@@ -1,6 +1,6 @@
 # feature_vector
 
-Before run the project, you should do the following steps :
+Before run the project, you should take the following steps :
 
 ## 1. Add some jar files to build path:
 
