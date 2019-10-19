@@ -2,7 +2,7 @@
 
 Before run the project, you should take the following steps :
 
-## 1. Install wordnet2.4.0
+## 1. Install wordnet 2.4.0
 
 [https://wordnet.princeton.edu/download](https://wordnet.princeton.edu/download)
 
