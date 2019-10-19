@@ -1,0 +1,189 @@
+requirement, subject, s-tag, s-ner, s-type, verb, v-tag, v-cat, v-process, object, o-tag, o-ner, o-type, label 
+1,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,user,NN,O,TN ,0
+1,user,NN,PERSON,PERSON,select,VB,TV,TRUE,product,NN,O,TN ,1
+1,user,NN,PERSON,PERSON,select product,NN,TV,FALSE,configure,VB,O,TV ,0
+2,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,available component of product,NN,O,TN ,0
+3,system,NN,O,NON-PERSON,shall enable,VB,TV,FALSE,user,NN,O,TN ,0
+4,system,NN,O,NON-PERSON,shall notify user about,IN,OTHER,FALSE,conflict in current configuration,NN,O,TN ,0
+5,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,user,NN,O,TN ,0
+5,user,NN,PERSON,PERSON,update,VB,TV,FALSE,configuration,NN,O,TN ,1
+5,conflict,NN,PERSON,PERSON,be in,IN,TV,FALSE,current configuration,NN,O,TN ,1
+6,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,user,NN,O,TN ,0
+6,user,NN,PERSON,PERSON,confirm,VB,TV,TRUE,completion of current configuration,NN,O,TN ,1
+6,user,NN,PERSON,PERSON,confirm,VB,TV,TRUE,completion,NN,O,TN ,1
+6,user,NN,PERSON,PERSON,confirm,VB,TV,TRUE,completion of configuration,NN,O,TN ,1
+7,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,detailed product categorization,NN,O,TN ,0
+7,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,product categorization,NN,O,TN ,0
+7,system,NN,O,NON-PERSON,shall display product categorization to,TO,OTHER,FALSE,user,NN,O,TN ,0
+8,system,NN,O,NON-PERSON,shall enable,VB,TV,FALSE,user,NN,O,TN ,0
+8,user,NN,PERSON,PERSON,enter,VB,TV,FALSE,search text,NN,O,TN ,1
+8,user,NN,PERSON,PERSON,enter search text on,IN,TV,FALSE,screen,NN,O,TN ,0
+9,user,NN,PERSON,PERSON,select,VB,TV,TRUE,option on screen,NN,O,TN ,1
+9,system,NN,O,NON-PERSON,shall enable,VB,TV,FALSE,user,NN,O,TN ,0
+9,user,NN,PERSON,PERSON,select option,NNS,TV,FALSE,search,VB,O,TN ,0
+9,user,NN,PERSON,PERSON,select,VB,TV,TRUE,multiple option on screen,NN,O,TN ,1
+9,user,NN,PERSON,PERSON,select,VB,TV,TRUE,multiple option,NNS,O,TN ,1
+9,user,NN,PERSON,PERSON,select,VB,TV,TRUE,option,NNS,O,TN ,1
+11,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,only 10 matching result,NN,O,TN ,0
+11,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,only 10 result,NN,O,TN ,0
+12,system,NN,O,NON-PERSON,shall enable,VB,TV,FALSE,navigate between search,NN,O,TN ,0
+12,system,NN,O,NON-PERSON,shall enable,VB,TV,FALSE,user,NN,O,TN ,0
+12,system,NN,O,NON-PERSON,shall enable,VB,TV,FALSE,navigate,VB,O,TV ,0
+12,user,NN,PERSON,PERSON,navigate between,IN,TV,FALSE,search,NN,O,TN ,1
+14,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,user,NN,O,TN ,0
+14,user,NN,PERSON,PERSON,create,VB,TV,TRUE,profile,NN,O,TN ,1
+14,system,NN,O,NON-PERSON,set,VBD,TV,FALSE,he credential,NN,O,TN ,0
+15,system,NN,O,NON-PERSON,shall authenticate,VB,TV,FALSE,user credentials,NNS,O,TN ,0
+15,system,NN,O,NON-PERSON,view,VB,TV,FALSE,profile,NN,O,TN ,0
+16,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,user,NN,O,TN ,0
+16,user,NN,PERSON,PERSON,update,VB,TV,FALSE,profile information,NN,O,TN ,1
+17,active order history,NN,O,NON-PERSON,be in,IN,TV,FALSE,customer profile,NN,O,TN ,0
+17,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,active order history,NN,O,TN ,0
+17,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,active order history in customer profile,NN,O,TN ,0
+17,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,order history in customer profile,NN,O,TN ,0
+17,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,order history,NN,O,TN ,0
+18,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,user,NN,O,TN ,0
+18,user,NN,PERSON,PERSON,select order from,IN,TV,FALSE,order history,NN,O,TN ,0
+18,user,NN,PERSON,PERSON,select,VB,TV,TRUE,order,NN,O,TN ,1
+19,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,information,NN,O,TN ,0
+19,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,detailed information about select order,NN,O,TN ,0
+19,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,information about select order,NN,O,TN ,0
+19,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,detailed information,NN,O,TN ,0
+19,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,detailed information about order,NN,O,TN ,0
+19,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,information about order,NN,O,TN ,0
+20,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,frequently search item,NNS,O,TN ,0
+20,system,NN,O,NON-PERSON,shall display item by,IN,OTHER,FALSE,user in profile,NN,O,TN ,0
+20,user,NN,PERSON,PERSON,be in,IN,TV,FALSE,profile,NN,O,TN ,1
+20,system,NN,O,NON-PERSON,shall display item by,IN,OTHER,FALSE,user,NN,O,TN ,0
+20,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,most frequently search item,NNS,O,TN ,0
+20,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,item,NNS,O,TN ,0
+20,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,search item,NNS,O,TN ,0
+21,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,user,NN,O,TN ,0
+21,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,register,VB,O,TN ,0
+21,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,register for newsletter in profile,NN,O,TN ,0
+21,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,register for newsletter,NNS,O,TN ,0
+21,user,NN,PERSON,PERSON,register for,IN,TV,FALSE,newsletter in profile,NN,O,TN ,1
+21,user,NN,PERSON,PERSON,register for,IN,TV,FALSE,newsletter,NNS,O,TN ,1
+21,newsletter,NNS,O,NON-PERSON,be in,IN,TV,FALSE,profile,NN,O,TN ,0
+22,system,NN,O,NON-PERSON,shall provide,VB,TV,FALSE,online help,NN,O,TN ,0
+22,system,NN,O,NON-PERSON,shall provide,VB,TV,FALSE,sitemap option for customer support,NN,O,TN ,0
+22,system,NN,O,NON-PERSON,shall provide,VB,TV,FALSE,sitemap option,NNS,O,TN ,0
+22,faq,NN,ORGANIZATION,NON-PERSON,have,null,TV,FALSE,customer support,NN,O,TN ,0
+22,system,NN,O,NON-PERSON,shall provide,VB,TV,FALSE,help,NN,O,TN ,0
+22,system,NN,O,NON-PERSON,shall provide,VB,TV,FALSE,faq 's customer support,NN,O,TN ,0
+23,user,NN,PERSON,PERSON,select,VB,TV,TRUE,support type,NN,O,TN ,1
+23,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,user,NN,O,TN ,0
+24,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,user,NN,O,TN ,0
+24,user,NN,PERSON,PERSON,enter customer information for,IN,TV,FALSE,support,NN,O,TN ,0
+24,user,NN,PERSON,PERSON,enter,VB,TV,FALSE,customer information,NN,O,TN ,1
+25,system,NN,O,NON-PERSON,shall display customer support contact number on,IN,OTHER,FALSE,screen,NN,O,TN ,0
+25,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,customer support contact number,NNS,O,TN ,0
+26,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,user,NN,O,TN ,0
+26,user,NN,PERSON,PERSON,enter contact number,NN,TV,FALSE,support personnel call,VB,O,TN ,0
+26,user,NN,PERSON,PERSON,enter,VB,TV,FALSE,contact number,NN,O,TN ,1
+27,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,help,NN,O,TN ,0
+27,system,NN,O,NON-PERSON,shall display help upon,IN,OTHER,FALSE,request,NN,O,TN ,0
+27,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,online help,NN,O,TN ,0
+28,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,FAQ,NNP,O,TN ,0
+28,system,NN,O,NON-PERSON,shall display faq upon,IN,OTHER,FALSE,request,NN,O,TN ,0
+29,system,NN,O,NON-PERSON,shall maintain customer email information as,IN,OTHER,FALSE,required part of customer profile,NN,O,TN ,0
+29,system,NN,O,NON-PERSON,shall maintain,VB,TV,FALSE,customer email information,NN,O,TN ,0
+29,system,NN,O,NON-PERSON,shall maintain customer email information as,IN,OTHER,FALSE,part of customer profile,NN,O,TN ,0
+29,system,NN,O,NON-PERSON,shall maintain customer email information as,IN,OTHER,FALSE,required part,NN,O,TN ,0
+29,system,NN,O,NON-PERSON,shall maintain customer email information as,IN,OTHER,FALSE,part,NN,O,TN ,0
+30,system,NN,O,NON-PERSON,shall send,VB,TV,FALSE,order,NN,O,TN ,0
+31,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,invoice,NN,O,TN ,0
+31,system,NN,O,NON-PERSON,shall display invoice,NN,TV,FALSE,confirm,VBN,O,TV ,0
+31,system,NN,O,NON-PERSON,shall display invoice for,IN,OTHER,FALSE,order,NN,O,TN ,0
+31,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,detailed invoice,NN,O,TN ,0
+31,it,PRP,O,NON-PERSON,be,VBZ,TV,FALSE,confirm,VBN,O,TV ,0
+31,system,NN,O,NON-PERSON,shall display invoice for,IN,OTHER,FALSE,current order,NN,O,TN ,0
+32,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,user,NN,O,TN ,0
+32,system,NN,O,NON-PERSON,shall optionally allow,VB,TV,FALSE,user,NN,O,TN ,0
+32,user,NN,PERSON,PERSON,print,VB,TV,FALSE,invoice,NN,O,TN ,1
+33,system,NN,O,NON-PERSON,shall provide,VB,TV,FALSE,shopping cart,NN,O,TN ,0
+33,system,NN,O,NON-PERSON,shall provide shopping cart during,IN,OTHER,FALSE,online purchase,NN,O,TN ,0
+33,system,NN,O,NON-PERSON,shall provide shopping cart during,IN,OTHER,FALSE,purchase,NN,O,TN ,0
+34,add/remove product,NNS,O,NON-PERSON,be in,IN,TV,FALSE,shopping cart,NN,O,TN ,0
+34,system,NN,O,NON-PERSON,shall allow user to,TO,OTHER,FALSE,add/remove product in shopping cart,NN,O,TN ,0
+34,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,user,NN,O,TN ,0
+34,system,NN,O,NON-PERSON,shall allow to,TO,OTHER,FALSE,add/remove product in shopping cart,NN,O,TN ,0
+34,system,NN,O,NON-PERSON,shall allow user to,TO,OTHER,FALSE,add/remove product,NNS,O,TN ,0
+34,system,NN,O,NON-PERSON,shall allow to,TO,OTHER,FALSE,add/remove product,NNS,O,TN ,0
+34,system,NN,O,NON-PERSON,shall allow to,TO,OTHER,FALSE,product,NNS,O,TN ,0
+34,system,NN,O,NON-PERSON,shall allow to,TO,OTHER,FALSE,product in shopping cart,NN,O,TN ,0
+34,system,NN,O,NON-PERSON,shall allow user to,TO,OTHER,FALSE,product,NNS,O,TN ,0
+34,system,NN,O,NON-PERSON,shall allow user to,TO,OTHER,FALSE,product in shopping cart,NN,O,TN ,0
+35,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,different shipping option provide,VBN,O,OTHER ,0
+35,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,shipping option provide,VBN,O,TN ,0
+35,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,different shipping option,NNS,O,TN ,0
+35,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,shipping option provide by shipping department,NN,O,TN ,0
+35,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,different shipping option provide by shipping department,NN,O,TN ,0
+35,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,shipping option,NNS,O,TN ,0
+36,user,NN,PERSON,PERSON,select,VB,TV,TRUE,shipping method,NN,O,TN ,1
+36,system,NN,O,NON-PERSON,shall enable,VB,TV,FALSE,user,NN,O,TN ,0
+36,user,NN,PERSON,PERSON,select shipping method during,IN,TV,FALSE,payment process,NN,O,TN ,0
+37,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,shipping charge,NNS,O,TN ,0
+38,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,duration,NN,O,TN ,0
+38,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,duration for shipping,NN,O,TN ,0
+38,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,tentative duration for shipping,NN,O,TN ,0
+38,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,tentative duration,NN,O,TN ,0
+39,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,user,NN,O,TN ,0
+39,user,NN,PERSON,PERSON,enter,VB,TV,FALSE,order information for tracking,NN,O,TN ,1
+39,user,NN,PERSON,PERSON,enter,VB,TV,FALSE,order information,NN,O,TN ,1
+40,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,current tracking information about order,NN,O,TN ,0
+40,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,tracking information,NN,O,TN ,0
+40,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,tracking information about order,NN,O,TN ,0
+40,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,current tracking information,NN,O,TN ,0
+41,system,NN,O,NON-PERSON,shall calculate tax for,IN,OTHER,FALSE,order,NN,O,TN ,0
+41,system,NN,O,NON-PERSON,shall calculate,VB,TV,FALSE,tax,NN,O,TN ,0
+42,system,NN,O,NON-PERSON,shall display tax information for,IN,OTHER,FALSE,order,NN,O,TN ,0
+42,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,tax information,NN,O,TN ,0
+43,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,payment method,NNS,O,TN ,0
+43,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,available payment method,NNS,O,TN ,0
+43,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,available payment method for payment,NN,O,TN ,0
+43,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,payment method for payment,NN,O,TN ,0
+44,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,user,NN,O,TN ,0
+44,user,NN,PERSON,PERSON,select,VB,TV,TRUE,payment method for order,NN,O,TN ,1
+44,user,NN,PERSON,PERSON,select,VB,TV,TRUE,payment method,NN,O,TN ,1
+45,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,order,NNS,O,TN ,0
+46,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,user,NN,O,TN ,0
+47,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,user,NN,O,TN ,0
+47,user,NN,PERSON,PERSON,cancel,VB,TV,TRUE,order,NN,O,TN ,1
+48,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,user,NN,O,TN ,0
+48,user,NN,PERSON,PERSON,change,VB,TV,FALSE,shipping,NN,O,TN ,1
+48,user,NN,PERSON,PERSON,change,VB,TV,FALSE,payment method,NN,O,TN ,1
+49,system,NN,O,NON-PERSON,shall notify user about,IN,OTHER,FALSE,change make to order,NN,O,TN ,0
+50,it,PRP,O,NON-PERSON,be,VBZ,TV,FALSE,when select,VBN,O,OTHER ,0
+50,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,review of product,NN,O,TN ,0
+50,it,PRP,O,NON-PERSON,be,VBZ,TV,FALSE,select,VBN,O,TV ,0
+50,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,rating,NNS,O,TN ,0
+51,system,NN,O,NON-PERSON,shall enable,VB,TV,FALSE,user,NN,O,TN ,0
+51,user,NN,PERSON,PERSON,enter,VB,TV,FALSE,rating,NNS,O,TN ,1
+51,user,NN,PERSON,PERSON,enter,VB,TV,FALSE,they review,NNS,O,TN ,1
+52,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,available financing option,NNS,O,TN ,0
+53,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,user,NN,O,TN ,0
+53,user,NN,PERSON,PERSON,select,VB,TV,TRUE,financing option,NN,O,TN ,1
+54,system,NN,O,NON-PERSON,shall notify,VB,TV,FALSE,use about financing request,NN,O,TN ,0
+54,system,NN,O,NON-PERSON,shall notify,VB,TV,FALSE,use,NN,O,TN ,0
+55,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,user,NN,O,TN ,0
+55,user,NN,PERSON,PERSON,view,VB,TV,FALSE,detailed sitemap,NN,O,OTHER ,1
+55,user,NN,PERSON,PERSON,view,VB,TV,FALSE,sitemap,NN,O,OTHER ,1
+56,system,NN,O,NON-PERSON,shall display,VB,TV,FALSE,available promotion,NNS,O,TN ,0
+57,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,user,NN,O,TN ,0
+57,user,NN,PERSON,PERSON,select,VB,TV,TRUE,promotion,NN,O,TN ,1
+57,user,NN,PERSON,PERSON,select,VB,TV,TRUE,available promotion,NN,O,TN ,1
+58,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,user,NN,O,TN ,0
+58,user,NN,PERSON,PERSON,confirm,VB,TV,TRUE,purchase,NN,O,TN ,1
+59,user,NN,PERSON,PERSON,enter,VB,TV,FALSE,payment information,NN,O,TN ,1
+59,system,NN,O,NON-PERSON,shall enable,VB,TV,FALSE,user,NN,O,TN ,0
+60,system,NN,O,NON-PERSON,shall provide,VB,TV,FALSE,uniform look,NN,O,TN ,0
+60,system,NN,O,NON-PERSON,shall provide,VB,TV,FALSE,look,NN,O,TN ,0
+60,system,NN,O,NON-PERSON,feel between,IN,TV,FALSE,web page,NNS,O,TN ,0
+61,system,NN,O,NON-PERSON,shall provide,VB,TV,FALSE,image for product,NN,O,TN ,0
+61,system,NN,O,NON-PERSON,shall provide,VB,TV,FALSE,digital image for product,NN,O,TN ,0
+62,system,NN,O,NON-PERSON,shall provide,VB,TV,FALSE,use,NN,O,TN ,0
+62,system,NN,O,NON-PERSON,shall provide,VB,TV,FALSE,use of icon,NNS,O,TN ,0
+63,system,NN,O,NON-PERSON,shall provide,VB,TV,FALSE,handicap access,NN,O,TN ,0
+64,system,NN,O,NON-PERSON,shall provide,VB,TV,FALSE,multi language support,NN,O,TN ,0
+64,system,NN,O,NON-PERSON,shall provide,VB,TV,FALSE,language support,NN,O,TN ,0
