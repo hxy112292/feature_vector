@@ -7,6 +7,6 @@ Before run the project, you should take the following steps :
 [https://wordnet.princeton.edu/download](https://wordnet.princeton.edu/download)
 
 
-## 2. Write some file paths in config.properties:
+## 2. Write wordnet installation paths in config.properties:
 
 wordnet.dir is the installation path of wordnet software.
