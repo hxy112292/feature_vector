@@ -1,0 +1,88 @@
+requirement, subject, s-tag, s-ner, s-type, verb, v-tag, v-cat, v-process, object, o-tag, o-ner, o-type, label 
+1,scientist,NNS,PERSON,PERSON,exploit,VB,TV,Y,datum from burst,NNS,O,TN ,1
+1,scientist,NNS,PERSON,PERSON,origin of,IN,OTHER,N,Gamma-Ray Bursts,NNPS,MISC,OTHER ,0
+1,scientist,NNS,PERSON,PERSON,exploit,VB,TV,Y,datum,NNS,O,TN ,1
+1,scientist,NNS,PERSON,PERSON,determine,VB,TV,Y,origin of Gamma-Ray Bursts,NNPS,MISC,TN ,1
+1,scientist,NNS,PERSON,PERSON,determine,VB,TV,Y,origin,NN,O,TN ,1
+2,scientist,NNS,PERSON,PERSON,exploit,VB,TV,Y,grb afterglow characteristic,NNS,O,TN ,1
+2,scientist,NNS,PERSON,PERSON,exploit,VB,TV,Y,discover grb afterglow characteristic,NNS,O,TN ,1
+2,Swift instrumentation,NN,O,NON-PERSON,shall allow,VB,TV,Y,scientist,NNS,O,TN ,0
+2,scientist,NNS,PERSON,PERSON,exploit,VB,TV,Y,newly discover grb afterglow characteristic,NNS,O,TN ,1
+3,scientist,NNS,PERSON,PERSON,determine,VB,TV,Y,origin of grb,NNS,O,TN ,1
+3,Swift,NNP,O,NON-PERSON,identify,VBP,TV,Y,class,NNS,O,TN ,0
+3,Swift,NNP,O,NON-PERSON,shall allow,VB,TV,Y,scientist,NNS,O,TN ,0
+3,GRB blast wave,NNS,O,NON-PERSON,interact with,IN,TV,Y,surroundings,NNS,O,TN ,0
+3,Swift,NNP,O,NON-PERSON,identify,VBP,TV,Y,different class,NNS,O,TN ,0
+3,Swift,NNP,O,NON-PERSON,identify,VBP,TV,Y,class of burst,NNS,O,TN ,0
+3,Swift,NNP,O,NON-PERSON,identify,VBP,TV,Y,different class of burst,NNS,O,TN ,0
+3,Swift,NNP,O,NON-PERSON,shall allow,VB,TV,Y,determine,VB,O,TV ,0
+3,scientist,NNS,PERSON,PERSON,determine,VB,TV,Y,origin,NN,O,TN ,1
+4,spacecraft,NN,O,NON-PERSON,shall,MD,OTHER,N,slew in direction,NN,O,TN ,0
+4,spacecraft,NN,O,NON-PERSON,shall,MD,OTHER,N,slew,NNS,O,TN ,0
+4,spacecraft,NN,O,NON-PERSON,shall,MD,OTHER,N,slew in direction of GRB,NNP,O,TN ,0
+4,slew,NNS,O,NON-PERSON,be in,IN,TV,Y,direction of GRB,NNP,O,TN ,0
+4,spacecraft,NN,O,NON-PERSON,bring,VBG,TV,Y,it,PRP,O,TN ,0
+5,Swift,NNP,O,NON-PERSON,shall have,VB,TV,Y,Communications Network communicate via dual redundant mil-std-1553b serial interface,NN,O,TN ,0
+5,Swift,NNP,O,NON-PERSON,shall have,VB,TV,Y,Communications Network communicate,VBZ,O,TN ,0
+5,Swift,NNP,O,NON-PERSON,shall have,VB,TV,Y,Communications Network communicate via mil-std-1553b serial interface,NN,O,TN ,0
+5,Swift,NNP,O,NON-PERSON,shall have,VB,TV,Y,Communications Network communicate to s/c via redundant mil-std-1553b serial interface,NN,O,TN ,0
+5,Swift,NNP,O,NON-PERSON,shall have,VB,TV,Y,Communications Network communicate via dual mil-std-1553b serial interface,NN,O,TN ,0
+5,Swift,NNP,O,NON-PERSON,shall have,VB,TV,Y,Communications Network communicate to s/c,NN,O,TN ,0
+5,Swift,NNP,O,NON-PERSON,shall have,VB,TV,Y,Communications Network communicate to s/c via mil-std-1553b serial interface,NN,O,TN ,0
+5,Swift,NNP,O,NON-PERSON,shall have,VB,TV,Y,Communications Network communicate to s/c via dual mil-std-1553b serial interface,NN,O,TN ,0
+5,Swift,NNP,O,NON-PERSON,shall have,VB,TV,Y,Communications Network communicate via redundant mil-std-1553b serial interface,NN,O,TN ,0
+5,Swift,NNP,O,NON-PERSON,shall have,VB,TV,Y,Communications Network communicate to s/c via dual redundant mil-std-1553b serial interface,NN,O,TN ,0
+6,scientist,NNS,PERSON,PERSON,collect science datum in,IN,TV,Y,form,NN,O,TN ,0
+6,scientist,NNS,PERSON,PERSON,collect,VBZ,TV,Y,science datum,NNS,O,TN ,1
+6,Swift,NNP,O,NON-PERSON,shall allow,VB,TV,Y,scientist,NNS,O,TN ,0
+6,scientist,NNS,PERSON,PERSON,collect science datum in,IN,TV,Y,form of image,NNS,O,TN ,0
+7,telecommand,NNS,O,NON-PERSON,will control,VB,TV,Y,temperature setpoint,NN,O,TN ,0
+7,Swift,NNP,O,NON-PERSON,shall cool ccd by,IN,OTHER,N,tec,NN,O,TN ,0
+7,Swift,NNP,O,NON-PERSON,shall cool,VB,TV,Y,CCD,NNP,O,OTHER ,0
+9,scientist,NNS,PERSON,PERSON,communicate with,IN,TV,Y,xrt,NN,O,OTHER ,1
+9,Swift,NNP,O,NON-PERSON,shall have,VB,TV,Y,Communications Network allow,VB,O,TN ,0
+10,Swift,NNP,O,NON-PERSON,shall have,VB,TV,Y,Time clock allow,VB,O,TN ,0
+10,scientist,NNS,PERSON,PERSON,make packet format as,IN,TV,Y,Consultative Committee,NNP,ORGANIZATION,TN ,0
+10,Swift,NNP,O,NON-PERSON,shall have,VB,TV,Y,real Time clock allow,VB,O,TN ,0
+10,scientist,NNS,PERSON,PERSON,make,VB,TV,Y,packet format,NN,O,TN ,1
+10,scientist,NNS,PERSON,PERSON,make packet format as,IN,TV,Y,Consultative Committee for Space Data Systems Source Packets,NNPS,O,OTHER ,0
+11,scientist,NNS,PERSON,PERSON,measure,VB,TV,Y,change in mechanical alignment,NN,O,TN ,1
+11,scientist,NNS,PERSON,PERSON,measure,VB,TV,Y,change in alignment of XRT 's tube,NN,O,TN ,1
+11,XRT,NNP,O,NON-PERSON,of,IN,OTHER,N,tube,NN,O,TN ,0
+11,change,NN,O,NON-PERSON,be in,IN,TV,Y,mechanical alignment of XRT 's tube,NN,O,TN ,0
+11,scientist,NNS,PERSON,PERSON,measure,VB,TV,Y,change,NN,O,TN ,1
+11,Telescope alignment,NN,O,NON-PERSON,monitor,VB,TV,Y,allow,VB,O,TV ,0
+11,scientist,NNS,PERSON,PERSON,measure,VB,TV,Y,change in alignment,NN,O,TN ,1
+11,scientist,NNS,PERSON,PERSON,measure,VB,TV,Y,change in mechanical alignment of XRT 's tube,NN,O,TN ,1
+11,Telescope alignment,NN,O,NON-PERSON,allow,VB,TV,Y,scientist,NNS,O,TN ,0
+12,Sun Shutter,NNP,MISC,NON-PERSON,have,VBZ,TV,Y,its own solar panel,NN,O,TN ,0
+12,Sun Shutter,NNP,MISC,NON-PERSON,have,VBZ,TV,Y,its solar panel for backup power,NN,O,TN ,0
+12,Sun Shutter,NNP,MISC,NON-PERSON,have,VBZ,TV,Y,its own panel,NN,O,TN ,0
+12,Sun Shutter,NNP,MISC,NON-PERSON,have,VBZ,TV,Y,its solar panel for power,NN,O,TN ,0
+12,Sun Shutter,NNP,MISC,NON-PERSON,have,VBZ,TV,Y,its panel for backup power,NN,O,TN ,0
+12,Sun Shutter,NNP,MISC,NON-PERSON,shall,MD,OTHER,N,shall power by spb,NN,ORGANIZATION,OTHER ,0
+12,Sun Shutter,NNP,MISC,NON-PERSON,have,VBZ,TV,Y,its own panel for power,NN,O,TN ,0
+12,Sun Shutter,NNP,MISC,NON-PERSON,have,VBZ,TV,Y,its own panel for backup power,NN,O,TN ,0
+12,Sun Shutter,NNP,MISC,NON-PERSON,have,VBZ,TV,Y,its panel,NN,O,TN ,0
+12,Sun Shutter,NNP,MISC,NON-PERSON,have,VBZ,TV,Y,its own solar panel for backup power,NN,O,TN ,0
+12,Sun Shutter,NNP,MISC,NON-PERSON,have,VBZ,TV,Y,its solar panel,NN,O,TN ,0
+12,Sun Shutter,NNP,MISC,NON-PERSON,have,VBZ,TV,Y,its own solar panel for power,NN,O,TN ,0
+12,Sun Shutter,NNP,MISC,NON-PERSON,shall,MD,OTHER,N,shall power,VBN,O,TN ,0
+12,Sun Shutter,NNP,MISC,NON-PERSON,have,VBZ,TV,Y,its panel for power,NN,O,TN ,0
+13,xrt,NN,O,NON-PERSON,shall monitor,VB,TV,Y,item,NNS,O,TN ,0
+13,xrt,NN,O,NON-PERSON,shall monitor,VB,TV,Y,several item,NNS,O,TN ,0
+13,xrt,NN,O,NON-PERSON,report,VBZ,TV,Y,they,PRP,O,OTHER ,0
+14,number,NNS,O,NON-PERSON,be in,IN,TV,Y,parenthesis,NN,O,TN ,0
+15,fsw,NN,ORGANIZATION,NON-PERSON,shall process science datum from,IN,OTHER,N,camera,NN,O,TN ,0
+15,relay,NN,PERSON,PERSON,be in,IN,TV,Y,form of CCSDS Source Packets,NNPS,O,TN ,0
+15,fsw,NN,ORGANIZATION,NON-PERSON,shall process,VB,TV,Y,science datum,NNS,O,TN ,0
+15,fsw,NN,ORGANIZATION,NON-PERSON,relay,NN,TV,Y,it,PRP,O,TN ,0
+16,fsw,NN,ORGANIZATION,NON-PERSON,shall receive command from,IN,OTHER,N,scu,NN,O,OTHER ,0
+16,fsw,NN,ORGANIZATION,NON-PERSON,shall receive,VB,TV,Y,command,NNS,O,TN ,0
+17,fsw,NN,ORGANIZATION,NON-PERSON,shall transmit,VB,TV,Y,housekeeping datum,NNS,O,TN ,0
+17,fsw,NN,ORGANIZATION,NON-PERSON,shall transmit datum to,TO,OTHER,N,scu,NN,ORGANIZATION,OTHER ,0
+17,fsw,NN,ORGANIZATION,NON-PERSON,shall transmit,VB,TV,Y,detailed housekeeping datum,NNS,O,TN ,0
+17,fsw,NN,ORGANIZATION,NON-PERSON,shall transmit datum in,IN,OTHER,N,form,NN,O,TN ,0
+17,fsw,NN,ORGANIZATION,NON-PERSON,shall transmit,VB,TV,Y,datum,NNS,O,TN ,0
+17,fsw,NN,ORGANIZATION,NON-PERSON,shall transmit,VB,TV,Y,detailed datum,NNS,O,TN ,0
+17,fsw,NN,ORGANIZATION,NON-PERSON,shall transmit datum in,IN,OTHER,N,form of CCSDS Source Packets,NNPS,O,TN ,0

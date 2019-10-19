@@ -1,0 +1,84 @@
+requirement, subject, s-tag, s-ner, s-type, verb, v-tag, v-cat, v-process, object, o-tag, o-ner, o-type, label 
+1,system,NN,O,NON-PERSON,should allow,VB,TV,Y,capability,NN,O,TN ,0
+1,capability,NN,O,NON-PERSON,restrict client to,TO,TV,Y,pre-determined set of service,NNS,O,TN ,0
+1,capability,NN,O,NON-PERSON,restrict client to,TO,TV,Y,set of service,NNS,O,TN ,0
+1,capability,NN,O,NON-PERSON,restrict,VB,TV,Y,authenticate client,NN,O,TN ,0
+1,capability,NN,O,NON-PERSON,restrict client to,TO,TV,Y,pre-determined set,NN,O,TN ,0
+1,capability,NN,O,NON-PERSON,restrict client to,TO,TV,Y,set,NN,O,TN ,0
+1,capability,NN,O,NON-PERSON,restrict,VB,TV,Y,client,NN,O,TN ,0
+2,user,NN,PERSON,PERSON,supervise,VB,TV,Y,change,NNS,O,TN ,1
+2,system,NN,O,NON-PERSON,should allow,VB,TV,Y,user,NN,O,TN ,0
+2,monitoring,NN,O,NON-PERSON,change for,IN,TV,Y,operational device,NNS,O,TN ,0
+2,user,NN,PERSON,PERSON,supervise,VB,TV,Y,monitoring of status,NN,O,TN ,1
+2,user,NN,PERSON,PERSON,supervise,VB,TV,Y,monitoring,NN,O,TN ,1
+2,user,NN,PERSON,PERSON,supervise,VB,TV,Y,change of state,NNS,O,TN ,1
+2,user,NN,PERSON,PERSON,supervise,VB,TV,Y,local monitoring of status,NN,O,TN ,1
+2,monitoring,NN,O,NON-PERSON,change of,IN,TV,Y,state,NNS,O,TN ,0
+2,user,NN,PERSON,PERSON,supervise,VB,TV,Y,change of state for operational device,NNS,O,TN ,1
+2,user,NN,PERSON,PERSON,supervise,VB,TV,Y,change for device,NNS,O,TN ,1
+2,user,NN,PERSON,PERSON,supervise,VB,TV,Y,local monitoring,NN,O,TN ,1
+2,user,NN,PERSON,PERSON,supervise,VB,TV,Y,change for operational device,NNS,O,TN ,1
+2,user,NN,PERSON,PERSON,supervise,VB,TV,Y,change of state for device,NNS,O,TN ,1
+2,monitoring,NN,O,NON-PERSON,change for,IN,TV,Y,device,NNS,O,TN ,0
+3,system,NN,O,NON-PERSON,should allow,VB,TV,Y,user,NN,O,TN ,0
+3,user,NN,PERSON,PERSON,operate,VB,TV,Y,equipment,NN,O,TN ,1
+3,system,NN,O,NON-PERSON,should allow,VB,TV,Y,operate,VB,O,TV ,0
+4,system,NN,O,NON-PERSON,should allow,VB,TV,Y,user,NN,O,TN ,0
+4,user,NN,PERSON,PERSON,change,VB,TV,Y,parameter,NN,O,TN ,1
+5,system,NN,O,NON-PERSON,should allow,VB,TV,Y,user,NN,O,TN ,0
+5,user,NN,PERSON,PERSON,visualize,VB,TV,Y,alarm,NNS,O,TN ,1
+6,user,NN,PERSON,PERSON,acknowledge,VB,TV,Y,alarm,NNS,O,TN ,1
+6,system,NN,O,NON-PERSON,should allow,VB,TV,Y,user,NN,O,TN ,0
+7,system,NN,O,NON-PERSON,should allow,VB,TV,Y,user,NN,O,TN ,0
+7,system,NN,O,NON-PERSON,should allow user to,TO,OTHER,N,clear alarm,NNS,O,TN ,0
+7,system,NN,O,NON-PERSON,should allow to,TO,OTHER,N,clear alarm,NNS,O,TN ,0
+7,system,NN,O,NON-PERSON,should allow user to,TO,OTHER,N,alarm,NNS,O,TN ,0
+7,system,NN,O,NON-PERSON,should allow to,TO,OTHER,N,alarm,NNS,O,TN ,0
+8,system,NN,O,NON-PERSON,should support,VB,TV,Y,scanning of device for alarm,NNS,O,TN ,0
+8,system,NN,O,NON-PERSON,should support,VB,TV,Y,scanning of device,NNS,O,TN ,0
+8,change,NNS,O,NON-PERSON,be in,IN,TV,Y,state,NN,O,TN ,0
+8,system,NN,O,NON-PERSON,should support,VB,TV,Y,scanning,NN,O,TN ,0
+8,operator control action,NNS,O,NON-PERSON,continuous scanning of,IN,OTHER,N,device,NNS,O,TN ,0
+8,system,NN,O,NON-PERSON,should support,VB,TV,Y,scanning for alarm,NNS,O,TN ,0
+8,system,NN,O,NON-PERSON,should support,VB,TV,Y,change,NNS,O,TN ,0
+8,system,NN,O,NON-PERSON,should support,VB,TV,Y,continuous scanning of device,NNS,O,TN ,0
+8,system,NN,O,NON-PERSON,should support,VB,TV,Y,operator control action,NNS,O,TN ,0
+8,operator control action,NNS,O,NON-PERSON,scanning for,IN,OTHER,N,alarm,NNS,O,TN ,0
+8,system,NN,O,NON-PERSON,should support,VB,TV,Y,continuous scanning of device for alarm,NNS,O,TN ,0
+8,system,NN,O,NON-PERSON,should support,VB,TV,Y,continuous scanning,NN,O,TN ,0
+8,system,NN,O,NON-PERSON,should support,VB,TV,Y,change in state,NN,O,TN ,0
+8,system,NN,O,NON-PERSON,should support,VB,TV,Y,continuous scanning for alarm,NNS,O,TN ,0
+8,operator control action,NNS,O,NON-PERSON,continuous scanning for,IN,OTHER,N,alarm,NNS,O,TN ,0
+8,operator control action,NNS,O,NON-PERSON,scanning of,IN,OTHER,N,device,NNS,O,TN ,0
+9,parameter,NNS,O,NON-PERSON,retrieve,VB,TV,Y,those,DT,O,OTHER ,0
+9,parameter,NNS,O,NON-PERSON,retrieve,VB,TV,Y,only those,DT,O,OTHER ,0
+10,system,NN,O,NON-PERSON,should support,VB,TV,Y,disturbance/fault record,NN,O,TN ,0
+10,system,NN,O,NON-PERSON,should support,VB,TV,Y,record,NN,O,TN ,0
+10,system,NN,O,NON-PERSON,retrieve,VBP,TV,Y,datum,NNS,O,TN ,0
+11,user,NN,PERSON,PERSON,configure,VB,TV,Y,communication network,NN,O,TN ,1
+11,system,NN,O,NON-PERSON,should allow,VB,TV,Y,user,NN,O,TN ,0
+12,system,NN,O,NON-PERSON,synchronise,VB,TV,Y,time,NN,O,TN ,0
+12,system,NN,O,NON-PERSON,synchronise,VB,TV,Y,time of device,NNS,O,TN ,0
+12,system,NN,O,NON-PERSON,synchronise time within,IN,TV,Y,communication system,NN,O,TN ,0
+13,system,NN,O,NON-PERSON,detect,VBZ,TV,Y,operational,JJ,O,TA ,0
+13,device,NN,O,NON-PERSON,be,VBZ,TV,Y,operational,JJ,O,TA ,0
+13,object,NN,O,NON-PERSON,be,VBZ,TV,Y,operational,JJ,O,TA ,0
+13,device,NN,O,NON-PERSON,be,VBZ,TV,Y,fully operational,JJ,O,OTHER ,0
+13,system,NN,O,NON-PERSON,detect,VBZ,TV,Y,fully operational,JJ,O,OTHER ,0
+13,system,NN,O,NON-PERSON,should allow,VB,TV,Y,detect,VBZ,O,TV ,0
+13,object,NN,O,NON-PERSON,be,VBZ,TV,Y,fully operational,JJ,O,OTHER ,0
+14,system,NN,O,NON-PERSON,should provide,VB,TV,Y,status report for component,NNS,O,TN ,0
+14,system,NN,O,NON-PERSON,should provide,VB,TV,Y,status report,NNS,O,TN ,0
+15,datum,NNS,O,NON-PERSON,be,VB,TV,Y,store in plant controller for transmission,NN,O,TN ,0
+15,datum,NNS,O,NON-PERSON,be,VB,TV,Y,store in plant controller for transmission on demand,NN,O,TN ,0
+15,datum,NNS,O,NON-PERSON,be store in,IN,TV,Y,plant controller,NN,TITLE,TN ,0
+15,system,NN,O,NON-PERSON,should allow,VB,TV,Y,datum,NNS,O,TN ,0
+15,datum,NNS,O,NON-PERSON,be,VB,TV,Y,store,VBN,O,TN ,0
+15,datum,NNS,O,NON-PERSON,be store for,IN,TV,Y,transmission on demand,NN,O,TN ,0
+15,datum,NNS,O,NON-PERSON,be store for,IN,TV,Y,transmission,NN,O,TN ,0
+16,system,NN,O,NON-PERSON,download,VB,TV,Y,configuration,NN,O,TN ,0
+16,system,NN,O,NON-PERSON,retrieve,VBP,TV,Y,configuration datum,NNS,O,TN ,0
+17,system,NN,O,NON-PERSON,start object within,IN,TV,Y,system,NN,O,TN ,0
+17,system,NN,O,NON-PERSON,start,VB,TV,Y,object,NNS,O,TN ,0
+17,system,NN,O,NON-PERSON,start function within,IN,TV,Y,system,NN,O,TN ,0
+17,system,NN,O,NON-PERSON,start,VB,TV,Y,function,NNS,O,TN ,0
