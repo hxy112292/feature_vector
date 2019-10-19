@@ -97,7 +97,7 @@ public class FileUtil {
      *      新内容
      */
     public static String getFileWithRelativePath(File folder, File file) {
-        return folder + "\\" + file.getName();
+        return folder + File.separator + file.getName();
     }
 
     /**

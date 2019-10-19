@@ -16,7 +16,7 @@ public class CSVFile {
 
     public static void writeToFeatureVector(String content, String filename) throws Exception{
 
-        String rootDir = PropertiesUtil.getPropery("result.dir");
+        String rootDir = FilePath.getResultPath();
 
         DateTime dt = new DateTime(new Date());
         DateTimeFormatter dtf = DateTimeFormat.forPattern("yyyy-MM-dd-HH-mm");

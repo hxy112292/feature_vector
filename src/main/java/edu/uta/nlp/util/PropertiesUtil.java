@@ -8,7 +8,7 @@ import java.util.Properties;
  */
 public class PropertiesUtil {
 
-    private static final String PROPERTIES_NAME = "config.properties";
+    public static final String PROPERTIES_NAME = "config.properties";
     private static Properties prop = new Properties();
     static {
         InputStream is = null;

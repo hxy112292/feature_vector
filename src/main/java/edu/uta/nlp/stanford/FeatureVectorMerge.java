@@ -13,6 +13,7 @@ import edu.uta.nlp.constant.SynsetType;
 import edu.uta.nlp.entity.ClassificationCoreLabel;
 import edu.uta.nlp.entity.FeatureVector;
 import edu.uta.nlp.file.CSVFile;
+import edu.uta.nlp.file.FilePath;
 import edu.uta.nlp.util.FileUtil;
 import edu.uta.nlp.util.PropertiesUtil;
 import edu.uta.nlp.wordnet.WordNetApi;
@@ -36,7 +37,7 @@ public class FeatureVectorMerge {
 
         List<BufferedReader> fileContent = new ArrayList<BufferedReader>();
 
-        File folder = new File(PropertiesUtil.getPropery("requirement.dir"));
+        File folder = new File(FilePath.getRequirementPath());
         for (final File file : folder.listFiles()) {
 
             String filePath = FileUtil.getFileWithRelativePath(folder, file);
