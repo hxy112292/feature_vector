@@ -10,3 +10,6 @@ Before run the project, you should take the following steps :
 ## 2. Write wordnet installation paths in config.properties:
 
 wordnet.dir is the installation path of wordnet software.
+
+
+## 3. Run Main.java
