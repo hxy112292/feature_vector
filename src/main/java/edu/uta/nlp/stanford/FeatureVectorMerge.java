@@ -15,7 +15,6 @@ import edu.uta.nlp.entity.FeatureVector;
 import edu.uta.nlp.file.CSVFile;
 import edu.uta.nlp.file.FilePath;
 import edu.uta.nlp.util.FileUtil;
-import edu.uta.nlp.util.PropertiesUtil;
 import edu.uta.nlp.wordnet.WordNetApi;
 
 import java.io.BufferedReader;
@@ -104,12 +103,7 @@ public class FeatureVectorMerge {
                         featureVector.setSubjectType(WordNetApi.getDefinition(featureVector.getSubject(), POS.NOUN).contains("person") ? "PERSON" : "NON-PERSON");
                         featureVector.setObjectType(SynsetType.getTag(WordNetApi.getType(featureVector.getObject(), POS.NOUN)));
                         featureVector.setVerbCat(SynsetType.getTag(WordNetApi.getType(featureVector.getVerb(), POS.VERB)));
-
-                        if(featureVector.getVerbCat().equals(SynsetType.getTag(POS.NUM_VERB))) {
-                            featureVector.setVerbProcess("Y");
-                        } else {
-                            featureVector.setVerbProcess("N");
-                        }
+                        featureVector.setVerbProcess(WordNetApi.getWord(featureVector.getVerb(), POS.VERB).contains("ion") ? "TRUE" : "FALSE");
 
                         sb.append(sentNo + "," + featureVector.toString() + " \n");
 

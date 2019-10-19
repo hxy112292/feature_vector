@@ -10,13 +10,39 @@ import edu.uta.nlp.util.PropertiesUtil;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.List;
 
 /**
  * @author hxy
  */
 public class WordNetApi {
 
+
+    public static String getWord(String word, POS pos) throws IOException {
+
+        String result = "";
+
+        if(word.contains(" ")) {
+            return result;
+        }
+
+        IDictionary dict = findDict();
+
+        dict.open();//Open dict
+
+        IIndexWord idxWord =dict.getIndexWord(word, pos);
+
+        if(idxWord == null) {
+            return result;
+        }
+
+        for(IWordID wordID : idxWord.getWordIDs()) {
+            for(IWordID iWord : dict.getWord(wordID).getRelatedWords()) {
+                result = result + dict.getWord(iWord).getLemma() + ";";
+            }
+        }
+
+        return result;
+    }
 
     public static String getDefinition(String word, POS pos) throws IOException {
 
@@ -31,7 +57,7 @@ public class WordNetApi {
             word = word.substring(word.lastIndexOf(" ") == -1 ? 0 : word.lastIndexOf(" "));
             idxWord =dict.getIndexWord(word, pos);
             if(idxWord == null) {
-                return "None";
+                return result;
             }
         }
 

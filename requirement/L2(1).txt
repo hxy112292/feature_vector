@@ -1,12 +1,14 @@
 The system should allow the capability to restrict an authenticated client to a pre-determined set of services and objects. 
-The system should support supervision local or remote monitoring of the status and changes of states for operational devices.
-The system should allow to operate equipment like switchgear or transformer, protection, etc.
-The system should allow parameter changes (parameter set switching, subset of setting, or single parameter).
-The system should allow an operator to visualize, acknowledge and clear alarms.
+The system should allow user to supervise local or remote monitoring of the status and changes of states for operational devices.
+The system should allow user to operate equipment.
+The system should allow user to change parameter.
+The system should allow user to visualize alarms.
+The system should allow user to acknowledge alarms.
+The system should allow user to clear alarms.
 The system should support continuous scanning of devices for alarms, operator control actions and changes in state
 The system should allow retrieving all parameters (names, values, and units for all setpoints) or to retrieve only those that differ from the default values.
 The system should support disturbance/fault record and retrieve data.
-The system should allow configure and maintain the communication network.
+The system should allow user to configure and maintain the communication network.
 The system should allow synchronise the time of devices within a communication system.
 The system should allow to detects if an object or device is fully operational, partially operational or not operational.
 The system should provide status and analysis reports for components.
