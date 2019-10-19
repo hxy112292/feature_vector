@@ -38,9 +38,7 @@ public class FeatureVectorMerge {
 
         File folder = new File(FilePath.getRequirementPath());
         for (final File file : folder.listFiles()) {
-
-            String filePath = FileUtil.getFileWithRelativePath(folder, file);
-            BufferedReader bufferedReader = (new BufferedReader(new FileReader(new File(filePath))));
+            BufferedReader bufferedReader = (new BufferedReader(new FileReader(file)));
             // Loop over sentences in the document
             int sentNo = 0;
             String line;

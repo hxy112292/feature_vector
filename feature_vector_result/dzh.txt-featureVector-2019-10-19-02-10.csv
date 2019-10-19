@@ -1,0 +1,302 @@
+requirement, subject, s-tag, s-ner, s-type, verb, v-tag, v-cat, v-process, object, o-tag, o-ner, o-type, label 
+1,user,NNS,PERSON,PERSON,apply through,IN,TV,FALSE,web portal,NN,O,TN ,1
+1,user,NNS,PERSON,PERSON,apply directly for,IN,TV,FALSE,account,NN,O,TN ,1
+1,user,NNS,PERSON,PERSON,apply for,IN,TV,FALSE,account,NN,O,TN ,1
+1,user,NNS,PERSON,PERSON,apply directly through,IN,TV,FALSE,web portal,NN,O,TN ,1
+2,user,NNS,PERSON,PERSON,must enter,VB,TV,FALSE,require field,NNS,O,TN ,1
+3,user,NN,PERSON,PERSON,must enter,VB,TV,FALSE,they NCAR Gatekeeper username,NNP,O,OTHER ,1
+4,user,NN,PERSON,PERSON,view,VB,TV,FALSE,they account detail,NNS,O,TN ,1
+4,user,NN,PERSON,PERSON,view,VB,TV,FALSE,they current account detail,NNS,O,TN ,1
+6,system,NN,O,NON-PERSON,shall provide,VB,TV,FALSE,means request,NN,O,TN ,0
+7,system,NN,O,NON-PERSON,shall notify,VB,TV,FALSE,admin,NN,O,OTHER ,0
+7,system,NN,O,NON-PERSON,shall notify,VB,TV,FALSE,portal admin,NN,O,TN ,0
+7,system,NN,O,NON-PERSON,shall notify admin about,IN,OTHER,FALSE,delete request,NNS,O,TN ,0
+7,system,NN,O,NON-PERSON,shall notify admin about,IN,OTHER,FALSE,request,NNS,O,TN ,0
+8,user,NN,PERSON,PERSON,enter password to,TO,TV,FALSE,login,NN,O,OTHER ,0
+8,user,NN,PERSON,PERSON,enter password to,TO,TV,FALSE,login to system,NN,O,TN ,0
+8,user,NN,PERSON,PERSON,enter,VB,TV,FALSE,password,NN,O,TN ,1
+8,system,NN,O,NON-PERSON,shall require,VB,TV,FALSE,user,NN,O,TN ,0
+8,user,NN,PERSON,PERSON,enter,VB,TV,FALSE,they username,JJ,O,OTHER ,1
+9,user,NN,PERSON,PERSON,shall,MD,OTHER,FALSE,shall prompt at beginning for they credentials,NNS,O,TN ,0
+9,user,NN,PERSON,PERSON,shall,MD,OTHER,FALSE,shall prompt at beginning of session,NN,O,TN ,0
+9,user,NN,PERSON,PERSON,shall,MD,OTHER,FALSE,shall prompt,VBN,O,TN ,0
+9,user,NN,PERSON,PERSON,shall,MD,OTHER,FALSE,shall prompt at beginning,NN,O,TN ,0
+9,user,NN,PERSON,PERSON,shall,MD,OTHER,FALSE,shall prompt at beginning of session for they credentials,NNS,O,TN ,0
+9,user,NN,PERSON,PERSON,shall,MD,OTHER,FALSE,shall prompt for they credentials,NNS,O,TN ,0
+10,login action,NNS,O,NON-PERSON,use,VBG,TV,FALSE,datum channel,NNS,O,TN ,0
+10,login action,NNS,O,NON-PERSON,shall,MD,OTHER,FALSE,shall protect,VBN,O,OTHER ,0
+10,login action,NNS,O,NON-PERSON,use,VBG,TV,FALSE,secure datum channel,NNS,O,TN ,0
+11,system,NN,O,NON-PERSON,shall lock,VB,TV,FALSE,account,NN,O,TN ,0
+11,system,NN,O,NON-PERSON,shall lock account after,IN,OTHER,FALSE,3 login attempt,NNS,O,TN ,0
+12,this,DT,O,NON-PERSON,will require,VB,TV,FALSE,portal,NN,O,TN ,0
+14,Admin user,NNS,PERSON,PERSON,will,MD,TV,FALSE,will authenticate against portal database,NN,O,TN ,0
+14,Admin user,NNS,PERSON,PERSON,will,MD,TV,FALSE,will authenticate,VBN,O,TN ,0
+15,user,NNS,PERSON,PERSON,will,MD,TV,FALSE,will authenticate,VBN,O,TN ,0
+15,user,NNS,PERSON,PERSON,will,MD,TV,FALSE,will authenticate against NCAR Gatekeeper system,NN,O,TN ,0
+16,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,administrator,NNS,O,TN ,0
+16,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,portal administrator,NNS,O,TN ,0
+17,user account,NNS,PERSON,PERSON,be in,IN,TV,FALSE,system,NN,O,TN ,0
+18,template,NNS,O,NON-PERSON,be,VB,TV,FALSE,not delete,VBN,O,OTHER ,0
+18,template,NNS,O,NON-PERSON,not be delete from,IN,OTHER,FALSE,disk,NN,O,TN ,0
+18,template,NNS,O,NON-PERSON,be delete from,IN,TV,FALSE,disk,NN,O,TN ,0
+18,template,NNS,O,NON-PERSON,be,VB,TV,FALSE,delete,VBN,O,TV ,0
+20,other objects/projects,NNS,O,NON-PERSON,will,MD,TV,FALSE,will delete,VBN,O,TN ,0
+20,other objects/projects,NNS,O,NON-PERSON,will,MD,TV,FALSE,will delete from system,NN,O,TN ,0
+20,other objects/projects,NNS,O,NON-PERSON,will,MD,TV,FALSE,will delete completely from system,NN,O,TN ,0
+20,other objects/projects,NNS,O,NON-PERSON,will,MD,TV,FALSE,will delete completely,RB,O,TN ,0
+21,admin,NN,O,NON-PERSON,lock,VB,TV,FALSE,account,NNS,O,TN ,0
+22,user,NN,PERSON,PERSON,will,MD,TV,FALSE,will notify,VBN,O,TN ,0
+22,user,NN,PERSON,PERSON,will,MD,TV,FALSE,will notify via e-mail,NN,O,TN ,0
+24,job,NN,PERSON,PERSON,end by,IN,TV,FALSE,portal admin,NN,O,TN ,0
+24,job,NN,PERSON,PERSON,end by,IN,TV,FALSE,admin,NN,O,OTHER ,0
+25,admin,NN,O,NON-PERSON,unlock,VB,TV,FALSE,account,NNS,O,TN ,0
+26,user,NN,PERSON,PERSON,login to,TO,OTHER,FALSE,system,NN,O,TN ,0
+26,user,NN,PERSON,PERSON,resume,VB,TV,TRUE,use,NN,O,TN ,1
+27,portal admin,NN,O,NON-PERSON,will have,VB,TV,FALSE,display of run job sort by user,NN,O,TN ,0
+27,admin,NN,O,NON-PERSON,will have,VB,TV,FALSE,display of run job sort by user,NN,O,TN ,0
+29,user,NN,PERSON,PERSON,have,null,TV,FALSE,run job,NNS,O,TN ,0
+30,user,NN,PERSON,PERSON,account to,TO,TV,FALSE,scientist role,NN,O,TN ,0
+30,user,NN,PERSON,PERSON,account to,TO,TV,FALSE,scientist role by default,NN,O,TN ,0
+31,user,NN,PERSON,PERSON,have,null,TV,FALSE,role in system,NN,O,TN ,0
+31,admin,NN,O,NON-PERSON,change,VB,TV,FALSE,user 's role,NN,O,TN ,0
+31,portal admin,NN,O,NON-PERSON,change,VB,TV,FALSE,user 's role in system,NN,O,TN ,0
+31,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,portal admin,NN,O,TN ,0
+31,system,NN,O,NON-PERSON,shall allow,VB,TV,FALSE,admin,NN,O,OTHER ,0
+31,user 's role,NN,PERSON,PERSON,be in,IN,TV,FALSE,system,NN,O,TN ,0
+31,admin,NN,O,NON-PERSON,change,VB,TV,FALSE,user 's role in system,NN,O,TN ,0
+31,portal admin,NN,O,NON-PERSON,change,VB,TV,FALSE,user 's role,NN,O,TN ,0
+33,system,NN,O,NON-PERSON,support,VBZ,TV,FALSE,staff login method,NNS,O,TN ,0
+33,system,NN,O,NON-PERSON,support,VBZ,TV,FALSE,streamlined staff login method,NNS,O,TN ,0
+34,staff member,NN,O,NON-PERSON,log into,IN,TV,FALSE,terminal,JJ,O,TN ,0
+34,staff member,NN,O,NON-PERSON,swipe card,NN,TV,FALSE,log,VB,O,TN ,0
+34,staff member,NN,O,NON-PERSON,swipe,VBZ,TV,FALSE,card,NN,O,TN ,0
+34,staff member,NN,O,NON-PERSON,swipe card,NN,TV,FALSE,log into terminal,JJ,O,TN ,0
+36,System administrator,NNS,PERSON,PERSON,create,VB,TV,FALSE,report template,NNS,O,TN ,0
+36,System administrator,NNS,PERSON,PERSON,create,VB,TV,FALSE,reliable report template,NNS,O,TN ,0
+37,System administrator,NNS,PERSON,PERSON,can,MD,TV,FALSE,can run,VBN,O,TN ,0
+37,System administrator,NNS,PERSON,PERSON,as be modify to,TO,OTHER,FALSE,staff person 's particular need,NNS,O,TN ,0
+37,staff person,NN,PERSON,PERSON,to,TO,OTHER,FALSE,particular need,NNS,O,TN ,0
+37,System administrator,NNS,PERSON,PERSON,be modify to,TO,TV,FALSE,staff person 's particular need,NNS,O,TN ,0
+37,System administrator,NNS,PERSON,PERSON,be,VBZ,TV,FALSE,modify,VBN,O,TV ,0
+37,System administrator,NNS,PERSON,PERSON,as be modify to,TO,OTHER,FALSE,staff person 's need,NNS,O,TN ,0
+37,System administrator,NNS,PERSON,PERSON,be modify to,TO,TV,FALSE,staff person 's need,NNS,O,TN ,0
+37,System administrator,NNS,PERSON,PERSON,be,VBZ,TV,FALSE,as modify,VBN,O,TN ,0
+38,change,NNS,O,NON-PERSON,be in,IN,TV,FALSE,template,NNS,O,TN ,0
+38,change,NNS,O,NON-PERSON,could,MD,OTHER,FALSE,could do,VBN,O,TN ,0
+38,change,NNS,O,NON-PERSON,comprise,VBG,TV,FALSE,result,NNS,O,TN ,0
+39,administrator,NN,TITLE,NON-PERSON,limit,VB,TV,FALSE,filter,NNS,O,TN ,0
+39,administrator,NN,TITLE,NON-PERSON,display,VBP,TV,FALSE,field,NNS,O,TN ,0
+40,System,NNP,O,NON-PERSON,provide,VBZ,TV,TRUE,permission level,NNS,O,TN ,0
+40,System,NNP,O,NON-PERSON,provide,VBZ,TV,TRUE,fine-grained permission level,NNS,O,TN ,0
+40,System,NNP,O,NON-PERSON,provide,VBZ,TV,TRUE,fine-grained permission level limit,VBG,O,TN ,0
+40,System,NNP,O,NON-PERSON,provide,VBZ,TV,TRUE,distinct fine-grained permission level limit,VBG,O,TN ,0
+40,System,NNP,O,NON-PERSON,provide,VBZ,TV,TRUE,distinct fine-grained permission level,NNS,O,TN ,0
+40,System,NNP,O,NON-PERSON,provide,VBZ,TV,TRUE,permission level limit,VBG,O,TN ,0
+40,System,NNP,O,NON-PERSON,provide,VBZ,TV,TRUE,distinct permission level,NNS,O,TN ,0
+40,System,NNP,O,NON-PERSON,provide,VBZ,TV,TRUE,distinct permission level limit,VBG,O,TN ,0
+41,permission,NNS,O,NON-PERSON,should,MD,OTHER,FALSE,should easy,JJ,O,OTHER ,0
+42,staff,NN,PERSON,PERSON,run,VB,TV,FALSE,report,NNS,O,TN ,1
+42,System administrator,NNS,PERSON,PERSON,create,VB,TV,FALSE,shared folder allow,VB,O,OTHER ,0
+42,System administrator,NNS,PERSON,PERSON,run,VB,TV,FALSE,ad hoc report,NNS,O,TN ,1
+42,System administrator,NNS,PERSON,PERSON,run,VB,TV,FALSE,ad hoc report on set,NNS,O,TN ,1
+42,staff,NN,PERSON,PERSON,run,VB,TV,FALSE,specific report,NNS,O,TN ,1
+42,System administrator,NNS,PERSON,PERSON,run,VB,TV,FALSE,ad hoc report on set of datum,NNS,O,TN ,1
+42,System administrator,NNS,PERSON,PERSON,run,VB,TV,FALSE,ad hoc report on specific set,NNS,O,TN ,1
+42,System administrator,NNS,PERSON,PERSON,create,VB,TV,FALSE,folder allow,VB,O,TN ,0
+42,System administrator,NNS,PERSON,PERSON,run,VB,TV,FALSE,ad hoc report on specific set of datum,NNS,O,TN ,1
+44,staff,NN,PERSON,PERSON,select,JJ,TV,FALSE,field to query,NN,O,TN ,1
+44,staff,NN,PERSON,PERSON,select,JJ,TV,FALSE,field,NNS,O,TN ,1
+45,r1 Administrators,NNPS,O,NON-PERSON,control,VBP,TV,FALSE,staff access,NN,O,TN ,0
+45,r1 .4.3 Administrators,NNPS,O,NON-PERSON,control,VBP,TV,FALSE,staff access,NN,O,TN ,0
+45,r1 Administrators,NNPS,O,NON-PERSON,control,VBP,TV,FALSE,staff access to table,NNS,O,TN ,0
+45,r1 .4.3 Administrators,NNPS,O,NON-PERSON,control,VBP,TV,FALSE,staff access to table,NNS,O,TN ,0
+46,system,NN,O,NON-PERSON,provide,VBZ,TV,TRUE,report,NNS,O,TN ,0
+46,system,NN,O,NON-PERSON,provide,VBZ,TV,TRUE,pre-defined report for consumption by library board,NNS,O,TN ,0
+46,system,NN,O,NON-PERSON,provide,VBZ,TV,TRUE,report for consumption by library board,NNS,O,TN ,0
+46,system,NN,O,NON-PERSON,provide,VBZ,TV,TRUE,report for consumption,NN,O,TN ,0
+46,system,NN,O,NON-PERSON,provide,VBZ,TV,TRUE,pre-defined report,NNS,O,TN ,0
+46,system,NN,O,NON-PERSON,provide,VBZ,TV,TRUE,pre-defined report for consumption,NN,O,TN ,0
+47,system,NN,O,NON-PERSON,hold,VBZ,TV,FALSE,fill,VBN,O,TN ,0
+47,volume,NN,O,NON-PERSON,traffic of,IN,TV,FALSE,use,NN,O,TN ,0
+47,system,NN,O,NON-PERSON,will,MD,TV,FALSE,will report,NNS,O,TN ,0
+49,transaction,NNS,O,NON-PERSON,provide,VBG,TV,TRUE,statistics,NNS,O,TN ,0
+49,transaction,NNS,O,NON-PERSON,provide,VBG,TV,TRUE,demographic statistics,NNS,O,TN ,0
+49,transaction,NNS,O,NON-PERSON,provide,VBG,TV,TRUE,useful demographic statistics,NNS,O,TN ,0
+49,transaction,NNS,O,NON-PERSON,provide,VBG,TV,TRUE,useful statistics,NNS,O,TN ,0
+49,transaction,NNS,O,NON-PERSON,be archive in,IN,TV,FALSE,form,NN,O,TN ,0
+49,transaction,NNS,O,NON-PERSON,be,VBP,TV,FALSE,archive,VBN,O,TN ,0
+52,item,NNS,O,NON-PERSON,be with,IN,TV,FALSE,invalid item type,NN,O,TN ,0
+53,in-transit item,NNS,O,NON-PERSON,be with,IN,TV,FALSE,outstanding hold,NN,O,TN ,0
+55,last copy,NN,O,NON-PERSON,be in,IN,TV,FALSE,system,NN,O,TN ,0
+56,item,NNS,O,NON-PERSON,be with,IN,TV,FALSE,long call number,NN,O,TN ,0
+57,patron,NNS,O,NON-PERSON,be with,IN,TV,FALSE,invalid home library,NN,O,TN ,0
+58,System,NNP,O,NON-PERSON,provide,VBZ,TV,TRUE,query selection,NNS,O,TN ,0
+58,System,NNP,O,NON-PERSON,provide query selection along with,IN,TV,FALSE,result,NNS,O,TN ,0
+60,System,NNP,O,NON-PERSON,must,MD,TN,FALSE,must able,JJ,O,TN ,0
+60,System,NNP,O,NON-PERSON,support reporting definition,NNS,TV,FALSE,describe,VBN,O,TV ,0
+60,System,NNP,O,NON-PERSON,support,VB,TV,FALSE,reporting definition,NNS,O,TN ,0
+60,System,NNP,O,NON-PERSON,support reporting definition,NNS,TV,FALSE,describe in Appendix,NNP,O,TN ,0
+61,System,NNP,O,NON-PERSON,must,MD,TN,FALSE,must able,JJ,O,TN ,0
+61,System,NNP,O,NON-PERSON,support,VB,TV,FALSE,fine-grained report requirement,NNS,O,TN ,0
+61,System,NNP,O,NON-PERSON,support report requirement,NNS,TV,FALSE,describe in Appendix B.,NNP,O,OTHER ,0
+61,System,NNP,O,NON-PERSON,support,VB,TV,FALSE,report requirement,NNS,O,TN ,0
+61,System,NNP,O,NON-PERSON,support report requirement,NNS,TV,FALSE,describe,VBN,O,TV ,0
+62,system,NN,O,NON-PERSON,produce,VBZ,TV,TRUE,statistics,NNS,O,TN ,0
+63,system,NN,O,NON-PERSON,produce,VBZ,TV,TRUE,demographic statistics include transaction by region,NNS,O,TN ,0
+63,system,NN,O,NON-PERSON,produce,VBZ,TV,TRUE,useful statistics include transaction by geographical region,NNS,O,TN ,0
+63,system,NN,O,NON-PERSON,produce,VBZ,TV,TRUE,statistics include transaction,NNS,O,TN ,0
+63,system,NN,O,NON-PERSON,produce,VBZ,TV,TRUE,statistics include transaction by region,NNS,O,TN ,0
+63,system,NN,O,NON-PERSON,produce,VBZ,TV,TRUE,statistics,NNS,O,TN ,0
+63,system,NN,O,NON-PERSON,produce,VBZ,TV,TRUE,useful demographic statistics include transaction by region,NNS,O,TN ,0
+63,system,NN,O,NON-PERSON,produce,VBZ,TV,TRUE,useful demographic statistics,NNS,O,TN ,0
+63,system,NN,O,NON-PERSON,produce,VBZ,TV,TRUE,useful demographic statistics include transaction by geographical region,NNS,O,TN ,0
+63,system,NN,O,NON-PERSON,produce,VBZ,TV,TRUE,useful statistics,NNS,O,TN ,0
+63,system,NN,O,NON-PERSON,produce,VBZ,TV,TRUE,demographic statistics,NNS,O,TN ,0
+63,system,NN,O,NON-PERSON,produce,VBZ,TV,TRUE,demographic statistics include transaction,NNS,O,TN ,0
+63,system,NN,O,NON-PERSON,produce,VBZ,TV,TRUE,useful statistics include transaction by region,NNS,O,TN ,0
+63,system,NN,O,NON-PERSON,produce,VBZ,TV,TRUE,useful statistics include transaction,NNS,O,TN ,0
+63,system,NN,O,NON-PERSON,produce,VBZ,TV,TRUE,useful demographic statistics include transaction,NNS,O,TN ,0
+63,system,NN,O,NON-PERSON,produce,VBZ,TV,TRUE,demographic statistics include transaction by geographical region,NNS,O,TN ,0
+63,system,NN,O,NON-PERSON,produce,VBZ,TV,TRUE,statistics include transaction by geographical region,NNS,O,TN ,0
+64,i.e. information,NN,O,NON-PERSON,be,VBZ,TV,FALSE,delete,VBN,O,TV ,0
+64,datum,NNS,O,NON-PERSON,must,MD,TN,FALSE,must anonymize,VBN,O,TN ,0
+65,ability,NN,O,NON-PERSON,be with,IN,TV,FALSE,ability break in category,NNS,O,TN ,0
+66,system,NN,O,NON-PERSON,provide,VBZ,TV,TRUE,interface,NN,O,TN ,0
+66,show,VBG,O,NON-PERSON,capacity of,IN,OTHER,FALSE,branch,NNS,O,TN ,0
+71,material,NN,PERSON,PERSON,be,VBG,TV,FALSE,how use,VBN,O,TN ,0
+71,material,NN,PERSON,PERSON,be,VBG,TV,FALSE,use,VBN,O,TN ,0
+74,ability,NN,O,NON-PERSON,query for,IN,TV,FALSE,candidate material,NNS,O,TN ,0
+74,utility,NN,O,NON-PERSON,include,VBZ,TV,TRUE,ability query,NN,O,TN ,0
+74,utility,NN,O,NON-PERSON,include,VBZ,TV,TRUE,ability query for candidate material,NNS,O,TN ,0
+75,mechanism,NNS,O,NON-PERSON,change,VBG,TV,FALSE,location field,NN,O,TN ,0
+76,utility,NN,O,NON-PERSON,provide criterion in,IN,TV,FALSE,addition,NN,O,TN ,0
+76,utility,NN,O,NON-PERSON,provide,VBZ,TV,TRUE,criterion,NNS,O,TN ,0
+76,utility,NN,O,NON-PERSON,provide,VBZ,TV,TRUE,mean,VBZ,O,TN ,0
+76,utility,NN,O,NON-PERSON,provide,VBZ,TV,TRUE,other criterion,NNS,O,TN ,0
+77,system,NN,O,NON-PERSON,provide,VBZ,TV,TRUE,report,NNS,O,TN ,0
+77,system,NN,O,NON-PERSON,provide,VBZ,TV,TRUE,report of miss item per branch,NN,O,TN ,0
+77,system,NN,O,NON-PERSON,provide,VBZ,TV,TRUE,report of item per branch,NN,O,TN ,0
+77,system,NN,O,NON-PERSON,provide,VBZ,TV,TRUE,report of miss item,NNS,O,TN ,0
+77,system,NN,O,NON-PERSON,provide,VBZ,TV,TRUE,report of item,NNS,O,TN ,0
+78,system,NN,O,NON-PERSON,generate,VBZ,TV,TRUE,list of item per branch,NN,O,TN ,0
+78,system,NN,O,NON-PERSON,generate,VBZ,TV,TRUE,list of item per branch per system,NN,O,TN ,0
+78,system,NN,O,NON-PERSON,generate,VBZ,TV,TRUE,list of item per system,NN,O,TN ,0
+78,system,NN,O,NON-PERSON,generate,VBZ,TV,TRUE,list of item,NNS,O,TN ,0
+78,system,NN,O,NON-PERSON,generate,VBZ,TV,TRUE,list,NN,O,TN ,0
+80,system,NN,O,NON-PERSON,provide,VBZ,TV,TRUE,report,NNS,O,TN ,0
+81,system,NN,O,NON-PERSON,have,VBZ,TV,FALSE,report assist in conversion from one status to another,DT,O,TN ,0
+81,system,NN,O,NON-PERSON,have,VBZ,TV,FALSE,report assist in conversion of item from one status to another,DT,O,TN ,0
+81,system,NN,O,NON-PERSON,have,VBZ,TV,FALSE,report assist in conversion from one status,NN,O,TN ,0
+81,system,NN,O,NON-PERSON,have,VBZ,TV,FALSE,report assist in conversion of item from one status,NN,O,TN ,0
+81,system,NN,O,NON-PERSON,have,VBZ,TV,FALSE,report assist,VB,O,TN ,0
+81,system,NN,O,NON-PERSON,have,VBZ,TV,FALSE,report assist in conversion of item,NNS,O,TN ,0
+81,system,NN,O,NON-PERSON,have,VBZ,TV,FALSE,report assist in conversion,NN,O,TN ,0
+82,library system,NN,O,NON-PERSON,have,null,TV,FALSE,last copy,NNS,O,TN ,0
+82,system,NN,O,NON-PERSON,provide,VBZ,TV,TRUE,last copy report,NN,O,TN ,0
+82,system,NN,O,NON-PERSON,provide,VBZ,TV,TRUE,copy report,NN,O,TN ,0
+85,query,NNS,O,NON-PERSON,can,MD,TV,FALSE,can limit,VBN,O,TN ,0
+85,query,NNS,O,NON-PERSON,can,MD,TV,FALSE,can limit by patron characteristic include age range,NN,O,TN ,0
+85,query,NNS,O,NON-PERSON,can,MD,TV,FALSE,can limit by patron characteristic,NNS,O,TN ,0
+86,list,NN,O,NON-PERSON,be with,IN,TV,FALSE,circulation in last x day,NNS,DURATION,TN ,0
+87,list,NN,O,NON-PERSON,should,MD,OTHER,FALSE,should configurable to System,NNP,O,TN ,0
+87,list,NN,O,NON-PERSON,should,MD,OTHER,FALSE,should configurable,JJ,O,OTHER ,0
+88,transaction history,NN,O,NON-PERSON,be,VBZ,TV,FALSE,maintain,VBN,O,TV ,0
+88,transaction history,NN,O,NON-PERSON,be maintain for,IN,TV,FALSE,x day,NNS,DURATION,TN ,0
+89,aggregate information,NN,O,NON-PERSON,be,VBZ,TV,FALSE,maintain,VBN,O,TV ,0
+89,monthly aggregate information,NN,O,NON-PERSON,be,VBZ,TV,FALSE,maintain,VBN,O,TV ,0
+89,monthly aggregate information,NN,O,NON-PERSON,be,VBZ,TV,FALSE,maintain indefinitely,RB,O,OTHER ,0
+89,aggregate information,NN,O,NON-PERSON,be,VBZ,TV,FALSE,maintain indefinitely,RB,O,OTHER ,0
+90,transaction,NNS,O,NON-PERSON,can,MD,TV,FALSE,can group by hour,NN,DURATION,TN ,0
+90,transaction,NNS,O,NON-PERSON,can,MD,TV,FALSE,can group,VBN,O,TN ,0
+91,transaction,NNS,O,NON-PERSON,include,VBP,TV,TRUE,check-out,NNS,O,OTHER ,0
+91,transaction,NNS,O,NON-PERSON,include,VBP,TV,TRUE,etc.,FW,O,TR ,0
+91,transaction,NNS,O,NON-PERSON,include,VBP,TV,TRUE,fine collect,VBN,O,TN ,0
+91,transaction,NNS,O,NON-PERSON,include,VBP,TV,TRUE,fine,NNS,O,TN ,0
+91,transaction,NNS,O,NON-PERSON,include,VBP,TV,TRUE,patron registration,NNS,O,TN ,0
+91,transaction,NNS,O,NON-PERSON,include,VBP,TV,TRUE,check-in,NNS,O,TN ,0
+92,system,NN,O,NON-PERSON,count,VBZ,TV,FALSE,type of check-in,NN,O,TN ,0
+92,system,NN,O,NON-PERSON,count individually,RB,TV,FALSE,type of check-in,NN,O,TN ,0
+92,system,NN,O,NON-PERSON,book-drop by,IN,OTHER,FALSE,terminal,JJ,O,TN ,0
+92,system,NN,O,NON-PERSON,count individually and cumulatively,RB,TV,FALSE,type of check-in,NN,O,TN ,0
+92,system,NN,O,NON-PERSON,book-drop by,IN,OTHER,FALSE,user,NN,O,TN ,0
+93,system,NN,O,NON-PERSON,count individually and cumulatively,RB,TV,FALSE,type of check-out,NN,O,TN ,0
+93,system,NN,O,NON-PERSON,count individually,RB,TV,FALSE,type of check-out,NN,O,TN ,0
+93,system,NN,O,NON-PERSON,count,VBZ,TV,FALSE,type of check-out,NN,O,TN ,0
+94,request,NNS,O,NON-PERSON,be,VBD,TV,FALSE,place at staff desk at computer inside library,NN,O,TN ,0
+94,request,NNS,O,NON-PERSON,be,VBD,TV,FALSE,place at staff desk at public computer inside library,NN,O,TN ,0
+94,hold,NN,O,NON-PERSON,be place at,IN,TV,FALSE,staff desk,NN,O,TN ,0
+94,hold,NN,O,NON-PERSON,be,VBD,TV,FALSE,how place at staff desk at computer,NN,O,TN ,0
+94,hold,NN,O,NON-PERSON,be place at,IN,TV,FALSE,staff desk at computer inside library,NN,O,TN ,0
+94,hold,NN,O,NON-PERSON,be,VBD,TV,FALSE,how place at staff desk,NN,O,TN ,0
+94,hold,NN,O,NON-PERSON,be place at,IN,TV,FALSE,staff desk at computer,NN,O,TN ,0
+94,hold,NN,O,NON-PERSON,be,VBD,TV,FALSE,how place at staff desk at computer inside library,NN,O,TN ,0
+94,request,NNS,O,NON-PERSON,be,VBD,TV,FALSE,how place at staff desk at computer inside library,NN,O,TN ,0
+94,request,NNS,O,NON-PERSON,be,VBD,TV,FALSE,how place at staff desk at computer,NN,O,TN ,0
+94,hold,NN,O,NON-PERSON,be,VBD,TV,FALSE,how place,VBN,O,TN ,0
+94,request,NNS,O,NON-PERSON,be,VBD,TV,FALSE,how place at staff desk,NN,O,TN ,0
+94,request,NNS,O,NON-PERSON,be,VBD,TV,FALSE,how place,VBN,O,TN ,0
+94,request,NNS,O,NON-PERSON,be,VBD,TV,FALSE,how place at staff desk at public computer inside library,NN,O,TN ,0
+94,request,NNS,O,NON-PERSON,be,VBD,TV,FALSE,place at staff desk,NN,O,TN ,0
+94,hold,NN,O,NON-PERSON,be place at,IN,TV,FALSE,staff desk at public computer,NN,O,TN ,0
+94,request,NNS,O,NON-PERSON,be,VBD,TV,FALSE,how place at staff desk at public computer,NN,O,TN ,0
+94,hold,NN,O,NON-PERSON,be,VBD,TV,FALSE,how place at staff desk at public computer inside library,NN,O,TN ,0
+94,request,NNS,O,NON-PERSON,be,VBD,TV,FALSE,place,VBN,O,TN ,0
+94,request,NNS,O,NON-PERSON,be,VBD,TV,FALSE,place at staff desk at public computer,NN,O,TN ,0
+94,hold,NN,O,NON-PERSON,be,VBD,TV,FALSE,how place at staff desk at public computer,NN,O,TN ,0
+94,hold,NN,O,NON-PERSON,be,VBD,TV,FALSE,place,VBN,O,TN ,0
+94,request,NNS,O,NON-PERSON,be,VBD,TV,FALSE,place at staff desk at computer,NN,O,TN ,0
+94,hold,NN,O,NON-PERSON,be place at,IN,TV,FALSE,staff desk at public computer inside library,NN,O,TN ,0
+95,system,NN,O,NON-PERSON,generate report per,IN,TV,FALSE,group o library per system per county,NN,O,TN ,0
+95,system,NN,O,NON-PERSON,generate,VB,TV,FALSE,report of transaction,NNS,O,TN ,0
+95,system,NN,O,NON-PERSON,generate,VB,TV,FALSE,report,NN,O,TN ,0
+95,system,NN,O,NON-PERSON,generate report per,IN,TV,FALSE,select group o library per system per county,NN,O,TN ,0
+95,system,NN,O,NON-PERSON,generate,VB,TV,FALSE,report of transaction per patron,NN,O,TN ,0
+95,system,NN,O,NON-PERSON,generate report per,IN,TV,FALSE,select group o library,NNS,O,TN ,0
+95,system,NN,O,NON-PERSON,generate report per,IN,TV,FALSE,select group o library per county,NN,O,TN ,0
+95,system,NN,O,NON-PERSON,generate report per,IN,TV,FALSE,group o library,NNS,O,TN ,0
+95,system,NN,O,NON-PERSON,generate report per,IN,TV,FALSE,select group o library per system,NN,O,TN ,0
+95,system,NN,O,NON-PERSON,generate report per,IN,TV,FALSE,library,NN,O,TN ,0
+95,system,NN,O,NON-PERSON,generate report per,IN,TV,FALSE,group o library per system,NN,O,TN ,0
+95,system,NN,O,NON-PERSON,generate report per,IN,TV,FALSE,group o library per county,NN,O,TN ,0
+96,system,NN,O,NON-PERSON,display,VBZ,TV,FALSE,number,NN,O,TN ,0
+96,system,NN,O,NON-PERSON,place,VBN,TV,FALSE,hold per patron,NN,O,TN ,0
+96,system,NN,O,NON-PERSON,place,VBN,TV,FALSE,hold,VBZ,O,TN ,0
+96,system,NN,O,NON-PERSON,display,VBZ,TV,FALSE,number of check-out,NNS,O,TN ,0
+97,hold,NNS,O,NON-PERSON,be subtotal by,IN,TV,FALSE,e.g. hold,VBZ,O,TN ,0
+97,hold,NNS,O,NON-PERSON,be subtotal by,IN,TV,FALSE,type,NN,O,TN ,0
+97,hold,NNS,O,NON-PERSON,be subtotal by,IN,TV,FALSE,hold,VBZ,O,TN ,0
+97,hold,NNS,O,NON-PERSON,be,VBP,TV,FALSE,subtotal,VBN,O,TN ,0
+98,item,NNS,O,NON-PERSON,be in,IN,TV,FALSE,entire collection,NN,O,TN ,0
+98,system,NN,O,NON-PERSON,generate,VB,TV,FALSE,report of value of item,NNS,O,TN ,0
+98,system,NN,O,NON-PERSON,generate,VB,TV,FALSE,report of value,NN,O,TN ,0
+98,system,NN,O,NON-PERSON,generate,VB,TV,FALSE,report of value of item in entire collection,NN,O,TN ,0
+98,system,NN,O,NON-PERSON,generate,VB,TV,FALSE,report,NN,O,TN ,0
+98,system,NN,O,NON-PERSON,generate,VB,TV,FALSE,report of value of item in collection,NN,O,TN ,0
+100,fine,NNS,O,NON-PERSON,be,VBP,TV,FALSE,attach,VBN,O,TV ,0
+100,fine,NNS,O,NON-PERSON,be,VBP,TV,FALSE,attach to patron record,NNS,O,TN ,0
+101,fine payment,NNS,O,NON-PERSON,make per,IN,TV,FALSE,library,NN,O,TN ,0
+101,payment,NNS,O,NON-PERSON,make per,IN,TV,FALSE,library,NN,O,TN ,0
+102,Financial information,NN,O,NON-PERSON,can,MD,TV,FALSE,can update easily,RB,O,TN ,0
+102,Financial information,NN,O,NON-PERSON,can,MD,TV,FALSE,can update,VBN,O,TN ,0
+103,staff user,NN,PERSON,PERSON,easily query patron account with,IN,TV,FALSE,balance greater,JJR,O,TN ,0
+103,staff user,NN,PERSON,PERSON,easily query patron account with,IN,TV,FALSE,balance,NNS,O,TN ,0
+103,staff user,NN,PERSON,PERSON,query patron account with,IN,TV,FALSE,balance greater than x dollar,NNS,MONEY,TN ,0
+103,staff user,NN,PERSON,PERSON,easily query patron account with,IN,TV,FALSE,balance greater than x dollar,NNS,MONEY,TN ,0
+103,staff user,NN,PERSON,PERSON,query patron account with,IN,TV,FALSE,balance greater,JJR,O,TN ,0
+103,staff user,NN,PERSON,PERSON,query,VB,TV,FALSE,patron account,NNS,O,TN ,0
+103,staff user,NN,PERSON,PERSON,easily query,VB,TV,FALSE,patron account,NNS,O,TN ,0
+103,staff user,NN,PERSON,PERSON,query patron account with,IN,TV,FALSE,balance,NNS,O,TN ,0
+103,staff user,NN,PERSON,PERSON,easily query patron account as,IN,TV,FALSE,example,NN,O,TN ,0
+103,staff user,NN,PERSON,PERSON,query patron account as,IN,TV,FALSE,example,NN,O,TN ,0
+104,system,NN,O,NON-PERSON,provide,VBZ,TV,TRUE,report,NNS,O,TN ,0
+104,system,NN,O,NON-PERSON,provide,VBZ,TV,TRUE,report include,VBG,O,TN ,0
+104,system,NN,O,NON-PERSON,provide,VBZ,TV,TRUE,financial report include,VBG,O,OTHER ,0
+104,system,NN,O,NON-PERSON,provide,VBZ,TV,TRUE,financial report,NNS,O,TN ,0
+105,fine,NNS,O,NON-PERSON,waive per,IN,TV,FALSE,branch,NN,O,TN ,0
+105,fine,NNS,O,NON-PERSON,waive per,IN,TV,FALSE,time period,NN,O,TN ,0
+106,payment,NNS,O,NON-PERSON,make per,IN,TV,FALSE,payment method,NN,O,TN ,0
+106,payment,NNS,O,NON-PERSON,make per,IN,TV,FALSE,time period,NN,O,TN ,0
+107,system,NN,O,NON-PERSON,maintain,VBZ,TV,FALSE,ledger,NN,O,TN ,0
+107,charge payment,NNS,O,NON-PERSON,be,VBP,TV,FALSE,apply,VBN,O,TV ,0
+107,system,NN,O,NON-PERSON,maintain,VBZ,TV,FALSE,ledger of patron payment,NNS,O,TN ,0
+107,charge payment,NNS,O,NON-PERSON,facilitate,VB,TV,TRUE,reconciliation,NN,O,TN ,0
