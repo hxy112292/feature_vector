@@ -2,15 +2,10 @@
 
 Before run the project, you should take the following steps :
 
-## 1. Add some jar files to build path:
+## 1. Install wordnet2.4.0
 
-edu.mit.jwi_2.4.0_jdk.jar
+[https://wordnet.princeton.edu/download](https://wordnet.princeton.edu/download)
 
-stanford-ner-2018-10-16/stanford-ner.jar
-
-stanford-ner-2018-10-16/stanford-ner-3.9.2.jar
-
-stanford-openie-src.jar
 
 ## 2. Write some file paths in config.properties:
 
