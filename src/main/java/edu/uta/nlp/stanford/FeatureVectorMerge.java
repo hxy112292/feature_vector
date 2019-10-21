@@ -87,7 +87,9 @@ public class FeatureVectorMerge {
                         for (ClassificationCoreLabel ccl : listOfClassificationPerWord) {
                             if (ccl.getWord().equals(oieSubjectArray[oieSubjectArray.length - 1])) {
                                 featureVector.setSubjectTag(ccl.getPos());
-                                featureVector.setSubjectNER(WordNetApi.getDefinition(featureVector.getSubject(), POS.NOUN).contains("person") ? "PERSON" : ccl.getNer());
+                                featureVector.setSubjectNER(WordNetApi.getDefinition(featureVector.getSubject(), POS.NOUN).contains("person ") ? "PERSON"
+                                        : (WordNetApi.getDefinition(featureVector.getSubject(), POS.NOUN).contains("who ") ? "PERSON"
+                                        : (WordNetApi.getDefinition(featureVector.getSubject(), POS.NOUN).contains("persons ") ? "PERSON" : ccl.getNer())));
                             }
                             if (ccl.getWord().equals(oieObjectArray[oieObjectArray.length - 1])) {
                                 featureVector.setObjectTag(ccl.getPos());
@@ -98,7 +100,9 @@ public class FeatureVectorMerge {
                             }
                         }
 
-                        featureVector.setSubjectType(WordNetApi.getDefinition(featureVector.getSubject(), POS.NOUN).contains("person") ? "PERSON" : "NON-PERSON");
+                        featureVector.setSubjectType(WordNetApi.getDefinition(featureVector.getSubject(), POS.NOUN).contains("person ") ? "PERSON"
+                                : (WordNetApi.getDefinition(featureVector.getSubject(), POS.NOUN).contains("who ") ? "PERSON"
+                                : (WordNetApi.getDefinition(featureVector.getSubject(), POS.NOUN).contains("persons ") ? "PERSON" : "NON-PERSON")));
                         featureVector.setObjectType(SynsetType.getTag(WordNetApi.getType(featureVector.getObject(), POS.NOUN)));
                         featureVector.setVerbCat(SynsetType.getTag(WordNetApi.getType(featureVector.getVerb(), POS.VERB)));
                         featureVector.setVerbProcess(WordNetApi.getWord(featureVector.getVerb(), POS.VERB).contains("ion") ? "TRUE" : "FALSE");
