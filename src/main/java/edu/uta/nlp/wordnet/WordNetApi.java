@@ -4,6 +4,7 @@ import edu.mit.jwi.Dictionary;
 import edu.mit.jwi.IDictionary;
 import edu.mit.jwi.item.IIndexWord;
 import edu.mit.jwi.item.IWordID;
+import edu.mit.jwi.item.LexFile;
 import edu.mit.jwi.item.POS;
 import edu.uta.nlp.constant.SynsetType;
 import edu.uta.nlp.util.PropertiesUtil;
@@ -41,7 +42,7 @@ public class WordNetApi {
             }
         }
 
-        return result;
+        return result.toLowerCase();
     }
 
     public static String getDefinition(String word, POS pos) throws IOException {
@@ -61,11 +62,11 @@ public class WordNetApi {
             }
         }
 
-//        for(IWordID wordID : idxWord.getWordIDs()) {
-//            result = result + dict.getWord(wordID).getSynset().getGloss();
-//        }
+        for(IWordID wordID : idxWord.getWordIDs()) {
+            result = result + dict.getWord(wordID).getSynset().getGloss();
+        }
 
-        result = result + dict.getWord(idxWord.getWordIDs().get(0)).getSynset().getGloss();
+//        result = result + dict.getWord(idxWord.getWordIDs().get(0)).getSynset().getGloss();
 
         dict.close();
 
