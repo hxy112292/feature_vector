@@ -98,7 +98,7 @@ public class FeatureVectorMerge {
                             }
                         }
 
-                        featureVector.setSubjectType(WordNetApi.getDefinition(featureVector.getSubject(), POS.NOUN).contains("who") ? "PERSON" : "NON-PERSON");
+                        featureVector.setSubjectType(WordNetApi.getDefinition(featureVector.getSubject(), POS.NOUN).contains("person") ? "PERSON" : "NON-PERSON");
                         featureVector.setObjectType(SynsetType.getTag(WordNetApi.getType(featureVector.getObject(), POS.NOUN)));
                         featureVector.setVerbCat(SynsetType.getTag(WordNetApi.getType(featureVector.getVerb(), POS.VERB)));
                         featureVector.setVerbProcess(WordNetApi.getWord(featureVector.getVerb(), POS.VERB).contains("ion") ? "TRUE" : "FALSE");

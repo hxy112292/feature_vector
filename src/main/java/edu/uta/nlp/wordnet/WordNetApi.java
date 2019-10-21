@@ -61,9 +61,11 @@ public class WordNetApi {
             }
         }
 
-        for(IWordID wordID : idxWord.getWordIDs()) {
-            result = result + dict.getWord(wordID).getSynset().getGloss();
-        }
+//        for(IWordID wordID : idxWord.getWordIDs()) {
+//            result = result + dict.getWord(wordID).getSynset().getGloss();
+//        }
+
+        result = result + dict.getWord(idxWord.getWordIDs().get(0)).getSynset().getGloss();
 
         dict.close();
 
