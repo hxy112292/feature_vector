@@ -2,15 +2,15 @@ package edu.uta.nlp.wordnet;
 
 import edu.mit.jwi.Dictionary;
 import edu.mit.jwi.IDictionary;
-import edu.mit.jwi.item.IIndexWord;
-import edu.mit.jwi.item.IWordID;
-import edu.mit.jwi.item.LexFile;
-import edu.mit.jwi.item.POS;
+import edu.mit.jwi.item.*;
 import edu.uta.nlp.constant.SynsetType;
+import edu.uta.nlp.entity.WordInfo;
 import edu.uta.nlp.util.PropertiesUtil;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author hxy
@@ -18,7 +18,7 @@ import java.net.URL;
 public class WordNetApi {
 
 
-    public static String getWord(String word, POS pos) throws IOException {
+    public static String getRelationWord(String word, POS pos) throws IOException {
 
         String result = "";
 
@@ -45,37 +45,9 @@ public class WordNetApi {
         return result.toLowerCase();
     }
 
-    public static String getDefinition(String word, POS pos) throws IOException {
+    public static List<WordInfo> getWordInfo(String word, POS pos) throws IOException {
 
-        String result = "";
-
-        IDictionary dict = findDict();
-
-        dict.open();//Open dict
-
-        IIndexWord idxWord =dict.getIndexWord(word, pos);
-        if(idxWord == null) {
-            word = word.substring(word.lastIndexOf(" ") == -1 ? 0 : word.lastIndexOf(" "));
-            idxWord =dict.getIndexWord(word, pos);
-            if(idxWord == null) {
-                return result;
-            }
-        }
-
-        for(IWordID wordID : idxWord.getWordIDs()) {
-            result = result + dict.getWord(wordID).getSynset().getGloss();
-        }
-
-//        result = result + dict.getWord(idxWord.getWordIDs().get(0)).getSynset().getGloss();
-
-        dict.close();
-
-        return result.toLowerCase();
-    }
-
-    public static Integer getType(String word, POS pos) throws IOException {
-
-        Integer result;
+        List<WordInfo> result = new ArrayList<>();
 
         IDictionary dict = findDict();
 
@@ -99,13 +71,28 @@ public class WordNetApi {
                     } else if((tmp=dict.getIndexWord(word, POS.ADVERB)) != null) {
                         idxWord = tmp;
                     } else {
-                        return SynsetType.OTHER.SynsetType();
+                        WordInfo wordInfo = new WordInfo();
+                        wordInfo.setGloss("");
+                        wordInfo.setLexFileName(SynsetType.OTHER.toString());
+                        wordInfo.setType(SynsetType.OTHER.toString());
+                        result.add(wordInfo);
+                        return result;
                     }
                 }
             }
         }
 
-        result = dict.getWord(idxWord.getWordIDs().get(0)).getSynset().getType();
+        for(IWordID wordID : idxWord.getWordIDs()) {
+
+            ISynset synset = dict.getWord(wordID).getSynset();
+
+            WordInfo wordInfo = new WordInfo();
+            wordInfo.setGloss(synset.getGloss());
+            wordInfo.setLexFileName(synset.getLexicalFile().getName());
+            wordInfo.setType(SynsetType.getTag(synset.getType()));
+
+            result.add(wordInfo);
+        }
 
         dict.close();
 

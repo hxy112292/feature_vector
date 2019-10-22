@@ -1,5 +1,6 @@
 package edu.uta.nlp.stanford;
 
+import edu.mit.jwi.item.LexFile;
 import edu.mit.jwi.item.POS;
 import edu.stanford.nlp.ie.util.RelationTriple;
 import edu.stanford.nlp.ling.CoreAnnotations;
@@ -9,12 +10,10 @@ import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.PropertiesUtils;
-import edu.uta.nlp.constant.SynsetType;
 import edu.uta.nlp.entity.ClassificationCoreLabel;
 import edu.uta.nlp.entity.FeatureVector;
 import edu.uta.nlp.file.CSVFile;
 import edu.uta.nlp.file.FilePath;
-import edu.uta.nlp.util.FileUtil;
 import edu.uta.nlp.wordnet.WordNetApi;
 
 import java.io.BufferedReader;
@@ -22,7 +21,6 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 import java.util.Properties;
 
 public class FeatureVectorMerge {
@@ -33,8 +31,6 @@ public class FeatureVectorMerge {
         Properties props = PropertiesUtils.asProperties("annotators",
                 "tokenize,ssplit,pos,lemma,depparse,natlog,openie,ner");
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
-
-        List<BufferedReader> fileContent = new ArrayList<BufferedReader>();
 
         File folder = new File(FilePath.getRequirementPath());
         for (final File file : folder.listFiles()) {
@@ -87,9 +83,7 @@ public class FeatureVectorMerge {
                         for (ClassificationCoreLabel ccl : listOfClassificationPerWord) {
                             if (ccl.getWord().equals(oieSubjectArray[oieSubjectArray.length - 1])) {
                                 featureVector.setSubjectTag(ccl.getPos());
-                                featureVector.setSubjectNER(WordNetApi.getDefinition(featureVector.getSubject(), POS.NOUN).contains("person ") ? "PERSON"
-                                        : (WordNetApi.getDefinition(featureVector.getSubject(), POS.NOUN).contains("who ") ? "PERSON"
-                                        : (WordNetApi.getDefinition(featureVector.getSubject(), POS.NOUN).contains("persons ") ? "PERSON" : ccl.getNer())));
+                                featureVector.setSubjectNER((WordType.getType(featureVector.getSubject(), POS.NOUN).equals(LexFile.NOUN_PERSON.getName().toUpperCase())) ? "PERSON" : ccl.getNer());
                             }
                             if (ccl.getWord().equals(oieObjectArray[oieObjectArray.length - 1])) {
                                 featureVector.setObjectTag(ccl.getPos());
@@ -100,12 +94,10 @@ public class FeatureVectorMerge {
                             }
                         }
 
-                        featureVector.setSubjectType(WordNetApi.getDefinition(featureVector.getSubject(), POS.NOUN).contains("person ") ? "PERSON"
-                                : (WordNetApi.getDefinition(featureVector.getSubject(), POS.NOUN).contains("who ") ? "PERSON"
-                                : (WordNetApi.getDefinition(featureVector.getSubject(), POS.NOUN).contains("persons ") ? "PERSON" : "NON-PERSON")));
-                        featureVector.setObjectType(SynsetType.getTag(WordNetApi.getType(featureVector.getObject(), POS.NOUN)));
-                        featureVector.setVerbCat(SynsetType.getTag(WordNetApi.getType(featureVector.getVerb(), POS.VERB)));
-                        featureVector.setVerbProcess(WordNetApi.getWord(featureVector.getVerb(), POS.VERB).contains("ion") ? "TRUE" : "FALSE");
+                        featureVector.setSubjectType(WordType.getType(featureVector.getSubject(), POS.NOUN));
+                        featureVector.setObjectType(WordType.getType(featureVector.getObject(), POS.NOUN));
+                        featureVector.setVerbProcess(WordNetApi.getRelationWord(featureVector.getVerb(), POS.VERB).contains("ion") ? "TRUE" : "FALSE");
+                        featureVector.setVerbCat(Vcat.getVcat(featureVector.getVerb()));
 
                         sb.append(sentNo + "," + featureVector.toString() + " \n");
 
