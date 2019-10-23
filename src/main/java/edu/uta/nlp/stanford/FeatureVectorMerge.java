@@ -107,7 +107,7 @@ public class FeatureVectorMerge {
                 }
             }
             String fileName = file.getName();
-            CSVFile.writeToFeatureVector(sb.toString(), fileName + "-featureVector");
+            CSVFile.writeToFeatureVector(sb.toString(), fileName + "-FeatureVector");
         }
     }
 }
