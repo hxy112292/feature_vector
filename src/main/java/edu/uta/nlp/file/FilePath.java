@@ -2,6 +2,9 @@ package edu.uta.nlp.file;
 
 import java.io.File;
 
+/**
+ * @author hxy
+ */
 public class FilePath {
 
     public static String getRequirementPath() {

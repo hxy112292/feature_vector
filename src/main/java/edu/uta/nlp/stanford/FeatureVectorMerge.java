@@ -23,6 +23,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Properties;
 
+/**
+ * @author hxy
+ */
 public class FeatureVectorMerge {
 
     public static void generate() throws Exception{

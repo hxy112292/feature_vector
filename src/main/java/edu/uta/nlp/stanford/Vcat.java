@@ -9,6 +9,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @author hxy
+ */
 public class Vcat {
 
     static Map<String, String> vcat = new HashMap<String, String>();

@@ -1,5 +1,8 @@
 package edu.uta.nlp.entity;
 
+/**
+ * @author hxy
+ */
 public class FeatureVector {
 
     private String subject;

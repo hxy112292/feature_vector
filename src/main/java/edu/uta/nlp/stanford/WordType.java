@@ -7,6 +7,9 @@ import edu.uta.nlp.wordnet.WordNetApi;
 
 import java.util.List;
 
+/**
+ * @author hxy
+ */
 public class WordType {
 
     public static String getType(String word, POS pos) throws Exception{

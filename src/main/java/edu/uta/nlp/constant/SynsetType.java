@@ -2,6 +2,9 @@ package edu.uta.nlp.constant;
 
 import edu.mit.jwi.item.POS;
 
+/**
+ * @author hxy
+ */
 public enum SynsetType {
 
 
