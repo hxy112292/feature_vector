@@ -25,7 +25,7 @@ public class Vcat {
         List<WordInfo> wordInfoList = WordNetApi.getWordInfo(word, POS.VERB);
         for(WordInfo wordInfo : wordInfoList) {
             if(wordInfo.getType().equals(SynsetType.getTag(POS.NUM_VERB))) {
-                return (vcat.get(word) == null) ? SynsetType.getTag(POS.NUM_VERB) : vcat.get(word);
+                return (vcat.get(word) == null) ? SynsetType.getTag(POS.NUM_VERB) : vcat.get(word).toUpperCase();
             }
         }
 
