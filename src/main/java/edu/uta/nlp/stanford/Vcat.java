@@ -13,7 +13,11 @@ public class Vcat {
 
     static Map<String, String> vcat = new HashMap<String, String>();
 
-    public static String getVcat(String word) throws Exception{
+    public Vcat() {
+        addVerbCategories();
+    }
+
+    public String getVcat(String word) throws Exception{
 
         List<WordInfo> wordInfoList = WordNetApi.getWordInfo(word, POS.VERB);
         for(WordInfo wordInfo : wordInfoList) {

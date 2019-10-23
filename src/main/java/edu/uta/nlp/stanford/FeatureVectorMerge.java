@@ -32,6 +32,8 @@ public class FeatureVectorMerge {
                 "tokenize,ssplit,pos,lemma,depparse,natlog,openie,ner");
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 
+        Vcat vcat = new Vcat();
+
         File folder = new File(FilePath.getRequirementPath());
         for (final File file : folder.listFiles()) {
             BufferedReader bufferedReader = (new BufferedReader(new FileReader(file)));
@@ -97,7 +99,7 @@ public class FeatureVectorMerge {
                         featureVector.setSubjectType(WordType.getType(featureVector.getSubject(), POS.NOUN));
                         featureVector.setObjectType(WordType.getType(featureVector.getObject(), POS.NOUN));
                         featureVector.setVerbProcess(WordNetApi.getRelationWord(featureVector.getVerb(), POS.VERB).contains("ion") ? "TRUE" : "FALSE");
-                        featureVector.setVerbCat(Vcat.getVcat(featureVector.getVerb()));
+                        featureVector.setVerbCat(vcat.getVcat(featureVector.getVerb()));
 
                         sb.append(sentNo + "," + featureVector.toString() + " \n");
 
