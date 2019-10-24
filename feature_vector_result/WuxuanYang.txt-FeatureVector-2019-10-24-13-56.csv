@@ -1,0 +1,189 @@
+requirement, subject, s-tag, s-ner, s-type, verb, v-tag, v-cat, v-process, object, o-tag, o-ner, o-type, label 
+1,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON ,0
+1,user,NN,PERSON,NOUN.PERSON,select,JJ,TV,TRUE,product,NN,O,NOUN.ARTIFACT ,1
+1,user,NN,PERSON,NOUN.PERSON,select product,NN,OTHER,FALSE,configure,NN,O,OTHER ,0
+2,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,available components of product,NN,O,NOUN.ARTIFACT ,0
+3,system,NN,O,NOUN.GROUP,enable,VBP,TV,FALSE,user,NN,O,NOUN.PERSON ,0
+4,system,NN,O,NOUN.GROUP,notify user about,IN,OTHER,FALSE,conflict in current configuration,NN,O,NOUN.COGNITION ,0
+5,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON ,0
+5,user,NN,PERSON,NOUN.PERSON,update,VBP,TV,FALSE,configuration,NN,O,NOUN.COGNITION ,1
+5,conflict,NN,O,NOUN.ACT,be in,VB,IS-A,FALSE,current configuration,NN,O,NOUN.COGNITION ,0
+6,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON ,0
+6,user,NN,PERSON,NOUN.PERSON,confirm,VBP,TV,TRUE,completion of current configuration,NN,O,NOUN.COGNITION ,1
+6,user,NN,PERSON,NOUN.PERSON,confirm,VBP,TV,TRUE,completion,NN,O,NOUN.ACT ,1
+6,user,NN,PERSON,NOUN.PERSON,confirm,VBP,TV,TRUE,completion of configuration,NN,O,NOUN.COGNITION ,1
+7,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,detailed product categorization,NN,O,NOUN.GROUP ,0
+7,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,product categorization,NN,O,NOUN.GROUP ,0
+7,system,NN,O,NOUN.GROUP,display product categorization to,TO,OTHER,FALSE,user,NN,O,NOUN.PERSON ,0
+8,system,NN,O,NOUN.GROUP,enable,VBP,TV,FALSE,user,NN,O,NOUN.PERSON ,0
+8,user,NN,PERSON,NOUN.PERSON,enter,VBP,TV,FALSE,search text,NN,O,NOUN.COMMUNICATION ,1
+8,user,NN,PERSON,NOUN.PERSON,enter search text on,IN,OTHER,FALSE,screen,NN,O,NOUN.ARTIFACT ,0
+9,user,NN,PERSON,NOUN.PERSON,select,JJ,TV,TRUE,options on screen,NN,O,NOUN.ARTIFACT ,1
+9,system,NN,O,NOUN.GROUP,enable,VBP,TV,FALSE,user,NN,O,NOUN.PERSON ,0
+9,user,NN,PERSON,NOUN.PERSON,select option,NN,OTHER,FALSE,search,NN,O,NOUN.ACT ,0
+9,user,NN,PERSON,NOUN.PERSON,select,JJ,TV,TRUE,multiple options on screen,NN,O,NOUN.ARTIFACT ,1
+9,user,NN,PERSON,NOUN.PERSON,select,JJ,TV,TRUE,multiple options,NNS,O,NOUN.COGNITION ,1
+9,user,NN,PERSON,NOUN.PERSON,select,JJ,TV,TRUE,options,NNS,O,OTHER ,1
+11,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,only 10 matching result,NN,O,NOUN.PHENOMENON ,0
+11,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,only 10 result,NN,O,NOUN.PHENOMENON ,0
+12,system,NN,O,NOUN.GROUP,enable,VBP,TV,FALSE,navigate between search,NN,O,NOUN.ACT ,0
+12,system,NN,O,NOUN.GROUP,enable,VBP,TV,FALSE,user,NN,O,NOUN.PERSON ,0
+12,system,NN,O,NOUN.GROUP,enable,VBP,TV,FALSE,navigate,VB,O,OTHER ,0
+12,user,NN,PERSON,NOUN.PERSON,navigate between,VB,TV,TRUE,search,NN,O,NOUN.ACT ,1
+14,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON ,0
+14,user,NN,PERSON,NOUN.PERSON,create,VB,TV,TRUE,profile,NN,O,NOUN.COMMUNICATION ,1
+14,system,NN,O,NOUN.GROUP,set,VBD,TV,FALSE,his credential,NN,O,NOUN.COMMUNICATION ,0
+15,system,NN,O,NOUN.GROUP,authenticate,VB,TV,TRUE,user credentials,NNS,O,NOUN.COMMUNICATION ,0
+15,system,NN,O,NOUN.GROUP,view,NN,TV,FALSE,profile,NN,O,NOUN.COMMUNICATION ,0
+16,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON ,0
+16,user,NN,PERSON,NOUN.PERSON,update,VBP,TV,FALSE,profile information,NN,O,NOUN.COMMUNICATION ,1
+17,active order history,NN,O,NOUN.TIME,be in,VB,IS-A,FALSE,customer profile,NN,O,NOUN.COMMUNICATION ,0
+17,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,active order history,NN,O,NOUN.TIME ,0
+17,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,active order history in customer profile,NN,O,NOUN.COMMUNICATION ,0
+17,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,order history in customer profile,NN,O,NOUN.COMMUNICATION ,0
+17,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,order history,NN,O,NOUN.TIME ,0
+18,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON ,0
+18,user,NN,PERSON,NOUN.PERSON,select order from,IN,OTHER,FALSE,order history,NN,O,NOUN.TIME ,0
+18,user,NN,PERSON,NOUN.PERSON,select,JJ,TV,TRUE,order,NN,O,NOUN.COMMUNICATION ,1
+19,system,NN,O,NOUN.GROUP,display,VBP,TV,FALSE,information,NN,O,NOUN.COMMUNICATION ,0
+19,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,detailed information about selected order,NN,O,NOUN.COMMUNICATION ,0
+19,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,information about selected order,NN,O,NOUN.COMMUNICATION ,0
+19,system,NN,O,NOUN.GROUP,display,VBP,TV,FALSE,detailed information,NN,O,NOUN.COMMUNICATION ,0
+19,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,detailed information about order,NN,O,NOUN.COMMUNICATION ,0
+19,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,information about order,NN,O,NOUN.COMMUNICATION ,0
+20,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,frequently searched items,NNS,O,OTHER ,0
+20,system,NN,O,NOUN.GROUP,display item by,IN,OTHER,FALSE,user in profile,NN,O,NOUN.COMMUNICATION ,0
+20,user,NN,PERSON,NOUN.PERSON,be in,VB,IS-A,FALSE,profile,NN,O,NOUN.COMMUNICATION ,0
+20,system,NN,O,NOUN.GROUP,display item by,IN,OTHER,FALSE,user,NN,O,NOUN.PERSON ,0
+20,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,most frequently searched items,NNS,O,OTHER ,0
+20,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,items,NNS,O,OTHER ,0
+20,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,searched items,NNS,O,OTHER ,0
+21,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON ,0
+21,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,register,NN,O,NOUN.COMMUNICATION ,0
+21,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,register for newsletters in profile,NN,O,NOUN.COMMUNICATION ,0
+21,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,register for newsletters,NNS,O,NOUN.COMMUNICATION ,0
+21,user,NN,PERSON,NOUN.PERSON,register for,NN,TV,TRUE,newsletters in profile,NN,O,NOUN.COMMUNICATION ,1
+21,user,NN,PERSON,NOUN.PERSON,register for,NN,TV,TRUE,newsletters,NNS,O,OTHER ,1
+21,newsletter,NN,O,NOUN.COMMUNICATION,be in,VB,IS-A,FALSE,profile,NN,O,NOUN.COMMUNICATION ,0
+22,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,online help,NN,O,NOUN.PERSON ,0
+22,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,sitemap options for customer support,NN,O,NOUN.ACT ,0
+22,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,sitemap options,NNS,O,OTHER ,0
+22,faq,NN,O,NOUN.COMMUNICATION,have,VBP,POSSESSION,FALSE,customer support,NN,O,NOUN.ACT ,0
+22,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,help,NN,O,NOUN.PERSON ,0
+22,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,FAQ 's customer support,NN,O,NOUN.ACT ,0
+23,user,NN,PERSON,NOUN.PERSON,select,JJ,TV,TRUE,support type,NN,O,NOUN.PERSON ,1
+23,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON ,0
+24,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON ,0
+24,user,NN,PERSON,NOUN.PERSON,enter customer information for,IN,OTHER,FALSE,support,NN,O,NOUN.ACT ,0
+24,user,NN,PERSON,NOUN.PERSON,enter,VBP,TV,FALSE,customer information,NN,O,NOUN.COMMUNICATION ,1
+25,system,NN,O,NOUN.GROUP,display customer support contact number on,IN,OTHER,FALSE,screen,NN,O,NOUN.ARTIFACT ,0
+25,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,customer support contact numbers,NNS,O,NOUN.COMMUNICATION ,0
+26,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON ,0
+26,user,NN,PERSON,NOUN.PERSON,enter contact number,NN,OTHER,FALSE,support personnel call,NN,O,NOUN.COMMUNICATION ,0
+26,user,NN,PERSON,NOUN.PERSON,enter,VBP,TV,FALSE,contact number,NN,O,NOUN.ATTRIBUTE ,1
+27,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,help,NN,O,NOUN.PERSON ,0
+27,system,NN,O,NOUN.GROUP,display help upon,IN,OTHER,FALSE,request,NN,O,NOUN.COMMUNICATION ,0
+27,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,online help,NN,O,NOUN.PERSON ,0
+28,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,FAQ,NN,O,NOUN.COMMUNICATION ,0
+28,system,NN,O,NOUN.GROUP,display faq upon,IN,OTHER,FALSE,request,NN,O,NOUN.COMMUNICATION ,0
+29,system,NN,O,NOUN.GROUP,maintain customer email information as,IN,OTHER,FALSE,required part of customer profile,NN,O,NOUN.COMMUNICATION ,0
+29,system,NN,O,NOUN.GROUP,maintain,VBP,TV,FALSE,customer email information,NN,O,NOUN.COMMUNICATION ,0
+29,system,NN,O,NOUN.GROUP,maintain customer email information as,IN,OTHER,FALSE,part of customer profile,NN,O,NOUN.COMMUNICATION ,0
+29,system,NN,O,NOUN.GROUP,maintain customer email information as,IN,OTHER,FALSE,required part,NN,O,NOUN.RELATION ,0
+29,system,NN,O,NOUN.GROUP,maintain customer email information as,IN,OTHER,FALSE,part,NN,O,NOUN.RELATION ,0
+30,system,NN,O,NOUN.GROUP,send,VBP,TV,FALSE,order,NN,O,NOUN.COMMUNICATION ,0
+31,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,invoice,NN,O,NOUN.COMMUNICATION ,0
+31,system,NN,O,NOUN.GROUP,display invoice,NN,OTHER,FALSE,confirmed,VBD,O,OTHER ,0
+31,system,NN,O,NOUN.GROUP,display invoice for,IN,OTHER,FALSE,order,NN,O,NOUN.COMMUNICATION ,0
+31,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,detailed invoice,NN,O,NOUN.COMMUNICATION ,0
+31,it,PRP,O,NOUN.COGNITION,be,VB,IS-A,FALSE,confirmed,VBN,O,OTHER ,0
+31,system,NN,O,NOUN.GROUP,display invoice for,IN,OTHER,FALSE,current order,NN,O,NOUN.COMMUNICATION ,0
+32,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON ,0
+32,system,NN,O,NOUN.GROUP,optionally allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON ,0
+32,user,NN,PERSON,NOUN.PERSON,print,NN,TV,FALSE,invoice,NN,O,NOUN.COMMUNICATION ,1
+33,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,shopping cart,NN,O,NOUN.ARTIFACT ,0
+33,system,NN,O,NOUN.GROUP,provide shopping cart during,IN,OTHER,FALSE,online purchase,NN,O,NOUN.ACT ,0
+33,system,NN,O,NOUN.GROUP,provide shopping cart during,IN,OTHER,FALSE,purchase,NN,O,NOUN.ACT ,0
+34,add/remove product,NN,O,NOUN.ARTIFACT,be in,VB,IS-A,FALSE,shopping cart,NN,O,NOUN.ARTIFACT ,0
+34,system,NN,O,NOUN.GROUP,allow user to,TO,OTHER,FALSE,add/remove products in shopping cart,VB,O,NOUN.ARTIFACT ,0
+34,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON ,0
+34,system,NN,O,NOUN.GROUP,allow to,VBP,PERMISSION,FALSE,add/remove products in shopping cart,NN,O,NOUN.ARTIFACT ,0
+34,system,NN,O,NOUN.GROUP,allow user to,TO,OTHER,FALSE,add/remove products,NNS,O,OTHER ,0
+34,system,NN,O,NOUN.GROUP,allow to,VBP,PERMISSION,FALSE,add/remove products,NNS,O,OTHER ,0
+34,system,NN,O,NOUN.GROUP,allow to,VBP,PERMISSION,FALSE,products,NNS,O,OTHER ,0
+34,system,NN,O,NOUN.GROUP,allow to,VBP,PERMISSION,FALSE,products in shopping cart,NN,O,NOUN.ARTIFACT ,0
+34,system,NN,O,NOUN.GROUP,allow user to,TO,OTHER,FALSE,products,NNS,O,OTHER ,0
+34,system,NN,O,NOUN.GROUP,allow user to,TO,OTHER,FALSE,products in shopping cart,VB,O,NOUN.ARTIFACT ,0
+35,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,different shipping options provided,VBN,O,OTHER ,0
+35,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,shipping options provided,VBN,O,NOUN.ACT ,0
+35,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,different shipping options,NNS,O,OTHER ,0
+35,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,shipping options provided by shipping department,NN,O,NOUN.GROUP ,0
+35,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,different shipping options provided by shipping department,NN,O,NOUN.GROUP ,0
+35,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,shipping options,NNS,O,NOUN.ACT ,0
+36,user,NN,PERSON,NOUN.PERSON,select,JJ,TV,TRUE,shipping method,NN,O,NOUN.COGNITION ,1
+36,system,NN,O,NOUN.GROUP,enable,VBP,TV,FALSE,user,NN,O,NOUN.PERSON ,0
+36,user,NN,PERSON,NOUN.PERSON,select shipping method during,IN,OTHER,FALSE,payment process,NN,O,NOUN.ACT ,0
+37,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,shipping charges,NNS,O,NOUN.ACT ,0
+38,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,duration,NN,O,NOUN.TIME ,0
+38,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,duration for shipping,NN,O,NOUN.ACT ,0
+38,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,tentative duration for shipping,NN,O,NOUN.ACT ,0
+38,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,tentative duration,NN,O,NOUN.TIME ,0
+39,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON ,0
+39,user,NN,PERSON,NOUN.PERSON,enter,VBP,TV,FALSE,order information for tracking,NN,O,NOUN.ACT ,1
+39,user,NN,PERSON,NOUN.PERSON,enter,VBP,TV,FALSE,order information,NN,O,NOUN.COMMUNICATION ,1
+40,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,current tracking information about order,NN,O,NOUN.COMMUNICATION ,0
+40,system,NN,O,NOUN.GROUP,display,VBP,TV,FALSE,tracking information,NN,O,NOUN.COMMUNICATION ,0
+40,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,tracking information about order,NN,O,NOUN.COMMUNICATION ,0
+40,system,NN,O,NOUN.GROUP,display,VBP,TV,FALSE,current tracking information,NN,O,NOUN.COMMUNICATION ,0
+41,system,NN,O,NOUN.GROUP,calculate tax for,IN,OTHER,FALSE,order,NN,O,NOUN.COMMUNICATION ,0
+41,system,NN,O,NOUN.GROUP,calculate,VBP,TV,TRUE,tax,NN,O,NOUN.POSSESSION ,0
+42,system,NN,O,NOUN.GROUP,display tax information for,IN,OTHER,FALSE,order,NN,O,NOUN.COMMUNICATION ,0
+42,system,NN,O,NOUN.GROUP,display,VBP,TV,FALSE,tax information,NN,O,NOUN.COMMUNICATION ,0
+43,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,payment methods,NNS,O,NOUN.POSSESSION ,0
+43,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,available payment methods,NNS,O,OTHER ,0
+43,system,NN,O,NOUN.GROUP,display,VBP,TV,FALSE,available payment methods for payment,NN,O,NOUN.POSSESSION ,0
+43,system,NN,O,NOUN.GROUP,display,VBP,TV,FALSE,payment methods for payment,NN,O,NOUN.POSSESSION ,0
+44,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON ,0
+44,user,NN,PERSON,NOUN.PERSON,select,JJ,TV,TRUE,payment method for order,NN,O,NOUN.COMMUNICATION ,1
+44,user,NN,PERSON,NOUN.PERSON,select,JJ,TV,TRUE,payment method,NN,O,NOUN.COGNITION ,1
+45,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,orders,NNS,O,OTHER ,0
+46,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON ,0
+47,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON ,0
+47,user,NN,PERSON,NOUN.PERSON,cancel,VBP,TV,TRUE,order,NN,O,NOUN.COMMUNICATION ,1
+48,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON ,0
+48,user,NN,PERSON,NOUN.PERSON,change,NN,TV,FALSE,shipping,NN,O,NOUN.ACT ,1
+48,user,NN,PERSON,NOUN.PERSON,change,NN,TV,FALSE,payment method,NN,O,NOUN.COGNITION ,1
+49,system,NN,O,NOUN.GROUP,notify user about,IN,OTHER,FALSE,changes made to order,NN,O,NOUN.COMMUNICATION ,0
+50,it,PRP,O,NOUN.COGNITION,be,VB,IS-A,FALSE,when selected,VBN,O,OTHER ,0
+50,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,reviews of product,NN,O,NOUN.ARTIFACT ,0
+50,it,PRP,O,NOUN.COGNITION,be,VB,IS-A,FALSE,selected,VBN,O,OTHER ,0
+50,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,ratings,NNS,O,OTHER ,0
+51,system,NN,O,NOUN.GROUP,enable,VBP,TV,FALSE,user,NN,O,NOUN.PERSON ,0
+51,user,NN,PERSON,NOUN.PERSON,enter,VBP,TV,FALSE,ratings,NNS,O,OTHER ,1
+51,user,NN,PERSON,NOUN.PERSON,enter,VBP,TV,FALSE,their reviews,NNS,O,OTHER ,1
+52,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,available financing options,NNS,O,OTHER ,0
+53,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON ,0
+53,user,NN,PERSON,NOUN.PERSON,select,JJ,TV,TRUE,financing option,NN,O,NOUN.POSSESSION ,1
+54,system,NN,O,NOUN.GROUP,notify,VBP,TV,TRUE,use about financing request,NN,O,NOUN.COMMUNICATION ,0
+54,system,NN,O,NOUN.GROUP,notify,VBP,TV,TRUE,use,NN,O,NOUN.ACT ,0
+55,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON ,0
+55,user,NN,PERSON,NOUN.PERSON,view,NN,TV,FALSE,detailed sitemap,NN,O,OTHER ,1
+55,user,NN,PERSON,NOUN.PERSON,view,NN,TV,FALSE,sitemap,NN,O,OTHER ,1
+56,system,NN,O,NOUN.GROUP,display,NN,TV,FALSE,available promotions,NNS,O,OTHER ,0
+57,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON ,0
+57,user,NN,PERSON,NOUN.PERSON,select,JJ,TV,TRUE,promotion,NN,O,NOUN.COMMUNICATION ,1
+57,user,NN,PERSON,NOUN.PERSON,select,JJ,TV,TRUE,available promotion,NN,O,NOUN.COMMUNICATION ,1
+58,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON ,0
+58,user,NN,PERSON,NOUN.PERSON,confirm,VBP,TV,TRUE,purchase,NN,O,NOUN.ACT ,1
+59,user,NN,PERSON,NOUN.PERSON,enter,VBP,TV,FALSE,payment information,NN,O,NOUN.COMMUNICATION ,1
+59,system,NN,O,NOUN.GROUP,enable,VBP,TV,FALSE,user,NN,O,NOUN.PERSON ,0
+60,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,uniform look,NN,O,NOUN.ATTRIBUTE ,0
+60,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,look,NN,O,NOUN.ATTRIBUTE ,0
+60,system,NN,O,NOUN.GROUP,feel between,VB,TV,FALSE,web pages,NNS,O,NOUN.OBJECT ,0
+61,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,image for product,NN,O,NOUN.ARTIFACT ,0
+61,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,digital image for product,NN,O,NOUN.ARTIFACT ,0
+62,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,use,NN,O,NOUN.ACT ,0
+62,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,use of icons,NNS,O,NOUN.ACT ,0
+63,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,handicap access,NN,O,NOUN.ATTRIBUTE ,0
+64,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,multi language support,NN,O,NOUN.ACT ,0
+64,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,language support,NN,O,NOUN.ACT ,0

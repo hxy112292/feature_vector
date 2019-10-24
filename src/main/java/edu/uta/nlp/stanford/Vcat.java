@@ -21,11 +21,15 @@ public class Vcat {
     }
 
     public String getVcat(String word) throws Exception{
+        String cat;
+        if((cat = vcat.get(word)) != null) {
+            return cat.toUpperCase();
+        }
 
         List<WordInfo> wordInfoList = WordNetApi.getWordInfo(word, POS.VERB);
         for(WordInfo wordInfo : wordInfoList) {
             if(wordInfo.getType().equals(SynsetType.getTag(POS.NUM_VERB))) {
-                return (vcat.get(word) == null) ? SynsetType.getTag(POS.NUM_VERB) : vcat.get(word).toUpperCase();
+                return SynsetType.getTag(POS.NUM_VERB);
             }
         }
 
@@ -54,7 +58,6 @@ public class Vcat {
         vcat.put("make-up", "consist");
         vcat.put("made-up-4", "consist");
         vcat.put("has", "containment");
-        vcat.put("has", "containment");
         vcat.put("is", "IS-A");
         vcat.put("was", "IS-A");
         vcat.put("are", "IS-A");
@@ -63,5 +66,17 @@ public class Vcat {
         vcat.put("regarded as", "IS-A");
         vcat.put("be", "IS-A");
         vcat.put("been", "IS-A");
+        vcat.put("can", "auxiliary");
+        vcat.put("could", "auxiliary");
+        vcat.put("may", "auxiliary");
+        vcat.put("might", "auxiliary");
+        vcat.put("will", "auxiliary");
+        vcat.put("would", "auxiliary");
+        vcat.put("shall", "auxiliary");
+        vcat.put("should", "auxiliary");
+        vcat.put("must", "auxiliary");
+        vcat.put("ought to", "auxiliary");
+        vcat.put("allow", "permission");
+        vcat.put("let", "permission");
     }
 }

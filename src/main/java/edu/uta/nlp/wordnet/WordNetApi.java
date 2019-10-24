@@ -3,9 +3,11 @@ package edu.uta.nlp.wordnet;
 import edu.mit.jwi.Dictionary;
 import edu.mit.jwi.IDictionary;
 import edu.mit.jwi.item.*;
+import edu.stanford.nlp.util.StringUtils;
 import edu.uta.nlp.constant.SynsetType;
 import edu.uta.nlp.entity.WordInfo;
 import edu.uta.nlp.util.PropertiesUtil;
+import edu.uta.nlp.util.StrUtil;
 
 import java.io.IOException;
 import java.net.URL;
@@ -22,7 +24,7 @@ public class WordNetApi {
 
         String result = "";
 
-        if(word.contains(" ")) {
+        if(StringUtils.isNullOrEmpty(word) || word.contains(" ")) {
             return result;
         }
 
@@ -49,6 +51,10 @@ public class WordNetApi {
 
         List<WordInfo> result = new ArrayList<>();
 
+        if(StringUtils.isNullOrEmpty(word)) {
+            return result;
+        }
+
         IDictionary dict = findDict();
 
         dict.open();//Open dict
@@ -56,47 +62,73 @@ public class WordNetApi {
         IIndexWord idxWord =dict.getIndexWord(word, pos);
         IIndexWord tmp;
         if(idxWord == null) {
-            String wordFirst = word.substring(0, word.indexOf(" ") == -1 ? word.length() : word.indexOf(" "));
-            String wordLast = word.substring(word.lastIndexOf(" ") == -1 ? 0 : word.lastIndexOf(" "));
+            String wordFirst = StrUtil.getFirstWord(word);
+            String wordLast = StrUtil.getLastWord(word);
             idxWord =dict.getIndexWord(wordLast, pos);
             if(idxWord == null) {
-                idxWord =dict.getIndexWord(wordFirst, pos);
-                if(idxWord == null) {
-                    if((tmp=dict.getIndexWord(word, POS.NOUN)) != null) {
-                        idxWord = tmp;
-                    } else if((tmp=dict.getIndexWord(word, POS.VERB)) != null) {
-                        idxWord = tmp;
-                    } else if((tmp=dict.getIndexWord(word, POS.ADJECTIVE)) != null) {
-                        idxWord = tmp;
-                    } else if((tmp=dict.getIndexWord(word, POS.ADVERB)) != null) {
-                        idxWord = tmp;
-                    } else {
-                        WordInfo wordInfo = new WordInfo();
-                        wordInfo.setGloss("");
-                        wordInfo.setLexFileName(SynsetType.OTHER.toString());
-                        wordInfo.setType(SynsetType.OTHER.toString());
-                        result.add(wordInfo);
-                        return result;
-                    }
+                idxWord = dict.getIndexWord(wordFirst, pos);
+                if (idxWord == null) {
+                    WordInfo wordInfo = new WordInfo();
+                    wordInfo.setGloss("");
+                    wordInfo.setLexFileName(SynsetType.OTHER.toString());
+                    wordInfo.setType(SynsetType.OTHER.toString());
+                    result.add(wordInfo);
+                    return result;
                 }
             }
         }
 
-        for(IWordID wordID : idxWord.getWordIDs()) {
-
-            ISynset synset = dict.getWord(wordID).getSynset();
-
-            WordInfo wordInfo = new WordInfo();
-            wordInfo.setGloss(synset.getGloss());
-            wordInfo.setLexFileName(synset.getLexicalFile().getName());
-            wordInfo.setType(SynsetType.getTag(synset.getType()));
-
-            result.add(wordInfo);
-        }
+        result.addAll(addWordInfo(dict, idxWord));
 
         dict.close();
 
         return result;
+    }
+
+    public static List<WordInfo> getAllWordInfo(String word) throws IOException {
+
+        IIndexWord idxWordNoun;
+        IIndexWord idxWordVerb;
+        IIndexWord idxWordAdj;
+        IIndexWord idxWordAdverb;
+
+        List<WordInfo> result = new ArrayList<>();
+
+        if(StringUtils.isNullOrEmpty(word)) {
+            return result;
+        }
+
+        IDictionary dict = findDict();
+
+        dict.open();//Open dict
+
+        if ((idxWordNoun = dict.getIndexWord(word, POS.NOUN)) != null) {
+            result.addAll(addWordInfo(dict, idxWordNoun));
+        }
+        if ((idxWordVerb = dict.getIndexWord(word, POS.VERB)) != null) {
+            result.addAll(addWordInfo(dict, idxWordVerb));
+        }
+        if ((idxWordAdj = dict.getIndexWord(word, POS.ADJECTIVE)) != null) {
+            result.addAll(addWordInfo(dict, idxWordAdj));
+        }
+        if ((idxWordAdverb = dict.getIndexWord(word, POS.ADVERB)) != null) {
+            result.addAll(addWordInfo(dict, idxWordAdverb));
+        }
+        dict.close();
+
+        return result;
+    }
+
+    public static Boolean isPos (String word, POS pos) throws Exception{
+
+        List<WordInfo> wordInfoList = getWordInfo(word, pos);
+
+        for(WordInfo wordInfo : wordInfoList) {
+            if(wordInfo.getType().equals(SynsetType.getTag(POS.NUM_VERB))) {
+                return Boolean.TRUE;
+            }
+        }
+        return Boolean.FALSE;
     }
 
     private static IDictionary findDict() throws IOException {
@@ -105,5 +137,21 @@ public class WordNetApi {
         IDictionary dict=new Dictionary(url);
 
         return dict;
+    }
+
+    private static List<WordInfo> addWordInfo(IDictionary dict, IIndexWord idxWord) {
+
+        List<WordInfo> result = new ArrayList<>();
+
+        for(IWordID wordID : idxWord.getWordIDs()) {
+            ISynset synset = dict.getWord(wordID).getSynset();
+            WordInfo wordInfo = new WordInfo();
+            wordInfo.setGloss(synset.getGloss());
+            wordInfo.setLexFileName(synset.getLexicalFile().getName());
+            wordInfo.setType(SynsetType.getTag(synset.getType()));
+            result.add(wordInfo);
+        }
+
+        return result;
     }
 }

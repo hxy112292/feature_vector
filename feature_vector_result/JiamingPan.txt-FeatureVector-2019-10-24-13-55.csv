@@ -1,0 +1,88 @@
+requirement, subject, s-tag, s-ner, s-type, verb, v-tag, v-cat, v-process, object, o-tag, o-ner, o-type, label 
+1,scientist,NN,PERSON,NOUN.PERSON,exploit,VBP,TV,TRUE,data from bursts,NNS,O,NOUN.GROUP ,1
+1,scientist,NN,PERSON,NOUN.PERSON,origin of,IN,OTHER,FALSE,Gamma-Ray Bursts,NNS,O,OTHER ,0
+1,scientist,NN,PERSON,NOUN.PERSON,exploit,VBP,TV,TRUE,data,NNS,O,NOUN.GROUP ,1
+1,scientist,NN,PERSON,NOUN.PERSON,determine,VB,TV,TRUE,origin of Gamma-Ray Bursts,NNS,O,NOUN.LOCATION ,1
+1,scientist,NN,PERSON,NOUN.PERSON,determine,VB,TV,TRUE,origin,NN,O,NOUN.LOCATION ,1
+2,scientist,NN,PERSON,NOUN.PERSON,exploit,VBP,TV,TRUE,GRB afterglow characteristics,NNS,O,OTHER ,1
+2,scientist,NN,PERSON,NOUN.PERSON,exploit,VBP,TV,TRUE,discovered GRB afterglow characteristics,NNS,O,OTHER ,1
+2,Swift instrumentation,NN,O,NOUN.ARTIFACT,allow,VBP,PERMISSION,FALSE,scientists,NNS,O,OTHER ,0
+2,scientist,NN,PERSON,NOUN.PERSON,exploit,VBP,TV,TRUE,newly discovered GRB afterglow characteristics,NNS,O,OTHER ,1
+3,scientist,NN,PERSON,NOUN.PERSON,determine,VB,TV,TRUE,origin of GRBs,NNS,O,NOUN.LOCATION ,1
+3,Swift,NNP,PERSON,NOUN.PERSON,identify,VBP,TV,TRUE,classes,NNS,O,OTHER ,1
+3,Swift,NNP,PERSON,NOUN.PERSON,allow,VBP,PERMISSION,FALSE,scientists,NNS,O,OTHER ,0
+3,GRB blast wave,NN,PERSON,NOUN.PERSON,interact with,VBP,TV,TRUE,surroundings,NNS,O,NOUN.STATE ,1
+3,Swift,NNP,PERSON,NOUN.PERSON,identify,VBP,TV,TRUE,different classes,NNS,O,OTHER ,1
+3,Swift,NNP,PERSON,NOUN.PERSON,identify,VBP,TV,TRUE,classes of bursts,NNS,O,OTHER ,1
+3,Swift,NNP,PERSON,NOUN.PERSON,identify,VBP,TV,TRUE,different classes of bursts,NNS,O,OTHER ,1
+3,Swift,NNP,PERSON,NOUN.PERSON,allow,VBP,PERMISSION,FALSE,determine,VB,O,OTHER ,0
+3,scientist,NN,PERSON,NOUN.PERSON,determine,VB,TV,TRUE,origin,NN,O,NOUN.LOCATION ,1
+4,spacecraft,NN,O,NOUN.ARTIFACT,shall,MD,AUXILIARY,FALSE,slews in direction,NN,O,NOUN.LOCATION ,0
+4,spacecraft,NN,O,NOUN.ARTIFACT,shall,MD,AUXILIARY,FALSE,slews,NNS,O,NOUN.QUANTITY ,0
+4,spacecraft,NN,O,NOUN.ARTIFACT,shall,MD,AUXILIARY,FALSE,slews in direction of GRB,NNP,O,NOUN.QUANTITY ,0
+4,slew,NN,O,NOUN.QUANTITY,be in,VB,IS-A,FALSE,direction of GRB,NN,O,NOUN.LOCATION ,0
+4,spacecraft,NN,O,NOUN.ARTIFACT,bring,VB,TV,FALSE,it,PRP,O,NOUN.COGNITION ,0
+5,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Communications Network communicates via dual redundant MIL-STD-1553B serial interface,NN,O,NOUN.ARTIFACT ,0
+5,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Communications Network communicates,VBZ,O,NOUN.COGNITION ,0
+5,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Communications Network communicates via MIL-STD-1553B serial interface,NN,O,NOUN.ARTIFACT ,0
+5,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Communications Network communicates to S/C via redundant MIL-STD-1553B serial interface,NN,O,NOUN.ARTIFACT ,0
+5,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Communications Network communicates via dual MIL-STD-1553B serial interface,NN,O,NOUN.ARTIFACT ,0
+5,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Communications Network communicates to S/C,NN,O,NOUN.COGNITION ,0
+5,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Communications Network communicates to S/C via MIL-STD-1553B serial interface,NN,O,NOUN.ARTIFACT ,0
+5,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Communications Network communicates to S/C via dual MIL-STD-1553B serial interface,NN,O,NOUN.ARTIFACT ,0
+5,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Communications Network communicates via redundant MIL-STD-1553B serial interface,NN,O,NOUN.ARTIFACT ,0
+5,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Communications Network communicates to S/C via dual redundant MIL-STD-1553B serial interface,NN,O,NOUN.ARTIFACT ,0
+6,scientist,NN,PERSON,NOUN.PERSON,collect science datum in,IN,OTHER,FALSE,form,NN,O,NOUN.COMMUNICATION ,0
+6,scientist,NN,PERSON,NOUN.PERSON,collect,VBP,TV,TRUE,science data,NNS,O,NOUN.GROUP ,1
+6,Swift,NNP,PERSON,NOUN.PERSON,allow,VBP,PERMISSION,FALSE,scientists,NNS,O,OTHER ,0
+6,scientist,NN,PERSON,NOUN.PERSON,collect science datum in,IN,OTHER,FALSE,form of images,NNS,O,NOUN.COMMUNICATION ,0
+7,telecommand,NN,O,OTHER,control,NN,TV,FALSE,temperature setpoint,NN,O,NOUN.ATTRIBUTE ,0
+7,Swift,NNP,PERSON,NOUN.PERSON,cool ccd by,IN,OTHER,FALSE,TEC,NN,ORGANIZATION,NOUN.PERSON ,0
+7,Swift,NNP,PERSON,NOUN.PERSON,cool,JJ,TV,FALSE,CCD,NNP,O,OTHER ,1
+8,scientist,NN,PERSON,NOUN.PERSON,communicate with,VBP,TV,TRUE,XRT,NN,O,OTHER ,1
+8,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Communications Network allow,VB,O,NOUN.COGNITION ,0
+9,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Time Clock allow,VB,O,NOUN.EVENT ,0
+9,scientist,NN,PERSON,NOUN.PERSON,make packet format as,IN,OTHER,FALSE,Consultative Committee,NNP,O,NOUN.GROUP ,0
+9,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Real Time Clock allow,VB,O,NOUN.QUANTITY ,0
+9,scientist,NN,PERSON,NOUN.PERSON,make,VBP,TV,FALSE,packet format,NN,O,NOUN.COMMUNICATION ,1
+9,scientist,NN,PERSON,NOUN.PERSON,make packet format as,IN,OTHER,FALSE,Consultative Committee for Space Data Systems Source Packets,NNS,O,OTHER ,0
+10,scientist,NN,PERSON,NOUN.PERSON,measure,NN,TV,FALSE,change in mechanical alignment,NN,O,NOUN.GROUP ,1
+10,scientist,NN,PERSON,NOUN.PERSON,measure,NN,TV,FALSE,change in alignment of XRT 's tube,NN,O,NOUN.ARTIFACT ,1
+10,XRT,NN,O,OTHER,of,IN,OTHER,FALSE,tube,NN,O,NOUN.ARTIFACT ,0
+10,change,NN,O,NOUN.EVENT,be in,VB,IS-A,FALSE,mechanical alignment of XRT 's tube,NN,O,NOUN.ARTIFACT ,0
+10,scientist,NN,PERSON,NOUN.PERSON,measure,NN,TV,FALSE,change,NN,O,NOUN.EVENT ,1
+10,Telescope alignment,NN,O,NOUN.GROUP,monitor,NN,TV,FALSE,allow,VBP,O,OTHER ,0
+10,scientist,NN,PERSON,NOUN.PERSON,measure,NN,TV,FALSE,change in alignment,NN,O,NOUN.GROUP ,1
+10,scientist,NN,PERSON,NOUN.PERSON,measure,NN,TV,FALSE,change in mechanical alignment of XRT 's tube,NN,O,NOUN.ARTIFACT ,1
+10,Telescope alignment,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,scientists,NNS,O,OTHER ,0
+11,Sun Shutter,NNP,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,its own solar panel,NN,O,NOUN.ARTIFACT ,0
+11,Sun Shutter,NNP,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,its solar panel for backup power,NN,O,NOUN.PERSON ,0
+11,Sun Shutter,NNP,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,its own panel,NN,O,NOUN.ARTIFACT ,0
+11,Sun Shutter,NNP,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,its solar panel for power,NN,O,NOUN.PERSON ,0
+11,Sun Shutter,NNP,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,its panel for backup power,NN,O,NOUN.PERSON ,0
+11,Sun Shutter,NNP,O,NOUN.ARTIFACT,shall,MD,AUXILIARY,FALSE,shall powered by SPB,NNP,ORGANIZATION,OTHER ,0
+11,Sun Shutter,NNP,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,its own panel for power,NN,O,NOUN.PERSON ,0
+11,Sun Shutter,NNP,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,its own panel for backup power,NN,O,NOUN.PERSON ,0
+11,Sun Shutter,NNP,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,its panel,NN,O,NOUN.ARTIFACT ,0
+11,Sun Shutter,NNP,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,its own solar panel for backup power,NN,O,NOUN.PERSON ,0
+11,Sun Shutter,NNP,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,its solar panel,NN,O,NOUN.ARTIFACT ,0
+11,Sun Shutter,NNP,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,its own solar panel for power,NN,O,NOUN.PERSON ,0
+11,Sun Shutter,NNP,O,NOUN.ARTIFACT,shall,MD,AUXILIARY,FALSE,shall powered,VBN,O,OTHER ,0
+11,Sun Shutter,NNP,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,its panel for power,NN,O,NOUN.PERSON ,0
+12,xrt,NN,O,OTHER,monitor,NN,TV,FALSE,items,NNS,O,OTHER ,0
+12,xrt,NN,O,OTHER,monitor,NN,TV,FALSE,several items,NNS,O,OTHER ,0
+12,xrt,NN,O,OTHER,report,NN,TV,FALSE,them,PRP,O,OTHER ,0
+12,number,NN,O,NOUN.ATTRIBUTE,be in,VB,IS-A,FALSE,parenthesis,NN,O,NOUN.COMMUNICATION ,0
+13,fsw,NN,O,OTHER,process science datum from,IN,OTHER,FALSE,camera,NN,O,NOUN.ARTIFACT ,0
+13,relay,NN,O,NOUN.ACT,be in,VB,IS-A,FALSE,form of CCSDS Source Packets,NNPS,O,NOUN.COMMUNICATION ,0
+13,fsw,NN,O,OTHER,process,NN,TV,FALSE,science data,NNS,O,NOUN.GROUP ,0
+13,fsw,NN,O,OTHER,relay,VBD,TV,FALSE,it,PRP,O,NOUN.COGNITION ,0
+14,fsw,NN,O,OTHER,receive command from,IN,OTHER,FALSE,SCU,NNP,O,OTHER ,0
+14,fsw,NN,O,OTHER,receive,VBP,TV,TRUE,commands,NNS,O,OTHER ,0
+15,fsw,NN,O,OTHER,transmit,VBP,TV,TRUE,housekeeping data,NNS,O,NOUN.GROUP ,0
+15,fsw,NN,O,OTHER,transmit datum to,TO,OTHER,FALSE,SCU,NNP,O,OTHER ,0
+15,fsw,NN,O,OTHER,transmit,VBP,TV,TRUE,detailed housekeeping data,NNS,O,NOUN.GROUP ,0
+15,fsw,NN,O,OTHER,transmit datum in,IN,OTHER,FALSE,form,NN,O,NOUN.COMMUNICATION ,0
+15,fsw,NN,O,OTHER,transmit,VBP,TV,TRUE,data,NNS,O,NOUN.GROUP ,0
+15,fsw,NN,O,OTHER,transmit,VBP,TV,TRUE,detailed data,NNS,O,NOUN.GROUP ,0
+15,fsw,NN,O,OTHER,transmit datum in,IN,OTHER,FALSE,form of CCSDS Source Packets,NNS,O,NOUN.COMMUNICATION ,0

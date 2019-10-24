@@ -1,0 +1,138 @@
+requirement, subject, s-tag, s-ner, s-type, verb, v-tag, v-cat, v-process, object, o-tag, o-ner, o-type, label 
+1,driver,NN,PERSON,NOUN.PERSON,of,IN,OTHER,FALSE,smart card,NN,O,NOUN.POSSESSION ,0
+1,member,NN,PERSON,NOUN.PERSON,send request about,IN,OTHER,FALSE,possible delivery of driver 's smart card to similar person,NN,O,NOUN.TOPS ,0
+1,member,NN,PERSON,NOUN.PERSON,send request about,IN,OTHER,FALSE,possible delivery of driver 's smart card to person,NN,O,NOUN.TOPS ,0
+1,member,NN,PERSON,NOUN.PERSON,send request about,IN,OTHER,FALSE,possible delivery of driver 's smart card,NN,O,NOUN.PERSON ,0
+1,member,NN,PERSON,NOUN.PERSON,send request about,IN,OTHER,FALSE,possible delivery to person,NN,O,NOUN.TOPS ,0
+1,member,NN,PERSON,NOUN.PERSON,send request about,IN,OTHER,FALSE,possible delivery of driver 's card to person,NN,O,NOUN.TOPS ,0
+1,member,NN,PERSON,NOUN.PERSON,send request about,IN,OTHER,FALSE,possible delivery to similar person,NN,O,NOUN.TOPS ,0
+1,member,NN,PERSON,NOUN.PERSON,send request about,IN,OTHER,FALSE,possible delivery of driver 's card,NN,O,NOUN.PERSON ,0
+1,member,NN,PERSON,NOUN.PERSON,send,VB,TV,FALSE,requests,NNS,O,OTHER ,1
+1,member,NN,PERSON,NOUN.PERSON,send request about,IN,OTHER,FALSE,possible delivery of driver 's card to similar person,NN,O,NOUN.TOPS ,0
+1,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,member,NN,O,NOUN.PERSON ,0
+1,member,NN,PERSON,NOUN.PERSON,send request about,IN,OTHER,FALSE,possible delivery,NN,O,NOUN.ACT ,0
+1,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,member of network,NN,O,NOUN.GROUP ,0
+2,member,NN,PERSON,NOUN.PERSON,send,VB,TV,FALSE,bulk request on all,DT,O,NOUN.ATTRIBUTE ,1
+2,member,NN,PERSON,NOUN.PERSON,send,VB,TV,FALSE,request on all,DT,O,NOUN.COMMUNICATION ,1
+2,driver,NN,PERSON,NOUN.PERSON,of,IN,OTHER,FALSE,smart cardholders,NNS,O,NOUN.STATE ,0
+2,member,NN,PERSON,NOUN.PERSON,send,VB,TV,FALSE,request,NN,O,NOUN.COMMUNICATION ,1
+2,member,NN,PERSON,NOUN.PERSON,send,VB,TV,FALSE,bulk request,NN,O,NOUN.COMMUNICATION ,1
+2,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,member,NN,O,NOUN.PERSON ,0
+2,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,member of network,NN,O,NOUN.GROUP ,0
+3,member,NN,PERSON,NOUN.PERSON,do,VBP,TV,FALSE,statistics,NNS,O,NOUN.COGNITION ,1
+3,member,NN,PERSON,NOUN.PERSON,do,VBP,TV,FALSE,statistics on messages,NNS,O,NOUN.COGNITION ,1
+3,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,member,NN,O,NOUN.PERSON ,0
+4,system,NN,O,NOUN.GROUP,provide reply through,IN,OTHER,FALSE,use,NN,O,NOUN.ACT ,0
+4,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,reply,NN,O,NOUN.COMMUNICATION ,0
+4,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,automatic reply,NN,O,NOUN.COMMUNICATION ,0
+4,system,NN,O,NOUN.GROUP,provide reply through,IN,OTHER,FALSE,use of interface to Members systems,NNS,O,NOUN.ACT ,0
+4,system,NN,O,NOUN.GROUP,provide reply through,IN,OTHER,FALSE,use of standard interface,NN,O,NOUN.ARTIFACT ,0
+4,system,NN,O,NOUN.GROUP,provide reply through,IN,OTHER,FALSE,use of interface,NN,O,NOUN.ARTIFACT ,0
+4,system,NN,O,NOUN.GROUP,provide reply through,IN,OTHER,FALSE,use to Members systems,NNS,O,NOUN.ACT ,0
+4,system,NN,O,NOUN.GROUP,provide reply to,TO,OTHER,FALSE,sender of request,NN,O,NOUN.COMMUNICATION ,0
+4,system,NN,O,NOUN.GROUP,provide reply to,TO,OTHER,FALSE,sender,NN,O,NOUN.PERSON ,0
+4,system,NN,O,NOUN.GROUP,provide reply through,IN,OTHER,FALSE,use of standard interface to Members systems,NNS,O,NOUN.ACT ,0
+5,system,NN,O,NOUN.GROUP,track workflow between,IN,OTHER,FALSE,senders,NNS,O,OTHER ,0
+5,system,NN,O,NOUN.GROUP,track,NN,TV,FALSE,workflow,NN,O,NOUN.ACT ,0
+6,system,NN,O,NOUN.GROUP,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT ,0
+7,statistics,NNS,O,NOUN.COGNITION,delay of,VBP,TV,FALSE,reply,NN,O,NOUN.COMMUNICATION ,0
+7,administrator,NN,PERSON,NOUN.PERSON,extract,NN,TV,TRUE,statistics,NNS,O,NOUN.COGNITION ,1
+7,statistics,NNS,O,NOUN.COGNITION,percentage of,IN,OTHER,FALSE,transaction,NN,O,NOUN.ACT ,0
+7,administrator,NN,PERSON,NOUN.PERSON,extract,NN,TV,TRUE,statistics of use,NN,O,NOUN.ACT ,1
+7,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,administrator,NN,TITLE,NOUN.PERSON ,0
+7,statistics,NNS,O,NOUN.COGNITION,percentage of,IN,OTHER,FALSE,unsuccessful transaction,NN,O,NOUN.ACT ,0
+7,statistics,NNS,O,NOUN.COGNITION,delay by,VBP,TV,FALSE,member/period,NN,O,OTHER ,0
+7,statistics,NNS,O,NOUN.COGNITION,standard delay of,IN,OTHER,FALSE,reply,NN,O,NOUN.COMMUNICATION ,0
+7,statistics,NNS,O,NOUN.COGNITION,standard delay by,IN,OTHER,FALSE,member/period,NN,O,OTHER ,0
+8,system,NN,O,NOUN.GROUP,provide,VB,TV,TRUE,management of user rights,NNS,O,NOUN.ACT ,0
+8,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,management,NN,O,NOUN.ACT ,0
+9,driver,NN,PERSON,NOUN.PERSON,in,IN,OTHER,FALSE,smart cardholder like pre-delivery check,NN,O,NOUN.POSSESSION ,0
+9,system,NN,O,NOUN.GROUP,define type in,IN,OTHER,FALSE,driver 's cardholder like pre-delivery check,NN,O,NOUN.POSSESSION ,0
+9,system,NN,O,NOUN.GROUP,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT ,0
+9,system,NN,O,NOUN.GROUP,define type in,IN,OTHER,FALSE,driver 's smart cardholder like check,NN,O,NOUN.POSSESSION ,0
+9,system,NN,O,NOUN.GROUP,define type in,IN,OTHER,FALSE,driver 's cardholder like check,NN,O,NOUN.POSSESSION ,0
+9,system,NN,O,NOUN.GROUP,define type in,IN,OTHER,FALSE,driver 's smart cardholder like pre-delivery check,NN,O,NOUN.POSSESSION ,0
+9,system,NN,O,NOUN.GROUP,define type in,IN,OTHER,FALSE,driver 's cardholder,NN,O,NOUN.PERSON ,0
+9,system,NN,O,NOUN.GROUP,define,VB,TV,TRUE,types,NNS,O,OTHER ,0
+9,system,NN,O,NOUN.GROUP,define type in,IN,OTHER,FALSE,driver 's smart cardholder,NN,O,NOUN.PERSON ,0
+10,system,NN,O,NOUN.GROUP,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT ,0
+10,system,NN,O,NOUN.GROUP,include,VBP,TV,TRUE,members,NNS,O,OTHER ,0
+10,system,NN,O,NOUN.GROUP,include,VBP,TV,TRUE,new members,NNS,O,OTHER ,0
+10,system,NN,O,NOUN.GROUP,include,VBP,TV,TRUE,members in network,NN,O,NOUN.GROUP ,0
+10,system,NN,O,NOUN.GROUP,include member through,IN,OTHER,FALSE,simple tasks,NNS,O,NOUN.PERSON ,0
+10,system,NN,O,NOUN.GROUP,include member through,IN,OTHER,FALSE,administrative tasks,NNS,O,OTHER ,0
+10,new member,NN,PERSON,NOUN.PERSON,be in,VB,IS-A,FALSE,network,NN,O,NOUN.GROUP ,0
+10,system,NN,O,NOUN.GROUP,include,VBP,TV,TRUE,new members in network,NN,O,NOUN.GROUP ,0
+10,system,NN,O,NOUN.GROUP,include member through,IN,OTHER,FALSE,tasks,NNS,O,OTHER ,0
+10,system,NN,O,NOUN.GROUP,include member through,IN,OTHER,FALSE,simple administrative tasks,NNS,O,NOUN.PERSON ,0
+11,system,NN,O,NOUN.GROUP,must,MD,AUXILIARY,FALSE,must highly automatic,JJ,O,NOUN.ARTIFACT ,0
+11,system,NN,O,NOUN.GROUP,must,MD,AUXILIARY,FALSE,must automatic,JJ,O,NOUN.ARTIFACT ,0
+12,system,NN,O,NOUN.GROUP,provide at,VBP,TV,TRUE,application level,NN,O,NOUN.ATTRIBUTE ,0
+13,none,NN,O,NOUN.TIME,reconstruct,VB,TV,TRUE,European database,NN,O,NOUN.COMMUNICATION ,0
+13,none,NN,O,NOUN.TIME,reconstruct database through,IN,OTHER,FALSE,use,NN,O,NOUN.ACT ,0
+13,none,NN,O,NOUN.TIME,be,VB,IS-A,FALSE,technically able,JJ,O,OTHER ,0
+13,none,NN,O,NOUN.TIME,reconstruct,VB,TV,TRUE,database,NN,O,NOUN.COMMUNICATION ,0
+13,none,NN,O,NOUN.TIME,be,VB,IS-A,FALSE,able,JJ,O,OTHER ,0
+13,none,NN,O,NOUN.TIME,reconstruct database through,IN,OTHER,FALSE,use of messages,NNS,O,NOUN.ACT ,0
+13,none,NN,O,NOUN.TIME,reconstruct,VB,TV,TRUE,consolidated European database,NN,O,NOUN.COMMUNICATION ,0
+13,none,NN,O,NOUN.TIME,reconstruct database through,IN,OTHER,FALSE,use of messages exchanged,VBN,O,NOUN.ACT ,0
+13,none,NN,O,NOUN.TIME,reconstruct,VB,TV,TRUE,consolidated database,NN,O,NOUN.COMMUNICATION ,0
+13,system,NN,O,NOUN.GROUP,must,MD,AUXILIARY,FALSE,must such,JJ,O,NOUN.OBJECT ,0
+14,Member State,NN,O,NOUN.GROUP,ask for,VB,TV,FALSE,status of card to Card Issuing Authority of Member State,NN,O,NOUN.GROUP ,0
+14,Member State,NNP,O,NOUN.GROUP,ask for,VB,TV,FALSE,status of card to Card Issuing Authority,NNP,O,NOUN.PERSON ,0
+14,Member State,NN,O,NOUN.GROUP,ask for,VB,TV,FALSE,status to Card Issuing Authority of Member State,NN,O,NOUN.GROUP ,0
+14,Member State,NN,O,NOUN.GROUP,ask for,VB,TV,FALSE,status of card to corresponding Card Issuing Authority of Member State,NN,O,NOUN.GROUP ,0
+14,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask for status of card to corresponding Card Issuing Authority,NNP,ORGANIZATION,NOUN.PERSON ,0
+14,Member State,NNP,O,NOUN.GROUP,ask for,VB,TV,FALSE,status to corresponding Card Issuing Authority,NNP,O,NOUN.PERSON ,0
+14,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask for status to corresponding Card Issuing Authority of Member State,NN,O,NOUN.GROUP ,0
+14,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask for status,NN,O,NOUN.STATE ,0
+14,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask for status of card,NN,O,NOUN.PERSON ,0
+14,Member State,NNP,O,NOUN.GROUP,ask for,VB,TV,FALSE,status of card,NN,O,NOUN.PERSON ,0
+14,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask for status of card to corresponding Card Issuing Authority of Member State,NN,O,NOUN.GROUP ,0
+14,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask for status to Card Issuing Authority of Member State,NN,O,NOUN.GROUP ,0
+14,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,Member State,NN,O,NOUN.GROUP ,0
+14,Member State,NNP,O,NOUN.GROUP,ask for,VB,TV,FALSE,status of card to corresponding Card Issuing Authority,NNP,O,NOUN.PERSON ,0
+14,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask for status of card to Card Issuing Authority of Member State,NN,O,NOUN.GROUP ,0
+14,Member State,NNP,O,NOUN.GROUP,ask for,VB,TV,FALSE,status,NN,O,NOUN.STATE ,0
+14,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask for status to Card Issuing Authority,NNP,ORGANIZATION,NOUN.PERSON ,0
+14,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask for status to corresponding Card Issuing Authority,NNP,ORGANIZATION,NOUN.PERSON ,0
+14,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask,VB,O,OTHER ,0
+14,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask for status of card to Card Issuing Authority,NNP,ORGANIZATION,NOUN.PERSON ,0
+14,Member State,NNP,O,NOUN.GROUP,ask for,VB,TV,FALSE,status to Card Issuing Authority,NNP,O,NOUN.PERSON ,0
+14,Member State,NN,O,NOUN.GROUP,ask for,VB,TV,FALSE,status to corresponding Card Issuing Authority of Member State,NN,O,NOUN.GROUP ,0
+15,Member State,NN,O,NOUN.GROUP,send card status modification request to,TO,OTHER,FALSE,Card Issuing Authority,NNP,ORGANIZATION,NOUN.PERSON ,0
+15,Member State,NN,O,NOUN.GROUP,send card status modification request to,TO,OTHER,FALSE,corresponding Card Issuing Authority,NNP,ORGANIZATION,NOUN.PERSON ,0
+15,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,Member State,NN,O,NOUN.GROUP ,0
+15,Member State,NNP,O,NOUN.GROUP,send card status modification request to,TO,OTHER,FALSE,Card Issuing Authority of Member State,NNP,O,NOUN.GROUP ,0
+15,card status modification request,NN,O,NOUN.COMMUNICATION,issue,NN,TV,FALSE,card,NN,O,NOUN.PERSON ,0
+15,Member State,NNP,O,NOUN.GROUP,send,VB,TV,FALSE,card status modification requests,NNS,O,NOUN.PERSON ,0
+15,Member State,NNP,O,NOUN.GROUP,send card status modification request to,TO,OTHER,FALSE,corresponding Card Issuing Authority of Member State,NNP,O,NOUN.GROUP ,0
+16,enforcement authority,NN,PERSON,NOUN.PERSON,ask for,VB,TV,FALSE,driver 's card status to Card Issuing Authority,NNP,ORGANIZATION,NOUN.PERSON ,1
+16,driver,NN,PERSON,NOUN.PERSON,for,IN,OTHER,FALSE,card status to corresponding Card Issuing Authority of Member State,NN,O,NOUN.GROUP ,0
+16,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask for driver 's card status to corresponding Card Issuing Authority,NNP,ORGANIZATION,NOUN.PERSON ,0
+16,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask for driver 's card status to Card Issuing Authority,NNP,ORGANIZATION,NOUN.PERSON ,0
+16,enforcement authority,NN,PERSON,NOUN.PERSON,ask for,VB,TV,FALSE,driver 's card status,NN,O,NOUN.STATE ,1
+16,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask for driver 's card status to Card Issuing Authority of Member State,NN,O,NOUN.GROUP ,0
+16,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,enforcement authorities,NNS,O,NOUN.GROUP ,0
+16,enforcement authority,NN,PERSON,NOUN.PERSON,ask for,VB,TV,FALSE,driver 's card status to corresponding Card Issuing Authority,NNP,ORGANIZATION,NOUN.PERSON ,1
+16,enforcement authority,NN,PERSON,NOUN.PERSON,ask for,VB,TV,FALSE,driver 's card status to corresponding Card Issuing Authority of Member State,NN,O,NOUN.GROUP ,1
+16,enforcement authority,NN,PERSON,NOUN.PERSON,ask for,VB,TV,FALSE,driver 's card status to Card Issuing Authority of Member State,NN,O,NOUN.GROUP ,1
+16,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask for driver 's card status to corresponding Card Issuing Authority of Member State,NN,O,NOUN.GROUP ,0
+16,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask for driver 's card status,NN,O,NOUN.STATE ,0
+16,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask,VB,O,OTHER ,0
+17,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask to Card Issuing Authority of Member State,NN,O,NOUN.GROUP ,0
+17,enforcement authority,NN,PERSON,NOUN.PERSON,ask to,VB,TV,FALSE,Card Issuing Authority of Member State,NN,O,NOUN.GROUP ,1
+17,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask to corresponding Card Issuing Authority of Member State,NN,O,NOUN.GROUP ,0
+17,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask for workshop card status to Card Issuing Authority of Member State,NN,O,NOUN.GROUP ,0
+17,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask to Card Issuing Authority,NNP,ORGANIZATION,NOUN.PERSON ,0
+17,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask to corresponding Card Issuing Authority,NNP,ORGANIZATION,NOUN.PERSON ,0
+17,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask for workshop card status to corresponding Card Issuing Authority,NNP,ORGANIZATION,NOUN.PERSON ,0
+17,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask for workshop card status to corresponding Card Issuing Authority of Member State,NN,O,NOUN.GROUP ,0
+17,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask for workshop card status,NN,O,NOUN.STATE ,0
+17,enforcement authority,NN,PERSON,NOUN.PERSON,ask for,VB,TV,FALSE,workshop card status,NN,O,NOUN.STATE ,1
+17,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,enforcement authorities,NNS,O,NOUN.GROUP ,0
+17,enforcement authority,NN,PERSON,NOUN.PERSON,ask to,VB,TV,FALSE,Card Issuing Authority,NNP,ORGANIZATION,NOUN.PERSON ,1
+17,enforcement authority,NN,PERSON,NOUN.PERSON,ask to,VB,TV,FALSE,corresponding Card Issuing Authority,NNP,ORGANIZATION,NOUN.PERSON ,1
+17,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask for workshop card status to Card Issuing Authority,NNP,ORGANIZATION,NOUN.PERSON ,0
+17,enforcement authority,NN,PERSON,NOUN.PERSON,ask to,VB,TV,FALSE,corresponding Card Issuing Authority of Member State,NN,O,NOUN.GROUP ,1
+17,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,ask,VB,O,OTHER ,0
