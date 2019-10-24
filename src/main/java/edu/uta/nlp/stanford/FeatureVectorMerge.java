@@ -15,6 +15,8 @@ import edu.uta.nlp.entity.FeatureVector;
 import edu.uta.nlp.file.CSVFile;
 import edu.uta.nlp.file.FilePath;
 import edu.uta.nlp.wordnet.WordNetApi;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -27,6 +29,8 @@ import java.util.Properties;
  * @author hxy
  */
 public class FeatureVectorMerge {
+
+    private static final Logger logger = LoggerFactory.getLogger(FeatureVectorMerge.class);
 
     public static void generate() throws Exception{
 
@@ -52,7 +56,7 @@ public class FeatureVectorMerge {
                 pipeline.annotate(doc);
 
                 for (CoreMap sentence : doc.get(CoreAnnotations.SentencesAnnotation.class)) {
-                    System.out.println("Sentence #" + ++sentNo + ": " + sentence.get(CoreAnnotations.TextAnnotation.class));
+                    logger.info("Sentence #" + ++sentNo + ": " + sentence.get(CoreAnnotations.TextAnnotation.class));
 
                     ArrayList<ClassificationCoreLabel> listOfClassificationPerWord = new ArrayList<ClassificationCoreLabel>();
 
@@ -77,7 +81,7 @@ public class FeatureVectorMerge {
                         featureVector.setVerb(triple.relationLemmaGloss());
                         featureVector.setObject(triple.objectLemmaGloss());
 
-                        System.out.println(triple.confidence + ":\t" + triple.subjectLemmaGloss() + ":\t"
+                        logger.info(triple.confidence + ":\t" + triple.subjectLemmaGloss() + ":\t"
                                 + triple.relationLemmaGloss() + ":\t" + triple.objectLemmaGloss());
 
 
