@@ -84,6 +84,29 @@ public class OpenIE {
             result.setVerb(verb);
             return result;
         }
+        if(WordNetApi.isPos(firstWord, POS.VERB)) {
+            if(CoreAnnotate.isPos(pipeline, lastWord, "RB")) {
+                result.setVerb(firstWord);
+                return result;
+            }
+            if(CoreAnnotate.isPos(pipeline, lastWord, "IN")) {
+                result.setVerb(firstWord);
+                return result;
+            }
+            if(CoreAnnotate.isPos(pipeline, lastWord, "TO")) {
+                result.setVerb(firstWord);
+                return result;
+            }
+            if(CoreAnnotate.isPos(pipeline, lastWord, "JJ")) {
+                result.setVerb(firstWord);
+                return result;
+            }
+            if(CoreAnnotate.isPosByChar(pipeline, lastWord, 'N') || WordNetApi.isPos(lastWord, POS.NOUN)) {
+                result.setVerb(lastWord);
+                result.setVcat(SynsetType.OTHER.toString());
+                return result;
+            }
+        }
         if(wordTotal == 2) {
             if(CoreAnnotate.isPos(pipeline, firstWord, "RB")) {
                 if(WordNetApi.isPos(lastWord, POS.VERB)) {
@@ -93,29 +116,6 @@ public class OpenIE {
                     result.setVcat(SynsetType.OTHER.toString());
                 }
                 return result;
-            }
-            if(WordNetApi.isPos(firstWord, POS.VERB)) {
-                if(CoreAnnotate.isPos(pipeline, lastWord, "RB")) {
-                    result.setVerb(firstWord);
-                    return result;
-                }
-                if(CoreAnnotate.isPos(pipeline, lastWord, "IN")) {
-                    result.setVerb(firstWord);
-                    return result;
-                }
-                if(CoreAnnotate.isPos(pipeline, lastWord, "TO")) {
-                    result.setVerb(firstWord);
-                    return result;
-                }
-                if(CoreAnnotate.isPos(pipeline, lastWord, "JJ")) {
-                    result.setVerb(firstWord);
-                    return result;
-                }
-                if(CoreAnnotate.isPosByChar(pipeline, lastWord, 'N') || WordNetApi.isPos(lastWord, POS.NOUN)) {
-                    result.setVerb(lastWord);
-                    result.setVcat(SynsetType.OTHER.toString());
-                    return result;
-                }
             }
         }
         if(wordTotal == 3) {
@@ -135,21 +135,6 @@ public class OpenIE {
                         return result;
                     }
                 } else {
-                    result.setVerb(lastWord);
-                    result.setVcat(SynsetType.OTHER.toString());
-                    return result;
-                }
-            }
-            if(WordNetApi.isPos(firstWord, POS.VERB) && CoreAnnotate.isPos(pipeline, secondWord, "RB")) {
-                if(CoreAnnotate.isPos(pipeline, lastWord, "IN")) {
-                    result.setVerb(firstWord);
-                    return result;
-                }
-                if(CoreAnnotate.isPos(pipeline, lastWord, "TO")) {
-                    result.setVerb(firstWord);
-                    return result;
-                }
-                if(CoreAnnotate.isPosByChar(pipeline, lastWord, 'N') || WordNetApi.isPos(lastWord, POS.NOUN)) {
                     result.setVerb(lastWord);
                     result.setVcat(SynsetType.OTHER.toString());
                     return result;
