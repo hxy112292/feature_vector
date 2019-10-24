@@ -5,6 +5,7 @@ import edu.mit.jwi.item.POS;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.PropertiesUtils;
 import edu.stanford.nlp.util.StringUtils;
+import edu.uta.nlp.constant.SynsetType;
 import edu.uta.nlp.entity.ClassificationCoreLabel;
 import edu.uta.nlp.entity.FeatureVector;
 import edu.uta.nlp.entity.OpenIESimpleLemma;
@@ -76,6 +77,9 @@ public class FeatureVectorMerge {
                         featureVector.setVerbCat(openIESimpleLemma.getVcat());
                     } else {
                         featureVector.setVerbCat(vcat.getVcat(openIESimpleLemma.getVerb()));
+                    }
+                    if(featureVector.getVerbCat() == SynsetType.TV.toString() && featureVector.getVerbTag().charAt(0) != 'V') {
+                        featureVector.setVerbTag("VB");
                     }
 
                     sb.append(sentNo + "," + featureVector.toString() + " \n");
