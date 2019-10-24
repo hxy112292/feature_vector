@@ -1,0 +1,84 @@
+requirement, subject, s-tag, s-ner, s-type, verb, v-tag, v-cat, v-process, object, o-tag, o-ner, o-type, label 
+1,system,NN,O,NOUN.GROUP,should allow,VB,TV,FALSE,capability,NN,O,NOUN.ATTRIBUTE ,0
+1,capability,NN,O,NOUN.ATTRIBUTE,restrict client to,TO,TV,FALSE,pre-determined set of service,NNS,O,NOUN.PERSON ,0
+1,capability,NN,O,NOUN.ATTRIBUTE,restrict client to,TO,TV,FALSE,set of service,NNS,O,NOUN.PERSON ,0
+1,capability,NN,O,NOUN.ATTRIBUTE,restrict,VB,TV,TRUE,authenticate client,NN,O,NOUN.PERSON ,0
+1,capability,NN,O,NOUN.ATTRIBUTE,restrict client to,TO,TV,FALSE,pre-determined set,NN,O,NOUN.PERSON ,0
+1,capability,NN,O,NOUN.ATTRIBUTE,restrict client to,TO,TV,FALSE,set,NN,O,NOUN.PERSON ,0
+1,capability,NN,O,NOUN.ATTRIBUTE,restrict,VB,TV,TRUE,client,NN,O,NOUN.PERSON ,0
+2,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,change,NNS,O,NOUN.EVENT ,1
+2,system,NN,O,NOUN.GROUP,should allow,VB,TV,FALSE,user,NN,O,NOUN.PERSON ,0
+2,monitoring,NN,O,NOUN.ACT,change for,IN,TV,FALSE,operational device,NNS,O,NOUN.ARTIFACT ,0
+2,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,monitoring of status,NN,O,NOUN.STATE ,1
+2,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,monitoring,NN,O,NOUN.ACT ,1
+2,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,change of state,NNS,O,NOUN.ACT ,1
+2,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,local monitoring of status,NN,O,NOUN.STATE ,1
+2,monitoring,NN,O,NOUN.ACT,change of,IN,TV,FALSE,state,NNS,O,NOUN.GROUP ,0
+2,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,change of state for operational device,NNS,O,NOUN.ARTIFACT ,1
+2,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,change for device,NNS,O,NOUN.ARTIFACT ,1
+2,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,local monitoring,NN,O,NOUN.ACT ,1
+2,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,change for operational device,NNS,O,NOUN.ARTIFACT ,1
+2,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,change of state for device,NNS,O,NOUN.ARTIFACT ,1
+2,monitoring,NN,O,NOUN.ACT,change for,IN,TV,FALSE,device,NNS,O,NOUN.ARTIFACT ,0
+3,system,NN,O,NOUN.GROUP,should allow,VB,TV,FALSE,user,NN,O,NOUN.PERSON ,0
+3,user,NN,PERSON,NOUN.PERSON,operate,VB,TV,TRUE,equipment,NN,O,NOUN.ARTIFACT ,1
+3,system,NN,O,NOUN.GROUP,should allow,VB,TV,FALSE,operate,VB,O,VERB.SOCIAL ,0
+4,system,NN,O,NOUN.GROUP,should allow,VB,TV,FALSE,user,NN,O,NOUN.PERSON ,0
+4,user,NN,PERSON,NOUN.PERSON,change,VB,TV,FALSE,parameter,NN,O,NOUN.COGNITION ,1
+5,system,NN,O,NOUN.GROUP,should allow,VB,TV,FALSE,user,NN,O,NOUN.PERSON ,0
+5,user,NN,PERSON,NOUN.PERSON,visualize,VB,TV,TRUE,alarm,NNS,O,NOUN.FEELING ,1
+6,user,NN,PERSON,NOUN.PERSON,acknowledge,VB,TV,FALSE,alarm,NNS,O,NOUN.FEELING ,1
+6,system,NN,O,NOUN.GROUP,should allow,VB,TV,FALSE,user,NN,O,NOUN.PERSON ,0
+7,system,NN,O,NOUN.GROUP,should allow,VB,TV,FALSE,user,NN,O,NOUN.PERSON ,0
+7,system,NN,O,NOUN.GROUP,should allow user to,TO,OTHER,FALSE,clear alarm,NNS,O,NOUN.FEELING ,0
+7,system,NN,O,NOUN.GROUP,should allow to,TO,OTHER,FALSE,clear alarm,NNS,O,NOUN.FEELING ,0
+7,system,NN,O,NOUN.GROUP,should allow user to,TO,OTHER,FALSE,alarm,NNS,O,NOUN.FEELING ,0
+7,system,NN,O,NOUN.GROUP,should allow to,TO,OTHER,FALSE,alarm,NNS,O,NOUN.FEELING ,0
+8,system,NN,O,NOUN.GROUP,should support,VB,TV,FALSE,scanning of device for alarm,NNS,O,NOUN.FEELING ,0
+8,system,NN,O,NOUN.GROUP,should support,VB,TV,FALSE,scanning of device,NNS,O,NOUN.ARTIFACT ,0
+8,change,NNS,O,NOUN.EVENT,be in,IN,TV,FALSE,state,NN,O,NOUN.GROUP ,0
+8,system,NN,O,NOUN.GROUP,should support,VB,TV,FALSE,scanning,NN,O,NOUN.PROCESS ,0
+8,operator control action,NNS,O,NOUN.ACT,continuous scanning of,IN,OTHER,FALSE,device,NNS,O,NOUN.ARTIFACT ,0
+8,system,NN,O,NOUN.GROUP,should support,VB,TV,FALSE,scanning for alarm,NNS,O,NOUN.FEELING ,0
+8,system,NN,O,NOUN.GROUP,should support,VB,TV,FALSE,change,NNS,O,NOUN.EVENT ,0
+8,system,NN,O,NOUN.GROUP,should support,VB,TV,FALSE,continuous scanning of device,NNS,O,NOUN.ARTIFACT ,0
+8,system,NN,O,NOUN.GROUP,should support,VB,TV,FALSE,operator control action,NNS,O,NOUN.ACT ,0
+8,operator control action,NNS,O,NOUN.ACT,scanning for,IN,OTHER,FALSE,alarm,NNS,O,NOUN.FEELING ,0
+8,system,NN,O,NOUN.GROUP,should support,VB,TV,FALSE,continuous scanning of device for alarm,NNS,O,NOUN.FEELING ,0
+8,system,NN,O,NOUN.GROUP,should support,VB,TV,FALSE,continuous scanning,NN,O,NOUN.PROCESS ,0
+8,system,NN,O,NOUN.GROUP,should support,VB,TV,FALSE,change in state,NN,O,NOUN.GROUP ,0
+8,system,NN,O,NOUN.GROUP,should support,VB,TV,FALSE,continuous scanning for alarm,NNS,O,NOUN.FEELING ,0
+8,operator control action,NNS,O,NOUN.ACT,continuous scanning for,IN,OTHER,FALSE,alarm,NNS,O,NOUN.FEELING ,0
+8,operator control action,NNS,O,NOUN.ACT,scanning of,IN,OTHER,FALSE,device,NNS,O,NOUN.ARTIFACT ,0
+9,parameter,NNS,O,NOUN.COGNITION,retrieve,VB,TV,FALSE,those,DT,O,OTHER ,0
+9,parameter,NNS,O,NOUN.COGNITION,retrieve,VB,TV,FALSE,only those,DT,O,OTHER ,0
+10,system,NN,O,NOUN.GROUP,should support,VB,TV,FALSE,disturbance/fault record,NN,O,NOUN.COMMUNICATION ,0
+10,system,NN,O,NOUN.GROUP,should support,VB,TV,FALSE,record,NN,O,NOUN.COMMUNICATION ,0
+10,system,NN,O,NOUN.GROUP,retrieve,VBP,TV,FALSE,datum,NNS,O,NOUN.COGNITION ,0
+11,user,NN,PERSON,NOUN.PERSON,configure,VB,TV,TRUE,communication network,NN,O,NOUN.GROUP ,1
+11,system,NN,O,NOUN.GROUP,should allow,VB,TV,FALSE,user,NN,O,NOUN.PERSON ,0
+12,system,NN,O,NOUN.GROUP,synchronise,VB,TV,TRUE,time,NN,O,NOUN.EVENT ,0
+12,system,NN,O,NOUN.GROUP,synchronise,VB,TV,TRUE,time of device,NNS,O,NOUN.ARTIFACT ,0
+12,system,NN,O,NOUN.GROUP,synchronise time within,IN,TV,FALSE,communication system,NN,O,NOUN.ARTIFACT ,0
+13,system,NN,O,NOUN.GROUP,detect,VBZ,TV,TRUE,operational,JJ,O,ADJ.PERT ,0
+13,device,NN,O,NOUN.ARTIFACT,be,VBZ,IS-A,FALSE,operational,JJ,O,ADJ.PERT ,0
+13,object,NN,O,NOUN.TOPS,be,VBZ,IS-A,FALSE,operational,JJ,O,ADJ.PERT ,0
+13,device,NN,O,NOUN.ARTIFACT,be,VBZ,IS-A,FALSE,fully operational,JJ,O,OTHER ,0
+13,system,NN,O,NOUN.GROUP,detect,VBZ,TV,TRUE,fully operational,JJ,O,OTHER ,0
+13,system,NN,O,NOUN.GROUP,should allow,VB,TV,FALSE,detect,VBZ,O,VERB.PERCEPTION ,0
+13,object,NN,O,NOUN.TOPS,be,VBZ,IS-A,FALSE,fully operational,JJ,O,OTHER ,0
+14,system,NN,O,NOUN.GROUP,should provide,VB,TV,FALSE,status report for component,NNS,O,NOUN.COGNITION ,0
+14,system,NN,O,NOUN.GROUP,should provide,VB,TV,FALSE,status report,NNS,O,NOUN.COMMUNICATION ,0
+15,datum,NNS,O,NOUN.COGNITION,be,VB,IS-A,FALSE,store in plant controller for transmission,NN,O,NOUN.ACT ,0
+15,datum,NNS,O,NOUN.COGNITION,be,VB,IS-A,FALSE,store in plant controller for transmission on demand,NN,O,NOUN.PROCESS ,0
+15,datum,NNS,O,NOUN.COGNITION,be store in,IN,TV,FALSE,plant controller,NN,TITLE,NOUN.PERSON ,0
+15,system,NN,O,NOUN.GROUP,should allow,VB,TV,FALSE,datum,NNS,O,NOUN.COGNITION ,0
+15,datum,NNS,O,NOUN.COGNITION,be,VB,IS-A,FALSE,store,VBN,O,NOUN.ARTIFACT ,0
+15,datum,NNS,O,NOUN.COGNITION,be store for,IN,TV,FALSE,transmission on demand,NN,O,NOUN.PROCESS ,0
+15,datum,NNS,O,NOUN.COGNITION,be store for,IN,TV,FALSE,transmission,NN,O,NOUN.ACT ,0
+16,system,NN,O,NOUN.GROUP,download,VB,TV,FALSE,configuration,NN,O,NOUN.COGNITION ,0
+16,system,NN,O,NOUN.GROUP,retrieve,VBP,TV,FALSE,configuration datum,NNS,O,NOUN.COGNITION ,0
+17,system,NN,O,NOUN.GROUP,start object within,IN,TV,FALSE,system,NN,O,NOUN.GROUP ,0
+17,system,NN,O,NOUN.GROUP,start,VB,TV,FALSE,object,NNS,O,NOUN.TOPS ,0
+17,system,NN,O,NOUN.GROUP,start function within,IN,TV,FALSE,system,NN,O,NOUN.GROUP ,0
+17,system,NN,O,NOUN.GROUP,start,VB,TV,FALSE,function,NNS,O,NOUN.RELATION ,0

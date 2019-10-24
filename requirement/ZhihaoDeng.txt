@@ -1,0 +1,113 @@
+Each users can apply for an account directly through the web portal. 
+Users must enter all required fields.
+The user must enter their NCAR Gatekeeper username. 
+The user can view their current account details.
+User must be logged in to the portal.
+Display all the account properties. 
+Password will not be displayed. 
+Delete account 
+The system shall provide a means to request that the user account be deleted from the system. 
+The system shall notify the portal admin(s) about the delete requests.
+The system shall require the user to enter their username and password to login to the system. 
+The user shall be prompted at the beginning of the session for their credentials, once logged in they will not be prompted for additional or different credentials. 
+All login actions shall be protected by using secure data channels.
+The system shall lock the account after 3 login attempts. This will require portal.
+admin action to unlock the account. 
+Admin users will be authenticated against the portal database. 
+Users will be authenticated against the NCAR Gatekeeper system. 
+Portal Admin(s) will receive e-mail notification when new accounts are ready for review. 
+Display a list of all accounts pending review.
+Approve specific account.
+Approve account.
+Reject account.
+The system shall allow portal administrators the ability to control template submissions rights. 
+The portal admin shall have the ability to list the user accounts in the system.
+List all user accounts.
+List accounts pending approval.
+List all account deletion requests.
+List all locked accounts.
+Delete a specific user account.
+There operation will not be reversible.
+Data removal 
+All user submitted templates will NOT be deleted from disk.
+All shared object that have NOT been referenced by dependant projects will be deleted.
+All other objects/projects will be deleted completely from the system. 
+The admin can lock accounts.
+The user will be notified via e-mail.
+Further logins will not be permitted until unlocked.
+Currently executing jobs will continue to run until the job ends or terminated by the portal admin.
+The admin can unlock accounts.
+Once unlocked the user can login to the system and resume use.
+The portal admin will have a display of all running jobs sorted by user.
+The status of each job and tile will be visible to the portal admin.
+The portal admin shall have the ability to terminate any user’s running jobs. 
+The system shall assign all user accounts to the scientist role by default. 
+The system shall allow the portal admin to change a user’s role in the system. 
+Review the need to implement resource quotas if time permits at the end of the project. 
+The system supports (but does not require) streamlined staff login methods.
+The staff member swipes a card to log into a terminal.
+The staff member logs into a terminal by using his/her individual login and password.
+System administrators can create reliable report templates that are available to staff.
+System administrators can be run as is or modified to the staff person's particular needs. Changes in the templates could be done without comprising the results. 
+The administrator can limit the filters and display fields that can be altered to certify a dependable output. 
+System provides distinct, fine-grained permission levels limiting who can create and clone reports. 
+All permissions should be easy to administer.
+System administrators can create shared folders to allow or disallow staff to run specific reports, and/or to run ad hoc reports on specific sets of data.
+System provides a user-friendly interface for designing queries against all record types. 
+Staff can select fields to query; select values from picklist of possible values; select regular expressions from drop-down menu, and use a full range of Boolean operators. R1.4.3 Administrators control staff access to tables and fields.
+The system provides pre-defined reports for consumption by library boards or other consumers. 
+The system will be reports providing basic statistics like those required by the Georgia Annual Report and Application for State Aid and activity reports that indicate traffic and volume of use that display statistics on check-outs, check-ins, holds placed, and holds filled. 
+The system should be possible cross-tabulated per terminal, per branch, per library system, per hour, per patron age range, per patron type, and per patron location.
+Transactions are archived in a form that protects patron privacy as defined by State Law, while providing useful demographic statistics.
+Examples of periodic reports: bibliographic records with holds.
+Items that have not been checked out in X days.
+Item-level holds; items with invalid item type. 
+In-transit items with outstanding hold.
+Items that have been in-transit for more than X days; 
+Items that are the last copy in the system.
+Items with a long call number; missing items.
+Bibliographic records with no item records; patrons with invalid home library.
+System provides the query selections along with the results.
+Ability to see where your report is in the queue of reports waiting to run.
+System must be able to support the reporting definitions as described in Appendix.
+System must be able to support the fine-grained reports requirements as described in Appendix B.
+The system produces statistics that can be used to understand and predict patron behavior and use of materials. 
+The system produces useful demographic statistics, including transactions by geographical regions, age ranges, etc. 
+The data used to produce these statistics must be anonymized, i.e. information that could be used to identify a patron is deleted.
+Ability to report on the volume of material in a given library at any point in time, based on new acquisitions, items on the shelf, and items out in circulation, with the ability to break down volume in categories.
+The system provides an interface showing capacity of all branches .
+For each genre and format of material, ability to compare the percentage of total circulations, the percentage of the collection, and the percentage of total shelf space that genre/format comprises. 
+Ability to report per library and per system.
+Ability to control inventory of uncataloged material, such as paperback books and children's board books. Support for quick distribution.
+Minimal branch labor; and ability to identify how the material is being used. Ability to count transactions and include in circulation statistics and reports.
+System provides a utility for transferring batches of items between branches, used for example to move books into a mobile library, an outreach program collection, or a "just-in-time" warehouse. 
+Utility includes ability to query for candidate materials; ability to save queries for repeated use; ability to manually select titles from query results; and ability to change records of all or selected items to move to new location.
+Mechanisms for moving items include changing location field, generating pull lists, etc. In addition, utility provides means to revert items to original location after a set period of time, and/or based on other criteria.
+The system provides reports of missing and damaged items per branch.
+The system generates a list of items that have been in-transit for more than X days (X configurable), per branch and per system. 
+The report would merge the transit to and transit from into one report for ease of front-line staff use.
+The system provides a utility and reports for identifying item records to purge.
+The system has a report to assist in the conversion of items from one status to another. 
+The system provides a last copy report that would single out a library system's last copies, to assist catalogers who need to edit WorldCat entries. 
+The system provides a quick effective method of deleting volume entries along with copy entries, as well as records with no items attached.
+Ability to count and track record deletions (e.g. item records, patron records) per location and per system.
+Queries and reports can be limited or grouped by various patron characteristics, including: age range, zip code, county of residence, home branch, patron type, and preferred language.
+The system generates a list of patrons with no circulation or electronic activity in the last X days (X configurable).  
+List should be configurable to System, Home Library, County, etc.
+Transaction history is maintained for X days (X is configurable).
+Monthly and annual aggregate information is maintained indefinitely.
+Transactions can be grouped by hour, terminal, branch, and system. Transactions include check-ins, check-outs, fines collected, patron registrations, etc., and can be queried by all transactions or by type of transaction.
+The system counts all types of check-in individually and cumulatively: book-drop, by terminal, by user or self-service.
+The system counts all types of check-out individually and cumulatively: staff check-out, self check-out, staff renewal, self checkout renewal, online renewal, OPAC renewal.
+The system counts all hold requests, including how the hold was placed: at a staff desk, at a public computer inside the library, or remotely.
+The system can generate a report of transactions (holds placed, holds filled, and check-outs) per patron, per library, per selected group o libraries, per system, per county. 
+The system displays the number of check-outs and placed holds per patron. Holds are subtotaled by type, e.g. active, frozen, and frozen-until holds.
+The system can generate a report of the value of items (based on data in item record) in the entire collection or a portion. 
+All reports and data archiving must comply with standard accounting practice and state, county, and municipal auditing requirements.
+Fines, charges, waivers, and ecommerce transactions are attached to patron and item records. 
+System tracks fines waived and payments made per library. Financial information can be updated easily. As an example, a staff user can easily query patron accounts with balances greater than X dollars.
+The system provides financial reports including: patron account balances by patron, home library, and system; fines and charges accrued per time period (e.g. last twelve months, YTD, last month) and per type of charge (overdue fines, damaged item charges, lost item charges, etc.).
+Fines waived per time period and per branch.
+Payments made per time period and per payment method (e.g. staff desk, self-check station, OPAC).
+The system maintains a ledger of patron payments, including which charges payments are applied to, to facilitate reconciliation.
+
