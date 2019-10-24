@@ -81,6 +81,11 @@ public class FeatureVectorMerge {
                     if(featureVector.getVerbCat() == SynsetType.TV.toString() && featureVector.getVerbTag().charAt(0) != 'V') {
                         featureVector.setVerbTag("VB");
                     }
+                    if(featureVector.getSubjectNER().equals("PERSON") && featureVector.getVerbCat().equals(SynsetType.TV.toString())) {
+                        featureVector.setLabel(1);
+                    } else {
+                        featureVector.setLabel(0);
+                    }
 
                     sb.append(sentNo + "," + featureVector.toString() + " \n");
                 }

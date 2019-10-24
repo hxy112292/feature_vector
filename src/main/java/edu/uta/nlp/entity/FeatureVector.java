@@ -17,12 +17,22 @@ public class FeatureVector {
     private String objectTag;
     private String objectNer;
     private String objectType;
+    private Integer label;
 
     @Override
     public String toString() {
         return subject + "," + subjectTag + "," + subjectNER + "," + subjectType + ","
                 + verb + "," + verbTag + "," + verbCat + "," + verbProcess + ","
-                + object + "," + objectTag + "," + objectNer + "," + objectType;
+                + object + "," + objectTag + "," + objectNer + "," + objectType + ","
+                + label;
+    }
+
+    public Integer getLabel() {
+        return label;
+    }
+
+    public void setLabel(Integer label) {
+        this.label = label;
     }
 
     public String getSubject() {
