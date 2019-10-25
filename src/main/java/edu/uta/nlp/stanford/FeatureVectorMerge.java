@@ -36,6 +36,7 @@ public class FeatureVectorMerge {
                 "tokenize,ssplit,pos,lemma,depparse,natlog,openie,ner");
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
         File folder = new File(FilePath.getRequirementPath());
+        //scan requirements
         scanFile(pipeline, folder, "");
     }
     private static void scanFile(StanfordCoreNLP pipeline, File folder, String fileDirectory) throws Exception {
@@ -46,7 +47,9 @@ public class FeatureVectorMerge {
             } else {
                 String fileName = fileDirectory+File.separator+file.getName();
                 fileName = FileUtil.getFileNameNoEx(fileName);
+                //generate feature vector
                 String fileContent = featureVectorProcess(pipeline, file);
+                //write to csv file
                 CSVFile.writeToFeatureVector(fileContent, fileName + "-FeatureVector");
             }
         }
@@ -57,6 +60,7 @@ public class FeatureVectorMerge {
         // Loop over sentences in the document
         int sentNo = 0;
         String line;
+        //csv file header
         StringBuilder sb = new StringBuilder("requirement, subject, s-tag, s-ner, s-type, verb, v-tag, v-cat, v-process, object, o-tag, o-ner, o-type, label \n");
         while ((line = bufferedReader.readLine()) != null) {
 
@@ -67,10 +71,12 @@ public class FeatureVectorMerge {
 
             for(FeatureVector featureVector : openIEList) {
 
+                //use openIE to get subject, verb, object
                 OpenIESimpleLemma openIESimpleLemma = OpenIE.selectLemma(pipeline, featureVector);
                 String sentence = openIESimpleLemma.toString();
                 List<ClassificationCoreLabel> listOfClassificationPerWord = CoreAnnotate.generate(pipeline, sentence);
 
+                //get pos, ner
                 for (ClassificationCoreLabel ccl : listOfClassificationPerWord) {
                     if (ccl.getWord().equals(openIESimpleLemma.getSubject())) {
                         featureVector.setSubjectTag(ccl.getPos());

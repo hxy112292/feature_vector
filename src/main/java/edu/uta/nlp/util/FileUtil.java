@@ -11,7 +11,7 @@ public class FileUtil {
 
 
     /**
-     * 创建文件
+     * create file
      *
      * @throws IOException
      */
@@ -26,14 +26,13 @@ public class FileUtil {
     }
 
     /**
-     * 写文件
+     * write file
      *
      * @param newStr
-     *      新内容
+     *
      * @throws IOException
      */
     public static boolean writeTxtFile(String filePath, String newStr) throws IOException {
-        // 先读取原有文件内容，然后进行写入操作
         boolean flag = false;
         String filein = newStr + "\r\n";
         String temp = "";
@@ -45,19 +44,14 @@ public class FileUtil {
         FileOutputStream fos = null;
         PrintWriter pw = null;
         try {
-            // 文件路径
             File file = new File(filePath);
-            // 将文件读入输入流
             fis = new FileInputStream(file);
             isr = new InputStreamReader(fis);
             br = new BufferedReader(isr);
             StringBuffer buf = new StringBuffer();
 
-            // 保存该文件原有的内容
             for (int j = 1; (temp = br.readLine()) != null; j++) {
                 buf = buf.append(temp);
-                // System.getProperty("line.separator")
-                // 行与行之间的分隔符 相当于“\n”
                 buf = buf.append(System.getProperty("line.separator"));
             }
             buf.append(filein);
@@ -68,7 +62,6 @@ public class FileUtil {
             pw.flush();
             flag = true;
         } catch (IOException e1) {
-            // TODO 自动生成 catch 块
             throw e1;
         } finally {
             if (pw != null) {
@@ -91,20 +84,20 @@ public class FileUtil {
     }
 
     /**
-     * 获取文件夹下的文件路径
+     * get file path
      *
-     * @param folder， file
-     *      新内容
+     * @param folder, file
+     *
      */
     public static String getFileWithRelativePath(File folder, File file) {
         return folder + File.separator + file.getName();
     }
 
     /**
-     * 读取文件夹下的文件内容
+     * get file content
      *
-     * @param folder， file
-     *      新内容
+     * @param folder, file
+     *
      */
     public static List<BufferedReader> readFileInFolder(File folder) throws Exception{
 
@@ -117,6 +110,12 @@ public class FileUtil {
         return fileContent;
     }
 
+    /**
+     * get file name without ex
+     *
+     * @param filename
+     *
+     */
     public static String getFileNameNoEx(String filename) {
         if ((filename != null) && (filename.length() > 0)) {
             int dot = filename.lastIndexOf('.');
