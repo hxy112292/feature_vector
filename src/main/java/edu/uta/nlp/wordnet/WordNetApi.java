@@ -60,7 +60,6 @@ public class WordNetApi {
         dict.open();//Open dict
 
         IIndexWord idxWord =dict.getIndexWord(word, pos);
-        IIndexWord tmp;
         if(idxWord == null) {
             String wordFirst = StrUtil.getFirstWord(word);
             String wordLast = StrUtil.getLastWord(word);
