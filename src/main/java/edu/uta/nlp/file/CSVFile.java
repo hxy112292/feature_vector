@@ -8,6 +8,7 @@ import org.joda.time.format.DateTimeFormatter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
 import java.util.Date;
 
 /**
@@ -24,7 +25,7 @@ public class CSVFile {
 
         DateTime dt = new DateTime(new Date());
         DateTimeFormatter dtf = DateTimeFormat.forPattern("yyyy-MM-dd-HH-mm");
-        String outputFilename = rootDir + "\\" + filename + "-" + dt.toString(dtf) + ".csv";
+        String outputFilename = rootDir + File.separator + filename + "-" + dt.toString(dtf) + ".csv";
 
         FileUtil.creatTxtFile(outputFilename);
         FileUtil.writeTxtFile(outputFilename, content);
