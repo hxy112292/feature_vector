@@ -1,20 +1,16 @@
 package edu.uta.nlp.stanford;
 
-import edu.mit.jwi.item.POS;
-import edu.mit.jwi.item.Synset;
 import edu.stanford.nlp.ie.util.RelationTriple;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.naturalli.NaturalLogicAnnotations;
 import edu.stanford.nlp.pipeline.Annotation;
-import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
-import edu.stanford.nlp.util.StringUtils;
 import edu.uta.nlp.constant.SynsetType;
 import edu.uta.nlp.entity.FeatureVector;
 import edu.uta.nlp.entity.OpenIESimpleLemma;
-import edu.uta.nlp.entity.WordInfo;
+import edu.uta.nlp.strategy.VerbLemmaStrategy;
 import edu.uta.nlp.util.StrUtil;
-import edu.uta.nlp.wordnet.WordNetApi;
+import edu.uta.nlp.wordnet.Vcat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -29,13 +25,15 @@ public class OpenIE {
 
     private static final Logger logger = LoggerFactory.getLogger(OpenIE.class);
 
-    public static List<FeatureVector> generate(StanfordCoreNLP pipeline, String line) throws Exception{
+    public static List<FeatureVector> generate(String line) throws Exception{
 
         List<FeatureVector> featureVectorList = new ArrayList<>();
+        FeatureVector protoype = new FeatureVector();
         Annotation doc = new Annotation(line);
-        pipeline.annotate(doc);
+        Pipeline pipeline = Pipeline.getInstance();
+        pipeline.getPipe().annotate(doc);
         for (CoreMap sentence : doc.get(CoreAnnotations.SentencesAnnotation.class)) {
-            // Get the FeatureVectorMerge triples for the sentence
+            // Get the FeatureVectorGenerate triples for the sentence
             Collection<RelationTriple> triples = sentence.get(NaturalLogicAnnotations.RelationTriplesAnnotation.class);
             for (RelationTriple triple : triples) {
                 String subjectLemmaGloss = triple.subjectLemmaGloss();
@@ -45,7 +43,8 @@ public class OpenIE {
 
                 logger.info(triple.confidence + ":\t" + subjectLemmaGloss + ":\t" + relationLemmaGloss + ":\t" + objectGloss);
 
-                FeatureVector featureVector = new FeatureVector();
+                //prototype mode
+                FeatureVector featureVector = (FeatureVector) protoype.clone();
                 featureVector.setSubject(subjectLemmaGloss);
                 featureVector.setObject(objectGloss);
                 featureVector.setVerb(relationLemmaGloss);
@@ -55,16 +54,19 @@ public class OpenIE {
         return featureVectorList;
     }
 
-    public static OpenIESimpleLemma selectLemma(StanfordCoreNLP pipeline, FeatureVector featureVector) throws Exception{
+    public static OpenIESimpleLemma selectLemma(FeatureVector featureVector) throws Exception{
 
         OpenIESimpleLemma openIESimpleLemma = new OpenIESimpleLemma();
 
         openIESimpleLemma.setSubject(StrUtil.getLastWord(featureVector.getSubject()));
 
-        OpenIESimpleLemma verb = selectVerbLemma(pipeline, featureVector.getVerb());
-        openIESimpleLemma.setVerb(verb.getVerb());
-        if(!StringUtils.isNullOrEmpty(verb.getVerb())) {
-            openIESimpleLemma.setVcat(verb.getVcat());
+        Integer wordTotal = featureVector.getVerb().split(" ").length;
+        VerbLemmaStrategy verbLemmaStrategy=VerbLemmaStrategy.getStrategy(wordTotal);
+        String verb = verbLemmaStrategy.process(featureVector.getVerb());
+        openIESimpleLemma.setVerb(verb);
+        if(verb == null) {
+            openIESimpleLemma.setVerb(StrUtil.getFirstWord(featureVector.getVerb()));
+            openIESimpleLemma.setVcat(SynsetType.OTHER.toString());
         }
 
         openIESimpleLemma.setObject(StrUtil.getLastWord(featureVector.getObject()));
@@ -72,83 +74,9 @@ public class OpenIE {
         return openIESimpleLemma;
     }
 
-    public static OpenIESimpleLemma selectVerbLemma(StanfordCoreNLP pipeline, String verb) throws Exception{
-
-        Integer wordTotal = verb.split(" ").length;
-        String lastWord = StrUtil.getLastWord(verb);
-        String firstWord = StrUtil.getFirstWord(verb);
-
-        OpenIESimpleLemma result = new OpenIESimpleLemma();
-
-        if(wordTotal == 1) {
-            result.setVerb(verb);
-            return result;
-        }
-        if(WordNetApi.isPos(firstWord, POS.VERB)) {
-            if(CoreAnnotate.isPos(pipeline, lastWord, "RB")) {
-                result.setVerb(firstWord);
-                return result;
-            }
-            if(CoreAnnotate.isPos(pipeline, lastWord, "IN")) {
-                result.setVerb(firstWord);
-                return result;
-            }
-            if(CoreAnnotate.isPos(pipeline, lastWord, "TO")) {
-                result.setVerb(firstWord);
-                return result;
-            }
-            if(CoreAnnotate.isPos(pipeline, lastWord, "JJ")) {
-                result.setVerb(firstWord);
-                return result;
-            }
-            if(CoreAnnotate.isPosByChar(pipeline, lastWord, 'N') || WordNetApi.isPos(lastWord, POS.NOUN)) {
-                result.setVerb(lastWord);
-                result.setVcat(SynsetType.OTHER.toString());
-                return result;
-            }
-        }
-        if(wordTotal == 2) {
-            if(CoreAnnotate.isPos(pipeline, firstWord, "RB")) {
-                if(WordNetApi.isPos(lastWord, POS.VERB)) {
-                    result.setVerb(lastWord);
-                } else {
-                    result.setVerb(lastWord);
-                    result.setVcat(SynsetType.OTHER.toString());
-                }
-                return result;
-            }
-        }
-        if(wordTotal == 3) {
-            String secondWord = StrUtil.getIndexOfWord(verb, 2);
-            if(CoreAnnotate.isPos(pipeline, firstWord, "RB")) {
-                if(WordNetApi.isPos(secondWord, POS.VERB)) {
-                    if(CoreAnnotate.isPos(pipeline, lastWord, "IN")) {
-                        result.setVerb(secondWord);
-                        return result;
-                    }
-                    if(CoreAnnotate.isPos(pipeline, lastWord, "TO")) {
-                        result.setVerb(secondWord);
-                        return result;
-                    }
-                    if(CoreAnnotate.isPos(pipeline, lastWord, "JJ")) {
-                        result.setVerb(secondWord);
-                        return result;
-                    }
-                } else {
-                    result.setVerb(lastWord);
-                    result.setVcat(SynsetType.OTHER.toString());
-                    return result;
-                }
-            }
-        }
-        result.setVerb(lastWord);
-        result.setVcat(SynsetType.OTHER.toString());
-        return result;
-    }
-
     private static String removeFirstMD(String word) throws Exception{
 
-        Vcat vcat = new Vcat();
+        Vcat vcat = Vcat.getInstance();
         String result = "";
         String[] tmp = word.split(" ");
         if(tmp.length < 2) {

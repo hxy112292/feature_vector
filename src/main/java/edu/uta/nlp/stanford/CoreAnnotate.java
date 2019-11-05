@@ -17,11 +17,12 @@ import java.util.List;
  */
 public class CoreAnnotate {
 
-    public static List<ClassificationCoreLabel> generate(StanfordCoreNLP pipeline, String line) {
+    public static List<ClassificationCoreLabel> generate(String line) {
 
         List<ClassificationCoreLabel> listOfClassificationPerWord = new ArrayList<ClassificationCoreLabel>();
         Annotation doc = new Annotation(line);
-        pipeline.annotate(doc);
+        Pipeline pipeline = Pipeline.getInstance();
+        pipeline.getPipe().annotate(doc);
         CoreMap sentence = doc.get(CoreAnnotations.SentencesAnnotation.class).get(0);
         for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
             String word = token.get(CoreAnnotations.TextAnnotation.class);
@@ -43,8 +44,8 @@ public class CoreAnnotate {
         return listOfClassificationPerWord;
     }
 
-    public static boolean isPos(StanfordCoreNLP pipeline, String word, String pos) {
-        String tag = generate(pipeline, word).get(0).getPos().toUpperCase();
+    public static boolean isPos(String word, String pos) {
+        String tag = generate(word).get(0).getPos().toUpperCase();
         if(!StringUtils.isNullOrEmpty(tag)) {
             if(!StringUtils.isNullOrEmpty(pos) && tag.equals(pos)) {
                 return Boolean.TRUE;
@@ -53,8 +54,8 @@ public class CoreAnnotate {
         return Boolean.FALSE;
     }
 
-    public static boolean isPosByChar(StanfordCoreNLP pipeline, String word, char pos) {
-        String tag = generate(pipeline, word).get(0).getPos().toUpperCase();
+    public static boolean isPosByChar(String word, char pos) {
+        String tag = generate(word).get(0).getPos().toUpperCase();
         if(!StringUtils.isNullOrEmpty(tag)) {
             if(tag.charAt(0) == pos) {
                 return Boolean.TRUE;

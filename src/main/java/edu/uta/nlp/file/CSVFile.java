@@ -18,8 +18,17 @@ public class CSVFile {
 
     private static final Logger logger = LoggerFactory.getLogger(CSVFile.class);
 
+    private static volatile CSVFile instance;
 
-    public static void writeToFeatureVector(String content, String filename) throws Exception{
+    public static synchronized CSVFile getInstance() {
+        if(instance == null) {
+            instance = new CSVFile();
+        }
+        return instance;
+    }
+
+
+    public void writeToFeatureVector(String content, String filename) throws Exception{
 
         String rootDir = FilePath.getResultPath();
 

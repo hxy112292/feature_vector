@@ -1,9 +1,8 @@
-package edu.uta.nlp.stanford;
+package edu.uta.nlp.wordnet;
 
 import edu.mit.jwi.item.POS;
 import edu.uta.nlp.constant.SynsetType;
 import edu.uta.nlp.entity.WordInfo;
-import edu.uta.nlp.wordnet.WordNetApi;
 
 import java.util.HashMap;
 import java.util.List;
@@ -14,10 +13,24 @@ import java.util.Map;
  */
 public class Vcat {
 
-    static Map<String, String> vcat = new HashMap<String, String>();
+    private static Map<String, String> vcat = new HashMap<String, String>();
 
-    public Vcat() {
+    private static volatile Vcat instance;
+
+    private Vcat() {
         addVerbCategories();
+    }
+
+    /**
+     *
+     * lazy singleton pattern
+     *
+     */
+    public static synchronized Vcat getInstance() {
+        if(instance == null) {
+            instance = new Vcat();
+        }
+        return instance;
     }
 
     public String getVcat(String word) throws Exception{

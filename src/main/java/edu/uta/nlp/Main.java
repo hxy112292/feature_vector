@@ -1,6 +1,6 @@
 package edu.uta.nlp;
 
-import edu.uta.nlp.stanford.FeatureVectorMerge;
+import edu.uta.nlp.controller.FeatureVectorGenerate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-            FeatureVectorMerge.generate();
+            FeatureVectorGenerate.generate();
         } catch (Exception e) {
             e.printStackTrace();
         }

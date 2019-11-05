@@ -3,7 +3,7 @@ package edu.uta.nlp.entity;
 /**
  * @author hxy
  */
-public class FeatureVector {
+public class FeatureVector implements Cloneable{
 
     private String subject;
     private String subjectTag;
@@ -119,5 +119,16 @@ public class FeatureVector {
 
     public void setObjectType(String objectType) {
         this.objectType = objectType;
+    }
+
+    @Override
+    public Object clone() {
+        Object clone = null;
+        try {
+            clone = super.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+        return clone;
     }
 }

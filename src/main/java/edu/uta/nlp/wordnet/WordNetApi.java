@@ -77,7 +77,7 @@ public class WordNetApi {
             }
         }
 
-        result.addAll(addWordInfo(dict, idxWord));
+        result.addAll(collectAllWordInfo(dict, idxWord));
 
         dict.close();
 
@@ -102,16 +102,16 @@ public class WordNetApi {
         dict.open();//Open dict
 
         if ((idxWordNoun = dict.getIndexWord(word, POS.NOUN)) != null) {
-            result.addAll(addWordInfo(dict, idxWordNoun));
+            result.addAll(collectAllWordInfo(dict, idxWordNoun));
         }
         if ((idxWordVerb = dict.getIndexWord(word, POS.VERB)) != null) {
-            result.addAll(addWordInfo(dict, idxWordVerb));
+            result.addAll(collectAllWordInfo(dict, idxWordVerb));
         }
         if ((idxWordAdj = dict.getIndexWord(word, POS.ADJECTIVE)) != null) {
-            result.addAll(addWordInfo(dict, idxWordAdj));
+            result.addAll(collectAllWordInfo(dict, idxWordAdj));
         }
         if ((idxWordAdverb = dict.getIndexWord(word, POS.ADVERB)) != null) {
-            result.addAll(addWordInfo(dict, idxWordAdverb));
+            result.addAll(collectAllWordInfo(dict, idxWordAdverb));
         }
         dict.close();
 
@@ -130,6 +130,17 @@ public class WordNetApi {
         return Boolean.FALSE;
     }
 
+    public static String getWordType(String word, POS pos) throws Exception{
+        List<WordInfo> wordInfoList = getWordInfo(word, pos);
+        for(WordInfo wordInfo : wordInfoList) {
+            if(wordInfo.getLexFileName().equals(LexFile.NOUN_PERSON.getName())) {
+                return wordInfo.getLexFileName().toUpperCase();
+            }
+        }
+
+        return wordInfoList.get(0).getLexFileName().toUpperCase();
+    }
+
     private static IDictionary findDict() throws IOException {
 
         URL url=new URL("file", null, PropertiesUtil.getPropery("wordnet.dir"));
@@ -138,7 +149,7 @@ public class WordNetApi {
         return dict;
     }
 
-    private static List<WordInfo> addWordInfo(IDictionary dict, IIndexWord idxWord) {
+    private static List<WordInfo> collectAllWordInfo(IDictionary dict, IIndexWord idxWord) {
 
         List<WordInfo> result = new ArrayList<>();
 
