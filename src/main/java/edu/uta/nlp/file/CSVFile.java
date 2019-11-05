@@ -1,7 +1,6 @@
 package edu.uta.nlp.file;
 
-import edu.uta.nlp.util.FileUtil;
-import edu.uta.nlp.util.PropertiesUtil;
+import edu.uta.nlp.util.TextFileUtil;
 import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
@@ -36,8 +35,8 @@ public class CSVFile {
         DateTimeFormatter dtf = DateTimeFormat.forPattern("yyyy-MM-dd-HH-mm");
         String outputFilename = rootDir + File.separator + filename + "-" + dt.toString(dtf) + ".csv";
 
-        FileUtil.creatTxtFile(outputFilename);
-        FileUtil.writeTxtFile(outputFilename, content);
+        TextFileUtil.creatTxtFile(outputFilename);
+        TextFileUtil.writeTxtFile(outputFilename, content);
 
         logger.info("Save file:"+ outputFilename);
     }

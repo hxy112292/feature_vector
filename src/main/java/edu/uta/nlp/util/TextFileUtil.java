@@ -1,13 +1,11 @@
 package edu.uta.nlp.util;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @author hxy
  */
-public class FileUtil {
+public class TextFileUtil {
 
 
     /**
@@ -81,33 +79,6 @@ public class FileUtil {
             }
         }
         return flag;
-    }
-
-    /**
-     * get file path
-     *
-     * @param folder, file
-     *
-     */
-    public static String getFileWithRelativePath(File folder, File file) {
-        return folder + File.separator + file.getName();
-    }
-
-    /**
-     * get file content
-     *
-     * @param folder, file
-     *
-     */
-    public static List<BufferedReader> readFileInFolder(File folder) throws Exception{
-
-        List<BufferedReader> fileContent = new ArrayList<BufferedReader>();
-        for (final File file : folder.listFiles()) {
-            String filename = getFileWithRelativePath(folder, file);
-            fileContent.add(new BufferedReader(new FileReader(new File(filename))));
-        }
-
-        return fileContent;
     }
 
     /**

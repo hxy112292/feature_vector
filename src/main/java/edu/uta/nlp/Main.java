@@ -14,7 +14,8 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-            FeatureVectorGenerate.generate();
+            FeatureVectorGenerate.process();
+//            ScanFile.getRequirements();
         } catch (Exception e) {
             e.printStackTrace();
         }

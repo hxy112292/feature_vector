@@ -1,10 +1,8 @@
 package edu.uta.nlp.stanford;
 
-import com.sun.istack.Nullable;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
-import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.StringUtils;
 import edu.uta.nlp.entity.ClassificationCoreLabel;

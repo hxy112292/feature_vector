@@ -25,7 +25,7 @@ public class OpenIE {
 
     private static final Logger logger = LoggerFactory.getLogger(OpenIE.class);
 
-    public static List<FeatureVector> generate(String line) throws Exception{
+    public static List<FeatureVector> selectGross(String line) throws Exception{
 
         List<FeatureVector> featureVectorList = new ArrayList<>();
         FeatureVector protoype = new FeatureVector();
