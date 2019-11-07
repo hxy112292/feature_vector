@@ -1,8 +1,6 @@
 package edu.uta.nlp;
 
-import edu.uta.nlp.database.service.FeatureVectorMysqlAccess;
-import edu.uta.nlp.database.service.impl.FeatureVectorAccessImpl;
-import edu.uta.nlp.entity.FeatureVector;
+import edu.uta.nlp.controller.FeatureVectorGenerate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,27 +14,7 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-//            FeatureVectorGenerate.process();
-            FeatureVectorAccessImpl featureVectorMysqlAccess = new FeatureVectorMysqlAccess();
-
-            FeatureVector insert = new FeatureVector();
-            insert.setRequirement("2");
-            insert.setSubject("user");
-            insert.setVerb("do");
-            insert.setObject("something");
-            featureVectorMysqlAccess.insertFeatureVector(insert);
-
-            FeatureVector findCondition = new FeatureVector();
-            findCondition.setSubject("user");
-            featureVectorMysqlAccess.selectFeatureVectorBySelective(findCondition);
-
-            FeatureVector update = new FeatureVector();
-            update.setSubject("customer");
-            update.setId(1);
-            featureVectorMysqlAccess.updateFeatureVectorBySelective(update);
-
-            featureVectorMysqlAccess.deleteFeatureVector(3);
-
+            FeatureVectorGenerate.process();
         } catch (Exception e) {
             e.printStackTrace();
         }
