@@ -6,6 +6,9 @@ import edu.uta.nlp.database.factory.DataBaseFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * @author hxy
+ */
 public class DeleteFeatureVector implements MysqlCmd {
 
     private int id;

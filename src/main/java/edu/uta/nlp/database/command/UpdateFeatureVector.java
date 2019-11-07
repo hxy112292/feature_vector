@@ -11,6 +11,9 @@ import org.slf4j.LoggerFactory;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * @author hxy
+ */
 public class UpdateFeatureVector implements MysqlCmd{
 
     private FeatureVector featureVector;
