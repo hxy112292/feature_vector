@@ -1,0 +1,1015 @@
+requirement, subject, s-tag, s-ner, s-type, verb, v-tag, v-cat, v-process, object, o-tag, o-ner, o-type, label 
+2,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,capability,NN,O,NOUN.ATTRIBUTE 
+2,capability,NN,O,NOUN.ATTRIBUTE,restrict client to,VB,TV,TRUE,pre-determined set of services,NNS,O,NOUN.ACT 
+2,capability,NN,O,NOUN.ATTRIBUTE,restrict client to,VB,TV,TRUE,set of services,NNS,O,NOUN.ACT 
+2,capability,NN,O,NOUN.ATTRIBUTE,restrict,VB,TV,TRUE,authenticated client,NN,O,NOUN.PERSON 
+2,capability,NN,O,NOUN.ATTRIBUTE,restrict client to,VB,TV,TRUE,pre-determined set,VBN,O,NOUN.PERSON 
+2,capability,NN,O,NOUN.ATTRIBUTE,restrict client to,VB,TV,TRUE,set,VBN,O,NOUN.PERSON 
+2,capability,NN,O,NOUN.ATTRIBUTE,restrict,VB,TV,TRUE,client,NN,O,NOUN.PERSON 
+3,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,changes,NNS,O,OTHER 
+3,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+3,monitoring,VBG,O,NOUN.ACT,change for,VB,TV,FALSE,operational devices,NNS,O,NOUN.COGNITION 
+3,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,monitoring of status,NN,O,NOUN.STATE 
+3,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,monitoring,NN,O,NOUN.ACT 
+3,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,changes of states,NNS,O,OTHER 
+3,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,local monitoring of status,NN,O,NOUN.STATE 
+3,monitoring,VBG,O,NOUN.ACT,change of,VB,TV,FALSE,states,NNS,O,OTHER 
+3,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,changes of states for operational devices,NNS,O,NOUN.COGNITION 
+3,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,changes for devices,NNS,O,NOUN.COGNITION 
+3,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,local monitoring,NN,O,NOUN.ACT 
+3,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,changes for operational devices,NNS,O,NOUN.COGNITION 
+3,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,changes of states for devices,NNS,O,NOUN.COGNITION 
+3,monitoring,VBG,O,NOUN.ACT,change for,VB,TV,FALSE,devices,NNS,O,NOUN.COGNITION 
+4,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+4,user,NN,PERSON,NOUN.PERSON,operate,VBP,TV,TRUE,equipment,NN,O,NOUN.ARTIFACT 
+4,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,operate,VBP,O,OTHER 
+5,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+5,user,NN,PERSON,NOUN.PERSON,change,VB,TV,FALSE,parameter,NN,O,NOUN.COGNITION 
+6,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+6,user,NN,PERSON,NOUN.PERSON,visualize,VBP,TV,TRUE,alarms,NNS,O,OTHER 
+7,user,NN,PERSON,NOUN.PERSON,acknowledge,VBP,TV,FALSE,alarms,NNS,O,OTHER 
+7,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+8,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+8,system,NN,O,NOUN.GROUP,allow user to,VBP,PERMISSION,FALSE,clear alarms,NNS,O,NOUN.STATE 
+8,system,NN,O,NOUN.GROUP,allow to,VBP,PERMISSION,FALSE,clear alarms,NNS,O,NOUN.STATE 
+8,system,NN,O,NOUN.GROUP,allow user to,VBP,PERMISSION,FALSE,alarms,NNS,O,OTHER 
+8,system,NN,O,NOUN.GROUP,allow to,VBP,PERMISSION,FALSE,alarms,NNS,O,OTHER 
+9,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,scanning of devices for alarms,NNS,O,NOUN.PROCESS 
+9,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,scanning of devices,NNS,O,NOUN.COGNITION 
+9,change,NN,O,NOUN.EVENT,be in,VB,IS-A,FALSE,state,NN,O,NOUN.GROUP 
+9,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,scanning,NN,O,NOUN.PROCESS 
+9,operator control action,NN,O,NOUN.ACT,continuous scanning of,IN,OTHER,FALSE,devices,NNS,O,NOUN.COGNITION 
+9,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,scanning for alarms,NNS,O,NOUN.PROCESS 
+9,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,changes,NNS,O,OTHER 
+9,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,continuous scanning of devices,NNS,O,NOUN.COGNITION 
+9,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,operator control actions,NNS,O,NOUN.PERSON 
+9,operator control action,NN,O,NOUN.ACT,scanning for,IN,OTHER,FALSE,alarms,NNS,O,OTHER 
+9,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,continuous scanning of devices for alarms,NNS,O,OTHER 
+9,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,continuous scanning,NN,O,NOUN.PROCESS 
+9,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,changes in state,NN,O,NOUN.GROUP 
+9,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,continuous scanning for alarms,NNS,O,OTHER 
+9,operator control action,NN,O,NOUN.ACT,continuous scanning for,IN,OTHER,FALSE,alarms,NNS,O,OTHER 
+9,operator control action,NN,O,NOUN.ACT,scanning of,IN,OTHER,FALSE,devices,NNS,O,NOUN.COGNITION 
+10,parameter,NN,O,NOUN.COGNITION,retrieve,VBP,TV,FALSE,those,DT,O,OTHER 
+10,parameter,NN,O,NOUN.COGNITION,retrieve,VBP,TV,FALSE,only those,DT,O,OTHER 
+11,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,disturbance/fault record,NN,O,NOUN.COMMUNICATION 
+11,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,record,NN,O,NOUN.COMMUNICATION 
+11,system,NN,O,NOUN.GROUP,retrieve,VBP,TV,FALSE,data,NNS,O,NOUN.GROUP 
+12,user,NN,PERSON,NOUN.PERSON,configure,VB,TV,TRUE,communication network,NN,O,NOUN.GROUP 
+12,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+13,system,NN,O,NOUN.GROUP,synchronise,VBP,TV,TRUE,time,NN,O,NOUN.EVENT 
+13,system,NN,O,NOUN.GROUP,synchronise,VBP,TV,TRUE,time of devices,NNS,O,NOUN.COGNITION 
+13,system,NN,O,NOUN.GROUP,synchronise time within,VB,TV,TRUE,communication system,NN,O,NOUN.ARTIFACT 
+14,system,NN,O,NOUN.GROUP,detect,VB,TV,TRUE,operational,JJ,O,OTHER 
+14,device,NN,O,NOUN.ARTIFACT,be,VB,IS-A,FALSE,operational,JJ,O,OTHER 
+14,object,NN,O,NOUN.TOPS,be,VB,IS-A,FALSE,operational,JJ,O,OTHER 
+14,device,NN,O,NOUN.ARTIFACT,be,VB,IS-A,FALSE,fully operational,JJ,O,OTHER 
+14,system,NN,O,NOUN.GROUP,detect,VB,TV,TRUE,fully operational,JJ,O,OTHER 
+14,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,detects,VBZ,O,OTHER 
+14,object,NN,O,NOUN.TOPS,be,VB,IS-A,FALSE,fully operational,JJ,O,OTHER 
+15,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,status reports for components,NNS,O,NOUN.STATE 
+15,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,status reports,NNS,O,NOUN.STATE 
+16,datum,NN,O,NOUN.COGNITION,be,VB,IS-A,FALSE,stored in plant controller for transmission,NN,O,NOUN.ACT 
+16,datum,NN,O,NOUN.COGNITION,be,VB,IS-A,FALSE,stored in plant controller for transmission on demand,NN,O,NOUN.PROCESS 
+16,datum,NN,O,NOUN.COGNITION,be store in,VB,IS-A,FALSE,plant controller,NN,TITLE,NOUN.PERSON 
+16,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,data,NNS,O,NOUN.GROUP 
+16,datum,NN,O,NOUN.COGNITION,be,VB,IS-A,FALSE,stored,VBN,O,OTHER 
+16,datum,NN,O,NOUN.COGNITION,be store for,VB,IS-A,FALSE,transmission on demand,NN,O,NOUN.PROCESS 
+16,datum,NN,O,NOUN.COGNITION,be store for,VB,IS-A,FALSE,transmission,NN,O,NOUN.ACT 
+17,system,NN,O,NOUN.GROUP,download,VB,TV,FALSE,configuration,NN,O,NOUN.COGNITION 
+17,system,NN,O,NOUN.GROUP,retrieve,VBP,TV,FALSE,configuration data,NNS,O,NOUN.GROUP 
+18,system,NN,O,NOUN.GROUP,start object within,VB,TV,FALSE,system,NN,O,NOUN.GROUP 
+18,system,NN,O,NOUN.GROUP,start,VB,TV,FALSE,objects,NNS,O,OTHER 
+18,system,NN,O,NOUN.GROUP,start function within,VB,TV,FALSE,system,NN,O,NOUN.GROUP 
+18,system,NN,O,NOUN.GROUP,start,VB,TV,FALSE,functions,NNS,O,OTHER 
+20,scientist,NN,PERSON,NOUN.PERSON,exploit,VBP,TV,TRUE,data from bursts,NNS,O,NOUN.GROUP 
+20,scientist,NN,PERSON,NOUN.PERSON,origin of,IN,OTHER,FALSE,Gamma-Ray Bursts,NNS,O,OTHER 
+20,scientist,NN,PERSON,NOUN.PERSON,exploit,VBP,TV,TRUE,data,NNS,O,NOUN.GROUP 
+20,scientist,NN,PERSON,NOUN.PERSON,determine,VB,TV,TRUE,origin of Gamma-Ray Bursts,NNS,O,NOUN.LOCATION 
+20,scientist,NN,PERSON,NOUN.PERSON,determine,VB,TV,TRUE,origin,NN,O,NOUN.LOCATION 
+21,scientist,NN,PERSON,NOUN.PERSON,exploit,VBP,TV,TRUE,GRB afterglow characteristics,NNS,O,OTHER 
+21,scientist,NN,PERSON,NOUN.PERSON,exploit,VBP,TV,TRUE,discovered GRB afterglow characteristics,NNS,O,OTHER 
+21,Swift instrumentation,NN,O,NOUN.ARTIFACT,allow,VBP,PERMISSION,FALSE,scientists,NNS,O,OTHER 
+21,scientist,NN,PERSON,NOUN.PERSON,exploit,VBP,TV,TRUE,newly discovered GRB afterglow characteristics,NNS,O,OTHER 
+22,scientist,NN,PERSON,NOUN.PERSON,determine,VB,TV,TRUE,origin of GRBs,NNS,O,NOUN.LOCATION 
+22,Swift,NNP,PERSON,NOUN.PERSON,identify,VBP,TV,TRUE,classes,NNS,O,OTHER 
+22,Swift,NNP,PERSON,NOUN.PERSON,allow,VBP,PERMISSION,FALSE,scientists,NNS,O,OTHER 
+22,GRB blast wave,NN,PERSON,NOUN.PERSON,interact with,VBP,TV,TRUE,surroundings,NNS,O,NOUN.STATE 
+22,Swift,NNP,PERSON,NOUN.PERSON,identify,VBP,TV,TRUE,different classes,NNS,O,OTHER 
+22,Swift,NNP,PERSON,NOUN.PERSON,identify,VBP,TV,TRUE,classes of bursts,NNS,O,OTHER 
+22,Swift,NNP,PERSON,NOUN.PERSON,identify,VBP,TV,TRUE,different classes of bursts,NNS,O,OTHER 
+22,Swift,NNP,PERSON,NOUN.PERSON,allow,VBP,PERMISSION,FALSE,determine,VB,O,OTHER 
+22,scientist,NN,PERSON,NOUN.PERSON,determine,VB,TV,TRUE,origin,NN,O,NOUN.LOCATION 
+23,spacecraft,NN,O,NOUN.ARTIFACT,shall,MD,AUXILIARY,FALSE,slews in direction,NN,O,NOUN.LOCATION 
+23,spacecraft,NN,O,NOUN.ARTIFACT,shall,MD,AUXILIARY,FALSE,slews,NNS,O,NOUN.QUANTITY 
+23,spacecraft,NN,O,NOUN.ARTIFACT,shall,MD,AUXILIARY,FALSE,slews in direction of GRB,NNP,O,NOUN.QUANTITY 
+23,slew,NN,O,NOUN.QUANTITY,be in,VB,IS-A,FALSE,direction of GRB,NN,O,NOUN.LOCATION 
+23,spacecraft,NN,O,NOUN.ARTIFACT,bring,VB,TV,FALSE,it,PRP,O,NOUN.COGNITION 
+24,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Communications Network communicates via dual redundant MIL-STD-1553B serial interface,NN,O,NOUN.ARTIFACT 
+24,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Communications Network communicates,VBZ,O,NOUN.COGNITION 
+24,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Communications Network communicates via MIL-STD-1553B serial interface,NN,O,NOUN.ARTIFACT 
+24,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Communications Network communicates to S/C via redundant MIL-STD-1553B serial interface,NN,O,NOUN.ARTIFACT 
+24,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Communications Network communicates via dual MIL-STD-1553B serial interface,NN,O,NOUN.ARTIFACT 
+24,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Communications Network communicates to S/C,NN,O,NOUN.COGNITION 
+24,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Communications Network communicates to S/C via MIL-STD-1553B serial interface,NN,O,NOUN.ARTIFACT 
+24,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Communications Network communicates to S/C via dual MIL-STD-1553B serial interface,NN,O,NOUN.ARTIFACT 
+24,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Communications Network communicates via redundant MIL-STD-1553B serial interface,NN,O,NOUN.ARTIFACT 
+24,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Communications Network communicates to S/C via dual redundant MIL-STD-1553B serial interface,NN,O,NOUN.ARTIFACT 
+25,scientist,NN,PERSON,NOUN.PERSON,collect science datum in,VB,TV,TRUE,form,NN,O,NOUN.COMMUNICATION 
+25,scientist,NN,PERSON,NOUN.PERSON,collect,VBP,TV,TRUE,science data,NNS,O,NOUN.GROUP 
+25,Swift,NNP,PERSON,NOUN.PERSON,allow,VBP,PERMISSION,FALSE,scientists,NNS,O,OTHER 
+25,scientist,NN,PERSON,NOUN.PERSON,collect science datum in,VB,TV,TRUE,form of images,NNS,O,NOUN.COMMUNICATION 
+26,telecommand,NN,O,OTHER,control,VB,TV,FALSE,temperature setpoint,NN,O,NOUN.ATTRIBUTE 
+26,Swift,NNP,PERSON,NOUN.PERSON,cool ccd by,VB,TV,FALSE,TEC,NNS,O,NOUN.PERSON 
+26,Swift,NNP,PERSON,NOUN.PERSON,cool,VB,TV,FALSE,CCD,NNP,O,OTHER 
+27,scientist,NN,PERSON,NOUN.PERSON,communicate with,VBP,TV,TRUE,XRT,NN,O,OTHER 
+27,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Communications Network allow,VB,O,NOUN.COGNITION 
+28,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Time Clock allow,VB,O,NOUN.EVENT 
+28,scientist,NN,PERSON,NOUN.PERSON,make packet format as,VBP,TV,FALSE,Consultative Committee,NNP,O,NOUN.GROUP 
+28,Swift,NNP,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,Real Time Clock allow,VB,O,NOUN.QUANTITY 
+28,scientist,NN,PERSON,NOUN.PERSON,make,VBP,TV,FALSE,packet format,NN,O,NOUN.COMMUNICATION 
+28,scientist,NN,PERSON,NOUN.PERSON,make packet format as,VBP,TV,FALSE,Consultative Committee for Space Data Systems Source Packets,NNPS,O,OTHER 
+29,scientist,NN,PERSON,NOUN.PERSON,measure,VB,TV,FALSE,change in mechanical alignment,NN,O,NOUN.GROUP 
+29,scientist,NN,PERSON,NOUN.PERSON,measure,VB,TV,FALSE,change in alignment of XRT 's tube,NN,O,NOUN.ARTIFACT 
+29,XRT,NN,O,OTHER,of,IN,OTHER,FALSE,tube,NN,O,NOUN.ARTIFACT 
+29,change,NN,O,NOUN.EVENT,be in,VB,IS-A,FALSE,mechanical alignment of XRT 's tube,NN,O,NOUN.ARTIFACT 
+29,scientist,NN,PERSON,NOUN.PERSON,measure,VB,TV,FALSE,change,NN,O,NOUN.EVENT 
+29,Telescope alignment,NN,O,NOUN.GROUP,monitor,VB,TV,FALSE,allow,VBP,O,OTHER 
+29,scientist,NN,PERSON,NOUN.PERSON,measure,VB,TV,FALSE,change in alignment,NN,O,NOUN.GROUP 
+29,scientist,NN,PERSON,NOUN.PERSON,measure,VB,TV,FALSE,change in mechanical alignment of XRT 's tube,NN,O,NOUN.ARTIFACT 
+29,Telescope alignment,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,scientists,NNS,O,OTHER 
+30,Sun Shutter,NNP,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,its own solar panel,NN,O,NOUN.ARTIFACT 
+30,Sun Shutter,NNP,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,its solar panel for backup power,NN,O,NOUN.PERSON 
+30,Sun Shutter,NNP,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,its own panel,NN,O,NOUN.ARTIFACT 
+30,Sun Shutter,NNP,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,its solar panel for power,NN,O,NOUN.PERSON 
+30,Sun Shutter,NNP,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,its panel for backup power,NN,O,NOUN.PERSON 
+30,Sun Shutter,NNP,O,NOUN.ARTIFACT,shall,MD,AUXILIARY,FALSE,shall powered by SPB,NNP,ORGANIZATION,OTHER 
+30,Sun Shutter,NNP,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,its own panel for power,NN,O,NOUN.PERSON 
+30,Sun Shutter,NNP,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,its own panel for backup power,NN,O,NOUN.PERSON 
+30,Sun Shutter,NNP,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,its panel,NN,O,NOUN.ARTIFACT 
+30,Sun Shutter,NNP,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,its own solar panel for backup power,NN,O,NOUN.PERSON 
+30,Sun Shutter,NNP,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,its solar panel,NN,O,NOUN.ARTIFACT 
+30,Sun Shutter,NNP,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,its own solar panel for power,NN,O,NOUN.PERSON 
+30,Sun Shutter,NNP,O,NOUN.ARTIFACT,shall,MD,AUXILIARY,FALSE,shall powered,VBN,O,OTHER 
+30,Sun Shutter,NNP,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,its panel for power,NN,O,NOUN.PERSON 
+31,xrt,NN,O,OTHER,monitor,VB,TV,FALSE,items,NNS,O,OTHER 
+31,xrt,NN,O,OTHER,monitor,VB,TV,FALSE,several items,NNS,O,OTHER 
+31,xrt,NN,O,OTHER,report,VB,TV,FALSE,them,PRP,O,OTHER 
+31,number,NN,O,NOUN.ATTRIBUTE,be in,VB,IS-A,FALSE,parenthesis,NN,O,NOUN.COMMUNICATION 
+32,fsw,NN,O,OTHER,process science datum from,VB,TV,FALSE,camera,NN,O,NOUN.ARTIFACT 
+32,relay,NN,O,NOUN.ACT,be in,VB,IS-A,FALSE,form of CCSDS Source Packets,NNPS,O,NOUN.COMMUNICATION 
+32,fsw,NN,O,OTHER,process,VB,TV,FALSE,science data,NNS,O,NOUN.GROUP 
+32,fsw,NN,O,OTHER,relay,VBD,TV,FALSE,it,PRP,O,NOUN.COGNITION 
+33,fsw,NN,O,OTHER,receive command from,VBP,TV,TRUE,SCU,NN,O,OTHER 
+33,fsw,NN,O,OTHER,receive,VBP,TV,TRUE,commands,NNS,O,OTHER 
+34,fsw,NN,O,OTHER,transmit,VBP,TV,TRUE,housekeeping data,NNS,O,NOUN.GROUP 
+34,fsw,NN,O,OTHER,transmit datum to,VBP,TV,TRUE,SCU,NN,O,OTHER 
+34,fsw,NN,O,OTHER,transmit,VBP,TV,TRUE,detailed housekeeping data,NNS,O,NOUN.GROUP 
+34,fsw,NN,O,OTHER,transmit datum in,VB,TV,TRUE,form,NN,O,NOUN.COMMUNICATION 
+34,fsw,NN,O,OTHER,transmit,VBP,TV,TRUE,data,NNS,O,NOUN.GROUP 
+34,fsw,NN,O,OTHER,transmit,VBP,TV,TRUE,detailed data,NNS,O,NOUN.GROUP 
+34,fsw,NN,O,OTHER,transmit datum in,VB,TV,TRUE,form of CCSDS Source Packets,NNS,O,NOUN.COMMUNICATION 
+36,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+36,user,NN,PERSON,NOUN.PERSON,select,VB,TV,TRUE,product,NN,O,NOUN.ARTIFACT 
+36,user,NN,PERSON,NOUN.PERSON,select product,NN,OTHER,FALSE,configure,NN,O,OTHER 
+37,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,available components of product,NN,O,NOUN.ARTIFACT 
+38,system,NN,O,NOUN.GROUP,enable,VBP,TV,FALSE,user,NN,O,NOUN.PERSON 
+39,system,NN,O,NOUN.GROUP,notify user about,VBP,TV,TRUE,conflict in current configuration,NN,O,NOUN.COGNITION 
+40,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+40,user,NN,PERSON,NOUN.PERSON,update,VBP,TV,FALSE,configuration,NN,O,NOUN.COGNITION 
+40,conflict,NN,O,NOUN.ACT,be in,VB,IS-A,FALSE,current configuration,NN,O,NOUN.COGNITION 
+41,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+41,user,NN,PERSON,NOUN.PERSON,confirm,VBP,TV,TRUE,completion of current configuration,NN,O,NOUN.COGNITION 
+41,user,NN,PERSON,NOUN.PERSON,confirm,VBP,TV,TRUE,completion,NN,O,NOUN.ACT 
+41,user,NN,PERSON,NOUN.PERSON,confirm,VBP,TV,TRUE,completion of configuration,NN,O,NOUN.COGNITION 
+42,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,detailed product categorization,NN,O,NOUN.GROUP 
+42,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,product categorization,NN,O,NOUN.GROUP 
+42,system,NN,O,NOUN.GROUP,display product categorization to,VB,TV,FALSE,user,NN,O,NOUN.PERSON 
+43,system,NN,O,NOUN.GROUP,enable,VBP,TV,FALSE,user,NN,O,NOUN.PERSON 
+43,user,NN,PERSON,NOUN.PERSON,enter,VBP,TV,FALSE,search text,NN,O,NOUN.COMMUNICATION 
+43,user,NN,PERSON,NOUN.PERSON,enter search text on,VBP,TV,FALSE,screen,NN,O,NOUN.ARTIFACT 
+44,user,NN,PERSON,NOUN.PERSON,select,VB,TV,TRUE,options on screen,NN,O,NOUN.ARTIFACT 
+44,system,NN,O,NOUN.GROUP,enable,VBP,TV,FALSE,user,NN,O,NOUN.PERSON 
+44,user,NN,PERSON,NOUN.PERSON,select option,NN,OTHER,FALSE,search,NN,O,NOUN.ACT 
+44,user,NN,PERSON,NOUN.PERSON,select,VB,TV,TRUE,multiple options on screen,NN,O,NOUN.ARTIFACT 
+44,user,NN,PERSON,NOUN.PERSON,select,VB,TV,TRUE,multiple options,NNS,O,NOUN.COGNITION 
+44,user,NN,PERSON,NOUN.PERSON,select,VB,TV,TRUE,options,NNS,O,OTHER 
+46,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,only 10 matching result,NN,O,NOUN.PHENOMENON 
+46,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,only 10 result,NN,O,NOUN.PHENOMENON 
+47,system,NN,O,NOUN.GROUP,enable,VBP,TV,FALSE,navigate between search,NN,O,NOUN.ACT 
+47,system,NN,O,NOUN.GROUP,enable,VBP,TV,FALSE,user,NN,O,NOUN.PERSON 
+47,system,NN,O,NOUN.GROUP,enable,VBP,TV,FALSE,navigate,VB,O,OTHER 
+47,user,NN,PERSON,NOUN.PERSON,navigate between,VB,TV,TRUE,search,NN,O,NOUN.ACT 
+49,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+49,user,NN,PERSON,NOUN.PERSON,create,VB,TV,TRUE,profile,NN,O,NOUN.COMMUNICATION 
+49,system,NN,O,NOUN.GROUP,set,VBD,TV,FALSE,his credential,NN,O,NOUN.COMMUNICATION 
+50,system,NN,O,NOUN.GROUP,authenticate,VB,TV,TRUE,user credentials,NNS,O,NOUN.COMMUNICATION 
+50,system,NN,O,NOUN.GROUP,view,VB,TV,FALSE,profile,NN,O,NOUN.COMMUNICATION 
+51,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+51,user,NN,PERSON,NOUN.PERSON,update,VBP,TV,FALSE,profile information,NN,O,NOUN.COMMUNICATION 
+52,active order history,NN,O,NOUN.TIME,be in,VB,IS-A,FALSE,customer profile,NN,O,NOUN.COMMUNICATION 
+52,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,active order history,NN,O,NOUN.TIME 
+52,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,active order history in customer profile,NN,O,NOUN.COMMUNICATION 
+52,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,order history in customer profile,NN,O,NOUN.COMMUNICATION 
+52,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,order history,NN,O,NOUN.TIME 
+53,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+53,user,NN,PERSON,NOUN.PERSON,select order from,VB,TV,TRUE,order history,NN,O,NOUN.TIME 
+53,user,NN,PERSON,NOUN.PERSON,select,VB,TV,TRUE,order,NN,O,NOUN.COMMUNICATION 
+54,system,NN,O,NOUN.GROUP,display,VBP,TV,FALSE,information,NN,O,NOUN.COMMUNICATION 
+54,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,detailed information about selected order,NN,O,NOUN.COMMUNICATION 
+54,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,information about selected order,NN,O,NOUN.COMMUNICATION 
+54,system,NN,O,NOUN.GROUP,display,VBP,TV,FALSE,detailed information,NN,O,NOUN.COMMUNICATION 
+54,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,detailed information about order,NN,O,NOUN.COMMUNICATION 
+54,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,information about order,NN,O,NOUN.COMMUNICATION 
+55,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,frequently searched items,NNS,O,OTHER 
+55,system,NN,O,NOUN.GROUP,display item by,VB,TV,FALSE,user in profile,NN,O,NOUN.COMMUNICATION 
+55,user,NN,PERSON,NOUN.PERSON,be in,VB,IS-A,FALSE,profile,NN,O,NOUN.COMMUNICATION 
+55,system,NN,O,NOUN.GROUP,display item by,VB,TV,FALSE,user,NN,O,NOUN.PERSON 
+55,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,most frequently searched items,NNS,O,OTHER 
+55,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,items,NNS,O,OTHER 
+55,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,searched items,NNS,O,OTHER 
+56,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+56,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,register,NN,O,NOUN.COMMUNICATION 
+56,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,register for newsletters in profile,NN,O,NOUN.COMMUNICATION 
+56,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,register for newsletters,NNS,O,NOUN.COMMUNICATION 
+56,user,NN,PERSON,NOUN.PERSON,register for,VB,TV,TRUE,newsletters in profile,NN,O,NOUN.COMMUNICATION 
+56,user,NN,PERSON,NOUN.PERSON,register for,VB,TV,TRUE,newsletters,NNS,O,OTHER 
+56,newsletter,NN,O,NOUN.COMMUNICATION,be in,VB,IS-A,FALSE,profile,NN,O,NOUN.COMMUNICATION 
+57,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,online help,NN,O,NOUN.PERSON 
+57,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,sitemap options for customer support,NN,O,NOUN.ACT 
+57,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,sitemap options,NNS,O,OTHER 
+57,faq,NN,O,NOUN.COMMUNICATION,have,VBP,POSSESSION,FALSE,customer support,NN,O,NOUN.ACT 
+57,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,help,NN,O,NOUN.PERSON 
+57,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,FAQ 's customer support,NN,O,NOUN.ACT 
+58,user,NN,PERSON,NOUN.PERSON,select,VB,TV,TRUE,support type,NN,O,NOUN.PERSON 
+58,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+59,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+59,user,NN,PERSON,NOUN.PERSON,enter customer information for,VBP,TV,FALSE,support,NN,O,NOUN.ACT 
+59,user,NN,PERSON,NOUN.PERSON,enter,VBP,TV,FALSE,customer information,NN,O,NOUN.COMMUNICATION 
+60,system,NN,O,NOUN.GROUP,display customer support contact number on,VB,TV,FALSE,screen,NN,O,NOUN.ARTIFACT 
+60,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,customer support contact numbers,NNS,O,NOUN.COMMUNICATION 
+61,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+61,user,NN,PERSON,NOUN.PERSON,enter contact number,NN,OTHER,FALSE,support personnel call,NN,O,NOUN.COMMUNICATION 
+61,user,NN,PERSON,NOUN.PERSON,enter,VBP,TV,FALSE,contact number,NN,O,NOUN.ATTRIBUTE 
+62,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,help,NN,O,NOUN.PERSON 
+62,system,NN,O,NOUN.GROUP,display help upon,VB,TV,FALSE,request,NN,O,NOUN.COMMUNICATION 
+62,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,online help,NN,O,NOUN.PERSON 
+63,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,FAQ,NN,O,NOUN.COMMUNICATION 
+63,system,NN,O,NOUN.GROUP,display faq upon,VB,TV,FALSE,request,NN,O,NOUN.COMMUNICATION 
+64,system,NN,O,NOUN.GROUP,maintain customer email information as,VBP,TV,FALSE,required part of customer profile,NN,O,NOUN.COMMUNICATION 
+64,system,NN,O,NOUN.GROUP,maintain,VBP,TV,FALSE,customer email information,NN,O,NOUN.COMMUNICATION 
+64,system,NN,O,NOUN.GROUP,maintain customer email information as,VBP,TV,FALSE,part of customer profile,NN,O,NOUN.COMMUNICATION 
+64,system,NN,O,NOUN.GROUP,maintain customer email information as,VBP,TV,FALSE,required part,NN,O,NOUN.RELATION 
+64,system,NN,O,NOUN.GROUP,maintain customer email information as,VBP,TV,FALSE,part,NN,O,NOUN.RELATION 
+65,system,NN,O,NOUN.GROUP,send,VBP,TV,FALSE,order,NN,O,NOUN.COMMUNICATION 
+66,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,invoice,NN,O,NOUN.COMMUNICATION 
+66,system,NN,O,NOUN.GROUP,display invoice,NN,OTHER,FALSE,confirmed,VBD,O,OTHER 
+66,system,NN,O,NOUN.GROUP,display invoice for,VB,TV,FALSE,order,NN,O,NOUN.COMMUNICATION 
+66,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,detailed invoice,NN,O,NOUN.COMMUNICATION 
+66,it,PRP,O,NOUN.COGNITION,be,VB,IS-A,FALSE,confirmed,VBN,O,OTHER 
+66,system,NN,O,NOUN.GROUP,display invoice for,VB,TV,FALSE,current order,NN,O,NOUN.COMMUNICATION 
+67,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+67,system,NN,O,NOUN.GROUP,optionally allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+67,user,NN,PERSON,NOUN.PERSON,print,VB,TV,FALSE,invoice,NN,O,NOUN.COMMUNICATION 
+68,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,shopping cart,NN,O,NOUN.ARTIFACT 
+68,system,NN,O,NOUN.GROUP,provide shopping cart during,VBP,TV,TRUE,online purchase,NN,O,NOUN.ACT 
+68,system,NN,O,NOUN.GROUP,provide shopping cart during,VBP,TV,TRUE,purchase,NN,O,NOUN.ACT 
+69,add/remove product,NN,O,NOUN.ARTIFACT,be in,VB,IS-A,FALSE,shopping cart,NN,O,NOUN.ARTIFACT 
+69,system,NN,O,NOUN.GROUP,allow user to,VBP,PERMISSION,FALSE,add/remove products in shopping cart,NN,O,NOUN.ARTIFACT 
+69,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+69,system,NN,O,NOUN.GROUP,allow to,VBP,PERMISSION,FALSE,add/remove products in shopping cart,NN,O,NOUN.ARTIFACT 
+69,system,NN,O,NOUN.GROUP,allow user to,VBP,PERMISSION,FALSE,add/remove products,NNS,O,OTHER 
+69,system,NN,O,NOUN.GROUP,allow to,VBP,PERMISSION,FALSE,add/remove products,NNS,O,OTHER 
+69,system,NN,O,NOUN.GROUP,allow to,VBP,PERMISSION,FALSE,products,NNS,O,OTHER 
+69,system,NN,O,NOUN.GROUP,allow to,VBP,PERMISSION,FALSE,products in shopping cart,NN,O,NOUN.ARTIFACT 
+69,system,NN,O,NOUN.GROUP,allow user to,VBP,PERMISSION,FALSE,products,NNS,O,OTHER 
+69,system,NN,O,NOUN.GROUP,allow user to,VBP,PERMISSION,FALSE,products in shopping cart,NN,O,NOUN.ARTIFACT 
+70,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,different shipping options provided,VBN,O,OTHER 
+70,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,shipping options provided,VBN,O,NOUN.ACT 
+70,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,different shipping options,NNS,O,OTHER 
+70,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,shipping options provided by shipping department,NN,O,NOUN.GROUP 
+70,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,different shipping options provided by shipping department,NN,O,NOUN.GROUP 
+70,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,shipping options,NNS,O,NOUN.ACT 
+71,user,NN,PERSON,NOUN.PERSON,select,VB,TV,TRUE,shipping method,NN,O,NOUN.COGNITION 
+71,system,NN,O,NOUN.GROUP,enable,VBP,TV,FALSE,user,NN,O,NOUN.PERSON 
+71,user,NN,PERSON,NOUN.PERSON,select shipping method during,VB,TV,TRUE,payment process,NN,O,NOUN.ACT 
+72,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,shipping charges,NNS,O,NOUN.ACT 
+73,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,duration,NN,O,NOUN.TIME 
+73,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,duration for shipping,NN,O,NOUN.ACT 
+73,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,tentative duration for shipping,NN,O,NOUN.ACT 
+73,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,tentative duration,NN,O,NOUN.TIME 
+74,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+74,user,NN,PERSON,NOUN.PERSON,enter,VBP,TV,FALSE,order information for tracking,NN,O,NOUN.ACT 
+74,user,NN,PERSON,NOUN.PERSON,enter,VBP,TV,FALSE,order information,NN,O,NOUN.COMMUNICATION 
+75,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,current tracking information about order,NN,O,NOUN.COMMUNICATION 
+75,system,NN,O,NOUN.GROUP,display,VBP,TV,FALSE,tracking information,NN,O,NOUN.COMMUNICATION 
+75,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,tracking information about order,NN,O,NOUN.COMMUNICATION 
+75,system,NN,O,NOUN.GROUP,display,VBP,TV,FALSE,current tracking information,NN,O,NOUN.COMMUNICATION 
+76,system,NN,O,NOUN.GROUP,calculate tax for,VBP,TV,TRUE,order,NN,O,NOUN.COMMUNICATION 
+76,system,NN,O,NOUN.GROUP,calculate,VBP,TV,TRUE,tax,NN,O,NOUN.POSSESSION 
+77,system,NN,O,NOUN.GROUP,display tax information for,VB,TV,FALSE,order,NN,O,NOUN.COMMUNICATION 
+77,system,NN,O,NOUN.GROUP,display,VBP,TV,FALSE,tax information,NN,O,NOUN.COMMUNICATION 
+78,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,payment methods,NNS,O,NOUN.POSSESSION 
+78,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,available payment methods,NNS,O,OTHER 
+78,system,NN,O,NOUN.GROUP,display,VBP,TV,FALSE,available payment methods for payment,NN,O,NOUN.POSSESSION 
+78,system,NN,O,NOUN.GROUP,display,VBP,TV,FALSE,payment methods for payment,NN,O,NOUN.POSSESSION 
+79,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+79,user,NN,PERSON,NOUN.PERSON,select,VB,TV,TRUE,payment method for order,NN,O,NOUN.COMMUNICATION 
+79,user,NN,PERSON,NOUN.PERSON,select,VB,TV,TRUE,payment method,NN,O,NOUN.COGNITION 
+80,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,orders,NNS,O,OTHER 
+81,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+82,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+82,user,NN,PERSON,NOUN.PERSON,cancel,VBP,TV,TRUE,order,NN,O,NOUN.COMMUNICATION 
+83,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+83,user,NN,PERSON,NOUN.PERSON,change,VB,TV,FALSE,shipping,NN,O,NOUN.ACT 
+83,user,NN,PERSON,NOUN.PERSON,change,VB,TV,FALSE,payment method,NN,O,NOUN.COGNITION 
+84,system,NN,O,NOUN.GROUP,notify user about,VBP,TV,TRUE,changes made to order,NN,O,NOUN.COMMUNICATION 
+85,it,PRP,O,NOUN.COGNITION,be,VB,IS-A,FALSE,when selected,VBN,O,OTHER 
+85,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,reviews of product,NN,O,NOUN.ARTIFACT 
+85,it,PRP,O,NOUN.COGNITION,be,VB,IS-A,FALSE,selected,VBN,O,OTHER 
+85,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,ratings,NNS,O,OTHER 
+86,system,NN,O,NOUN.GROUP,enable,VBP,TV,FALSE,user,NN,O,NOUN.PERSON 
+86,user,NN,PERSON,NOUN.PERSON,enter,VBP,TV,FALSE,ratings,NNS,O,OTHER 
+86,user,NN,PERSON,NOUN.PERSON,enter,VBP,TV,FALSE,their reviews,NNS,O,OTHER 
+87,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,available financing options,NNS,O,OTHER 
+88,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+88,user,NN,PERSON,NOUN.PERSON,select,VB,TV,TRUE,financing option,NN,O,NOUN.POSSESSION 
+89,system,NN,O,NOUN.GROUP,notify,VBP,TV,TRUE,use about financing request,NN,O,NOUN.COMMUNICATION 
+89,system,NN,O,NOUN.GROUP,notify,VBP,TV,TRUE,use,NN,O,NOUN.ACT 
+90,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+90,user,NN,PERSON,NOUN.PERSON,view,VB,TV,FALSE,detailed sitemap,NN,O,OTHER 
+90,user,NN,PERSON,NOUN.PERSON,view,VB,TV,FALSE,sitemap,NN,O,OTHER 
+91,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,available promotions,NNS,O,OTHER 
+92,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+92,user,NN,PERSON,NOUN.PERSON,select,VB,TV,TRUE,promotion,NN,O,NOUN.COMMUNICATION 
+92,user,NN,PERSON,NOUN.PERSON,select,VB,TV,TRUE,available promotion,NN,O,NOUN.COMMUNICATION 
+93,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+93,user,NN,PERSON,NOUN.PERSON,confirm,VBP,TV,TRUE,purchase,NN,O,NOUN.ACT 
+94,user,NN,PERSON,NOUN.PERSON,enter,VBP,TV,FALSE,payment information,NN,O,NOUN.COMMUNICATION 
+94,system,NN,O,NOUN.GROUP,enable,VBP,TV,FALSE,user,NN,O,NOUN.PERSON 
+95,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,uniform look,NN,O,NOUN.ATTRIBUTE 
+95,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,look,NN,O,NOUN.ATTRIBUTE 
+95,system,NN,O,NOUN.GROUP,feel between,VB,TV,FALSE,web pages,NNS,O,NOUN.OBJECT 
+96,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,image for product,NN,O,NOUN.ARTIFACT 
+96,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,digital image for product,NN,O,NOUN.ARTIFACT 
+97,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,use,NN,O,NOUN.ACT 
+97,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,use of icons,NNS,O,NOUN.ACT 
+98,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,handicap access,NN,O,NOUN.ATTRIBUTE 
+99,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,multi language support,NN,O,NOUN.ACT 
+99,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,language support,NN,O,NOUN.ACT 
+101,UIC,NNP,ORGANIZATION,OTHER,provide,VBP,TV,TRUE,network,NN,O,NOUN.GROUP 
+101,UIC,NNP,ORGANIZATION,OTHER,provide,VBP,TV,TRUE,stable network,NN,O,NOUN.GROUP 
+101,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+102,UIC,NNP,ORGANIZATION,OTHER,provide,VBP,TV,TRUE,voice services,NNS,O,NOUN.ACT 
+102,UIC,NNP,ORGANIZATION,OTHER,provide,VBP,TV,TRUE,stable voice services,NNS,O,NOUN.ACT 
+102,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+103,UIC,NNP,ORGANIZATION,OTHER,provide,VBP,TV,TRUE,stable voice,NN,O,NOUN.PERSON 
+103,UIC,NNP,ORGANIZATION,OTHER,provide,VBP,TV,TRUE,point-to-point voice,NN,O,NOUN.PERSON 
+103,UIC,NNP,ORGANIZATION,OTHER,provide,VBP,TV,TRUE,voice,NN,O,NOUN.PERSON 
+103,UIC,NNP,ORGANIZATION,OTHER,provide,VBP,TV,TRUE,stable point-to-point voice,NN,O,NOUN.PERSON 
+103,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+104,UIC,NNP,ORGANIZATION,OTHER,provide,VBP,TV,TRUE,public emergency voice,NN,O,NOUN.PERSON 
+104,UIC,NNP,ORGANIZATION,OTHER,provide,VBP,TV,TRUE,stable emergency voice,NN,O,NOUN.PERSON 
+104,UIC,NNP,ORGANIZATION,OTHER,provide,VBP,TV,TRUE,stable public emergency voice,NN,O,NOUN.PERSON 
+104,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+104,UIC,NNP,ORGANIZATION,OTHER,provide,VBP,TV,TRUE,emergency voice,NN,O,NOUN.PERSON 
+105,UIC,NNP,ORGANIZATION,OTHER,provide,VBP,TV,TRUE,broadcast voice,NN,O,NOUN.PERSON 
+105,UIC,NNP,ORGANIZATION,OTHER,provide,VBP,TV,TRUE,stable broadcast voice,NN,O,NOUN.PERSON 
+105,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+106,UIC,NNP,ORGANIZATION,OTHER,provide,VBP,TV,TRUE,group voice,NN,O,NOUN.PERSON 
+106,UIC,NNP,ORGANIZATION,OTHER,provide,VBP,TV,TRUE,stable group voice,NN,O,NOUN.PERSON 
+106,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+107,UIC,NNP,ORGANIZATION,OTHER,provide,VBP,TV,TRUE,stable multi-party voice,NN,O,NOUN.PERSON 
+107,UIC,NNP,ORGANIZATION,OTHER,provide,VBP,TV,TRUE,stable voice,NN,O,NOUN.PERSON 
+107,UIC,NNP,ORGANIZATION,OTHER,provide,VBP,TV,TRUE,multi-party voice,NN,O,NOUN.PERSON 
+107,UIC,NNP,ORGANIZATION,OTHER,provide,VBP,TV,TRUE,voice,NN,O,NOUN.PERSON 
+107,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+108,UIC,NNP,ORGANIZATION,OTHER,provide,VBP,TV,TRUE,stable data services,NNS,O,NOUN.ACT 
+108,UIC,NNP,ORGANIZATION,OTHER,provide,VBP,TV,TRUE,data services,NNS,O,NOUN.ACT 
+108,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+109,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,transmission,NN,O,NOUN.ACT 
+109,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,transmission of point-to-point,NN,O,NOUN.ACT 
+109,UIC,NNP,ORGANIZATION,OTHER,support transmission to,VB,TV,FALSE,users,NNS,O,OTHER 
+109,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,transmission from ground,NN,O,NOUN.OBJECT 
+109,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,transmission of point-to-point from ground,NN,O,NOUN.OBJECT 
+109,UIC,NNP,ORGANIZATION,OTHER,support transmission to,VB,TV,FALSE,mobile users,NNS,O,NOUN.OBJECT 
+109,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+110,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,receipt,NN,O,NOUN.ACT 
+110,UIC,NNP,ORGANIZATION,OTHER,support receipt by,VB,TV,FALSE,ground,NN,O,NOUN.OBJECT 
+110,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,receipt of mobile-originated text messages,NNS,O,NOUN.ACT 
+110,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,receipt of text messages,NNS,O,NOUN.ACT 
+110,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+111,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,communications between ground users,NNS,O,NOUN.COGNITION 
+111,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,communications,NNS,O,NOUN.COGNITION 
+111,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,communications between users,NNS,O,NOUN.COGNITION 
+111,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+112,UIC,NNP,ORGANIZATION,OTHER,support timetable information communication between,VB,TV,FALSE,ground users,NNS,O,NOUN.OBJECT 
+112,UIC,NNP,ORGANIZATION,OTHER,support timetable information communication between,VB,TV,FALSE,users,NNS,O,OTHER 
+112,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,timetable information communications,NNS,O,NOUN.COGNITION 
+112,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+113,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,maintenance applications communications,NNS,O,NOUN.COGNITION 
+113,UIC,NNP,ORGANIZATION,OTHER,support maintenance application communication between,VB,TV,FALSE,ground users,NNS,O,NOUN.OBJECT 
+113,UIC,NNP,ORGANIZATION,OTHER,support maintenance application communication between,VB,TV,FALSE,users,NNS,O,OTHER 
+113,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+114,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,email communications between users,NNS,O,NOUN.COMMUNICATION 
+114,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,email communications,NNS,O,NOUN.COGNITION 
+114,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,email communications between ground users,NNS,O,NOUN.COMMUNICATION 
+114,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+115,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,remote databases access,NN,O,NOUN.ATTRIBUTE 
+115,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,databases access between users,NNS,O,OTHER 
+115,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,remote databases access between users,NNS,O,NOUN.ARTIFACT 
+115,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,remote databases access between ground users,NNS,O,NOUN.ARTIFACT 
+115,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,databases access,NN,O,NOUN.ATTRIBUTE 
+115,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,databases access between ground users,NNS,O,OTHER 
+115,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+116,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,network of data rates of at least 2.4 kbit/s,NNS,O,NOUN.GROUP 
+116,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,network of data rates,NNS,O,NOUN.POSSESSION 
+116,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,network,NN,O,NOUN.GROUP 
+116,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+117,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,call related Services,NNPS,O,NOUN.ACT 
+117,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,call Services,NNPS,O,NOUN.ACT 
+117,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+118,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,display of identity of user,NN,O,NOUN.PERSON 
+118,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,display,NN,O,NOUN.COMMUNICATION 
+118,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,display of identity of called/calling user,NN,O,NOUN.PERSON 
+118,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,display of identity,NN,O,NOUN.ATTRIBUTE 
+118,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+119,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+120,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,priority control,NN,O,NOUN.PERSON 
+120,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+121,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,closed user group,NN,O,NOUN.TOPS 
+121,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,user group,NN,O,NOUN.TOPS 
+121,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+122,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,call forwarding,NN,O,NOUN.COMMUNICATION 
+122,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,forwarding,NN,O,NOUN.ACT 
+122,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+123,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,hold,NN,O,NOUN.ACT 
+123,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,call hold,NN,O,NOUN.ACT 
+123,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+124,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,waiting,VBG,O,NOUN.ACT 
+124,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,call waiting,VBG,O,NOUN.COMMUNICATION 
+124,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+125,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+126,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,railway Services,NNPS,O,NOUN.ACT 
+126,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,railway specific Services,NNPS,O,NOUN.ACT 
+126,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+127,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,functional,JJ,O,OTHER 
+127,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+128,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,location dependent addressing,VBG,O,NOUN.TOPS 
+128,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,location addressing,VBG,O,NOUN.TOPS 
+128,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+129,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,shunting mode,NN,O,NOUN.ATTRIBUTE 
+129,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+130,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,Railway emergency,NN,O,NOUN.EVENT 
+130,UIC,NNP,ORGANIZATION,OTHER,be,VB,IS-A,FALSE,able,JJ,O,OTHER 
+131,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,Cab radio services,NNS,O,NOUN.ACT 
+131,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+132,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,driver call-related services,NNS,O,NOUN.ACT 
+132,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,driver services,NNS,O,NOUN.ACT 
+132,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+133,driver,NN,PERSON,NOUN.PERSON,control,VB,TV,FALSE,calls,VBZ,O,OTHER 
+133,UIC,NNP,ORGANIZATION,OTHER,allow,VBP,PERMISSION,FALSE,driver,NN,TITLE,NOUN.PERSON 
+133,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+134,driver,NN,PERSON,NOUN.PERSON,call,VB,TV,FALSE,other drivers in area,NN,O,NOUN.LOCATION 
+134,driver,NN,PERSON,NOUN.PERSON,call,VB,TV,FALSE,other drivers,NNS,O,OTHER 
+134,driver,NN,PERSON,NOUN.PERSON,call,VB,TV,FALSE,drivers in area,NN,O,NOUN.LOCATION 
+134,driver,NN,PERSON,NOUN.PERSON,call,VB,TV,FALSE,drivers,NNS,O,OTHER 
+134,other driver,NN,PERSON,NOUN.PERSON,be in,VB,IS-A,FALSE,area,NN,O,NOUN.LOCATION 
+134,UIC,NNP,ORGANIZATION,OTHER,allow,VBP,PERMISSION,FALSE,driver,NN,TITLE,NOUN.PERSON 
+134,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+135,driver,NN,PERSON,NOUN.PERSON,send,VB,TV,FALSE,Railway emergency call,NN,O,NOUN.COMMUNICATION 
+135,UIC,NNP,ORGANIZATION,OTHER,allow,VBP,PERMISSION,FALSE,driver,NN,TITLE,NOUN.PERSON 
+135,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+136,driver,NN,PERSON,NOUN.PERSON,confirm,VBP,TV,TRUE,receipt of Railway emergency call,NN,O,NOUN.COMMUNICATION 
+136,driver,NN,PERSON,NOUN.PERSON,confirm,VBP,TV,TRUE,receipt,NN,O,NOUN.ACT 
+136,UIC,NNP,ORGANIZATION,OTHER,allow,VBP,PERMISSION,FALSE,driver,NN,TITLE,NOUN.PERSON 
+136,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+137,UIC,NNP,ORGANIZATION,OTHER,allow,VBP,PERMISSION,FALSE,communicate with drivers on same train,NN,CRIMINAL_CHARGE,NOUN.ARTIFACT 
+137,UIC,NNP,ORGANIZATION,OTHER,allow,VBP,PERMISSION,FALSE,communicate with other drivers on same train,NN,CRIMINAL_CHARGE,NOUN.ARTIFACT 
+137,UIC,NNP,ORGANIZATION,OTHER,allow,VBP,PERMISSION,FALSE,communicate with other drivers on train,NN,CRIMINAL_CHARGE,NOUN.ARTIFACT 
+137,driver,NN,PERSON,NOUN.PERSON,communicate with,VBP,TV,TRUE,drivers,NNS,O,OTHER 
+137,UIC,NNP,ORGANIZATION,OTHER,allow,VBP,PERMISSION,FALSE,communicate with drivers on train,NN,CRIMINAL_CHARGE,NOUN.ARTIFACT 
+137,UIC,NNP,ORGANIZATION,OTHER,allow,VBP,PERMISSION,FALSE,communicate,VBP,O,OTHER 
+137,driver,NN,PERSON,NOUN.PERSON,communicate on,VBP,TV,TRUE,train,NN,CRIMINAL_CHARGE,NOUN.ARTIFACT 
+137,UIC,NNP,ORGANIZATION,OTHER,allow,VBP,PERMISSION,FALSE,communicate on train,NN,CRIMINAL_CHARGE,NOUN.ARTIFACT 
+137,driver,NN,PERSON,NOUN.PERSON,communicate with,VBP,TV,TRUE,other drivers,NNS,O,OTHER 
+137,UIC,NNP,ORGANIZATION,OTHER,allow,VBP,PERMISSION,FALSE,communicate with other drivers,NNS,O,OTHER 
+137,UIC,NNP,ORGANIZATION,OTHER,allow,VBP,PERMISSION,FALSE,driver,NN,TITLE,NOUN.PERSON 
+137,UIC,NNP,ORGANIZATION,OTHER,allow,VBP,PERMISSION,FALSE,communicate with drivers,NNS,O,OTHER 
+137,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+137,driver,NN,PERSON,NOUN.PERSON,communicate on,VBP,TV,TRUE,same train,NN,CRIMINAL_CHARGE,NOUN.ARTIFACT 
+137,UIC,NNP,ORGANIZATION,OTHER,allow,VBP,PERMISSION,FALSE,communicate on same train,NN,CRIMINAL_CHARGE,NOUN.ARTIFACT 
+138,driver,NN,PERSON,NOUN.PERSON,call,VB,TV,FALSE,train staff,NN,O,NOUN.GROUP 
+138,UIC,NNP,ORGANIZATION,OTHER,allow,VBP,PERMISSION,FALSE,driver,NN,TITLE,NOUN.PERSON 
+138,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+139,driver,NN,PERSON,NOUN.PERSON,call,VB,TV,FALSE,other authorized users,NNS,O,OTHER 
+139,driver,NN,PERSON,NOUN.PERSON,call,VB,TV,FALSE,authorized users,NNS,O,OTHER 
+139,UIC,NNP,ORGANIZATION,OTHER,allow,VBP,PERMISSION,FALSE,driver,NN,TITLE,NOUN.PERSON 
+139,driver,NN,PERSON,NOUN.PERSON,call,VB,TV,FALSE,users,NNS,O,OTHER 
+139,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+139,driver,NN,PERSON,NOUN.PERSON,call,VB,TV,FALSE,other users,NNS,O,OTHER 
+140,driver,NN,PERSON,NOUN.PERSON,receive,VBP,TV,TRUE,incoming voice calls,NNS,O,NOUN.ACT 
+140,UIC,NNP,ORGANIZATION,OTHER,allow,VBP,PERMISSION,FALSE,driver,NN,TITLE,NOUN.PERSON 
+140,driver,NN,PERSON,NOUN.PERSON,receive,VBP,TV,TRUE,voice calls,NNS,O,NOUN.PERSON 
+140,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+141,driver,NN,PERSON,NOUN.PERSON,terminate,VBP,TV,TRUE,calls,NNS,O,OTHER 
+141,UIC,NNP,ORGANIZATION,OTHER,allow,VBP,PERMISSION,FALSE,driver,NN,TITLE,NOUN.PERSON 
+141,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+142,driver,NN,PERSON,NOUN.PERSON,receive,VBP,TV,TRUE,text messages,NNS,O,NOUN.COMMUNICATION 
+142,UIC,NNP,ORGANIZATION,OTHER,allow,VBP,PERMISSION,FALSE,driver,NN,TITLE,NOUN.PERSON 
+142,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+143,driver,NN,PERSON,NOUN.PERSON,enter/leave,NN,OTHER,FALSE,shunting mode,NN,O,NOUN.ATTRIBUTE 
+143,UIC,NNP,ORGANIZATION,OTHER,allow,VBP,PERMISSION,FALSE,driver,NN,TITLE,NOUN.PERSON 
+143,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+144,driver,NN,PERSON,NOUN.PERSON,enter/leave,NN,OTHER,FALSE,direct mode,NN,O,NOUN.ATTRIBUTE 
+144,driver,NN,PERSON,NOUN.PERSON,enter/leave,NN,OTHER,FALSE,mode,NN,O,NOUN.ATTRIBUTE 
+144,UIC,NNP,ORGANIZATION,OTHER,allow,VBP,PERMISSION,FALSE,driver,NN,TITLE,NOUN.PERSON 
+144,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+145,driver,NN,PERSON,NOUN.PERSON,monitor,VB,TV,FALSE,calls to other users/devices,NNS,O,OTHER 
+145,driver,NN,PERSON,NOUN.PERSON,monitor,VB,TV,FALSE,calls to other on-train users/devices,NNS,O,OTHER 
+145,driver,NN,PERSON,NOUN.PERSON,monitor,VB,TV,FALSE,calls to users/devices,NNS,O,OTHER 
+145,driver,NN,PERSON,NOUN.PERSON,monitor,VB,TV,FALSE,calls,VBZ,O,OTHER 
+145,driver,NN,PERSON,NOUN.PERSON,monitor,VB,TV,FALSE,calls to on-train users/devices,NNS,O,OTHER 
+145,UIC,NNP,ORGANIZATION,OTHER,allow,VBP,PERMISSION,FALSE,driver,NN,TITLE,NOUN.PERSON 
+145,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+146,UIC,NNP,ORGANIZATION,OTHER,allow to,VBP,PERMISSION,FALSE,forward calls/cancel call forwarding to/from driver handheld,JJ,O,NOUN.PERSON 
+146,UIC,NNP,ORGANIZATION,OTHER,allow driver to,VBP,PERMISSION,FALSE,forward calls/cancel call forwarding to/from driver handheld,JJ,O,NOUN.PERSON 
+146,UIC,NNP,ORGANIZATION,OTHER,allow to,VBP,PERMISSION,FALSE,forward calls/cancel call forwarding to/from driver,NN,TITLE,NOUN.PERSON 
+146,UIC,NNP,ORGANIZATION,OTHER,allow driver to,VBP,PERMISSION,FALSE,call forwarding to/from driver,NN,TITLE,NOUN.PERSON 
+146,UIC,NNP,ORGANIZATION,OTHER,allow driver to,VBP,PERMISSION,FALSE,calls/cancel call forwarding to/from driver,NN,TITLE,NOUN.PERSON 
+146,UIC,NNP,ORGANIZATION,OTHER,allow driver to,VBP,PERMISSION,FALSE,forward calls/cancel call forwarding to/from driver,NN,TITLE,NOUN.PERSON 
+146,UIC,NNP,ORGANIZATION,OTHER,allow to,VBP,PERMISSION,FALSE,call forwarding to/from driver,NN,TITLE,NOUN.PERSON 
+146,UIC,NNP,ORGANIZATION,OTHER,allow to,VBP,PERMISSION,FALSE,calls/cancel call forwarding to/from driver,NN,TITLE,NOUN.PERSON 
+146,UIC,NNP,ORGANIZATION,OTHER,allow to,VBP,PERMISSION,FALSE,call forwarding to/from driver handheld,JJ,O,NOUN.COMMUNICATION 
+146,UIC,NNP,ORGANIZATION,OTHER,allow driver to,VBP,PERMISSION,FALSE,call forwarding to/from driver handheld,JJ,O,NOUN.COMMUNICATION 
+146,UIC,NNP,ORGANIZATION,OTHER,allow to,VBP,PERMISSION,FALSE,calls/cancel call forwarding to/from driver handheld,JJ,O,OTHER 
+146,UIC,NNP,ORGANIZATION,OTHER,allow,VBP,PERMISSION,FALSE,driver,NN,TITLE,NOUN.PERSON 
+146,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+146,UIC,NNP,ORGANIZATION,OTHER,allow driver to,VBP,PERMISSION,FALSE,calls/cancel call forwarding to/from driver handheld,JJ,O,OTHER 
+147,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,General purpose radio services,NNS,O,NOUN.ACT 
+147,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+148,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,radio,NN,O,NOUN.COMMUNICATION 
+148,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+149,UIC,NNP,ORGANIZATION,OTHER,be,VB,IS-A,FALSE,able,JJ,O,OTHER 
+149,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,radio,NN,O,NOUN.COMMUNICATION 
+150,UIC,NNP,ORGANIZATION,OTHER,be,VB,IS-A,FALSE,able,JJ,O,OTHER 
+150,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,radio,NN,O,NOUN.COMMUNICATION 
+151,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,radio,NN,O,NOUN.COMMUNICATION 
+151,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+152,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,radio,NN,O,NOUN.COMMUNICATION 
+152,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+153,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,user,NN,O,NOUN.PERSON 
+153,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+154,UIC,NNP,ORGANIZATION,OTHER,support user to,VB,TV,FALSE,language on radio,NN,O,NOUN.COMMUNICATION 
+154,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,user,NN,O,NOUN.PERSON 
+154,UIC,NNP,ORGANIZATION,OTHER,support user to,VB,TV,FALSE,language,NN,O,NOUN.COMMUNICATION 
+154,UIC,NNP,ORGANIZATION,OTHER,support user to,VB,TV,FALSE,select language on radio,NN,O,NOUN.COMMUNICATION 
+154,UIC,NNP,ORGANIZATION,OTHER,support user to,VB,TV,FALSE,select language,NN,O,NOUN.COMMUNICATION 
+154,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+155,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,user,NN,O,NOUN.PERSON 
+155,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+156,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+157,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,register functional numbers,NNS,O,NOUN.COMMUNICATION 
+157,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,register numbers,NNS,O,NOUN.COMMUNICATION 
+157,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+158,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,their details,NNS,O,NOUN.COMMUNICATION 
+158,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,store/retrieve numbers,NNS,O,NOUN.COMMUNICATION 
+158,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,numbers,NNS,O,NOUN.COMMUNICATION 
+158,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+159,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,radio services,NNS,O,NOUN.ACT 
+159,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,Operational radio services,NNS,O,NOUN.ACT 
+159,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+160,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,operational radio,NN,O,NOUN.COMMUNICATION 
+160,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,radio,NN,O,NOUN.COMMUNICATION 
+160,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+161,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,operational radio,NN,O,NOUN.COMMUNICATION 
+161,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,radio,NN,O,NOUN.COMMUNICATION 
+161,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+162,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,operational radio,NN,O,NOUN.COMMUNICATION 
+162,UIC,NNP,ORGANIZATION,OTHER,be,VB,IS-A,FALSE,able,JJ,O,OTHER 
+162,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,radio,NN,O,NOUN.COMMUNICATION 
+163,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,operational radio,NN,O,NOUN.COMMUNICATION 
+163,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,radio,NN,O,NOUN.COMMUNICATION 
+163,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+164,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,operational radio,NN,O,NOUN.COMMUNICATION 
+164,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,radio,NN,O,NOUN.COMMUNICATION 
+164,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+165,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,operational radio,NN,O,NOUN.COMMUNICATION 
+165,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,radio,NN,O,NOUN.COMMUNICATION 
+165,UIC,NNP,ORGANIZATION,OTHER,support radio to,VB,TV,FALSE,group calls,VBZ,O,NOUN.TOPS 
+165,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+166,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,operational radio,NN,O,NOUN.COMMUNICATION 
+166,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,radio,NN,O,NOUN.COMMUNICATION 
+166,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+167,UIC,NNP,ORGANIZATION,OTHER,support radio to,VB,TV,FALSE,shunting mode communications,NNS,O,NOUN.COGNITION 
+167,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,operational radio,NN,O,NOUN.COMMUNICATION 
+167,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,radio,NN,O,NOUN.COMMUNICATION 
+167,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+168,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,operational radio,NN,O,NOUN.COMMUNICATION 
+168,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,radio,NN,O,NOUN.COMMUNICATION 
+168,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+169,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,operational radio,NN,O,NOUN.COMMUNICATION 
+169,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,radio,NN,O,NOUN.COMMUNICATION 
+169,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+170,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,operational radio,NN,O,NOUN.COMMUNICATION 
+170,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,radio,NN,O,NOUN.COMMUNICATION 
+170,UIC,NNP,ORGANIZATION,OTHER,support radio to,VB,TV,FALSE,select language,NN,O,NOUN.COMMUNICATION 
+170,UIC,NNP,ORGANIZATION,OTHER,support radio to,VB,TV,FALSE,language,NN,O,NOUN.COMMUNICATION 
+170,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+171,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,operational radio,NN,O,NOUN.COMMUNICATION 
+171,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,radio,NN,O,NOUN.COMMUNICATION 
+171,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+172,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,operational radio,NN,O,NOUN.COMMUNICATION 
+172,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,radio,NN,O,NOUN.COMMUNICATION 
+172,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+173,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,operational radio,NN,O,NOUN.COMMUNICATION 
+173,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,radio,NN,O,NOUN.COMMUNICATION 
+173,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+174,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,stable Controller equipment service,NN,O,NOUN.PERSON 
+174,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,Controller equipment service,NN,O,NOUN.PERSON 
+174,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+175,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,stable primary controller equipment service,NN,O,NOUN.PERSON 
+175,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,primary controller equipment service,NN,O,NOUN.PERSON 
+175,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,controller equipment service,NN,O,NOUN.PERSON 
+175,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+175,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,stable controller equipment service,NN,O,NOUN.PERSON 
+176,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,primary controller,NN,TITLE,NOUN.PERSON 
+176,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,controller,NN,TITLE,NOUN.PERSON 
+176,incoming call,NN,O,NOUN.COMMUNICATION,call,VB,TV,FALSE,requests,NNS,O,OTHER 
+176,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+177,controller,NN,PERSON,NOUN.PERSON,display,VB,TV,FALSE,queue,NN,O,NOUN.GROUP 
+177,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,primary controller,NN,TITLE,NOUN.PERSON 
+177,priority,NN,O,NOUN.STATE,functional identity of,IN,OTHER,FALSE,callers,NNS,O,OTHER 
+177,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,controller,NN,TITLE,NOUN.PERSON 
+177,primary controller,NN,PERSON,NOUN.PERSON,display queue to,VB,TV,FALSE,controller,NN,TITLE,NOUN.PERSON 
+177,priority,NN,O,NOUN.STATE,identity of,IN,OTHER,FALSE,callers,NNS,O,OTHER 
+177,controller,NN,PERSON,NOUN.PERSON,display queue to,VB,TV,FALSE,controller,NN,TITLE,NOUN.PERSON 
+177,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+177,primary controller,NN,PERSON,NOUN.PERSON,display,VB,TV,FALSE,queue,NN,O,NOUN.GROUP 
+178,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,primary controller,NN,TITLE,NOUN.PERSON 
+178,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,controller,NN,TITLE,NOUN.PERSON 
+178,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+179,railway operation priority,NN,O,NOUN.STATE,support,VB,TV,FALSE,controller,NN,TITLE,NOUN.PERSON 
+179,railway operation priority,NN,O,NOUN.STATE,support,VB,TV,FALSE,primary controller,NN,TITLE,NOUN.PERSON 
+180,UIC,NNP,ORGANIZATION,OTHER,support controller,NN,OTHER,FALSE,establish close,NN,O,NOUN.TIME 
+180,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,primary controller,NN,TITLE,NOUN.PERSON 
+180,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,controller,NN,TITLE,NOUN.PERSON 
+180,UIC,NNP,ORGANIZATION,OTHER,support controller,NN,OTHER,FALSE,establish,VB,O,OTHER 
+180,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+181,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,primary controller,NN,TITLE,NOUN.PERSON 
+181,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,controller,NN,TITLE,NOUN.PERSON 
+181,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+182,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,primary controller,NN,TITLE,NOUN.PERSON 
+182,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,controller,NN,TITLE,NOUN.PERSON 
+182,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+183,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,primary controller,NN,TITLE,NOUN.PERSON 
+183,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,controller,NN,TITLE,NOUN.PERSON 
+183,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+184,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,stable other controller equipment service,NN,O,NOUN.PERSON 
+184,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,other controller equipment service,NN,O,NOUN.PERSON 
+184,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,controller equipment service,NN,O,NOUN.PERSON 
+184,UIC,NNP,ORGANIZATION,OTHER,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+184,UIC,NNP,ORGANIZATION,OTHER,support,VB,TV,FALSE,stable controller equipment service,NN,O,NOUN.PERSON 
+186,user,NN,PERSON,NOUN.PERSON,apply through,VB,TV,TRUE,web portal,NN,O,NOUN.ARTIFACT 
+186,user,NN,PERSON,NOUN.PERSON,apply directly for,VB,TV,TRUE,account,NN,O,NOUN.STATE 
+186,user,NN,PERSON,NOUN.PERSON,apply for,VB,TV,TRUE,account,NN,O,NOUN.STATE 
+186,user,NN,PERSON,NOUN.PERSON,apply directly through,VB,TV,TRUE,web portal,NN,O,NOUN.ARTIFACT 
+187,user,NN,PERSON,NOUN.PERSON,enter,VBP,TV,FALSE,required fields,NNS,O,NOUN.PERSON 
+188,user,NN,PERSON,NOUN.PERSON,enter,VBP,TV,FALSE,their NCAR Gatekeeper username,NN,O,OTHER 
+189,user,NN,PERSON,NOUN.PERSON,view,VB,TV,FALSE,their account details,NNS,O,NOUN.COMMUNICATION 
+189,user,NN,PERSON,NOUN.PERSON,view,VB,TV,FALSE,their current account details,NNS,O,NOUN.COMMUNICATION 
+194,user account,NN,O,NOUN.STATE,be delete from,VB,IS-A,FALSE,system,NN,O,NOUN.GROUP 
+194,user account,NN,O,NOUN.STATE,be,VB,IS-A,FALSE,deleted,VBN,O,OTHER 
+194,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,means request,NN,O,NOUN.COMMUNICATION 
+195,system,NN,O,NOUN.GROUP,notify,VBP,TV,TRUE,admin,NN,O,OTHER 
+195,system,NN,O,NOUN.GROUP,notify,VBP,TV,TRUE,portal admin,NN,O,NOUN.ARTIFACT 
+195,system,NN,O,NOUN.GROUP,notify admin about,VBP,TV,TRUE,delete requests,NNS,O,OTHER 
+195,system,NN,O,NOUN.GROUP,notify admin about,VBP,TV,TRUE,requests,NNS,O,OTHER 
+196,user,NN,PERSON,NOUN.PERSON,enter password to,VBP,TV,FALSE,login,NN,O,OTHER 
+196,user,NN,PERSON,NOUN.PERSON,enter password to,VBP,TV,FALSE,login to system,NN,O,NOUN.GROUP 
+196,user,NN,PERSON,NOUN.PERSON,enter,VBP,TV,FALSE,password,NN,O,NOUN.COMMUNICATION 
+196,system,NN,O,NOUN.GROUP,require,VBP,TV,TRUE,user,NN,O,NOUN.PERSON 
+196,user,NN,PERSON,NOUN.PERSON,enter,VBP,TV,FALSE,their username,NN,O,OTHER 
+197,user,NN,PERSON,NOUN.PERSON,shall,MD,AUXILIARY,FALSE,shall prompted at beginning for their credentials,NNS,O,NOUN.COMMUNICATION 
+197,user,NN,PERSON,NOUN.PERSON,shall,MD,AUXILIARY,FALSE,shall prompted at beginning of session,NN,O,NOUN.COMMUNICATION 
+197,user,NN,PERSON,NOUN.PERSON,shall,MD,AUXILIARY,FALSE,shall prompted,VBD,O,OTHER 
+197,user,NN,PERSON,NOUN.PERSON,shall,MD,AUXILIARY,FALSE,shall prompted at beginning,VBG,O,NOUN.EVENT 
+197,user,NN,PERSON,NOUN.PERSON,shall,MD,AUXILIARY,FALSE,shall prompted at beginning of session for their credentials,NNS,O,NOUN.COMMUNICATION 
+197,user,NN,PERSON,NOUN.PERSON,shall,MD,AUXILIARY,FALSE,shall prompted for their credentials,NNS,O,NOUN.COMMUNICATION 
+198,login action,NN,O,NOUN.ACT,use,VB,TV,FALSE,data channels,NNS,O,NOUN.COMMUNICATION 
+198,login action,NN,O,NOUN.ACT,shall,MD,AUXILIARY,FALSE,shall protected,VBD,O,OTHER 
+198,login action,NN,O,NOUN.ACT,use,VB,TV,FALSE,secure data channels,NNS,O,NOUN.COMMUNICATION 
+199,system,NN,O,NOUN.GROUP,lock,VB,TV,FALSE,account,NN,O,NOUN.STATE 
+199,system,NN,O,NOUN.GROUP,lock account after,VB,TV,FALSE,3 login attempts,NNS,O,NOUN.QUANTITY 
+199,this,DT,O,OTHER,require,VBP,TV,TRUE,portal,NN,O,NOUN.ARTIFACT 
+201,Admin user,NN,PERSON,NOUN.PERSON,will,MD,AUXILIARY,FALSE,will authenticated against portal database,NN,O,NOUN.COMMUNICATION 
+201,Admin user,NN,PERSON,NOUN.PERSON,will,MD,AUXILIARY,FALSE,will authenticated,VBN,O,NOUN.COGNITION 
+202,user,NN,PERSON,NOUN.PERSON,will,MD,AUXILIARY,FALSE,will authenticated,VBN,O,NOUN.COGNITION 
+202,user,NN,PERSON,NOUN.PERSON,will,MD,AUXILIARY,FALSE,will authenticated against NCAR Gatekeeper system,NN,O,NOUN.GROUP 
+203,account,NN,O,NOUN.STATE,be,VB,IS-A,FALSE,when ready,JJ,O,NOUN.STATE 
+203,account,NN,O,NOUN.STATE,be ready for,VB,IS-A,FALSE,review,NN,O,NOUN.COGNITION 
+203,account,NN,O,NOUN.STATE,be,VB,IS-A,FALSE,ready,JJ,O,NOUN.STATE 
+203,new account,NN,O,NOUN.STATE,be,VB,IS-A,FALSE,when ready for review,NN,O,NOUN.COGNITION 
+203,Portal Admin,NNP,O,NOUN.ARTIFACT,receive,VBP,TV,TRUE,notification,NN,O,NOUN.ACT 
+203,account,NN,O,NOUN.STATE,be,VB,IS-A,FALSE,when ready for review,NN,O,NOUN.COGNITION 
+203,new account,NN,O,NOUN.STATE,be,VB,IS-A,FALSE,when ready,JJ,O,NOUN.STATE 
+203,new account,NN,O,NOUN.STATE,be ready for,VB,IS-A,FALSE,review,NN,O,NOUN.COGNITION 
+203,Portal Admin,NNP,O,NOUN.ARTIFACT,receive,VBP,TV,TRUE,e-mail notification,NN,O,NOUN.ACT 
+203,new account,NN,O,NOUN.STATE,be,VB,IS-A,FALSE,ready,JJ,O,NOUN.STATE 
+208,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,administrators,NNS,O,OTHER 
+208,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,portal administrators,NNS,O,NOUN.ARTIFACT 
+209,user account,NN,O,NOUN.STATE,be in,VB,IS-A,FALSE,system,NN,O,NOUN.GROUP 
+217,template,NN,O,NOUN.COGNITION,be,VB,IS-A,FALSE,NOT deleted,VBN,O,OTHER 
+217,template,NN,O,NOUN.COGNITION,not be delete from,IN,OTHER,FALSE,disk,NN,O,NOUN.SHAPE 
+217,template,NN,O,NOUN.COGNITION,be delete from,VB,IS-A,FALSE,disk,NN,O,NOUN.SHAPE 
+217,template,NN,O,NOUN.COGNITION,be,VB,IS-A,FALSE,deleted,VBN,O,OTHER 
+219,other objects/projects,NNS,O,OTHER,will,MD,AUXILIARY,FALSE,will deleted,VBN,O,NOUN.COGNITION 
+219,other objects/projects,NNS,O,OTHER,will,MD,AUXILIARY,FALSE,will deleted from system,NN,O,NOUN.GROUP 
+219,other objects/projects,NNS,O,OTHER,will,MD,AUXILIARY,FALSE,will deleted completely from system,NN,O,NOUN.GROUP 
+219,other objects/projects,NNS,O,OTHER,will,MD,AUXILIARY,FALSE,will deleted completely,RB,O,NOUN.COGNITION 
+220,admin,NN,O,OTHER,lock,VB,TV,FALSE,accounts,NNS,O,OTHER 
+221,user,NN,PERSON,NOUN.PERSON,will,MD,AUXILIARY,FALSE,will notified,VBN,O,NOUN.COGNITION 
+221,user,NN,PERSON,NOUN.PERSON,will,MD,AUXILIARY,FALSE,will notified via e-mail,VB,O,NOUN.COMMUNICATION 
+223,job,NN,PERSON,NOUN.PERSON,end by,VB,TV,FALSE,portal admin,NN,O,NOUN.ARTIFACT 
+223,job,NN,PERSON,NOUN.PERSON,end by,VB,TV,FALSE,admin,NN,O,OTHER 
+224,admin,NN,O,OTHER,unlock,VB,TV,FALSE,accounts,NNS,O,OTHER 
+225,user,NN,PERSON,NOUN.PERSON,login to,TO,OTHER,FALSE,system,NN,O,NOUN.GROUP 
+225,user,NN,PERSON,NOUN.PERSON,resume,VBP,TV,TRUE,use,NN,O,NOUN.ACT 
+226,portal admin,NN,O,NOUN.ARTIFACT,have,VBP,POSSESSION,FALSE,display of running jobs sorted by user,NN,O,NOUN.PERSON 
+226,admin,NN,O,OTHER,have,VBP,POSSESSION,FALSE,display of running jobs sorted by user,NN,O,NOUN.PERSON 
+228,user,NN,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,running jobs,NNS,O,NOUN.ACT 
+229,user,NN,PERSON,NOUN.PERSON,account to,VB,TV,FALSE,scientist role,NN,O,NOUN.ACT 
+229,user,NN,PERSON,NOUN.PERSON,account to,VB,TV,FALSE,scientist role by default,NN,O,NOUN.ACT 
+230,user,NN,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,role in system,NN,O,NOUN.GROUP 
+230,admin,JJ,O,OTHER,change,VB,TV,FALSE,user 's role,NN,O,NOUN.ACT 
+230,portal admin,JJ,O,NOUN.ARTIFACT,change,VB,TV,FALSE,user 's role in system,NN,O,NOUN.GROUP 
+230,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,portal admin,NN,O,NOUN.ARTIFACT 
+230,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,admin,NN,O,OTHER 
+230,user 's role,NN,O,NOUN.ACT,be in,VB,IS-A,FALSE,system,NN,O,NOUN.GROUP 
+230,admin,JJ,O,OTHER,change,VB,TV,FALSE,user 's role in system,NN,O,NOUN.GROUP 
+230,portal admin,JJ,O,NOUN.ARTIFACT,change,VB,TV,FALSE,user 's role,NN,O,NOUN.ACT 
+231,time,NN,O,NOUN.EVENT,permit at,VB,TV,TRUE,end of project,NN,O,NOUN.ACT 
+231,time,NN,O,NOUN.EVENT,permit at,VB,TV,TRUE,end,NN,O,NOUN.PERSON 
+232,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,staff login methods,NNS,O,NOUN.GROUP 
+232,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,streamlined staff login methods,NNS,O,OTHER 
+233,staff member,NN,PERSON,NOUN.PERSON,log into,VB,TV,FALSE,terminal,NN,O,NOUN.ARTIFACT 
+233,staff member,NN,PERSON,NOUN.PERSON,swipe card,NN,OTHER,FALSE,log,NN,O,NOUN.SUBSTANCE 
+233,staff member,NN,PERSON,NOUN.PERSON,swipe,VB,TV,FALSE,card,NN,O,NOUN.PERSON 
+233,staff member,NN,PERSON,NOUN.PERSON,swipe card,NN,OTHER,FALSE,log into terminal,NN,O,NOUN.ARTIFACT 
+235,System administrator,NN,PERSON,NOUN.PERSON,create,VB,TV,TRUE,report templates,NNS,O,NOUN.COMMUNICATION 
+235,System administrator,NN,PERSON,NOUN.PERSON,create,VB,TV,TRUE,reliable report templates,NNS,O,OTHER 
+236,System administrator,NN,PERSON,NOUN.PERSON,can,MD,AUXILIARY,FALSE,can run,VB,O,NOUN.ACT 
+236,System administrator,NN,PERSON,NOUN.PERSON,as be modify to,TO,OTHER,FALSE,staff person 's particular needs,NNS,O,NOUN.GROUP 
+236,staff person,NN,O,NOUN.TOPS,to,TO,OTHER,FALSE,particular needs,NNS,O,NOUN.COGNITION 
+236,System administrator,NN,PERSON,NOUN.PERSON,be modify to,VB,IS-A,FALSE,staff person 's particular needs,NNS,O,NOUN.GROUP 
+236,System administrator,NN,PERSON,NOUN.PERSON,be,VB,IS-A,FALSE,modified,VBN,O,OTHER 
+236,System administrator,NN,PERSON,NOUN.PERSON,as be modify to,TO,OTHER,FALSE,staff person 's needs,NNS,O,NOUN.GROUP 
+236,System administrator,NN,PERSON,NOUN.PERSON,be modify to,VB,IS-A,FALSE,staff person 's needs,NNS,O,NOUN.GROUP 
+236,System administrator,NN,PERSON,NOUN.PERSON,be,VB,IS-A,FALSE,as modified,VBN,O,NOUN.SUBSTANCE 
+236,change,NN,O,NOUN.EVENT,be in,VB,IS-A,FALSE,templates,NNS,O,OTHER 
+236,change,NN,O,NOUN.EVENT,could,MD,AUXILIARY,FALSE,could done,VBN,O,OTHER 
+236,change,NN,O,NOUN.EVENT,comprise,VBP,CONSIST,FALSE,results,NNS,O,OTHER 
+237,administrator,NN,PERSON,NOUN.PERSON,limit,VB,TV,TRUE,filters,NNS,O,OTHER 
+237,administrator,NN,PERSON,NOUN.PERSON,display,VB,TV,FALSE,fields,NNS,O,NOUN.PERSON 
+238,System,NNP,O,NOUN.GROUP,provide,VBP,TV,TRUE,permission levels,NNS,O,NOUN.COMMUNICATION 
+238,System,NNP,O,NOUN.GROUP,provide,VBP,TV,TRUE,fine-grained permission levels,NNS,O,OTHER 
+238,System,NNP,O,NOUN.GROUP,provide,VBP,TV,TRUE,fine-grained permission levels limiting,VBG,O,NOUN.RELATION 
+238,System,NNP,O,NOUN.GROUP,provide,VBP,TV,TRUE,distinct fine-grained permission levels limiting,VBG,O,NOUN.RELATION 
+238,System,NNP,O,NOUN.GROUP,provide,VBP,TV,TRUE,distinct fine-grained permission levels,NNS,O,OTHER 
+238,System,NNP,O,NOUN.GROUP,provide,VBP,TV,TRUE,permission levels limiting,VBG,O,NOUN.RELATION 
+238,System,NNP,O,NOUN.GROUP,provide,VBP,TV,TRUE,distinct permission levels,NNS,O,OTHER 
+238,System,NNP,O,NOUN.GROUP,provide,VBP,TV,TRUE,distinct permission levels limiting,VBG,O,NOUN.RELATION 
+239,permission,NN,O,NOUN.COMMUNICATION,should,MD,AUXILIARY,FALSE,should easy,RB,O,OTHER 
+240,staff,NN,O,NOUN.GROUP,run,VB,TV,FALSE,reports,NNS,O,OTHER 
+240,System administrator,NN,PERSON,NOUN.PERSON,create,VB,TV,TRUE,shared folders allow,VB,O,OTHER 
+240,System administrator,NN,PERSON,NOUN.PERSON,run,VB,TV,FALSE,ad hoc reports,NNS,O,NOUN.COMMUNICATION 
+240,System administrator,NN,PERSON,NOUN.PERSON,run,VB,TV,FALSE,ad hoc reports on sets,NNS,O,NOUN.COMMUNICATION 
+240,staff,NN,O,NOUN.GROUP,run,VB,TV,FALSE,specific reports,NNS,O,NOUN.COGNITION 
+240,System administrator,NN,PERSON,NOUN.PERSON,run,VBP,TV,FALSE,ad hoc reports on sets of data,NNS,O,NOUN.GROUP 
+240,System administrator,NN,PERSON,NOUN.PERSON,run,VB,TV,FALSE,ad hoc reports on specific sets,NNS,O,NOUN.COMMUNICATION 
+240,System administrator,NN,PERSON,NOUN.PERSON,create,VB,TV,TRUE,folders allow,VB,O,OTHER 
+240,System administrator,NN,PERSON,NOUN.PERSON,run,VBP,TV,FALSE,ad hoc reports on specific sets of data,NNS,O,NOUN.GROUP 
+242,staff,NN,O,NOUN.GROUP,select,VB,TV,TRUE,fields to query,NN,O,NOUN.COMMUNICATION 
+242,staff,NN,O,NOUN.GROUP,select,VB,TV,TRUE,fields,NNS,O,NOUN.PERSON 
+242,r1 Administrators,NNPS,O,OTHER,control,VBP,TV,FALSE,staff access,NN,O,NOUN.ATTRIBUTE 
+242,r1 .4.3 Administrators,NNPS,O,OTHER,control,VBP,TV,FALSE,staff access,NN,O,NOUN.ATTRIBUTE 
+242,r1 Administrators,NNPS,O,OTHER,control,VBP,TV,FALSE,staff access to tables,NNS,O,NOUN.GROUP 
+242,r1 .4.3 Administrators,NNPS,O,OTHER,control,VBP,TV,FALSE,staff access to tables,NNS,O,NOUN.GROUP 
+243,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,reports,NNS,O,OTHER 
+243,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,pre-defined reports for consumption by library boards,NNS,O,NOUN.ARTIFACT 
+243,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,reports for consumption by library boards,NNS,O,NOUN.ARTIFACT 
+243,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,reports for consumption,NN,O,NOUN.ACT 
+243,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,pre-defined reports,NNS,O,OTHER 
+243,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,pre-defined reports for consumption,NN,O,NOUN.ACT 
+244,will report,NN,O,NOUN.COMMUNICATION,provide,VBP,TV,TRUE,statistics like those required by Georgia Report for State Aid,NN,O,NOUN.ATTRIBUTE 
+244,will report,NN,O,NOUN.COMMUNICATION,provide,VBP,TV,TRUE,statistics like those,DT,O,NOUN.COGNITION 
+244,system,NN,O,NOUN.GROUP,hold,VBP,TV,FALSE,filled,VBN,O,OTHER 
+244,will report,NN,O,NOUN.COMMUNICATION,provide,VBP,TV,TRUE,basic statistics like those,DT,O,NOUN.COMMUNICATION 
+244,will report,NN,O,NOUN.COMMUNICATION,provide,VBP,TV,TRUE,basic statistics like those required by Georgia Report for State Aid,NN,O,NOUN.ATTRIBUTE 
+244,will report,NN,O,NOUN.COMMUNICATION,provide,VBP,TV,TRUE,statistics,NNS,O,NOUN.COGNITION 
+244,will report,NN,O,NOUN.COMMUNICATION,provide,VBP,TV,TRUE,basic statistics like those required by Georgia Report,NNP,O,NOUN.COMMUNICATION 
+244,will report,NN,O,NOUN.COMMUNICATION,provide,VBP,TV,TRUE,basic statistics like those required,VBN,O,NOUN.COMMUNICATION 
+244,will report,NN,O,NOUN.COMMUNICATION,provide,VBP,TV,TRUE,basic statistics like those required by Georgia Annual Report,NNP,O,NOUN.COMMUNICATION 
+244,will report,NN,O,NOUN.COMMUNICATION,provide,VBP,TV,TRUE,basic statistics,NNS,O,NOUN.COGNITION 
+244,will report,NN,O,NOUN.COMMUNICATION,provide,VBP,TV,TRUE,statistics like those required by Georgia Annual Report,NNP,O,NOUN.COMMUNICATION 
+244,will report,NN,O,NOUN.COMMUNICATION,provide,VBP,TV,TRUE,statistics like those required,VBN,O,NOUN.COGNITION 
+244,volume,NN,O,NOUN.QUANTITY,traffic of,VB,TV,FALSE,use,NN,O,NOUN.ACT 
+244,system,NN,O,NOUN.GROUP,will,MD,AUXILIARY,FALSE,will reports,NNS,O,NOUN.COGNITION 
+244,will report,NN,O,NOUN.COMMUNICATION,provide,VBP,TV,TRUE,statistics like those required by Georgia Report,NNP,O,NOUN.COMMUNICATION 
+246,transaction,NN,O,NOUN.ACT,provide,VBP,TV,TRUE,statistics,NNS,O,NOUN.COGNITION 
+246,transaction,NN,O,NOUN.ACT,provide,VBP,TV,TRUE,demographic statistics,NNS,O,NOUN.COGNITION 
+246,transaction,NN,O,NOUN.ACT,provide,VBP,TV,TRUE,useful demographic statistics,NNS,O,NOUN.COGNITION 
+246,transaction,NN,O,NOUN.ACT,provide,VBP,TV,TRUE,useful statistics,NNS,O,NOUN.COGNITION 
+246,transaction,NN,O,NOUN.ACT,be archive in,VB,IS-A,FALSE,form,NN,O,NOUN.COMMUNICATION 
+246,transaction,NN,O,NOUN.ACT,be,VB,IS-A,FALSE,archived,VBN,O,OTHER 
+247,bibliographic record,NN,O,NOUN.COMMUNICATION,be with,VB,IS-A,FALSE,holds,VBZ,O,OTHER 
+249,item,NN,O,NOUN.COMMUNICATION,be with,VB,IS-A,FALSE,invalid item type,NN,O,NOUN.PERSON 
+250,in-transit item,NN,O,NOUN.COMMUNICATION,be with,VB,IS-A,FALSE,outstanding hold,NN,O,NOUN.ACT 
+252,last copy,NN,O,NOUN.COMMUNICATION,be in,VB,IS-A,FALSE,system,NN,O,NOUN.GROUP 
+253,item,NN,O,NOUN.COMMUNICATION,be with,VB,IS-A,FALSE,long call number,NN,O,NOUN.ATTRIBUTE 
+254,patron,NN,PERSON,NOUN.PERSON,be with,VB,IS-A,FALSE,invalid home library,NN,O,NOUN.ARTIFACT 
+254,bibliographic record,NN,O,NOUN.COMMUNICATION,be with,VB,IS-A,FALSE,item records,NNS,O,NOUN.COMMUNICATION 
+255,System,NNP,O,NOUN.GROUP,provide,VBP,TV,TRUE,query selections,NNS,O,NOUN.COMMUNICATION 
+255,System,NNP,O,NOUN.GROUP,provide query selection along with,VBP,TV,TRUE,results,NNS,O,OTHER 
+256,you report,NN,O,NOUN.COMMUNICATION,be in,VB,IS-A,FALSE,where queue,NN,O,NOUN.GROUP 
+256,you report,NN,O,NOUN.COMMUNICATION,be in,VB,IS-A,FALSE,where queue of reports,NNS,O,OTHER 
+256,you report,NN,O,NOUN.COMMUNICATION,be in,VB,IS-A,FALSE,where queue of reports waiting,VBG,O,NOUN.ACT 
+256,you report,NN,O,NOUN.COMMUNICATION,be in,VB,IS-A,FALSE,queue,NN,O,NOUN.GROUP 
+256,you report,NN,O,NOUN.COMMUNICATION,be in,VB,IS-A,FALSE,queue of reports,NNS,O,NOUN.GROUP 
+256,you report,NN,O,NOUN.COMMUNICATION,be in,VB,IS-A,FALSE,queue of reports waiting,VBG,O,NOUN.ACT 
+257,System,NNP,O,NOUN.GROUP,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+257,System,NNP,O,NOUN.GROUP,support reporting definition,NN,OTHER,FALSE,described,VBN,O,OTHER 
+257,System,NNP,O,NOUN.GROUP,support,VB,TV,FALSE,reporting definitions,NNS,O,NOUN.COMMUNICATION 
+257,System,NNP,O,NOUN.GROUP,support reporting definition,NN,OTHER,FALSE,described in Appendix,NN,O,NOUN.COMMUNICATION 
+258,System,NNP,O,NOUN.GROUP,must,MD,AUXILIARY,FALSE,must able,JJ,O,NOUN.OBJECT 
+258,System,NNP,O,NOUN.GROUP,support,VB,TV,FALSE,fine-grained reports requirements,NNS,O,OTHER 
+258,System,NNP,O,NOUN.GROUP,support report requirement,NN,OTHER,FALSE,described in Appendix B.,NNP,O,OTHER 
+258,System,NNP,O,NOUN.GROUP,support,VB,TV,FALSE,reports requirements,NNS,O,OTHER 
+258,System,NNP,O,NOUN.GROUP,support report requirement,NN,OTHER,FALSE,described,VBN,O,OTHER 
+259,system,NN,O,NOUN.GROUP,produce,VBP,TV,TRUE,statistics,NNS,O,NOUN.COGNITION 
+259,patron behavior,NN,O,NOUN.ACT,use of,VB,TV,FALSE,materials,NNS,O,OTHER 
+260,system,NN,O,NOUN.GROUP,produce,VBP,TV,TRUE,demographic statistics including transactions by regions,NNS,O,NOUN.COGNITION 
+260,system,NN,O,NOUN.GROUP,produce,VBP,TV,TRUE,useful statistics including transactions by geographical regions,NNS,O,OTHER 
+260,system,NN,O,NOUN.GROUP,produce,VBP,TV,TRUE,statistics including transactions,NNS,O,NOUN.COMMUNICATION 
+260,system,NN,O,NOUN.GROUP,produce,VBP,TV,TRUE,statistics including transactions by regions,NNS,O,NOUN.COGNITION 
+260,system,NN,O,NOUN.GROUP,produce,VBP,TV,TRUE,statistics,NNS,O,NOUN.COGNITION 
+260,system,NN,O,NOUN.GROUP,produce,VBP,TV,TRUE,useful demographic statistics including transactions by regions,NNS,O,OTHER 
+260,system,NN,O,NOUN.GROUP,produce,VBP,TV,TRUE,useful demographic statistics,NNS,O,NOUN.COGNITION 
+260,system,NN,O,NOUN.GROUP,produce,VBP,TV,TRUE,useful demographic statistics including transactions by geographical regions,NNS,O,OTHER 
+260,system,NN,O,NOUN.GROUP,produce,VBP,TV,TRUE,useful statistics,NNS,O,NOUN.COGNITION 
+260,system,NN,O,NOUN.GROUP,produce,VBP,TV,TRUE,demographic statistics,NNS,O,NOUN.COGNITION 
+260,system,NN,O,NOUN.GROUP,produce,VBP,TV,TRUE,demographic statistics including transactions,NNS,O,NOUN.COMMUNICATION 
+260,system,NN,O,NOUN.GROUP,produce,VBP,TV,TRUE,useful statistics including transactions by regions,NNS,O,OTHER 
+260,system,NN,O,NOUN.GROUP,produce,VBP,TV,TRUE,useful statistics including transactions,NNS,O,NOUN.COMMUNICATION 
+260,system,NN,O,NOUN.GROUP,produce,VBP,TV,TRUE,useful demographic statistics including transactions,NNS,O,NOUN.COMMUNICATION 
+260,system,NN,O,NOUN.GROUP,produce,VBP,TV,TRUE,demographic statistics including transactions by geographical regions,NNS,O,NOUN.COGNITION 
+260,system,NN,O,NOUN.GROUP,produce,VBP,TV,TRUE,statistics including transactions by geographical regions,NNS,O,NOUN.COGNITION 
+261,i.e. information,NN,O,NOUN.COMMUNICATION,be,VB,IS-A,FALSE,deleted,VBN,O,OTHER 
+261,datum,NN,O,NOUN.COGNITION,must,MD,AUXILIARY,FALSE,must anonymized,VBN,O,NOUN.OBJECT 
+262,ability,NN,O,NOUN.ATTRIBUTE,be with,VB,IS-A,FALSE,ability break in categories,NNS,O,NOUN.ATTRIBUTE 
+263,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,interface,NN,O,NOUN.ARTIFACT 
+263,show,NN,O,NOUN.ACT,capacity of,IN,OTHER,FALSE,branches,NNS,O,OTHER 
+266,child,NN,PERSON,NOUN.PERSON,have,VBP,POSSESSION,FALSE,board books,NNS,O,NOUN.GROUP 
+267,material,NN,PERSON,NOUN.PERSON,be,VB,IS-A,FALSE,how used,VBN,O,OTHER 
+267,material,NN,PERSON,NOUN.PERSON,be,VB,IS-A,FALSE,used,VBN,O,OTHER 
+269,ability,NN,O,NOUN.ATTRIBUTE,query for,VB,TV,FALSE,candidate materials,NNS,O,NOUN.PERSON 
+269,utility,NN,O,NOUN.GROUP,include,VBP,TV,TRUE,ability query,NN,O,NOUN.COMMUNICATION 
+269,utility,NN,O,NOUN.GROUP,include,VBP,TV,TRUE,ability query for candidate materials,NNS,O,NOUN.ATTRIBUTE 
+270,mechanism,NN,O,NOUN.PROCESS,change,VB,TV,FALSE,location field,NN,O,NOUN.LOCATION 
+270,utility,NN,O,NOUN.GROUP,provide criterion in,VBP,TV,TRUE,addition,NN,O,NOUN.ARTIFACT 
+270,utility,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,criteria,NNS,O,OTHER 
+270,utility,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,means,VBZ,O,NOUN.ACT 
+270,utility,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,other criteria,NNS,O,OTHER 
+271,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,reports,NNS,O,OTHER 
+271,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,reports of missing items per branch,NN,O,NOUN.GROUP 
+271,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,reports of items per branch,NN,O,NOUN.GROUP 
+271,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,reports of missing items,NNS,O,OTHER 
+271,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,reports of items,NNS,O,OTHER 
+272,system,NN,O,NOUN.GROUP,generate,VBP,TV,TRUE,list of items per branch,NN,O,NOUN.GROUP 
+272,system,NN,O,NOUN.GROUP,generate,VBP,TV,TRUE,list of items per branch per system,NN,O,NOUN.GROUP 
+272,system,NN,O,NOUN.GROUP,generate,VBP,TV,TRUE,list of items per system,NN,O,NOUN.GROUP 
+272,system,NN,O,NOUN.GROUP,generate,VBP,TV,TRUE,list of items,NNS,O,NOUN.COMMUNICATION 
+272,system,NN,O,NOUN.GROUP,generate,VBP,TV,TRUE,list,NN,O,NOUN.COMMUNICATION 
+273,report,NN,O,NOUN.COMMUNICATION,merge,VBP,TV,FALSE,transit,NN,O,NOUN.ARTIFACT 
+273,report,NN,O,NOUN.COMMUNICATION,merge transit to,VBP,TV,FALSE,to ease of front-line staff use,NN,O,NOUN.ACT 
+273,report,NN,O,NOUN.COMMUNICATION,merge transit to,VBP,TV,FALSE,to ease,NN,O,NOUN.ATTRIBUTE 
+273,report,NN,O,NOUN.COMMUNICATION,merge transit to,VBP,TV,FALSE,to ease of staff use,NN,O,NOUN.ACT 
+274,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,reports,NNS,O,OTHER 
+275,system,NN,O,NOUN.GROUP,have,VBP,POSSESSION,FALSE,report assist in conversion from one status to another,DT,O,NOUN.COMMUNICATION 
+275,system,NN,O,NOUN.GROUP,have,VBP,POSSESSION,FALSE,report assist in conversion of items from one status to another,DT,O,NOUN.COMMUNICATION 
+275,system,NN,O,NOUN.GROUP,have,VBP,POSSESSION,FALSE,report assist in conversion from one status,NN,O,NOUN.STATE 
+275,system,NN,O,NOUN.GROUP,have,VBP,POSSESSION,FALSE,report assist in conversion of items from one status,NN,O,NOUN.STATE 
+275,system,NN,O,NOUN.GROUP,have,VBP,POSSESSION,FALSE,report assist,VB,O,NOUN.ACT 
+275,system,NN,O,NOUN.GROUP,have,VBP,POSSESSION,FALSE,report assist in conversion of items,NNS,O,NOUN.COMMUNICATION 
+275,system,NN,O,NOUN.GROUP,have,VBP,POSSESSION,FALSE,report assist in conversion,NN,O,NOUN.EVENT 
+276,library system,NN,O,NOUN.GROUP,have,VBP,POSSESSION,FALSE,last copies,NNS,O,NOUN.TIME 
+276,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,last copy report,NN,O,NOUN.COMMUNICATION 
+276,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,copy report,NN,O,NOUN.COMMUNICATION 
+277,record,NN,O,NOUN.COMMUNICATION,be with,VB,IS-A,FALSE,items attached,VBN,O,OTHER 
+279,query,NN,O,NOUN.COMMUNICATION,can,MD,AUXILIARY,FALSE,can limited,VBN,O,NOUN.ARTIFACT 
+279,query,NN,O,NOUN.COMMUNICATION,can,MD,AUXILIARY,FALSE,can limited by patron characteristics including age range,VB,O,NOUN.ATTRIBUTE 
+279,query,NN,O,NOUN.COMMUNICATION,can,MD,AUXILIARY,FALSE,can limited by patron characteristics,NNS,O,NOUN.ARTIFACT 
+280,list,NN,O,NOUN.COMMUNICATION,be with,VB,IS-A,FALSE,circulation in last X days,NNS,DURATION,NOUN.TIME 
+281,list,NN,O,NOUN.COMMUNICATION,should,MD,AUXILIARY,FALSE,should configurable to System,NNP,O,NOUN.GROUP 
+281,list,NN,O,NOUN.COMMUNICATION,should,MD,AUXILIARY,FALSE,should configurable,VB,O,OTHER 
+282,transaction history,NN,O,NOUN.TIME,be,VB,IS-A,FALSE,maintained,VBN,O,OTHER 
+282,transaction history,NN,O,NOUN.TIME,be maintain for,VB,IS-A,FALSE,X days,NNS,DURATION,NOUN.TIME 
+283,aggregate information,NN,O,NOUN.COMMUNICATION,be,VB,IS-A,FALSE,maintained,VBN,O,OTHER 
+283,monthly aggregate information,NN,O,NOUN.COMMUNICATION,be,VB,IS-A,FALSE,maintained,VBN,O,OTHER 
+283,monthly aggregate information,NN,O,NOUN.COMMUNICATION,be,VB,IS-A,FALSE,maintained indefinitely,RB,O,OTHER 
+283,aggregate information,NN,O,NOUN.COMMUNICATION,be,VB,IS-A,FALSE,maintained indefinitely,RB,O,OTHER 
+284,transaction,NN,O,NOUN.ACT,can,MD,AUXILIARY,FALSE,can grouped by hour,NN,DURATION,NOUN.TIME 
+284,transaction,NN,O,NOUN.ACT,can,MD,AUXILIARY,FALSE,can grouped,VBN,O,NOUN.ARTIFACT 
+284,transaction,NN,O,NOUN.ACT,include,VBP,TV,TRUE,check-outs,NNS,O,OTHER 
+284,transaction,NN,O,NOUN.ACT,include,VBP,TV,TRUE,etc.,FW,O,OTHER 
+284,transaction,NN,O,NOUN.ACT,include,VBP,TV,TRUE,fines collected,VBN,O,OTHER 
+284,transaction,NN,O,NOUN.ACT,include,VBP,TV,TRUE,fines,NNS,O,OTHER 
+284,transaction,NN,O,NOUN.ACT,include,VBP,TV,TRUE,patron registrations,NNS,O,NOUN.PERSON 
+284,transaction,NN,O,NOUN.ACT,include,VBP,TV,TRUE,check-ins,NNS,O,OTHER 
+285,system,NN,O,NOUN.GROUP,count,VB,TV,FALSE,types of check-in,NN,O,NOUN.ACT 
+285,system,NN,O,NOUN.GROUP,count individually,VB,TV,FALSE,types of check-in,NN,O,NOUN.ACT 
+285,system,NN,O,NOUN.GROUP,book-drop by,IN,OTHER,FALSE,terminal,JJ,O,NOUN.ARTIFACT 
+285,system,NN,O,NOUN.GROUP,count individually and cumulatively,VB,TV,FALSE,types of check-in,NN,O,NOUN.ACT 
+285,system,NN,O,NOUN.GROUP,book-drop by,IN,OTHER,FALSE,user,NN,O,NOUN.PERSON 
+286,system,NN,O,NOUN.GROUP,count individually and cumulatively,VB,TV,FALSE,types of check-out,NN,O,OTHER 
+286,system,NN,O,NOUN.GROUP,count individually,VB,TV,FALSE,types of check-out,NN,O,OTHER 
+286,system,NN,O,NOUN.GROUP,count,VB,TV,FALSE,types of check-out,NN,O,OTHER 
+287,request,NN,O,NOUN.COMMUNICATION,be,VB,IS-A,FALSE,placed at staff desk at computer inside library,NN,O,NOUN.ARTIFACT 
+287,request,NN,O,NOUN.COMMUNICATION,be,VB,IS-A,FALSE,placed at staff desk at public computer inside library,NN,O,NOUN.ARTIFACT 
+287,hold,VB,O,NOUN.ACT,be place at,VB,IS-A,FALSE,staff desk,NN,O,NOUN.ARTIFACT 
+287,hold,VB,O,NOUN.ACT,be,VB,IS-A,FALSE,how placed at staff desk at computer,NN,O,NOUN.PERSON 
+287,hold,VB,O,NOUN.ACT,be place at,VB,IS-A,FALSE,staff desk at computer inside library,NN,O,NOUN.ARTIFACT 
+287,hold,VB,O,NOUN.ACT,be,VB,IS-A,FALSE,how placed at staff desk,NN,O,NOUN.ARTIFACT 
+287,hold,VB,O,NOUN.ACT,be place at,VB,IS-A,FALSE,staff desk at computer,NN,O,NOUN.PERSON 
+287,hold,VB,O,NOUN.ACT,be,VB,IS-A,FALSE,how placed at staff desk at computer inside library,NN,O,NOUN.ARTIFACT 
+287,request,NN,O,NOUN.COMMUNICATION,be,VB,IS-A,FALSE,how placed at staff desk at computer inside library,NN,O,NOUN.ARTIFACT 
+287,request,NN,O,NOUN.COMMUNICATION,be,VB,IS-A,FALSE,how placed at staff desk at computer,NN,O,NOUN.PERSON 
+287,hold,VB,O,NOUN.ACT,be,VB,IS-A,FALSE,how placed,VBN,O,OTHER 
+287,request,NN,O,NOUN.COMMUNICATION,be,VB,IS-A,FALSE,how placed at staff desk,NN,O,NOUN.ARTIFACT 
+287,request,NN,O,NOUN.COMMUNICATION,be,VB,IS-A,FALSE,how placed,VBN,O,OTHER 
+287,request,NN,O,NOUN.COMMUNICATION,be,VB,IS-A,FALSE,how placed at staff desk at public computer inside library,NN,O,NOUN.ARTIFACT 
+287,request,NN,O,NOUN.COMMUNICATION,be,VB,IS-A,FALSE,placed at staff desk,NN,O,NOUN.ARTIFACT 
+287,hold,VB,O,NOUN.ACT,be place at,VB,IS-A,FALSE,staff desk at public computer,NN,O,NOUN.PERSON 
+287,request,NN,O,NOUN.COMMUNICATION,be,VB,IS-A,FALSE,how placed at staff desk at public computer,NN,O,NOUN.PERSON 
+287,hold,VB,O,NOUN.ACT,be,VB,IS-A,FALSE,how placed at staff desk at public computer inside library,NN,O,NOUN.ARTIFACT 
+287,request,NN,O,NOUN.COMMUNICATION,be,VB,IS-A,FALSE,placed,VBN,O,OTHER 
+287,request,NN,O,NOUN.COMMUNICATION,be,VB,IS-A,FALSE,placed at staff desk at public computer,NN,O,NOUN.PERSON 
+287,hold,VB,O,NOUN.ACT,be,VB,IS-A,FALSE,how placed at staff desk at public computer,NN,O,NOUN.PERSON 
+287,hold,VB,O,NOUN.ACT,be,VB,IS-A,FALSE,placed,VBN,O,OTHER 
+287,request,NN,O,NOUN.COMMUNICATION,be,VB,IS-A,FALSE,placed at staff desk at computer,NN,O,NOUN.PERSON 
+287,hold,VB,O,NOUN.ACT,be place at,VB,IS-A,FALSE,staff desk at public computer inside library,NN,O,NOUN.ARTIFACT 
+288,system,NN,O,NOUN.GROUP,generate report per,VBP,TV,TRUE,group o libraries per system per county,NN,O,NOUN.LOCATION 
+288,system,NN,O,NOUN.GROUP,generate,VBP,TV,TRUE,report of transactions,NNS,O,NOUN.COMMUNICATION 
+288,system,NN,O,NOUN.GROUP,generate,VBP,TV,TRUE,report,NN,O,NOUN.COMMUNICATION 
+288,system,NN,O,NOUN.GROUP,generate report per,VBP,TV,TRUE,selected group o libraries per system per county,NN,O,NOUN.LOCATION 
+288,system,NN,O,NOUN.GROUP,generate,VBP,TV,TRUE,report of transactions per patron,NN,O,NOUN.PERSON 
+288,system,NN,O,NOUN.GROUP,generate report per,VBP,TV,TRUE,selected group o libraries,NNS,O,OTHER 
+288,system,NN,O,NOUN.GROUP,generate report per,VBP,TV,TRUE,selected group o libraries per county,NN,O,NOUN.LOCATION 
+288,system,NN,O,NOUN.GROUP,generate report per,VBP,TV,TRUE,group o libraries,NNS,O,NOUN.TOPS 
+288,system,NN,O,NOUN.GROUP,generate report per,VBP,TV,TRUE,selected group o libraries per system,NN,O,NOUN.GROUP 
+288,system,NN,O,NOUN.GROUP,generate report per,VBP,TV,TRUE,library,NN,O,NOUN.ARTIFACT 
+288,system,NN,O,NOUN.GROUP,generate report per,VBP,TV,TRUE,group o libraries per system,NN,O,NOUN.GROUP 
+288,system,NN,O,NOUN.GROUP,generate report per,VBP,TV,TRUE,group o libraries per county,NN,O,NOUN.LOCATION 
+289,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,number,NN,O,NOUN.ATTRIBUTE 
+289,system,NN,O,NOUN.GROUP,place,VB,TV,FALSE,holds per patron,NN,O,NOUN.PERSON 
+289,system,NN,O,NOUN.GROUP,place,VB,TV,FALSE,holds,VBZ,O,OTHER 
+289,system,NN,O,NOUN.GROUP,display,VB,TV,FALSE,number of check-outs,NNS,O,NOUN.ATTRIBUTE 
+289,hold,VB,O,NOUN.ACT,be subtotal by,VB,IS-A,FALSE,e.g. holds,VBZ,O,OTHER 
+289,hold,VB,O,NOUN.ACT,be subtotal by,VB,IS-A,FALSE,type,NN,O,NOUN.PERSON 
+289,hold,VB,O,NOUN.ACT,be subtotal by,VB,IS-A,FALSE,holds,VBZ,O,OTHER 
+289,hold,VB,O,NOUN.ACT,be,VB,IS-A,FALSE,subtotaled,VBN,O,OTHER 
+290,item,NN,O,NOUN.COMMUNICATION,be in,VB,IS-A,FALSE,entire collection,NN,O,NOUN.GROUP 
+290,system,NN,O,NOUN.GROUP,generate,VBP,TV,TRUE,report of value of items,NNS,O,NOUN.COMMUNICATION 
+290,system,NN,O,NOUN.GROUP,generate,VBP,TV,TRUE,report of value,NN,O,NOUN.COGNITION 
+290,system,NN,O,NOUN.GROUP,generate,VBP,TV,TRUE,report of value of items in entire collection,NN,O,NOUN.GROUP 
+290,system,NN,O,NOUN.GROUP,generate,VBP,TV,TRUE,report,NN,O,NOUN.COMMUNICATION 
+290,system,NN,O,NOUN.GROUP,generate,VBP,TV,TRUE,report of value of items in collection,NN,O,NOUN.GROUP 
+292,fine,JJ,O,NOUN.POSSESSION,be,VB,IS-A,FALSE,attached,VBN,O,OTHER 
+292,fine,JJ,O,NOUN.POSSESSION,be,VB,IS-A,FALSE,attached to patron records,NNS,O,OTHER 
+293,fine payment,NN,O,NOUN.POSSESSION,make per,VBP,TV,FALSE,library,NN,O,NOUN.ARTIFACT 
+293,payment,NN,O,NOUN.POSSESSION,make per,VBP,TV,FALSE,library,NN,O,NOUN.ARTIFACT 
+293,Financial information,NN,O,NOUN.COMMUNICATION,can,MD,AUXILIARY,FALSE,can updated easily,RB,O,NOUN.ARTIFACT 
+293,Financial information,NN,O,NOUN.COMMUNICATION,can,MD,AUXILIARY,FALSE,can updated,VBN,O,NOUN.ARTIFACT 
+293,staff user,NN,PERSON,NOUN.PERSON,easily query patron account with,IN,OTHER,FALSE,balances greater,JJR,O,OTHER 
+293,staff user,NN,PERSON,NOUN.PERSON,easily query patron account with,IN,OTHER,FALSE,balances,NNS,O,OTHER 
+293,staff user,NN,PERSON,NOUN.PERSON,query patron account with,VB,TV,FALSE,balances greater than X dollars,NNS,O,OTHER 
+293,staff user,NN,PERSON,NOUN.PERSON,easily query patron account with,IN,OTHER,FALSE,balances greater than X dollars,NNS,O,OTHER 
+293,staff user,NN,PERSON,NOUN.PERSON,query patron account with,VB,TV,FALSE,balances greater,JJR,O,OTHER 
+293,staff user,NN,PERSON,NOUN.PERSON,query,VB,TV,FALSE,patron accounts,NNS,O,NOUN.PERSON 
+293,staff user,NN,PERSON,NOUN.PERSON,easily query,VB,TV,FALSE,patron accounts,NNS,O,NOUN.PERSON 
+293,staff user,NN,PERSON,NOUN.PERSON,query patron account with,VB,TV,FALSE,balances,NNS,O,OTHER 
+293,staff user,NN,PERSON,NOUN.PERSON,easily query patron account as,IN,OTHER,FALSE,example,NN,O,NOUN.COGNITION 
+293,staff user,NN,PERSON,NOUN.PERSON,query patron account as,VB,TV,FALSE,example,NN,O,NOUN.COGNITION 
+294,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,reports,NNS,O,OTHER 
+294,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,reports including,VBG,O,OTHER 
+294,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,financial reports including,VBG,O,OTHER 
+294,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,financial reports,NNS,O,OTHER 
+295,fine,JJ,O,NOUN.POSSESSION,waive per,VB,TV,FALSE,branch,NN,O,NOUN.GROUP 
+295,fine,JJ,O,NOUN.POSSESSION,waive per,VB,TV,FALSE,time period,NN,O,NOUN.TIME 
+296,payment,NN,O,NOUN.POSSESSION,make per,VBP,TV,FALSE,payment method,NN,O,NOUN.COGNITION 
+296,payment,NN,O,NOUN.POSSESSION,make per,VBP,TV,FALSE,time period,NN,O,NOUN.TIME 
+297,system,NN,O,NOUN.GROUP,maintain,VBP,TV,FALSE,ledger,NN,O,NOUN.POSSESSION 
+297,charge payment,NN,O,NOUN.POSSESSION,be,VB,IS-A,FALSE,applied,VBN,O,OTHER 
+297,system,NN,O,NOUN.GROUP,maintain,VBP,TV,FALSE,ledger of patron payments,NNS,O,NOUN.POSSESSION 
+297,charge payment,NN,O,NOUN.POSSESSION,facilitate,VB,TV,TRUE,reconciliation,NN,O,NOUN.ACT 
+

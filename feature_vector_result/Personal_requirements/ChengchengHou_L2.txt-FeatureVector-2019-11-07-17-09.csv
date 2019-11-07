@@ -1,0 +1,85 @@
+requirement, subject, s-tag, s-ner, s-type, verb, v-tag, v-cat, v-process, object, o-tag, o-ner, o-type, label 
+1,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,capability,NN,O,NOUN.ATTRIBUTE 
+1,capability,NN,O,NOUN.ATTRIBUTE,restrict client to,VB,TV,TRUE,pre-determined set of services,NNS,O,NOUN.ACT 
+1,capability,NN,O,NOUN.ATTRIBUTE,restrict client to,VB,TV,TRUE,set of services,NNS,O,NOUN.ACT 
+1,capability,NN,O,NOUN.ATTRIBUTE,restrict,VB,TV,TRUE,authenticated client,NN,O,NOUN.PERSON 
+1,capability,NN,O,NOUN.ATTRIBUTE,restrict client to,VB,TV,TRUE,pre-determined set,VBN,O,NOUN.PERSON 
+1,capability,NN,O,NOUN.ATTRIBUTE,restrict client to,VB,TV,TRUE,set,VBN,O,NOUN.PERSON 
+1,capability,NN,O,NOUN.ATTRIBUTE,restrict,VB,TV,TRUE,client,NN,O,NOUN.PERSON 
+2,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,changes,NNS,O,OTHER 
+2,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+2,monitoring,VBG,O,NOUN.ACT,change for,VB,TV,FALSE,operational devices,NNS,O,NOUN.COGNITION 
+2,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,monitoring of status,NN,O,NOUN.STATE 
+2,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,monitoring,NN,O,NOUN.ACT 
+2,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,changes of states,NNS,O,OTHER 
+2,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,local monitoring of status,NN,O,NOUN.STATE 
+2,monitoring,VBG,O,NOUN.ACT,change of,VB,TV,FALSE,states,NNS,O,OTHER 
+2,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,changes of states for operational devices,NNS,O,NOUN.COGNITION 
+2,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,changes for devices,NNS,O,NOUN.COGNITION 
+2,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,local monitoring,NN,O,NOUN.ACT 
+2,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,changes for operational devices,NNS,O,NOUN.COGNITION 
+2,user,NN,PERSON,NOUN.PERSON,supervise,VB,TV,TRUE,changes of states for devices,NNS,O,NOUN.COGNITION 
+2,monitoring,VBG,O,NOUN.ACT,change for,VB,TV,FALSE,devices,NNS,O,NOUN.COGNITION 
+3,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+3,user,NN,PERSON,NOUN.PERSON,operate,VBP,TV,TRUE,equipment,NN,O,NOUN.ARTIFACT 
+3,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,operate,VBP,O,OTHER 
+4,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+4,user,NN,PERSON,NOUN.PERSON,change,VB,TV,FALSE,parameter,NN,O,NOUN.COGNITION 
+5,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+5,user,NN,PERSON,NOUN.PERSON,visualize,VBP,TV,TRUE,alarms,NNS,O,OTHER 
+6,user,NN,PERSON,NOUN.PERSON,acknowledge,VBP,TV,FALSE,alarms,NNS,O,OTHER 
+6,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+7,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+7,system,NN,O,NOUN.GROUP,allow user to,VBP,PERMISSION,FALSE,clear alarms,NNS,O,NOUN.STATE 
+7,system,NN,O,NOUN.GROUP,allow to,VBP,PERMISSION,FALSE,clear alarms,NNS,O,NOUN.STATE 
+7,system,NN,O,NOUN.GROUP,allow user to,VBP,PERMISSION,FALSE,alarms,NNS,O,OTHER 
+7,system,NN,O,NOUN.GROUP,allow to,VBP,PERMISSION,FALSE,alarms,NNS,O,OTHER 
+8,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,scanning of devices for alarms,NNS,O,NOUN.PROCESS 
+8,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,scanning of devices,NNS,O,NOUN.COGNITION 
+8,change,NN,O,NOUN.EVENT,be in,VB,IS-A,FALSE,state,NN,O,NOUN.GROUP 
+8,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,scanning,NN,O,NOUN.PROCESS 
+8,operator control action,NN,O,NOUN.ACT,continuous scanning of,JJ,OTHER,FALSE,devices,NNS,O,NOUN.COGNITION 
+8,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,scanning for alarms,NNS,O,NOUN.PROCESS 
+8,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,changes,NNS,O,OTHER 
+8,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,continuous scanning of devices,NNS,O,NOUN.COGNITION 
+8,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,operator control actions,NNS,O,NOUN.PERSON 
+8,operator control action,NN,O,NOUN.ACT,scanning for,NN,OTHER,FALSE,alarms,NNS,O,OTHER 
+8,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,continuous scanning of devices for alarms,NNS,O,OTHER 
+8,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,continuous scanning,NN,O,NOUN.PROCESS 
+8,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,changes in state,NN,O,NOUN.GROUP 
+8,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,continuous scanning for alarms,NNS,O,OTHER 
+8,operator control action,NN,O,NOUN.ACT,continuous scanning for,JJ,OTHER,FALSE,alarms,NNS,O,OTHER 
+8,operator control action,NN,O,NOUN.ACT,scanning of,NN,OTHER,FALSE,devices,NNS,O,NOUN.COGNITION 
+9,parameter,NN,O,NOUN.COGNITION,retrieve,VBP,TV,FALSE,those,DT,O,OTHER 
+9,parameter,NN,O,NOUN.COGNITION,retrieve,VBP,TV,FALSE,only those,DT,O,OTHER 
+10,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,disturbance/fault record,NN,O,NOUN.COMMUNICATION 
+10,system,NN,O,NOUN.GROUP,support,VB,TV,FALSE,record,NN,O,NOUN.COMMUNICATION 
+10,system,NN,O,NOUN.GROUP,retrieve,VBP,TV,FALSE,data,NNS,O,NOUN.GROUP 
+11,user,NN,PERSON,NOUN.PERSON,configure,VB,TV,TRUE,communication network,NN,O,NOUN.GROUP 
+11,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,user,NN,O,NOUN.PERSON 
+12,system,NN,O,NOUN.GROUP,synchronise,VBP,TV,TRUE,time,NN,O,NOUN.EVENT 
+12,system,NN,O,NOUN.GROUP,synchronise,VBP,TV,TRUE,time of devices,NNS,O,NOUN.COGNITION 
+12,system,NN,O,NOUN.GROUP,synchronise time within,VB,TV,TRUE,communication system,NN,O,NOUN.ARTIFACT 
+13,system,NN,O,NOUN.GROUP,detect,VB,TV,TRUE,operational,JJ,O,OTHER 
+13,device,NN,O,NOUN.ARTIFACT,be,VB,IS-A,FALSE,operational,JJ,O,OTHER 
+13,object,NN,O,NOUN.TOPS,be,VB,IS-A,FALSE,operational,JJ,O,OTHER 
+13,device,NN,O,NOUN.ARTIFACT,be,VB,IS-A,FALSE,fully operational,JJ,O,OTHER 
+13,system,NN,O,NOUN.GROUP,detect,VB,TV,TRUE,fully operational,JJ,O,OTHER 
+13,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,detects,VBZ,O,OTHER 
+13,object,NN,O,NOUN.TOPS,be,VB,IS-A,FALSE,fully operational,JJ,O,OTHER 
+14,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,status reports for components,NNS,O,NOUN.STATE 
+14,system,NN,O,NOUN.GROUP,provide,VBP,TV,TRUE,status reports,NNS,O,NOUN.STATE 
+15,datum,NN,O,NOUN.COGNITION,be,VB,IS-A,FALSE,stored in plant controller for transmission,NN,O,NOUN.ACT 
+15,datum,NN,O,NOUN.COGNITION,be,VB,IS-A,FALSE,stored in plant controller for transmission on demand,NN,O,NOUN.PROCESS 
+15,datum,NN,O,NOUN.COGNITION,be store in,VB,IS-A,FALSE,plant controller,NN,TITLE,NOUN.PERSON 
+15,system,NN,O,NOUN.GROUP,allow,VBP,PERMISSION,FALSE,data,NNS,O,NOUN.GROUP 
+15,datum,NN,O,NOUN.COGNITION,be,VB,IS-A,FALSE,stored,VBN,O,OTHER 
+15,datum,NN,O,NOUN.COGNITION,be store for,VB,IS-A,FALSE,transmission on demand,NN,O,NOUN.PROCESS 
+15,datum,NN,O,NOUN.COGNITION,be store for,VB,IS-A,FALSE,transmission,NN,O,NOUN.ACT 
+16,system,NN,O,NOUN.GROUP,download,VB,TV,FALSE,configuration,NN,O,NOUN.COGNITION 
+16,system,NN,O,NOUN.GROUP,retrieve,VBP,TV,FALSE,configuration data,NNS,O,NOUN.GROUP 
+17,system,NN,O,NOUN.GROUP,start object within,VB,TV,FALSE,system,NN,O,NOUN.GROUP 
+17,system,NN,O,NOUN.GROUP,start,VB,TV,FALSE,objects,NNS,O,OTHER 
+17,system,NN,O,NOUN.GROUP,start function within,VB,TV,FALSE,system,NN,O,NOUN.GROUP 
+17,system,NN,O,NOUN.GROUP,start,VB,TV,FALSE,functions,NNS,O,OTHER 
+
