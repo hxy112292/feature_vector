@@ -1,6 +1,7 @@
 package edu.uta.nlp;
 
 import edu.uta.nlp.controller.FeatureVectorGenerate;
+import edu.uta.nlp.database.service.FeatureVectorService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,7 +16,8 @@ public class Main {
 
         try {
             FeatureVectorGenerate.process();
-//            ScanFile.getRequirements();
+//            FeatureVectorService featureVectorService = new FeatureVectorService();
+//            featureVectorService.test();
         } catch (Exception e) {
             e.printStackTrace();
         }

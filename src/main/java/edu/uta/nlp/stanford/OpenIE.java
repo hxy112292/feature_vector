@@ -8,7 +8,7 @@ import edu.stanford.nlp.util.CoreMap;
 import edu.uta.nlp.constant.SynsetType;
 import edu.uta.nlp.entity.FeatureVector;
 import edu.uta.nlp.entity.OpenIESimpleLemma;
-import edu.uta.nlp.strategy.VerbLemmaStrategy;
+import edu.uta.nlp.stanford.strategy.VerbLemmaStrategy;
 import edu.uta.nlp.util.StrUtil;
 import edu.uta.nlp.wordnet.Vcat;
 import org.slf4j.Logger;
