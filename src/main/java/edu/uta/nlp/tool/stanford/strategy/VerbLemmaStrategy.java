@@ -1,7 +1,8 @@
-package edu.uta.nlp.stanford.strategy;
+package edu.uta.nlp.tool.stanford.strategy;
 
 import edu.mit.jwi.item.POS;
-import edu.uta.nlp.stanford.CoreAnnotate;
+import edu.uta.nlp.tool.NlpTool;
+import edu.uta.nlp.tool.stanford.StanfordTool;
 import edu.uta.nlp.util.StrUtil;
 import edu.uta.nlp.wordnet.WordNetApi;
 
@@ -33,12 +34,13 @@ public enum VerbLemmaStrategy {
         public String process(String verb) throws Exception {
             String lastWord = StrUtil.getLastWord(verb);
             String firstWord = StrUtil.getFirstWord(verb);
+            NlpTool nlptool = new StanfordTool();
 
             if (WordNetApi.isPos(firstWord, POS.VERB) &&
-                    (CoreAnnotate.isPos(lastWord, "RB") || CoreAnnotate.isPos(lastWord, "IN") ||
-                            CoreAnnotate.isPos(lastWord, "TO") || CoreAnnotate.isPos(lastWord, "JJ"))) {
+                    (nlptool.isPosByString(lastWord, "RB") || nlptool.isPosByString(lastWord, "IN") ||
+                            nlptool.isPosByString(lastWord, "TO") || nlptool.isPosByString(lastWord, "JJ"))) {
                 return firstWord;
-            } else if (CoreAnnotate.isPos(firstWord, "RB") && WordNetApi.isPos(lastWord, POS.VERB)) {
+            } else if (nlptool.isPosByString(firstWord, "RB") && WordNetApi.isPos(lastWord, POS.VERB)) {
                 return firstWord;
             }
             return null;
@@ -55,15 +57,16 @@ public enum VerbLemmaStrategy {
             String lastWord = StrUtil.getLastWord(verb);
             String firstWord = StrUtil.getFirstWord(verb);
             String secondWord = StrUtil.getIndexOfWord(verb, 2);
+            NlpTool nlptool = new StanfordTool();
             //do something
             if(WordNetApi.isPos(firstWord, POS.VERB)) {
-                if(CoreAnnotate.isPos(lastWord, "RB") || CoreAnnotate.isPos(lastWord, "IN") ||
-                        CoreAnnotate.isPos(lastWord, "TO")|| CoreAnnotate.isPos(lastWord, "JJ")) {
+                if(nlptool.isPosByString(lastWord, "RB") || nlptool.isPosByString(lastWord, "IN") ||
+                        nlptool.isPosByString(lastWord, "TO")|| nlptool.isPosByString(lastWord, "JJ")) {
                     return firstWord;
                 }
-            } else if(CoreAnnotate.isPos(firstWord, "RB") && WordNetApi.isPos(secondWord, POS.VERB)) {
-                if (CoreAnnotate.isPos(lastWord, "IN") || CoreAnnotate.isPos(lastWord, "TO") ||
-                        CoreAnnotate.isPos(lastWord, "JJ")) {
+            } else if(nlptool.isPosByString(firstWord, "RB") && WordNetApi.isPos(secondWord, POS.VERB)) {
+                if (nlptool.isPosByString(lastWord, "IN") || nlptool.isPosByString(lastWord, "TO") ||
+                        nlptool.isPosByString(lastWord, "JJ")) {
                     return secondWord;
                 }
             }
@@ -77,9 +80,10 @@ public enum VerbLemmaStrategy {
             //do something
             String lastWord = StrUtil.getLastWord(verb);
             String firstWord = StrUtil.getFirstWord(verb);
+            NlpTool nlptool = new StanfordTool();
             if(WordNetApi.isPos(firstWord, POS.VERB)) {
-                if(CoreAnnotate.isPos(lastWord, "RB") || CoreAnnotate.isPos(lastWord, "IN") ||
-                        CoreAnnotate.isPos(lastWord, "TO")|| CoreAnnotate.isPos(lastWord, "JJ")) {
+                if(nlptool.isPosByString(lastWord, "RB") || nlptool.isPosByString(lastWord, "IN") ||
+                        nlptool.isPosByString(lastWord, "TO")|| nlptool.isPosByString(lastWord, "JJ")) {
                     return firstWord;
                 }
             }

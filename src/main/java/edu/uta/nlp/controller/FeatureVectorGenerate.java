@@ -3,9 +3,8 @@ package edu.uta.nlp.controller;
 import edu.mit.jwi.item.LexFile;
 import edu.mit.jwi.item.POS;
 import edu.stanford.nlp.util.StringUtils;
-import edu.uta.nlp.NlpTool.JieBaTool;
-import edu.uta.nlp.NlpTool.NlpTool;
-import edu.uta.nlp.NlpTool.StanfordTool;
+import edu.uta.nlp.tool.NlpTool;
+import edu.uta.nlp.tool.stanford.StanfordTool;
 import edu.uta.nlp.constant.SynsetType;
 import edu.uta.nlp.entity.ClassificationCoreLabel;
 import edu.uta.nlp.entity.FeatureVector;
@@ -15,8 +14,6 @@ import edu.uta.nlp.file.FilePath;
 import edu.uta.nlp.file.ScanFile;
 import edu.uta.nlp.iterator.Aggregate;
 import edu.uta.nlp.iterator.Iterator;
-import edu.uta.nlp.stanford.CoreAnnotate;
-import edu.uta.nlp.stanford.OpenIE;
 import edu.uta.nlp.wordnet.Vcat;
 import edu.uta.nlp.wordnet.WordNetApi;
 import org.slf4j.Logger;
@@ -25,7 +22,6 @@ import org.slf4j.LoggerFactory;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.util.Vector;
 
 /**
  * @author hxy
@@ -59,11 +55,11 @@ public class FeatureVectorGenerate {
                 logger.info("#R" + (++sentNo) + ": " + line);
 
                 Aggregate<FeatureVector> featureVectorAggregate =  new Aggregate();
-                //use openIE to get subject, verb, object gross.
-                NlpTool nlptool = new StanfordTool();
-                //NlpTool nlptool = new JieBaTool();
 
-                featureVectorAggregate.addAll(nlptool.selectGross(line));
+                NlpTool nlptool = new StanfordTool();
+
+                //use openIE to get subject, verb, object gross.
+                featureVectorAggregate.addAll(nlptool.selectOpenIEGross(line));
                 Iterator<FeatureVector> featureVectorIterator = featureVectorAggregate.getIterator();
 
 
@@ -71,10 +67,10 @@ public class FeatureVectorGenerate {
                     FeatureVector featureVector = (FeatureVector) featureVectorIterator.next();
 
                     //use openIE to get subject, verb, object lemma.
-                    OpenIESimpleLemma openIESimpleLemma = nlptool.selectLemma(featureVector);
+                    OpenIESimpleLemma openIESimpleLemma = nlptool.selectOpenIELemma(featureVector);
                     String sentence = openIESimpleLemma.toString();
                     Aggregate<ClassificationCoreLabel> coreLabelAggregate = new Aggregate();
-                    coreLabelAggregate.addAll(nlptool.generate(sentence));
+                    coreLabelAggregate.addAll(nlptool.generatePosTag(sentence));
                     Iterator<ClassificationCoreLabel> coreLabelIterator = coreLabelAggregate.getIterator();
 
                     //get pos, ner

@@ -1,4 +1,4 @@
-package edu.uta.nlp.stanford;
+package edu.uta.nlp.tool.stanford;
 
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.PropertiesUtils;
