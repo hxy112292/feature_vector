@@ -15,7 +15,7 @@ public abstract class AbstractDataBase {
 
     public abstract void open() throws Exception;
 
-    public abstract Object excuteSqlCmd(String sql) throws Exception;
+    public abstract Object executeSqlCmd(String sql) throws Exception;
 
     public abstract void close() throws Exception;
 

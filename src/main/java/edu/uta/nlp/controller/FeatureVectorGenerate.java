@@ -47,7 +47,7 @@ public class FeatureVectorGenerate {
             // line in file
             String line;
             //csv file header
-            StringBuilder sb = new StringBuilder("requirement, subject, s-tag, s-ner, s-type, verb, v-tag, v-cat, v-controller, object, o-tag, o-ner, o-type, label \n");
+            StringBuilder sb = new StringBuilder("requirement, subject, s-tag, s-ner, s-type, verb, v-tag, v-cat, v-process, object, o-tag, o-ner, o-type, label \n");
             while ((line = bufferedReader.readLine()) != null) {
 
                 line = line.replaceAll("\\([^\\)]*\\)","");
@@ -96,7 +96,8 @@ public class FeatureVectorGenerate {
                         featureVector.setVerbTag("VB");
                     }
 
-                    sb.append(sentNo + "," + featureVector.toString() + " \n");
+                    featureVector.setRequirement(String.valueOf(sentNo));
+                    sb.append(featureVector.toString() + " \n");
                 }
             }
             CSVFile csvFile = CSVFile.getInstance();

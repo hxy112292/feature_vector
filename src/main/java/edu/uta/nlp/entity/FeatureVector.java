@@ -1,10 +1,14 @@
 package edu.uta.nlp.entity;
 
+import java.util.Date;
+
 /**
  * @author hxy
  */
 public class FeatureVector implements Cloneable{
 
+    private Integer id;
+    private String requirement;
     private String subject;
     private String subjectTag;
     private String subjectNER;
@@ -17,12 +21,46 @@ public class FeatureVector implements Cloneable{
     private String objectTag;
     private String objectNer;
     private String objectType;
+    private Date updateTime;
+    private Date createTime;
 
     @Override
     public String toString() {
-        return subject + "," + subjectTag + "," + subjectNER + "," + subjectType + ","
+        return requirement + "," + subject + "," + subjectTag + "," + subjectNER + "," + subjectType + ","
                 + verb + "," + verbTag + "," + verbCat + "," + verbProcess + ","
                 + object + "," + objectTag + "," + objectNer + "," + objectType;
+    }
+
+    public Date getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public String getRequirement() {
+        return requirement;
+    }
+
+    public void setRequirement(String requirement) {
+        this.requirement = requirement;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getSubject() {

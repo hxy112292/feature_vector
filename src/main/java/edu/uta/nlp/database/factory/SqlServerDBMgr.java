@@ -8,7 +8,7 @@ public class SqlServerDBMgr extends AbstractDataBase{
     }
 
     @Override
-    public Object excuteSqlCmd(String sql) throws Exception {
+    public Object executeSqlCmd(String sql) throws Exception {
         return null;
     }
 
