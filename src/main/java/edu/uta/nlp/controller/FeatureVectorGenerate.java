@@ -3,6 +3,9 @@ package edu.uta.nlp.controller;
 import edu.mit.jwi.item.LexFile;
 import edu.mit.jwi.item.POS;
 import edu.stanford.nlp.util.StringUtils;
+import edu.uta.nlp.NlpTool.JieBaTool;
+import edu.uta.nlp.NlpTool.NlpTool;
+import edu.uta.nlp.NlpTool.StanfordTool;
 import edu.uta.nlp.constant.SynsetType;
 import edu.uta.nlp.entity.ClassificationCoreLabel;
 import edu.uta.nlp.entity.FeatureVector;
@@ -22,6 +25,7 @@ import org.slf4j.LoggerFactory;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.util.Vector;
 
 /**
  * @author hxy
@@ -56,17 +60,21 @@ public class FeatureVectorGenerate {
 
                 Aggregate<FeatureVector> featureVectorAggregate =  new Aggregate();
                 //use openIE to get subject, verb, object gross.
-                featureVectorAggregate.addAll(OpenIE.selectGross(line));
+                NlpTool nlptool = new StanfordTool();
+                //NlpTool nlptool = new JieBaTool();
+
+                featureVectorAggregate.addAll(nlptool.selectGross(line));
                 Iterator<FeatureVector> featureVectorIterator = featureVectorAggregate.getIterator();
+
 
                 while(featureVectorIterator.hasNext()) {
                     FeatureVector featureVector = (FeatureVector) featureVectorIterator.next();
 
                     //use openIE to get subject, verb, object lemma.
-                    OpenIESimpleLemma openIESimpleLemma = OpenIE.selectLemma(featureVector);
+                    OpenIESimpleLemma openIESimpleLemma = nlptool.selectLemma(featureVector);
                     String sentence = openIESimpleLemma.toString();
                     Aggregate<ClassificationCoreLabel> coreLabelAggregate = new Aggregate();
-                    coreLabelAggregate.addAll(CoreAnnotate.generate(sentence));
+                    coreLabelAggregate.addAll(nlptool.generate(sentence));
                     Iterator<ClassificationCoreLabel> coreLabelIterator = coreLabelAggregate.getIterator();
 
                     //get pos, ner
