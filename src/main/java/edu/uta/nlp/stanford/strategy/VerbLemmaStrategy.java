@@ -1,4 +1,4 @@
-package edu.uta.nlp.strategy;
+package edu.uta.nlp.stanford.strategy;
 
 import edu.mit.jwi.item.POS;
 import edu.uta.nlp.stanford.CoreAnnotate;

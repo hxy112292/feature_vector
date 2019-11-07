@@ -1,8 +1,8 @@
 package edu.uta.nlp.file;
 
-import edu.uta.nlp.composite.AbstractFileNode;
-import edu.uta.nlp.composite.FileNode;
-import edu.uta.nlp.composite.FolderNode;
+import edu.uta.nlp.file.composite.AbstractFileNode;
+import edu.uta.nlp.file.composite.FileNode;
+import edu.uta.nlp.file.composite.FolderNode;
 
 import java.io.File;
 import java.util.ArrayList;

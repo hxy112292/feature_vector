@@ -1,4 +1,4 @@
-package edu.uta.nlp.composite;
+package edu.uta.nlp.file.composite;
 
 import java.io.File;
 import java.util.Collections;
