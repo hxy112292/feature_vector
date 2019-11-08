@@ -3,6 +3,8 @@ package edu.uta.nlp.controller;
 import edu.mit.jwi.item.LexFile;
 import edu.mit.jwi.item.POS;
 import edu.stanford.nlp.util.StringUtils;
+import edu.uta.nlp.database.service.FeatureVectorMysqlAccess;
+import edu.uta.nlp.database.service.impl.FeatureVectorAccessImpl;
 import edu.uta.nlp.tool.NlpTool;
 import edu.uta.nlp.tool.stanford.StanfordTool;
 import edu.uta.nlp.constant.SynsetType;
@@ -14,14 +16,19 @@ import edu.uta.nlp.file.FilePath;
 import edu.uta.nlp.file.ScanFile;
 import edu.uta.nlp.iterator.Aggregate;
 import edu.uta.nlp.iterator.Iterator;
+import edu.uta.nlp.util.StrUtil;
+import edu.uta.nlp.util.TextFileUtil;
 import edu.uta.nlp.wordnet.Vcat;
 import edu.uta.nlp.wordnet.WordNetApi;
+import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * @author hxy
@@ -46,6 +53,11 @@ public class FeatureVectorGenerate {
             int sentNo = 0;
             // line in file
             String line;
+            // create a table in mysql
+            SimpleDateFormat simpleDate = new SimpleDateFormat("yyyyMMddHHmmss");
+            String tableName = TextFileUtil.getFileNameNoEx(file.getName()) + "_" + simpleDate.format(new Date());
+            tableName = StrUtil.filterTableName(tableName);
+            FeatureVectorAccessImpl featureVectorAccess = new FeatureVectorMysqlAccess(tableName);
             //csv file header
             StringBuilder sb = new StringBuilder("requirement, subject, s-tag, s-ner, s-type, verb, v-tag, v-cat, v-process, object, o-tag, o-ner, o-type, label \n");
             while ((line = bufferedReader.readLine()) != null) {
@@ -88,6 +100,8 @@ public class FeatureVectorGenerate {
                             featureVector.setVerbTag(ccl.getPos());
                         }
                     }
+
+                    //get type, process
                     featureVector.setSubjectType(WordNetApi.getWordType(featureVector.getSubject(), POS.NOUN));
                     featureVector.setObjectType(WordNetApi.getWordType(featureVector.getObject(), POS.NOUN));
                     featureVector.setVerbProcess(WordNetApi.getRelationWord(openIESimpleLemma.getVerb(), POS.VERB).contains("ion") ? "TRUE" : "FALSE");
@@ -102,10 +116,14 @@ public class FeatureVectorGenerate {
 
                     featureVector.setRequirement(String.valueOf(sentNo));
                     sb.append(featureVector.toString() + " \n");
+
+                    featureVectorAccess.insertFeatureVector(featureVector);
                 }
             }
+            //wirte to csv file
             CSVFile csvFile = CSVFile.getInstance();
             String fileName = file.getAbsolutePath().substring(FilePath.getRequirementPath().length());
+            fileName = TextFileUtil.getFileNameNoEx(fileName);
             csvFile.writeToFeatureVector(sb.toString(), fileName + "-FeatureVector");
         }
     }

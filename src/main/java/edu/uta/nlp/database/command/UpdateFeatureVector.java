@@ -5,9 +5,11 @@ import edu.uta.nlp.constant.DataBaseType;
 import edu.uta.nlp.database.factory.AbstractDataBase;
 import edu.uta.nlp.database.factory.DataBaseFactory;
 import edu.uta.nlp.entity.FeatureVector;
+import edu.uta.nlp.util.CamelUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.lang.reflect.Field;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -16,57 +18,33 @@ import java.util.Date;
  */
 public class UpdateFeatureVector implements MysqlCmd{
 
+    private String tableName;
+
     private FeatureVector featureVector;
 
     private static Logger logger = LoggerFactory.getLogger(UpdateFeatureVector.class);
 
-    public UpdateFeatureVector(FeatureVector featureVector) {
+    public UpdateFeatureVector(String tableName, FeatureVector featureVector) {
+        this.tableName = tableName;
         this.featureVector = featureVector;
     }
 
     @Override
     public Object execute() throws Exception {
 
-        StringBuilder sb = new StringBuilder("update feature_vector set ");
-        if(!StringUtils.isNullOrEmpty(featureVector.getRequirement())) {
-            sb.append("requirement = '" + featureVector.getRequirement() + "',");
+        StringBuilder sb = new StringBuilder("update " + tableName + " set ");
+        for (Field field : featureVector.getClass().getDeclaredFields()) {
+            field.setAccessible(Boolean.TRUE);
+            if(!field.getName().equals("id")
+                    && !field.getName().equals("createTime")
+                    && !field.getName().equals("updateTime")
+                    && field.get(featureVector) != null
+                    && !StringUtils.isNullOrEmpty(field.get(featureVector).toString())) {
+                sb.append(CamelUtil.camel2under(field.getName()) + " ='");
+                sb.append(field.get(featureVector).toString() + "',");
+            }
         }
-        if(!StringUtils.isNullOrEmpty(featureVector.getSubject())) {
-            sb.append("subject = '" + featureVector.getSubject() + "',");
-        }
-        if(!StringUtils.isNullOrEmpty(featureVector.getSubjectNER())) {
-            sb.append("subject_ner = '" + featureVector.getSubjectNER() + "',");
-        }
-        if(!StringUtils.isNullOrEmpty(featureVector.getSubjectTag())) {
-            sb.append("subject_tag = '" + featureVector.getSubjectTag() + "',");
-        }
-        if(!StringUtils.isNullOrEmpty(featureVector.getSubjectType())) {
-            sb.append("subject_type = '" + featureVector.getSubjectType() + "',");
-        }
-        if(!StringUtils.isNullOrEmpty(featureVector.getVerb())) {
-            sb.append("verb = '" + featureVector.getVerb() + "',");
-        }
-        if(!StringUtils.isNullOrEmpty(featureVector.getVerbTag())) {
-            sb.append("verb_tag = '" + featureVector.getVerbTag() + "',");
-        }
-        if(!StringUtils.isNullOrEmpty(featureVector.getVerbCat())) {
-            sb.append("verb_cat = '" + featureVector.getVerbCat() + "',");
-        }
-        if(!StringUtils.isNullOrEmpty(featureVector.getVerbProcess())) {
-            sb.append("verb_process = '" + featureVector.getVerbProcess() + "',");
-        }
-        if(!StringUtils.isNullOrEmpty(featureVector.getObject())) {
-            sb.append("object = '" + featureVector.getObject() + "',");
-        }
-        if(!StringUtils.isNullOrEmpty(featureVector.getObjectNer())) {
-            sb.append("object_ner = '" + featureVector.getObjectNer() + "',");
-        }
-        if(!StringUtils.isNullOrEmpty(featureVector.getObjectTag())) {
-            sb.append("object_tag = '" + featureVector.getObjectTag() + "',");
-        }
-        if(!StringUtils.isNullOrEmpty(featureVector.getObjectType())) {
-            sb.append("object_type = '" + featureVector.getObjectType() + "',");
-        }
+
         SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String timestamp = simpleDate.format(new Date());
         sb.append("update_time = '" + timestamp + "'");

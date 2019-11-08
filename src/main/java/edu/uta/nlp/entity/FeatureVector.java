@@ -21,6 +21,7 @@ public class FeatureVector implements Cloneable{
     private String objectTag;
     private String objectNer;
     private String objectType;
+    private Integer label;
     private Date updateTime;
     private Date createTime;
 
@@ -29,6 +30,14 @@ public class FeatureVector implements Cloneable{
         return requirement + "," + subject + "," + subjectTag + "," + subjectNER + "," + subjectType + ","
                 + verb + "," + verbTag + "," + verbCat + "," + verbProcess + ","
                 + object + "," + objectTag + "," + objectNer + "," + objectType;
+    }
+
+    public Integer getLabel() {
+        return label;
+    }
+
+    public void setLabel(Integer label) {
+        this.label = label;
     }
 
     public Date getUpdateTime() {

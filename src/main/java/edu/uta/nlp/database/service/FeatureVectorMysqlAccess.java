@@ -13,12 +13,22 @@ import java.util.List;
  */
 public class FeatureVectorMysqlAccess implements FeatureVectorAccessImpl {
 
+    private String tableName;
+
     private static Logger logger = LoggerFactory.getLogger(FeatureVector.class);
+
+    public FeatureVectorMysqlAccess(String tableName) throws Exception{
+        this.tableName = tableName;
+
+        CreateTableFeatureVector createTableFeatureVector = new CreateTableFeatureVector(tableName);
+
+        createTableFeatureVector.execute();
+    }
 
     @Override
     public List<FeatureVector> selectFeatureVectorBySelective(FeatureVector featureVector) throws Exception{
 
-        GetFeatureVector getFeatureVector = new GetFeatureVector(featureVector);
+        GetFeatureVector getFeatureVector = new GetFeatureVector(tableName, featureVector);
 
         return (List<FeatureVector>) getFeatureVector.execute();
     }
@@ -26,7 +36,7 @@ public class FeatureVectorMysqlAccess implements FeatureVectorAccessImpl {
     @Override
     public int insertFeatureVector(FeatureVector featureVector) throws Exception {
 
-        InsertFeatureVector insertFeatureVector = new InsertFeatureVector(featureVector);
+        InsertFeatureVector insertFeatureVector = new InsertFeatureVector(tableName, featureVector);
 
         return (int) insertFeatureVector.execute();
     }
@@ -34,7 +44,7 @@ public class FeatureVectorMysqlAccess implements FeatureVectorAccessImpl {
     @Override
     public int deleteFeatureVector(Integer id) throws Exception {
 
-        DeleteFeatureVector deleteFeatureVector = new DeleteFeatureVector(id);
+        DeleteFeatureVector deleteFeatureVector = new DeleteFeatureVector(tableName, id);
 
         return (int) deleteFeatureVector.execute();
     }
@@ -42,7 +52,7 @@ public class FeatureVectorMysqlAccess implements FeatureVectorAccessImpl {
     @Override
     public int updateFeatureVectorBySelective(FeatureVector featureVector) throws Exception {
 
-        UpdateFeatureVector updateFeatureVector = new UpdateFeatureVector(featureVector);
+        UpdateFeatureVector updateFeatureVector = new UpdateFeatureVector(tableName, featureVector);
 
         return (int) updateFeatureVector.execute();
     }

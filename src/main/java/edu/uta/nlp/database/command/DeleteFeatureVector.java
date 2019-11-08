@@ -11,18 +11,21 @@ import org.slf4j.LoggerFactory;
  */
 public class DeleteFeatureVector implements MysqlCmd {
 
+    private String tableName;
+
     private int id;
 
     private static Logger logger = LoggerFactory.getLogger(DeleteFeatureVector.class);
 
-    public DeleteFeatureVector(int id) {
+    public DeleteFeatureVector(String tableName, int id) {
+        this.tableName = tableName;
         this.id = id;
     }
 
     @Override
     public Object execute() throws Exception {
 
-        StringBuilder sb = new StringBuilder("delete from feature_vector where 1=1");
+        StringBuilder sb = new StringBuilder("delete from " + tableName + " where 1=1");
         sb.append(" and id=" + id);
 
         logger.info("delete feature vector: " + sb.toString());
