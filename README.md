@@ -3,7 +3,8 @@
 We are team6, our class is CSE-5322.
  
 In the project, we have use singleton pattern, composite pattern, prototype pattern,
-iterator pattern, strategy pattern. 
+iterator pattern, strategy pattern, bridge pattern, command pattern, factory pattern,
+template pattern. 
 
 Before run the project, you should take the following steps :
 
