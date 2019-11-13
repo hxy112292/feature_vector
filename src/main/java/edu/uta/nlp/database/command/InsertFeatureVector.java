@@ -67,12 +67,9 @@ public class InsertFeatureVector implements MysqlCmd{
 
         DataBaseFactory dataBaseFactory = new DataBaseFactory();
         AbstractDataBase database = dataBaseFactory.getDatabase(DataBaseType.DATABASE_TYPE_MYSQL);
-        database.open();
-        Object result = database.executeSqlCmd(sb.toString());
+        Object result = database.operation(sb.toString());
 
         logger.info("insert feature vector result: " + result.toString());
-
-        database.close();
 
         return result;
     }

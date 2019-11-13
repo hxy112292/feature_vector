@@ -8,7 +8,7 @@ public class OracleDBMgr extends AbstractDataBase{
     }
 
     @Override
-    public Object executeSqlCmd(String sql) throws Exception {
+    public <T> Object executeSqlCmd(String sql, Class<T>... clazz) throws Exception {
         return null;
     }
 

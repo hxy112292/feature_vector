@@ -1,5 +1,9 @@
 package edu.uta.nlp.database.factory;
 
+import edu.uta.nlp.util.ResultSetToList;
+
+import java.util.List;
+
 /**
  * @author hxy
  */
@@ -15,9 +19,20 @@ public abstract class AbstractDataBase {
 
     public abstract void open() throws Exception;
 
-    public abstract Object executeSqlCmd(String sql) throws Exception;
+    public abstract <T> Object executeSqlCmd(String sql, Class<T>... clazz) throws Exception;
 
     public abstract void close() throws Exception;
+
+    public final <T> Object operation(String sql, Class<T>... clazz) throws Exception{
+
+        open();
+
+        Object result = executeSqlCmd(sql, clazz);
+
+        close();
+
+        return result;
+    }
 
     public String getDriver() {
         return driver;

@@ -6,6 +6,9 @@ import edu.uta.nlp.database.factory.DataBaseFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * @author hxy
+ */
 public class CreateTableFeatureVector implements MysqlCmd{
 
     private String tableName;
@@ -44,12 +47,9 @@ public class CreateTableFeatureVector implements MysqlCmd{
 
         DataBaseFactory dataBaseFactory = new DataBaseFactory();
         AbstractDataBase database = dataBaseFactory.getDatabase(DataBaseType.DATABASE_TYPE_MYSQL);
-        database.open();
-        Object result = database.executeSqlCmd(sb.toString());
+        Object result = database.operation(sb.toString());
 
         logger.info("create table " + tableName + " result: " + result.toString());
-
-        database.close();
 
         return result;
     }

@@ -49,13 +49,10 @@ public class GetFeatureVector implements MysqlCmd {
 
         DataBaseFactory dataBaseFactory = new DataBaseFactory();
         AbstractDataBase database = dataBaseFactory.getDatabase(DataBaseType.DATABASE_TYPE_MYSQL);
-        database.open();
-        Object result = database.executeSqlCmd(sb.toString());
-        List<FeatureVector> featureVectorList = ResultSetToList.exchangeData((ResultSet) result, FeatureVector.class);
+        Object result = database.operation(sb.toString(), FeatureVector.class);
 
-        logger.info("get feature vector result: " + featureVectorList.toString());
+        logger.info("get feature vector result: " + result.toString());
 
-        database.close();
-        return featureVectorList;
+        return result;
     }
 }
