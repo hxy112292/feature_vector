@@ -134,11 +134,11 @@ public class WordNetApi {
         List<WordInfo> wordInfoList = getWordInfo(word, pos);
         for(WordInfo wordInfo : wordInfoList) {
             if(wordInfo.getLexFileName().equals(LexFile.NOUN_PERSON.getName())) {
-                return wordInfo.getLexFileName().toUpperCase();
+                return wordInfo.getLexFileName().replace('.', '_').toUpperCase();
             }
         }
 
-        return wordInfoList.get(0).getLexFileName().toUpperCase();
+        return wordInfoList.get(0).getLexFileName().replace('.', '_').toUpperCase();
     }
 
     private static IDictionary findDict() throws IOException {

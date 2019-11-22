@@ -13,7 +13,7 @@ import edu.uta.nlp.wordnet.WordNetApi;
 public enum VerbLemmaStrategy {
 
     /**
-     * process one word verb phrase
+     * extractUseCase one word verb phrase
      *
      * @return verb String
      */
@@ -25,7 +25,7 @@ public enum VerbLemmaStrategy {
         }
     },
     /**
-     * process two word verb phrase
+     * extractUseCase two word verb phrase
      *
      * @return verb String
      */
@@ -47,7 +47,7 @@ public enum VerbLemmaStrategy {
         }
     },
     /**
-     * process three word verb phrase
+     * extractUseCase three word verb phrase
      *
      * @return verb String
      */

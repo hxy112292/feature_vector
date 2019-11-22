@@ -1,6 +1,6 @@
 package edu.uta.nlp.database.command;
 
-import edu.uta.nlp.constant.DataBaseType;
+import edu.uta.nlp.constant.Constants;
 import edu.uta.nlp.database.factory.AbstractDataBase;
 import edu.uta.nlp.database.factory.DataBaseFactory;
 import org.slf4j.Logger;
@@ -31,7 +31,7 @@ public class DeleteFeatureVector implements MysqlCmd {
         logger.info("delete feature vector: " + sb.toString());
 
         DataBaseFactory dataBaseFactory = new DataBaseFactory();
-        AbstractDataBase database = dataBaseFactory.getDatabase(DataBaseType.DATABASE_TYPE_MYSQL);
+        AbstractDataBase database = dataBaseFactory.getDatabase(Constants.DATABASE_TYPE_MYSQL);
         Object result = database.operation(sb.toString());
 
         logger.info("delete feature vector result :" + result.toString());

@@ -1,12 +1,7 @@
 package edu.uta.nlp.database.service.impl;
 
-import edu.uta.nlp.constant.DataBaseType;
-import edu.uta.nlp.database.factory.AbstractDataBase;
-import edu.uta.nlp.database.factory.DataBaseFactory;
 import edu.uta.nlp.entity.FeatureVector;
-import edu.uta.nlp.util.ResultSetToList;
 
-import java.sql.ResultSet;
 import java.util.List;
 
 /**

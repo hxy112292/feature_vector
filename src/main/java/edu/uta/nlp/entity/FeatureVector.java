@@ -8,7 +8,6 @@ import java.util.Date;
 public class FeatureVector implements Cloneable{
 
     private Integer id;
-    private String requirement;
     private String subject;
     private String subjectTag;
     private String subjectNER;
@@ -21,22 +20,22 @@ public class FeatureVector implements Cloneable{
     private String objectTag;
     private String objectNer;
     private String objectType;
-    private Integer label;
+    private String label;
     private Date updateTime;
     private Date createTime;
 
     @Override
     public String toString() {
-        return requirement + "," + subject + "," + subjectTag + "," + subjectNER + "," + subjectType + ","
+        return subject + "," + subjectTag + "," + subjectNER + "," + subjectType + ","
                 + verb + "," + verbTag + "," + verbCat + "," + verbProcess + ","
-                + object + "," + objectTag + "," + objectNer + "," + objectType;
+                + object + "," + objectTag + "," + objectNer + "," + objectType+","+label;
     }
 
-    public Integer getLabel() {
+    public String getLabel() {
         return label;
     }
 
-    public void setLabel(Integer label) {
+    public void setLabel(String label) {
         this.label = label;
     }
 
@@ -54,14 +53,6 @@ public class FeatureVector implements Cloneable{
 
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
-    }
-
-    public String getRequirement() {
-        return requirement;
-    }
-
-    public void setRequirement(String requirement) {
-        this.requirement = requirement;
     }
 
     public Integer getId() {

@@ -29,8 +29,7 @@ public class ScanFile {
         }
     }
 
-    public static List<File> getRequirements() throws Exception{
-        File folder = new File(FilePath.getRequirementPath());
+    public static List<File> getFiles(File folder) throws Exception{
         AbstractFileNode noder = new FolderNode(folder);
         scan(noder);
         List<File> fileList = new ArrayList<>();

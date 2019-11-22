@@ -1,0 +1,21 @@
+Num,Use Case
+1,member transport requests
+2,member transport request on all
+3,member transport request
+4,member transport bulk request on all
+5,member transport bulk request
+6,member execute statistics
+7,member execute statistics on messages
+8,administrator extract statistics
+9,administrator extract statistics of use
+10,enforcement authority ask for driver _s card status to Card Issuing Authority
+11,enforcement authority ask for driver _s card status
+12,enforcement authority ask for driver _s card status to corresponding Card Issuing Authority
+13,enforcement authority ask for driver _s card status to corresponding Card Issuing Authority of Member State
+14,enforcement authority ask for driver _s card status to Card Issuing Authority of Member State
+15,enforcement authority ask to Card Issuing Authority of Member State
+16,enforcement authority ask for workshop card status
+17,enforcement authority ask to Card Issuing Authority
+18,enforcement authority ask to corresponding Card Issuing Authority
+19,enforcement authority ask to corresponding Card Issuing Authority of Member State
+

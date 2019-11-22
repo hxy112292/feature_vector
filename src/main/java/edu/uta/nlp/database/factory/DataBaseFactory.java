@@ -1,6 +1,6 @@
 package edu.uta.nlp.database.factory;
 
-import edu.uta.nlp.constant.DataBaseType;
+import edu.uta.nlp.constant.Constants;
 
 /**
  * @author hxy
@@ -8,11 +8,11 @@ import edu.uta.nlp.constant.DataBaseType;
 public class DataBaseFactory {
 
     public AbstractDataBase getDatabase(String databaseType) {
-        if(databaseType.equals(DataBaseType.DATABASE_TYPE_MYSQL)) {
+        if(databaseType.equals(Constants.DATABASE_TYPE_MYSQL)) {
             return new MysqlDBMgr();
-        } else if(databaseType.equals(DataBaseType.DATABASE_TYPE_ORACLE)) {
+        } else if(databaseType.equals(Constants.DATABASE_TYPE_ORACLE)) {
             return new OracleDBMgr();
-        } else if(databaseType.equals(DataBaseType.DATABASE_TYPE_SQLSERVER)) {
+        } else if(databaseType.equals(Constants.DATABASE_TYPE_SQLSERVER)) {
             return new SqlServerDBMgr();
         } else {
             return null;

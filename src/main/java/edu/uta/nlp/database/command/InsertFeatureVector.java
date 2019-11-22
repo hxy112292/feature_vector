@@ -1,7 +1,7 @@
 package edu.uta.nlp.database.command;
 
 import edu.stanford.nlp.util.StringUtils;
-import edu.uta.nlp.constant.DataBaseType;
+import edu.uta.nlp.constant.Constants;
 import edu.uta.nlp.database.factory.AbstractDataBase;
 import edu.uta.nlp.database.factory.DataBaseFactory;
 import edu.uta.nlp.entity.FeatureVector;
@@ -66,7 +66,7 @@ public class InsertFeatureVector implements MysqlCmd{
         logger.info("insert feature vector: " + sb.toString());
 
         DataBaseFactory dataBaseFactory = new DataBaseFactory();
-        AbstractDataBase database = dataBaseFactory.getDatabase(DataBaseType.DATABASE_TYPE_MYSQL);
+        AbstractDataBase database = dataBaseFactory.getDatabase(Constants.DATABASE_TYPE_MYSQL);
         Object result = database.operation(sb.toString());
 
         logger.info("insert feature vector result: " + result.toString());

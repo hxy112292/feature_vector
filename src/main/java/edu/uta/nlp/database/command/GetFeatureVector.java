@@ -1,19 +1,15 @@
 package edu.uta.nlp.database.command;
 
 import edu.stanford.nlp.util.StringUtils;
-import edu.uta.nlp.constant.DataBaseType;
+import edu.uta.nlp.constant.Constants;
 import edu.uta.nlp.database.factory.AbstractDataBase;
 import edu.uta.nlp.database.factory.DataBaseFactory;
 import edu.uta.nlp.entity.FeatureVector;
 import edu.uta.nlp.util.CamelUtil;
-import edu.uta.nlp.util.ResultSetToList;
-import edu.uta.nlp.util.StrUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.lang.reflect.Field;
-import java.sql.ResultSet;
-import java.util.List;
 
 /**
  * @author hxy
@@ -48,7 +44,7 @@ public class GetFeatureVector implements MysqlCmd {
         logger.info("get feature vector: " + sb.toString());
 
         DataBaseFactory dataBaseFactory = new DataBaseFactory();
-        AbstractDataBase database = dataBaseFactory.getDatabase(DataBaseType.DATABASE_TYPE_MYSQL);
+        AbstractDataBase database = dataBaseFactory.getDatabase(Constants.DATABASE_TYPE_MYSQL);
         Object result = database.operation(sb.toString(), FeatureVector.class);
 
         logger.info("get feature vector result: " + result.toString());

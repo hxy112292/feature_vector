@@ -35,7 +35,7 @@ public class StrUtil {
 
     public static String chRegex(String s) {
         if(s.contains("'")) {
-            s = s.replaceAll("\\'","\\\\\\'");
+            s = s.replaceAll("\\'","_");
         }
         if(s.contains("&")) {
             s = s.replaceAll("&", "_");

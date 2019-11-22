@@ -91,7 +91,7 @@ public class TextFileUtil {
         if ((filename != null) && (filename.length() > 0)) {
             int dot = filename.lastIndexOf('.');
             if ((dot >-1) && (dot < (filename.length()))) {
-                return filename.substring(0, dot);
+                return getFileNameNoEx(filename.substring(0, dot));
             }
         }
         return filename;

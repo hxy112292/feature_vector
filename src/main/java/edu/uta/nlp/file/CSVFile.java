@@ -1,5 +1,6 @@
 package edu.uta.nlp.file;
 
+import edu.uta.nlp.constant.Constants;
 import edu.uta.nlp.util.TextFileUtil;
 import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
@@ -27,17 +28,26 @@ public class CSVFile {
     }
 
 
-    public void writeToFeatureVector(String content, String filename) throws Exception{
+    public String  writeToCSV(String content, String filename, String label) throws Exception{
 
-        String rootDir = FilePath.getResultPath();
+        String rootDir;
+        if(label.equals(Constants.LABEL)) {
+            rootDir = FilePath.getLabeledResultPath();
+        } else if(label.equals(Constants.NO_LABEL)){
+            rootDir = FilePath.getUnLabeledResultPath();
+        } else {
+            rootDir = FilePath.getUseCasePath();
+        }
 
         DateTime dt = new DateTime(new Date());
         DateTimeFormatter dtf = DateTimeFormat.forPattern("yyyy-MM-dd-HH-mm");
-        String outputFilename = rootDir + File.separator + filename + "-" + dt.toString(dtf) + ".csv";
+        String outputFilename = rootDir + File.separator + filename + "." + dt.toString(dtf) + ".csv";
 
         TextFileUtil.creatTxtFile(outputFilename);
         TextFileUtil.writeTxtFile(outputFilename, content);
 
         logger.info("Save file:"+ outputFilename);
+
+        return outputFilename;
     }
 }

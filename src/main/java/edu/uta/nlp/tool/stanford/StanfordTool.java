@@ -75,7 +75,7 @@ public class StanfordTool implements NlpTool {
         Pipeline pipeline = Pipeline.getInstance();
         pipeline.getPipe().annotate(doc);
         for (CoreMap sentence : doc.get(CoreAnnotations.SentencesAnnotation.class)) {
-            // Get the FeatureVectorGenerate triples for the sentence
+            // Get the FeatureVector triples for the sentence
             Collection<RelationTriple> triples = sentence.get(NaturalLogicAnnotations.RelationTriplesAnnotation.class);
             for (RelationTriple triple : triples) {
                 String subjectLemmaGloss = triple.subjectLemmaGloss();

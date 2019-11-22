@@ -1,6 +1,6 @@
 package edu.uta.nlp;
 
-import edu.uta.nlp.controller.FeatureVectorGenerate;
+import edu.uta.nlp.controller.FeatureVectorController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-            FeatureVectorGenerate.process();
+            FeatureVectorController.extractUseCase();
         } catch (Exception e) {
             e.printStackTrace();
         }

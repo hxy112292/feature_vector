@@ -1,0 +1,18 @@
+The system must allow a member of the network to transport requests to a particular or all the other members about the possible delivery of a driver's smart card to a similar person.
+The system must allow a member of the network to transport a bulk request on all or a large part of its driver's smart cardholders to a particular or all members of the network.
+The system must allow a member to execute statistics on messages issued and received from/to his system.
+The system must provide the automatic reply to the sender of the request through the use of a standard interface to the Members systems.
+The system must track the workflow between senders and related replies.
+The system must be able, in accordance with the rules on delays for each transaction, to automatically transmit alert messages to senders/replier/administrator when f.i.a constraint on delay for the reply is not fulfilled.
+The system must allow the administrator to extract statistics of use, standard delay of reply by member/period, percentage of unsuccessful transaction.
+The system must provide the management of user rights and permissions.
+The system must be able to define and manage various types of messages already in the driver’s smart cardholder like a pre-delivery check, stolen/lost cards, renewals, exchanges, and duplicates.
+The system must be able to include new members in the network through simple administrative tasks.
+The system must be highly automatic to relieve the users of as many repetitive and tedious tasks as possible.
+The system must provide at the application level a full security and encryption policy compatible with the level of security required in such a situation.
+The system must guarantee that none of the Member of the network, including the administrator, is technically able to reconstruct a consolidated European database through the use of the messages exchanged.
+The system must be such that none of the Member States of the network, including the administrator, re-construct a consolidated European database.
+The system must allow a Member State to ask for the status of card to the corresponding Card Issuing Authority of the Member State having issued the card.
+The system must allow a Member State to transport card status modification requests to the corresponding Card Issuing Authority of the Member State having issued the card.
+The system must allow enforcement authorities to ask for driver's card status to the corresponding Card Issuing Authority of the Member State having issued the card.
+The system must allow enforcement authorities to ask for workshop card status to the corresponding Card Issuing Authority of the Member State having issued the card.

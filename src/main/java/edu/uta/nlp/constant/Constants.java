@@ -1,6 +1,15 @@
 package edu.uta.nlp.constant;
 
-public class DataBaseType {
+/**
+ * @author hxy
+ */
+public class Constants {
+
+    public final static String LABEL = "label";
+
+    public final static String NO_LABEL = "no label";
+
+    public final static String USE_CASE = "use case";
 
     public final static String DATABASE_TYPE_MYSQL = "mysql";
 
