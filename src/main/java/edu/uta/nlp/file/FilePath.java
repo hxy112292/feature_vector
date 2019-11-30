@@ -15,17 +15,17 @@ public class FilePath {
 
     public static String getLabeledResultPath() {
 
-        return System.getProperty("user.dir") + File.separator + "feature_vector_result" + File.separator + "label";
+        return System.getProperty("user.dir") + File.separator + "feature_vector_label";
     }
 
     public static String getUseCasePath() {
 
-        return System.getProperty("user.dir") + File.separator + "feature_vector_result" + File.separator + "use case";
+        return System.getProperty("user.dir") + File.separator + "use_case";
     }
 
     public static String getUnLabeledResultPath() {
 
-        return System.getProperty("user.dir") + File.separator + "feature_vector_result" + File.separator + "no label";
+        return System.getProperty("user.dir") + File.separator + "feature_vector_no_label";
     }
 
     public static String getModelPath() {

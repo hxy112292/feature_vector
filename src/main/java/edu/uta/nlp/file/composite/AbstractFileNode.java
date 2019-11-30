@@ -4,6 +4,8 @@ import java.io.File;
 import java.util.List;
 
 /**
+ * Composite pattern
+ *
  * @author hxy
  */
 public abstract class AbstractFileNode {

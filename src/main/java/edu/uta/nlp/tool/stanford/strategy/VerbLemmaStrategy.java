@@ -1,109 +1,30 @@
 package edu.uta.nlp.tool.stanford.strategy;
 
-import edu.mit.jwi.item.POS;
-import edu.uta.nlp.tool.NlpTool;
-import edu.uta.nlp.tool.stanford.StanfordTool;
-import edu.uta.nlp.util.StrUtil;
-import edu.uta.nlp.wordnet.WordNetApi;
-
 /**
  * @author housirvip
  */
 
-public enum VerbLemmaStrategy {
+public class VerbLemmaStrategy {
 
-    /**
-     * extractUseCase one word verb phrase
-     *
-     * @return verb String
-     */
-    ONE() {
-        @Override
-        public String process(String verb) {
-            //do something
-            return verb;
-        }
-    },
-    /**
-     * extractUseCase two word verb phrase
-     *
-     * @return verb String
-     */
-    TWO() {
-        @Override
-        public String process(String verb) throws Exception {
-            String lastWord = StrUtil.getLastWord(verb);
-            String firstWord = StrUtil.getFirstWord(verb);
-            NlpTool nlptool = new StanfordTool();
+    public static String getVerb(String verb) throws Exception{
 
-            if (WordNetApi.isPos(firstWord, POS.VERB) &&
-                    (nlptool.isPosByString(lastWord, "RB") || nlptool.isPosByString(lastWord, "IN") ||
-                            nlptool.isPosByString(lastWord, "TO") || nlptool.isPosByString(lastWord, "JJ"))) {
-                return firstWord;
-            } else if (nlptool.isPosByString(firstWord, "RB") && WordNetApi.isPos(lastWord, POS.VERB)) {
-                return firstWord;
-            }
-            return null;
-        }
-    },
-    /**
-     * extractUseCase three word verb phrase
-     *
-     * @return verb String
-     */
-    THREE() {
-        @Override
-        public String process(String verb) throws Exception{
-            String lastWord = StrUtil.getLastWord(verb);
-            String firstWord = StrUtil.getFirstWord(verb);
-            String secondWord = StrUtil.getIndexOfWord(verb, 2);
-            NlpTool nlptool = new StanfordTool();
-            //do something
-            if(WordNetApi.isPos(firstWord, POS.VERB)) {
-                if(nlptool.isPosByString(lastWord, "RB") || nlptool.isPosByString(lastWord, "IN") ||
-                        nlptool.isPosByString(lastWord, "TO")|| nlptool.isPosByString(lastWord, "JJ")) {
-                    return firstWord;
-                }
-            } else if(nlptool.isPosByString(firstWord, "RB") && WordNetApi.isPos(secondWord, POS.VERB)) {
-                if (nlptool.isPosByString(lastWord, "IN") || nlptool.isPosByString(lastWord, "TO") ||
-                        nlptool.isPosByString(lastWord, "JJ")) {
-                    return secondWord;
-                }
-            }
-            return null;
-        }
-    },
+        Context context;
 
-    OTHER() {
-        @Override
-        public String process(String verb) throws Exception{
-            //do something
-            String lastWord = StrUtil.getLastWord(verb);
-            String firstWord = StrUtil.getFirstWord(verb);
-            NlpTool nlptool = new StanfordTool();
-            if(WordNetApi.isPos(firstWord, POS.VERB)) {
-                if(nlptool.isPosByString(lastWord, "RB") || nlptool.isPosByString(lastWord, "IN") ||
-                        nlptool.isPosByString(lastWord, "TO")|| nlptool.isPosByString(lastWord, "JJ")) {
-                    return firstWord;
-                }
-            }
-            return null;
-        }
-    };
+        Integer wordTotal = verb.split(" ").length;
 
-    public abstract String process(String verb) throws Exception;
-
-    public static VerbLemmaStrategy getStrategy(int len) {
-
-        switch (len) {
+        switch (wordTotal) {
             case 1:
-                return ONE;
+                context = new Context(new OneWord());
+                return context.executeStrategy(verb);
             case 2:
-                return TWO;
+                context = new Context(new TwoWord());
+                return context.executeStrategy(verb);
             case 3:
-                return THREE;
+                context = new Context(new ThreeWord());
+                return context.executeStrategy(verb);
             default:
-                return OTHER;
+                context = new Context(new Other());
+                return context.executeStrategy(verb);
         }
     }
 }

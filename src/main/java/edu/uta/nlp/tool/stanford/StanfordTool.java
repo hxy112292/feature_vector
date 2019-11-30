@@ -102,9 +102,7 @@ public class StanfordTool implements NlpTool {
 
         openIESimpleLemma.setSubject(StrUtil.getLastWord(featureVector.getSubject()));
 
-        Integer wordTotal = featureVector.getVerb().split(" ").length;
-        VerbLemmaStrategy verbLemmaStrategy=VerbLemmaStrategy.getStrategy(wordTotal);
-        String verb = verbLemmaStrategy.process(featureVector.getVerb());
+        String verb = VerbLemmaStrategy.getVerb(featureVector.getVerb());
         openIESimpleLemma.setVerb(verb);
         if(verb == null) {
             openIESimpleLemma.setVerb(StrUtil.getFirstWord(featureVector.getVerb()));

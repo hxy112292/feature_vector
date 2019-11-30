@@ -1,0 +1,41 @@
+Num,Actor, Verb, Object
+1,potential user,create,online account identified by email address
+2,potential user,create,account identified by email address
+3,potential user,create,account identified by valid email address
+4,potential user,create,online account identified
+5,potential user,create,account identified
+6,potential user,create,account
+7,potential user,create,online account
+8,potential user,create,online account identified by valid email address
+9,user,specify,account type
+10,user,change,temporary password
+11,user,change,password
+12,user,change password at,login
+13,user,change password at,first login
+14,event organizer,submit,event proposal
+15,event organizer,cancel,event with cancellation charge
+16,event organizer,cancel,event
+17,event organizer,cancel,event with 15 % cancellation charge
+18,event organizer,edit,Pending Review proposal without charge
+19,event organizer,edit,Pending Review proposal
+20,event organizer,edit,Submitted
+21,exhibitor,submit,booth lease request
+22,exhibitor,send along with,payment
+23,exhibitor,send along with,payment to NTSS
+24,exhibitor,withdraw,booth lease request
+25,exhibitor,withdraw,booth lease request with 10 % cancellation charge
+26,exhibitor,withdraw,booth lease request with cancellation charge
+27,potential participant,register for,event
+28,participant,select from,list
+29,participant,select from,list of event of her/his interest
+30,participant,select from,list of event
+31,participant,print,payment slip
+32,register participant,cancel registration at_time,one week
+33,register participant,cancel registration at_time,one week before event
+34,participant,cancel registration at_time,one week
+35,participant,cancel registration at_time,one week before event
+36,participant,cancel,registration
+37,register participant,cancel,registration
+38,participant,cancel registration without,charge
+39,register participant,cancel registration without,charge
+

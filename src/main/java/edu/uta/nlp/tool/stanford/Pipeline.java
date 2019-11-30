@@ -6,6 +6,7 @@ import edu.stanford.nlp.util.PropertiesUtils;
 import java.util.Properties;
 
 /**
+ * Singleton Pattern
  * @author hxy
  */
 public class Pipeline {

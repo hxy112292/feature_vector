@@ -25,7 +25,7 @@ public class WekaProcess {
         unlabeled.setClassIndex(unlabeled.numAttributes() - 1);
 
         StringBuilder sbLabel = new StringBuilder("subject,s-tag,s-ner,s-type,verb,v-tag,v-cat,v-extractUseCase,object,o-tag,o-ner,o-type,label\n");
-        StringBuilder sbUseCase = new StringBuilder("Num,Use Case\n");
+        StringBuilder sbUseCase = new StringBuilder("Num,Actor, Verb, Object\n");
         int senNo = 0;
 
         for (int i = 0; i < unlabeled.numInstances(); i++) {
@@ -35,7 +35,7 @@ public class WekaProcess {
             String featureVector = "" + instance.toString();
             if (classification == 0.0 && classValue == 0.0) {
                 featureVector = featureVector.replace(",NONE", ",1");
-                sbUseCase.append((++senNo) + "," + instance.stringValue(0) + " " + instance.stringValue(4) + " "
+                sbUseCase.append((++senNo) + "," + instance.stringValue(0) + "," + instance.stringValue(4) + ","
                         + instance.stringValue(8) + "\n");
             } else {
                 featureVector = featureVector.replace(",NONE", ",0");

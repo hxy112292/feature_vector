@@ -1,0 +1,34 @@
+The system shall allow a potential user to create an online account identified by a valid email address.
+The system shall require the user to specify the account type (event organizer, exhibitor, speaker, or observer). Different types of account shall have different privileges.
+The system shall send a temporary password to the email address. The temporary password must comply to commonly adopted password security rules.
+The system shall require the user to change the temporary password at the first login. The new password must comply to commonly adopted password security rules.
+The system shall allow an event organizer to submit an event proposal using an event proposal form with fields that describe the event.
+Upon submission, the system shall generate a payment slip to be sent by the event organizer along with the payment to NTSS.
+Upon reception of the payment for an event proposal,
+the system shall change the status of the event proposal to "Pending Review" from "Submitted,"
+the system shall email notify the event organizer that the payment has been received and the proposal is pending review.
+The system shall allow an event organizer to cancel an event with a 15% cancellation charge.
+The system shall allow an event organizer to edit a "Submitted" or "Pending Review" proposal without charge.
+The system shall allow an event organizer or NTSS staff to view an event proposal.
+The system shall allow an NTSS staff to evaluate an event proposal and enter feedback and an acceptance decision of either "Accepted" or "Rejected." If "Rejected," then the staff must also provide feedback explaining why the proposal is rejected.
+The system shall allow an exhibitor to submit a booth lease request.
+The system shall display a floor plan with available booths, their sizes and leasing prices. The booth sizes are large, medium, and small, each of which is speciﬁed by width and length.
+The system shall allow the exhibitor to select one or more available booths to be leased.
+The system shall generate a summary and total payment slip so that the exhibitor can print and send along with the payment to NTSS.
+When the payment is received, the system shall change the status of the request to pending review and notify the exhibitor of the status change.
+The system shall allow an exhibitor to withdraw a booth lease request with a 10% cancellation charge.
+The system shall allow an exhibitor or NTSS staff to view a booth lease request.
+The system shall allow an NTSS staff to evaluate a booth lease request.
+The system shall allow an NTSS staff to enter "Accepted" or "Rejected" decision.
+If the decision is Rejected, then the system shall require the NTSS staff to enter feedback explaining why the lease request was rejected.
+The system shall change the status of the request accordingly and notify the exhibitor of the change in request status.
+The system shall change the status of a booth to "unavailable" once it is leased out.
+The system shall allow a potential participant to register for an event.
+The system shall allow the participant to select from a list of event of her/his interest.
+The system shall allow a participant to register for one or more events.
+The system shall generate a payment slip showing a summary and the total payment.
+The system shall allow the participant to print the payment slip to be sent together with the payment.
+Once the payment is received, the system shall change the participants’ registrations to "Paid" and notify the registering participant of this change.
+The system shall allow a registering participant to cancel a registration without charge one week before the event and with a 10% cancellation charge afterwards.
+The system shall allow an NTSS staff to specify a floor plan with predefined sizes.
+The system shall allow payment by credit card, cashier check, personal check, money order, or PayPal.

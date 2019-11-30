@@ -1,0 +1,172 @@
+subject,s-tag,s-ner,s-type,verb,v-tag,v-cat,v-extractUseCase,object,o-tag,o-ner,o-type,label
+'potential user',NN,PERSON,NOUN_PERSON,create,VB,TV,TRUE,'online account identified by email address',NN,O,NOUN_COMMUNICATION,1
+'potential user',NN,PERSON,NOUN_PERSON,create,VB,TV,TRUE,'account identified by email address',NN,O,NOUN_COMMUNICATION,1
+'potential user',NN,PERSON,NOUN_PERSON,create,VB,TV,TRUE,'account identified by valid email address',NN,O,NOUN_COMMUNICATION,1
+'potential user',NN,PERSON,NOUN_PERSON,create,VB,TV,TRUE,'online account identified',VBN,O,OTHER,1
+'potential user',NN,PERSON,NOUN_PERSON,create,VB,TV,TRUE,'account identified',VBN,O,NOUN_STATE,1
+'potential user',NN,PERSON,NOUN_PERSON,create,VB,TV,TRUE,account,NN,O,NOUN_STATE,1
+'potential user',NN,PERSON,NOUN_PERSON,create,VB,TV,TRUE,'online account',NN,O,NOUN_STATE,1
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,'potential user',NN,O,NOUN_PERSON,0
+'potential user',NN,PERSON,NOUN_PERSON,create,VB,TV,TRUE,'online account identified by valid email address',NN,O,NOUN_COMMUNICATION,1
+user,NN,PERSON,NOUN_PERSON,specify,VB,TV,TRUE,'account type',NN,O,NOUN_PERSON,1
+system,NN,O,NOUN_GROUP,require,VBP,TV,TRUE,user,NN,O,NOUN_PERSON,0
+'different type',NN,PERSON,NOUN_PERSON,have,VBP,POSSESSION,FALSE,privileges,NNS,O,OTHER,0
+type,NN,PERSON,NOUN_PERSON,have,VBP,POSSESSION,FALSE,'different privileges',NNS,O,OTHER,0
+'different type',NN,PERSON,NOUN_PERSON,have,VBP,POSSESSION,FALSE,'different privileges',NNS,O,OTHER,0
+type,NN,PERSON,NOUN_PERSON,have,VBP,POSSESSION,FALSE,privileges,NNS,O,OTHER,0
+system,NN,O,NOUN_GROUP,'send password to',VB,TV,FALSE,'email address',NN,O,NOUN_COMMUNICATION,0
+system,NN,O,NOUN_GROUP,send,VB,TV,FALSE,'temporary password',NN,O,NOUN_COMMUNICATION,0
+system,NN,O,NOUN_GROUP,send,VB,TV,FALSE,password,NN,O,NOUN_COMMUNICATION,0
+password,NN,O,NOUN_COMMUNICATION,'comply to',VB,TV,FALSE,'commonly adopted password security rules',NNS,O,OTHER,0
+password,NN,O,NOUN_COMMUNICATION,'comply to',VB,TV,FALSE,'adopted password security rules',NNS,O,OTHER,0
+'temporary password',NN,O,NOUN_COMMUNICATION,'comply to',VB,TV,FALSE,'commonly adopted password security rules',NNS,O,OTHER,0
+'temporary password',NN,O,NOUN_COMMUNICATION,'comply to',VB,TV,FALSE,'password security rules',NNS,O,NOUN_COMMUNICATION,0
+'temporary password',NN,O,NOUN_COMMUNICATION,'comply to',VB,TV,FALSE,'adopted password security rules',NNS,O,OTHER,0
+password,NN,O,NOUN_COMMUNICATION,'comply to',VB,TV,FALSE,'password security rules',NNS,O,NOUN_COMMUNICATION,0
+user,NN,PERSON,NOUN_PERSON,change,VB,TV,FALSE,'temporary password',NN,O,NOUN_COMMUNICATION,1
+user,NN,PERSON,NOUN_PERSON,change,VB,TV,FALSE,password,NN,O,NOUN_COMMUNICATION,1
+user,NN,PERSON,NOUN_PERSON,'change password at',VB,TV,FALSE,login,NN,O,OTHER,1
+system,NN,O,NOUN_GROUP,require,VBP,TV,TRUE,user,NN,O,NOUN_PERSON,0
+user,NN,PERSON,NOUN_PERSON,'change password at',VB,TV,FALSE,'first login',NN,O,NOUN_RELATION,1
+'new password',NN,O,NOUN_COMMUNICATION,'comply to',VB,TV,FALSE,'commonly adopted password security rules',NNS,O,OTHER,0
+password,NN,O,NOUN_COMMUNICATION,'comply to',VB,TV,FALSE,'commonly adopted password security rules',NNS,O,OTHER,0
+password,NN,O,NOUN_COMMUNICATION,'comply to',VB,TV,FALSE,'adopted password security rules',NNS,O,OTHER,0
+'new password',NN,O,NOUN_COMMUNICATION,'comply to',VB,TV,FALSE,'password security rules',NNS,O,NOUN_COMMUNICATION,0
+'new password',NN,O,NOUN_COMMUNICATION,'comply to',VB,TV,FALSE,'adopted password security rules',NNS,O,OTHER,0
+password,NN,O,NOUN_COMMUNICATION,'comply to',VB,TV,FALSE,'password security rules',NNS,O,NOUN_COMMUNICATION,0
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,'event organizer',NN,TITLE,NOUN_PERSON,0
+'event proposal form',NN,O,NOUN_COMMUNICATION,'be with',VB,IS-A,FALSE,fields,NNS,O,NOUN_PERSON,0
+'event organizer',NN,PERSON,NOUN_PERSON,submit,VBP,TV,TRUE,'event proposal',NN,O,NOUN_COMMUNICATION,1
+system,NN,O,NOUN_GROUP,'change status from',VB,TV,FALSE,Submitted,VBN,O,OTHER,0
+system,NN,O,NOUN_GROUP,'change status to',VB,TV,FALSE,'Pending Review',NN,O,NOUN_COGNITION,0
+system,NN,O,NOUN_GROUP,change,VB,TV,FALSE,'status of event proposal',NN,O,NOUN_COMMUNICATION,0
+system,NN,O,NOUN_GROUP,change,VB,TV,FALSE,status,NN,O,NOUN_STATE,0
+proposal,NN,O,NOUN_COMMUNICATION,be,VB,IS-A,FALSE,review,NN,O,NOUN_COGNITION,0
+system,NN,O,NOUN_GROUP,notify,VBP,TV,TRUE,'event organizer',NN,TITLE,NOUN_PERSON,0
+payment,NN,O,NOUN_POSSESSION,be,VB,IS-A,FALSE,received,VBN,O,OTHER,0
+proposal,NN,O,NOUN_COMMUNICATION,be,VB,IS-A,FALSE,'pending review',NN,O,NOUN_COGNITION,0
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,'event organizer',NN,TITLE,NOUN_PERSON,0
+'event organizer',NN,PERSON,NOUN_PERSON,cancel,VB,TV,TRUE,'event with cancellation charge',NN,O,NOUN_PERSON,1
+event,NN,O,NOUN_TOPS,'be with',VB,IS-A,FALSE,'15 \% cancellation charge',NN,O,NOUN_PERSON,0
+'event organizer',NN,PERSON,NOUN_PERSON,cancel,VB,TV,TRUE,event,NN,O,NOUN_TOPS,1
+'event organizer',NN,PERSON,NOUN_PERSON,cancel,VB,TV,TRUE,'event with 15 \% cancellation charge',NN,O,NOUN_PERSON,1
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,'event organizer',NN,TITLE,NOUN_PERSON,0
+'event organizer',NN,PERSON,NOUN_PERSON,edit,VB,TV,FALSE,'Pending Review proposal without charge',NN,O,NOUN_PERSON,1
+'event organizer',NN,PERSON,NOUN_PERSON,edit,VB,TV,FALSE,'Pending Review proposal',NN,O,NOUN_COMMUNICATION,1
+'event organizer',NN,PERSON,NOUN_PERSON,edit,VB,TV,FALSE,Submitted,VBN,O,OTHER,1
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,'event organizer',NN,TITLE,NOUN_PERSON,0
+'ntss staff',NN,O,NOUN_GROUP,view,VB,TV,FALSE,'event proposal',NN,O,NOUN_COMMUNICATION,0
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,'NTSS staff',NN,O,NOUN_GROUP,0
+'event proposal',NN,O,NOUN_COMMUNICATION,enter,VBP,TV,FALSE,'acceptance decision',NN,O,NOUN_COGNITION,0
+'ntss staff',NN,O,NOUN_GROUP,evaluate,VB,TV,TRUE,'event proposal',NN,O,NOUN_COMMUNICATION,0
+'event proposal',NN,O,NOUN_COMMUNICATION,enter,VBP,TV,FALSE,'acceptance decision of Accepted',JJ,O,NOUN_COGNITION,0
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,'NTSS staff',NN,O,NOUN_GROUP,0
+'event proposal',NN,O,NOUN_COMMUNICATION,enter,VBP,TV,FALSE,feedback,NN,O,NOUN_PROCESS,0
+staff,NN,O,NOUN_GROUP,provide,VBP,TV,TRUE,feedback,NN,O,NOUN_PROCESS,0
+proposal,NN,O,NOUN_COMMUNICATION,be,VB,IS-A,FALSE,'why rejected',VBN,O,NOUN_MOTIVE,0
+staff,NN,O,NOUN_GROUP,'also provide feedback',RB,OTHER,FALSE,Rejected,VBD,O,OTHER,0
+staff,NN,O,NOUN_GROUP,'provide feedback',VBP,OTHER,TRUE,Rejected,VBN,O,OTHER,0
+proposal,NN,O,NOUN_COMMUNICATION,be,VB,IS-A,FALSE,rejected,VBN,O,OTHER,0
+staff,NN,O,NOUN_GROUP,'also provide',RB,OTHER,FALSE,'feedback explaining',VBG,O,NOUN_PROCESS,0
+staff,NN,O,NOUN_GROUP,'also provide',RB,OTHER,FALSE,feedback,NN,O,NOUN_PROCESS,0
+staff,NN,O,NOUN_GROUP,provide,VBP,TV,TRUE,'feedback explaining',VBG,O,NOUN_PROCESS,0
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,exhibitor,NN,O,NOUN_PERSON,0
+exhibitor,NN,PERSON,NOUN_PERSON,submit,VBP,TV,TRUE,'booth lease request',NN,O,NOUN_COMMUNICATION,1
+system,NN,O,NOUN_GROUP,display,VB,TV,FALSE,'their sizes',NNS,O,OTHER,0
+system,NN,O,NOUN_GROUP,display,VB,TV,FALSE,prices,NNS,O,OTHER,0
+system,NN,O,NOUN_GROUP,display,VB,TV,FALSE,'leasing prices',NNS,O,OTHER,0
+system,NN,O,NOUN_GROUP,display,VB,TV,FALSE,'floor plan',NN,O,NOUN_ARTIFACT,0
+system,NN,O,NOUN_GROUP,display,VB,TV,FALSE,'floor plan with available booths',NNS,O,NOUN_ARTIFACT,0
+'floor plan',NN,O,NOUN_ARTIFACT,'be with',VB,IS-A,FALSE,'available booths',NNS,O,OTHER,0
+system,NN,O,NOUN_GROUP,display,VB,TV,FALSE,'floor plan with booths',NNS,O,NOUN_ARTIFACT,0
+'booth size',NN,O,NOUN_ATTRIBUTE,be,VB,IS-A,FALSE,large,JJ,O,NOUN_ATTRIBUTE,0
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,exhibitor,NN,O,NOUN_PERSON,0
+payment,NN,O,NOUN_POSSESSION,slip,VBP,TV,FALSE,'exhibitor can print',NN,O,NOUN_COMMUNICATION,0
+exhibitor,NN,PERSON,NOUN_PERSON,'send along with',VBP,TV,FALSE,payment,NN,O,NOUN_POSSESSION,1
+summary,NN,O,NOUN_COMMUNICATION,slip,VBP,TV,FALSE,'exhibitor can print',NN,O,NOUN_COMMUNICATION,0
+exhibitor,NN,PERSON,NOUN_PERSON,'send along with',VB,TV,FALSE,'payment to NTSS',NNS,ORGANIZATION,NOUN_POSSESSION,1
+'total payment',NN,O,NOUN_POSSESSION,slip,VBP,TV,FALSE,'exhibitor can print',NN,O,NOUN_COMMUNICATION,0
+payment,NN,O,NOUN_POSSESSION,be,VB,IS-A,FALSE,received,VBN,O,OTHER,0
+system,NN,O,NOUN_GROUP,change,VB,TV,FALSE,'status of request',NN,O,NOUN_COMMUNICATION,0
+system,NN,O,NOUN_GROUP,'change status to',VB,TV,FALSE,review,NN,O,NOUN_COGNITION,0
+notify,VB,O,OTHER,'exhibitor of',NN,OTHER,FALSE,'status change',NN,O,NOUN_EVENT,0
+system,NN,O,NOUN_GROUP,change,VB,TV,FALSE,status,NN,O,NOUN_STATE,0
+system,NN,O,NOUN_GROUP,'change status to',VB,TV,FALSE,'pending review',NN,O,NOUN_COGNITION,0
+payment,NN,O,NOUN_POSSESSION,be,VB,IS-A,FALSE,'When received',VBN,O,OTHER,0
+system,NN,O,NOUN_GROUP,notify,VBP,TV,TRUE,exhibitor,NN,O,NOUN_PERSON,0
+system,NN,O,NOUN_GROUP,notify,VBP,TV,TRUE,'exhibitor of status change',NN,O,NOUN_EVENT,0
+exhibitor,NN,PERSON,NOUN_PERSON,withdraw,VBP,TV,FALSE,'booth lease request',NN,O,NOUN_COMMUNICATION,1
+exhibitor,NN,PERSON,NOUN_PERSON,withdraw,VBP,TV,FALSE,'booth lease request with 10 \% cancellation charge',NN,O,NOUN_PERSON,1
+exhibitor,NN,PERSON,NOUN_PERSON,withdraw,VBP,TV,FALSE,'booth lease request with cancellation charge',NN,O,NOUN_PERSON,1
+'booth lease request',NN,O,NOUN_COMMUNICATION,'be with',VB,IS-A,FALSE,'10 \% cancellation charge',NN,O,NOUN_PERSON,0
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,exhibitor,NN,O,NOUN_PERSON,0
+'ntss staff',NN,O,NOUN_GROUP,view,VB,TV,FALSE,'booth lease request',NN,O,NOUN_COMMUNICATION,0
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,exhibitor,NN,O,NOUN_PERSON,0
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,'NTSS staff',NN,O,NOUN_GROUP,0
+'ntss staff',NN,O,NOUN_GROUP,evaluate,VB,TV,TRUE,'booth lease request',NN,O,NOUN_COMMUNICATION,0
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,'NTSS staff',NN,O,NOUN_GROUP,0
+'ntss staff',NN,O,NOUN_GROUP,enter,VBP,TV,FALSE,decision,NN,O,NOUN_COGNITION,0
+'ntss staff',NN,O,NOUN_GROUP,enter,VBP,TV,FALSE,'Accepted decision',NN,O,NOUN_COGNITION,0
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,'NTSS staff',NN,O,NOUN_GROUP,0
+decision,NN,O,NOUN_COGNITION,be,VB,IS-A,FALSE,Rejected,VBN,O,OTHER,0
+'lease request',NN,O,NOUN_COMMUNICATION,be,VB,IS-A,FALSE,rejected,VBN,O,OTHER,0
+'ntss staff',NN,O,NOUN_GROUP,enter,VBP,TV,FALSE,feedback,NN,O,NOUN_PROCESS,0
+'lease request',NN,O,NOUN_COMMUNICATION,be,VB,IS-A,FALSE,'why rejected',VBN,O,NOUN_MOTIVE,0
+system,NN,O,NOUN_GROUP,'require ntss staff',VBP,OTHER,TRUE,Rejected,VBN,O,OTHER,0
+'ntss staff',NN,O,NOUN_GROUP,enter,VBP,TV,FALSE,'feedback explaining',VBG,O,NOUN_PROCESS,0
+system,NN,O,NOUN_GROUP,require,VBP,TV,TRUE,'NTSS staff',NN,O,NOUN_GROUP,0
+notify,VB,O,OTHER,'exhibitor of',NN,OTHER,FALSE,change,NN,O,NOUN_EVENT,0
+system,NN,O,NOUN_GROUP,change,VB,TV,FALSE,'status of request',NN,O,NOUN_COMMUNICATION,0
+system,NN,O,NOUN_GROUP,notify,VBP,TV,TRUE,'exhibitor of change',NN,O,NOUN_EVENT,0
+system,NN,O,NOUN_GROUP,'change accordingly',VB,TV,FALSE,status,NN,O,NOUN_STATE,0
+change,NN,O,NOUN_EVENT,'be in',VB,IS-A,FALSE,'request status',NN,O,NOUN_STATE,0
+system,NN,O,NOUN_GROUP,change,VB,TV,FALSE,status,NN,O,NOUN_STATE,0
+notify,VB,O,OTHER,'exhibitor of',NN,OTHER,FALSE,'change in request status',NN,O,NOUN_STATE,0
+system,NN,O,NOUN_GROUP,'change accordingly',VB,TV,FALSE,'status of request',NN,O,NOUN_COMMUNICATION,0
+system,NN,O,NOUN_GROUP,notify,VBP,TV,TRUE,'exhibitor of change in request status',NN,O,NOUN_STATE,0
+system,NN,O,NOUN_GROUP,notify,VBP,TV,TRUE,exhibitor,NN,O,NOUN_PERSON,0
+system,NN,O,NOUN_GROUP,'change status to',VB,TV,FALSE,unavailable,JJ,O,OTHER,0
+system,NN,O,NOUN_GROUP,change,VB,TV,FALSE,status,NN,O,NOUN_STATE,0
+system,NN,O,NOUN_GROUP,change,VB,TV,FALSE,'status of booth',NN,O,NOUN_PERSON,0
+'potential participant',NN,PERSON,NOUN_PERSON,'register for',VB,TV,TRUE,event,NN,O,NOUN_TOPS,1
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,register,NN,O,NOUN_COMMUNICATION,0
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,'register for event',NN,O,NOUN_TOPS,0
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,'potential participant',NN,O,NOUN_PERSON,0
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,'select from list',NN,O,NOUN_COMMUNICATION,0
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,'select from list of event of her/his interest',NN,O,NOUN_COGNITION,0
+participant,NN,PERSON,NOUN_PERSON,'select from',VB,TV,TRUE,list,NN,O,NOUN_COMMUNICATION,1
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,participant,NN,O,NOUN_PERSON,0
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,'select from list of event',NN,O,NOUN_TOPS,0
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,select,JJ,O,OTHER,0
+participant,NN,PERSON,NOUN_PERSON,'select from',VB,TV,TRUE,'list of event of her/his interest',NN,O,NOUN_COGNITION,1
+participant,NN,PERSON,NOUN_PERSON,'select from',VB,TV,TRUE,'list of event',NN,O,NOUN_TOPS,1
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,register,NN,O,NOUN_COMMUNICATION,0
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,participant,NN,O,NOUN_PERSON,0
+system,NN,O,NOUN_GROUP,generate,VBP,TV,TRUE,'payment slip',NN,O,NOUN_PERSON,0
+'payment slip',NN,PERSON,NOUN_PERSON,be,VB,IS-A,FALSE,sent,VBN,O,NOUN_QUANTITY,0
+participant,NN,PERSON,NOUN_PERSON,print,VB,TV,FALSE,'payment slip',NN,O,NOUN_PERSON,1
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,participant,NN,O,NOUN_PERSON,0
+'payment slip',NN,PERSON,NOUN_PERSON,'be send with',VB,IS-A,FALSE,payment,NN,O,NOUN_POSSESSION,0
+'payment slip',NN,PERSON,NOUN_PERSON,be,VB,IS-A,FALSE,'sent together',RB,O,NOUN_QUANTITY,0
+'payment slip',NN,PERSON,NOUN_PERSON,'be send together with',VB,IS-A,FALSE,payment,NN,O,NOUN_POSSESSION,0
+payment,NN,O,NOUN_POSSESSION,be,VB,IS-A,FALSE,received,VBN,O,OTHER,0
+system,NN,O,NOUN_GROUP,change,VB,TV,FALSE,'participants _ registrations',NNS,O,OTHER,0
+payment,NN,O,NOUN_POSSESSION,be,VB,IS-A,FALSE,'Once received',VBN,O,OTHER,0
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,'registering participant',NN,O,NOUN_PERSON,0
+'register participant',NN,PERSON,NOUN_PERSON,'cancel registration at_time',VB,TV,TRUE,'one week',NN,DURATION,NOUN_TIME,1
+'register participant',NN,PERSON,NOUN_PERSON,'cancel registration at_time',VB,TV,TRUE,'one week before event',NN,O,NOUN_TOPS,1
+participant,NN,PERSON,NOUN_PERSON,'cancel registration at_time',VB,TV,TRUE,'one week',NN,DURATION,NOUN_TIME,1
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,participant,NN,O,NOUN_PERSON,0
+participant,NN,PERSON,NOUN_PERSON,'cancel registration at_time',VB,TV,TRUE,'one week before event',NN,O,NOUN_TOPS,1
+participant,NN,PERSON,NOUN_PERSON,cancel,VB,TV,TRUE,registration,NN,O,NOUN_ACT,1
+'register participant',NN,PERSON,NOUN_PERSON,cancel,VB,TV,TRUE,registration,NN,O,NOUN_ACT,1
+participant,NN,PERSON,NOUN_PERSON,'cancel registration without',VB,TV,TRUE,charge,NN,O,NOUN_PERSON,1
+'register participant',NN,PERSON,NOUN_PERSON,'cancel registration without',VB,TV,TRUE,charge,NN,O,NOUN_PERSON,1
+'ntss staff',NN,O,NOUN_GROUP,specify,VB,TV,TRUE,'floor plan with sizes',NNS,O,NOUN_ARTIFACT,0
+'ntss staff',NN,O,NOUN_GROUP,specify,VB,TV,TRUE,'floor plan with predefined sizes',NNS,O,NOUN_ARTIFACT,0
+'floor plan',NN,O,NOUN_ARTIFACT,'be with',VB,IS-A,FALSE,'predefined sizes',NNS,O,OTHER,0
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,'NTSS staff',NN,O,NOUN_GROUP,0
+'ntss staff',NN,O,NOUN_GROUP,specify,VB,TV,TRUE,'floor plan',NN,O,NOUN_ARTIFACT,0
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,payment,NN,O,NOUN_POSSESSION,0
+system,NN,O,NOUN_GROUP,allow,VBP,PERMISSION,FALSE,'payment by credit card',NN,O,NOUN_PERSON,0
+
